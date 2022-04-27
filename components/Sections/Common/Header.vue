@@ -4,10 +4,10 @@
       <div class="block lg:flex items-center justify-between">
 
         <div class="flex justify-between">
-          <UiSharedLogo  />
+          <UiSharedLogo @click="emitReloadPage" />
 
           <div class="lg:hidden menu-wrap">
-            
+
           </div>
         </div>
       </div>
