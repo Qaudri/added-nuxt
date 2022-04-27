@@ -6,9 +6,7 @@
         <div class="flex justify-between">
           <UiSharedLogo @click="emitReloadPage" />
 
-          <div class="lg:hidden menu-wrap">
-
-          </div>
+          <UiSharedMenu />
         </div>
       </div>
     </div>
