@@ -17,7 +17,11 @@
 
 <script>
 export default {
-
+methods: {
+  emitReloadPage(){
+    this.$emit("ReloadPage")
+  }
+}
 }
 </script>
 
