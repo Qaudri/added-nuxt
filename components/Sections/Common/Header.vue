@@ -52,4 +52,36 @@ methods: {
 
 <style>
 
+.menu-slide-down{
+  animation: slideDown .75s forwards;
+}
+
+.menu-slide-up{
+  animation: slideUp .75s forwards;
+}
+
+@keyframes slideDown {
+  from{
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  to{
+    opacity: 0;
+    transform: translateY(-5rem);
+  }
+
+  from{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 </style>
