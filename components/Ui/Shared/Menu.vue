@@ -8,16 +8,10 @@
 <script>
 
 export default {
-  data(){
-    return{
-      is_revealed: false
-    }
-  },
 
   methods: {
     revealMenu(){
       this.is_revealed = true
-      console.log("clicked")
     },
 
     hideMenu(){
