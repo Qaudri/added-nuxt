@@ -5,9 +5,9 @@
 
         <div class="flex justify-between">
           <UiSharedLogo @click="emitReloadPage" />
-          
+
           <div class="flex">
-            <UiButtonsMenu class="block lg:hidden" @click="revealMenu" /> 
+            <UiButtonsMenu class="block lg:hidden" @click="showMenu" /> 
             <UiButtonsClose class="hidden" @click="hideMenu" />
           </div>
         </div>
@@ -27,9 +27,19 @@
 
 <script>
 export default {
+
+
 methods: {
   emitReloadPage(){
     this.$emit("ReloadPage")
+  }
+
+  hideMenu(){
+    this.is_revealed = true
+  }
+
+  showMenu(){
+    this.is_revealed = true
   }
 }
 }
