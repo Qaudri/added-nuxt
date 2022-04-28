@@ -55,6 +55,7 @@ methods: {
 @media screen and (max-width: 1024px) {
   .menu-slide-down{
   animation: slideDown .75s forwards;
+  display: block;
 }
 
 .menu-slide-up{
