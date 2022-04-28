@@ -27,20 +27,24 @@
 
 <script>
 export default {
-
+data(){
+  return{
+    is_revealed: false,
+  }
+},
 
 methods: {
   emitReloadPage(){
     this.$emit("ReloadPage")
-  }
+  },
 
   hideMenu(){
     this.is_revealed = true
-  }
+  },
 
   showMenu(){
     this.is_revealed = true
-  }
+  },
 }
 }
 </script>
