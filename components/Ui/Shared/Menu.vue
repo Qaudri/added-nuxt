@@ -1,9 +1,7 @@
 <template>
-  <div class="flex justify-end w-full">
-    <div class="flex">
-      <UiButtonsMenu class="block lg:hidden" @click="revealMenu" /> 
-      <UiButtonsClose class="hidden" @click="hideMenu" />
-    </div>
+  <div class="flex">
+    <UiButtonsMenu class="block lg:hidden" @click="revealMenu" /> 
+    <UiButtonsClose class="hidden" @click="hideMenu" />
   </div>
 </template>
 
