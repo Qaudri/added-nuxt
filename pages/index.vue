@@ -1,6 +1,6 @@
 <template>
   <div class="w-full">
-    <SectionsCommonHeader />
+    <SectionsCommonHeader @ReloadPage="reloadThisPage" />
 
     <section class="hero-bg w-full py-32 md:py-44 px-10">
 
@@ -192,7 +192,13 @@
 
 <script>
 export default {
-  name: 'IndexPage'
+  name: 'IndexPage',
+
+  methods: {
+    reloadThisPage(){
+      this.$router.push({name:'/'})
+    }
+  }
 }
 </script>
 
@@ -203,7 +209,7 @@ body{
 }
 
 .hero-bg{
-  background: url(../images/bg.jpg);
+  background: url(../assets/images/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
