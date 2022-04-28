@@ -16,7 +16,7 @@
                   Acquire the 21st century skills so as to improve your relevance and employability in this ever changing world.
               </p>
               <div>
-                  <a href="./courses.html" class="select-none px-10 py-3 font-medium hover:text-white hover:bg-primary-100 border-2 border-primary-100 text-primary-100 mt-8 mb-1 duration-500 ease-in-out">
+                  <a href="@/courses.html" class="select-none px-10 py-3 font-medium hover:text-white hover:bg-primary-100 border-2 border-primary-100 text-primary-100 mt-8 mb-1 duration-500 ease-in-out">
                       Get Started
                   </a>
               </div>
@@ -24,7 +24,7 @@
 
           </div>
 
-          <img src="./assets/images/hero-bg.png" alt="" class="select-none w-full lg:w-1/2 border-b-2 pl-6 pb-1" />
+          <img :src="require('@/assets/images/hero-bg.png')" alt="" class="select-none w-full lg:w-1/2 border-b-2 pl-6 pb-1" />
         </div>
     </section> 
 
@@ -32,7 +32,7 @@
       <div>
           <div class="block lg:flex justify-between items-center">
               <div class="w-full hidden lg:block lg:w-1/2">
-                  <img src="./assets/images/academy.jpg" alt="" class="w-full">
+                  <img :src="require('@/assets/images/academy.jpg')" alt="" class="w-full">
               </div>
               <div class="w-full lg:w-1/2 px-10 md:px-16 2xl:px-24 py-8 lg:py-0">
                   <h1
@@ -55,7 +55,7 @@
           <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-24 container mx-auto px-10" >
 
               <div class="p-6 py-6 md:py-8 bg-white shadow-lg flex md:block">
-                  <img src="./assets/images/register.svg" alt="" class="w-16 md:w-28 md:mb-6 mr-4 flex justify-center md:mx-auto">
+                  <img :src="require('@/assets/images/icons/register.svg')" alt="" class="w-16 md:w-28 md:mb-6 mr-4 flex justify-center md:mx-auto">
                   <div>
                       <h1 class="xl:text-2xl text-xl font-semibold uppercase text-left md:text-center text-primary-100 md:flex md:justify-center md:mx-auto">
                       Quick Enrollment
@@ -68,7 +68,7 @@
               </div>
 
               <div class="p-6 py-6 md:py-8 bg-white shadow-lg flex md:block">
-                  <img src="./assets/images/course.svg" alt="" class="w-16 md:w-28 md:mb-6 mr-4 flex justify-center md:mx-auto">
+                  <img :src="require('@/assets/images/icons/course.svg')" alt="" class="w-16 md:w-28 md:mb-6 mr-4 flex justify-center md:mx-auto">
                   <div>
                       <h1 class="xl:text-2xl text-xl font-semibold uppercase text-left md:text-center text-primary-100 md:flex md:justify-center md:mx-auto">
                           THOROUGH CURRICULUM
@@ -81,7 +81,7 @@
               </div>
 
               <div class="p-6 py-6 md:py-8 bg-white shadow-lg flex md:block">
-                  <img src="./assets/images/environ.svg" alt="" class="w-16 md:w-28 md:mb-6 mr-4 flex justify-center md:mx-auto">
+                  <img :src="require('@/assets/images/icons/environ.svg')" alt="" class="w-16 md:w-28 md:mb-6 mr-4 flex justify-center md:mx-auto">
                   <div>
                       <h1 class="xl:text-2xl text-xl font-semibold uppercase text-left md:text-center text-primary-100 md:flex md:justify-center md:mx-auto">
                           CONDUSIVE AREA
@@ -94,7 +94,7 @@
               </div>
 
               <div class="p-6 py-6 md:py-8 bg-white shadow-lg flex md:block">
-                  <img src="./assets/images/recruit.svg" alt="" class="w-16 md:w-28 md:mb-6 mr-4 flex justify-center md:mx-auto">
+                  <img :src="require('@/assets/images/icons/recruit.svg')" alt="" class="w-16 md:w-28 md:mb-6 mr-4 flex justify-center md:mx-auto">
                   <div>
                       <h1 class="xl:text-2xl text-xl font-semibold uppercase text-left md:text-center text-primary-100 md:flex md:justify-center md:mx-auto">
                           JOB PLACEMENT
@@ -126,12 +126,12 @@
                   companies. We conduct and train students in different courses with unique certification.
                   </p>
 
-                  <a href="./courses.html" class="text-lg text-primary-100 font-medium py-3 px-10 border-2 border-primary-100
+                  <a href="@/courses.html" class="text-lg text-primary-100 font-medium py-3 px-10 border-2 border-primary-100
                   hover:bg-primary-100 duration-500 ease-in-out hover:text-white">View our Courses</a>
               </div>
 
               <div class="lg:w-1/2">
-                  <img src="./assets/images/work-bg.png" alt="" class="w-full py-8 pl-8 hidden lg:block" />
+                  <img :src="require('@/assets/images/work-bg.png')" alt="" class="w-full py-8 pl-8 hidden lg:block" />
               </div>
           </div>
 
@@ -328,7 +328,7 @@
           </div>
         </div>
 
-        <a href="./courses.html" class="text-white xl:text-xl xl:border-3 text-base px-6 py-3 font-medium border-2 border-white hover:bg-white hover:text-primary-100 duration-500 ease-in-out">
+        <a href="@/courses.html" class="text-white xl:text-xl xl:border-3 text-base px-6 py-3 font-medium border-2 border-white hover:bg-white hover:text-primary-100 duration-500 ease-in-out">
           Register Now
         </a>      
       </div>
