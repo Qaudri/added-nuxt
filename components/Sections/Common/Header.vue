@@ -6,9 +6,9 @@
         <div class="flex justify-between">
           <UiSharedLogo @click="emitReloadPage" />
 
-          <div class="flex">
-            <UiButtonsMenu class="lg:hidden" @revealMenu="showMenu" :class="is_revealed ? 'hidden' : 'block'" /> 
-            <UiButtonsClose class="hidden" @closeMenu="hideMenu" />
+          <div class="flex lg:hidden">
+            <UiButtonsMenu @revealMenu="showMenu" :class="is_revealed ? 'hidden' : 'block'" /> 
+            <UiButtonsClose @closeMenu="hideMenu" :class="is_revealed ? 'block' : 'hidden' " />
           </div>
         </div>
 
