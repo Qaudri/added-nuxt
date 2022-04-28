@@ -4,14 +4,6 @@
       <UiButtonsMenu class="block lg:hidden" @click="revealMenu" /> 
       <UiButtonsClose class="hidden" @click="hideMenu" />
     </div>
-
-    <div class="items-center hidden lg:flex lg:pt-0 pt-8 h-screen lg:h-auto">
-      <UiButtonsSecondary button_title="Who We Are" />
-      <UiButtonsSecondary button_title="What We Do" />
-      <UiButtonsSecondary button_title="Our Services" />
-      <UiButtonsSecondary button_title="Academy" />
-      <UiButtonsPrimary button_title="Let's Talk" />
-    </div>
   </div>
 </template>
 
@@ -27,6 +19,7 @@ export default {
   methods: {
     revealMenu(){
       this.is_revealed = true
+      console.log("clicked")
     },
 
     hideMenu(){
