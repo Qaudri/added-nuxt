@@ -1,8 +1,8 @@
 <template>
   <div class="flex justify-end w-full">
     <div class="flex">
-      <UiButtonsMenu class="block lg:hidden" /> 
-      <UiButtonsClose class="hidden" />
+      <UiButtonsMenu class="block lg:hidden" @click="revealMenu" /> 
+      <UiButtonsClose class="hidden" @click="hideMenu" />
     </div>
 
     <div class="items-center hidden lg:flex lg:pt-0 pt-8 h-screen lg:h-auto">
@@ -16,6 +16,7 @@
 </template>
 
 <script>
+
 export default {
 
 }
