@@ -273,3 +273,33 @@ export default {
 }
 </script>
 
+<style>
+body{
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+
+br{
+  content: "A" !important;
+  display: block !important;
+  margin-bottom: .65em !important;
+}
+
+div{
+  user-select: none;
+}
+
+h1{
+  color: #222222 !important;
+}
+
+p{
+  color: #222222 !important;
+}
+
+.bg-gray-50{
+  background-color: #f7f7f7 !important;
+}
+</style>
+
