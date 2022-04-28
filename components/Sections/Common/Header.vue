@@ -7,8 +7,8 @@
           <UiSharedLogo @click="emitReloadPage" />
 
           <div class="flex">
-            <UiButtonsMenu class="block lg:hidden" @click="showMenu" /> 
-            <UiButtonsClose class="hidden" @click="hideMenu" />
+            <UiButtonsMenu class="lg:hidden" @revealMenu="showMenu" :class="is_revealed ? 'hidden' : 'block'" /> 
+            <UiButtonsClose class="hidden" @closeMenu="hideMenu" />
           </div>
         </div>
 
@@ -39,11 +39,12 @@ methods: {
   },
 
   hideMenu(){
-    this.is_revealed = true
+    this.is_revealed = false
   },
 
   showMenu(){
-    this.is_revealed = true
+    this.is_revealed = true;
+    console.log("shown")
   },
 }
 }
