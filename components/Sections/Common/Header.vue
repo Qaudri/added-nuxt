@@ -12,7 +12,7 @@
           </div>
         </div>
 
-        <div :class="is_revealed ? 'menu-slide-down' : 'menu-slide-up' " class="items-center hidden lg:flex lg:pt-0 pt-8 h-screen lg:h-auto">
+        <div :class="is_revealed ? 'menu-slide-down' : 'menu-slide-up'" class="items-center hidden lg:flex lg:pt-0 pt-8 h-screen lg:h-auto">
           <UiButtonsSecondary button_title="Who We Are" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
           <UiButtonsSecondary button_title="What We Do" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
           <UiButtonsSecondary button_title="Our Services" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
@@ -30,6 +30,7 @@ export default {
 data(){
   return{
     is_revealed: false,
+    is_animated: false,
   }
 },
 
@@ -39,12 +40,14 @@ methods: {
   },
 
   hideMenu(){
-    this.is_revealed = false
+    this.is_revealed = false;
+    setTimeout(() => {
+      this.is_animated = true
+    }, 750);
   },
 
   showMenu(){
     this.is_revealed = true;
-    console.log("shown")
   },
 }
 }
