@@ -13,7 +13,7 @@
           <UiButtonsSecondary button_title="What We Do" />
           <UiButtonsSecondary button_title="Our Services" />
           <UiButtonsSecondary button_title="Academy" />
-          <UiButtonsPrimary button_title="Let's Talk" />
+          <UiButtonsPrimary button_title="Let's Talk" class="lg:ml-4 my-10 lg:my-0 mx-6 lg:mr-0 " />
         </div>
 
       </div>
