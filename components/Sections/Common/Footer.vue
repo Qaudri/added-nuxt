@@ -4,19 +4,19 @@
       <div class="block lg:flex justify-around w-full items-center">
         <div class=" flex justify-center mx-auto md:mx-0 mb-4 md:mb-0">
           <a target="blank" href="https://www.facebook.com">
-            <img :src="require('/assets/images/icons/socials/facebook.svg')" alt="" width="20px" class="mr-6">
+            <img :src="require('/assets/images/icons/socials/facebook.svg')" alt=""  class="mr-6 w-5 2xl:w-8">
           </a>
 
           <a target="blank" href="https://www.instagram.com" >
-            <img :src="require('/assets/images/icons/socials/instagram.svg')" alt="" width="20px" class="mr-6">
+            <img :src="require('/assets/images/icons/socials/instagram.svg')" alt=""  class="mr-6 w-5 2xl:w-8">
           </a>
 
           <a target="blank" href="https://wa.me/2340866699820">
-            <img :src="require('/assets/images/icons/socials/whatsapp.svg')" alt="" width="20px" class="mr-6">
+            <img :src="require('/assets/images/icons/socials/whatsapp.svg')" alt=""  class="mr-6 w-5 2xl:w-8">
           </a>
 
           <a target="blank" href="https://www.youtube.com" >
-            <img :src="require('/assets/images/icons/socials/youtube.svg')" alt="" width="20px">
+            <img :src="require('/assets/images/icons/socials/youtube.svg')" alt="" class=" w-5 2xl:w-8" >
           </a>
         </div>
 
