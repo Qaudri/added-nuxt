@@ -4,7 +4,7 @@
       <div class="block lg:flex items-center lg:justify-between container mx-auto py-3 px-10">
 
         <div class="flex justify-between">
-          <UiSharedLogo @click="emitReloadPage" />
+          <UiSharedLogo @ReloadPage="emitReloadPage" />
 
           <div class="flex lg:hidden">
             <UiButtonsMenu @revealMenu="showMenu" :class="is_revealed ? 'hidden' : 'block'" /> 
