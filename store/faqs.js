@@ -2,46 +2,38 @@ export const state = () => ({
   items : [
     {
       id: 1,
-      question: "How do I start the game?",
-      answer: "Click the login button in the navigation menu to get started.",
+      question: "Are there any online classes?",
+      answer: "Yes, we do offer online training for select courses. We use platforms like Google Meet and Zoom for the trainings. Currently we are trying to increase the number of online courses we offer.",
       active: false,
     },
 
     {
       id: 2,
-      question: "How do I know my score?",
-      answer: "Once you are done with the questions, the system reviews your submission and reveals your score.",
+      question: "Which course should I choose?",
+      answer: "We feel that your choice of a course should be a professional decision. Everyone has their own strengths and you should play to yours. Check the details of the courses to pick the one that fits you best. If you are still confused, contact us and we will help you as much as we can.",
       active: false,
     },
 
     {
       id: 3,
-      question: "What do I stand to gain?",
-      answer: "The questions help boost and evaluate your memory and you can use them to prepare for an exam.",
+      question: "Can I have a private class?",
+      answer: "Private classes are not offered currently. Contact us and maybe we can figure something out.",
       active: false,
 
     },
 
     {
       id: 4,
-      question: "Can  my friend join?",
-      answer: "Sure! The referral will be appreciated! It's free and anyone can join.",
+      question: "Why Added?",
+      answer: "Because with us, you can never go wrong! Our courses are tailored to mmet your needs and suit your learning speed and capability. Our mentors are friendly, warm and caring. Our environment is safe, conducive and welcoming. In short, we are the best there is at what we do!",
       active: false,
 
     },
 
     {
       id: 5,
-      question: "What happens once the quiz is over?",
-      answer: "The system stores your score in a record for future purposes and uses the data to create a progess graph for you.",
-      active: false,
-
-    },
-
-    {
-      id: 6,
-      question: "Who is the game for?",
-      answer: "The game is for everyone who wants to test their technical knowledge.",
+      question: "Payment methods?",
+      answer: "You can pay directly via the website or you can contact us for a discussion. We are available 24/7",
       active: false,
 
     },
