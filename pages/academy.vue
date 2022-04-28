@@ -263,7 +263,7 @@
       </div>
     </section>
 
-    <SectionsCommonFooter />
+    <SectionsCommonFooter class="pt-60 md:pt-40 lg:pt-32" />
   </div>
 </template>
 
