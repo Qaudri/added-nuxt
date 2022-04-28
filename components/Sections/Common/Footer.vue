@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-secondary-100">
     <div class="container mx-auto py-6 px-10">
       <div class="block lg:flex justify-around w-full items-center">
         <div class=" flex justify-center mx-auto md:mx-0 mb-4 md:mb-0">
