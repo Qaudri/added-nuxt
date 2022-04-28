@@ -8,7 +8,7 @@
           <UiSharedMenu />
         </div>
 
-        <div class="items-center lg:flex lg:pt-0 pt-8 h-screen lg:h-auto">
+        <div class="items-center hidden lg:flex lg:pt-0 pt-8 h-screen lg:h-auto">
           <UiButtonsSecondary button_title="Who We Are" />
           <UiButtonsSecondary button_title="What We Do" />
           <UiButtonsSecondary button_title="Our Services" />
