@@ -1,8 +1,8 @@
 <template>
-  <div class="flex justify-between w-full">
-    <div>
-      <UiButtonsMenu /> 
-      <UiButtonsClose />
+  <div class="flex justify-end w-full">
+    <div class="flex">
+      <UiButtonsMenu class="block lg:hidden" /> 
+      <UiButtonsClose class="hidden" />
     </div>
 
     <div class="items-center hidden lg:flex lg:pt-0 pt-8 h-screen lg:h-auto">
