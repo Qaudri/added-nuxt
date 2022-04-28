@@ -1,7 +1,7 @@
 <template>
-  <body>
+  <div>
     <SectionsCommonHeader />
-  </body>
+  </div>
 </template>
 
 <script>
