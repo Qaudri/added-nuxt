@@ -195,3 +195,73 @@ export default {
   name: 'IndexPage'
 }
 </script>
+
+<style>
+body{
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.hero-bg{
+  background: url(../images/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+br{
+  content: "A" !important;
+  display: block !important;
+  margin-bottom: .65em !important;
+}
+
+div{
+  user-select: none;
+}
+
+h1{
+  color: #222222 !important;
+}
+
+p{
+  color: #222222 !important;
+}
+
+@media screen and (min-width: 1024px){
+  .hero-text{
+    position: sticky;
+    width: 50vw;
+  }
+
+}
+
+@media screen and (max-width: 375px){
+  .extra{
+    display: block !important;
+  }
+
+  p{
+    font-size: small !important;
+    width: 100%;
+
+  }
+
+  h1{
+    font-size: x-large !important;
+  }
+
+  .grid > div{
+    padding: .5rem !important;
+  }
+
+}
+
+.width{
+  width: 24rem !important;
+  padding-right: 1.5rem !important;
+  height: 26rem !important;
+}
+
+.bg-gray-50{
+  background-color: #f7f7f7 !important;
+}
+</style>
