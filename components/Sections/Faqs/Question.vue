@@ -1,8 +1,9 @@
 <template>
 
   <div @click="dropDown" :class="is_clicked ? 'border-b-0 rounded-b-none' : ''"
-  class="w-screen-1/2 flex rounded-lg justify-between px-4 py-3  border-2 border-accent1-600 bg-white
+  class="w-full md:w-2/3 flex justify-between px-4 py-3 border-2 border-primary-100 bg-white
    text-primary-100 text-lg font-medium">
+
     <slot class="cursor-pointer" />
 
     <img :src="require('@/assets/images/icons/reveal.svg')" alt="" width="10px"
