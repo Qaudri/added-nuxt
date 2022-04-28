@@ -20,7 +20,7 @@
           </a>
         </div>
 
-        <div class="flex justify-center items-cente lg:blockr mt-2">
+        <div class="flex justify-center items-center lg:block mt-2">
           <div class="text-white font medium opacity-50" >2020 Added Digital Solutions. All rights reserved</div>
         </div>
       </div>
