@@ -18,7 +18,21 @@
 <script>
 
 export default {
+  data(){
+    return{
+      is_revealed: false
+    }
+  },
 
+  methods: {
+    revealMenu(){
+      this.is_revealed = true
+    },
+
+    hideMenu(){
+      this.is_revealed = false
+    }
+  }
 }
 </script>
 
