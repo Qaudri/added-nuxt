@@ -46,7 +46,7 @@
 
         <div class="block md:flex justify-evenly mt-14 xl:justify-evenly">
           <div class="my-10 md:my-0">
-            <img src="./assets/images/star.svg" alt="" class="w-20 my-4 flex justify-center mx-auto">
+            <img :src="require('@/assets/images/icons/star.svg')" alt="" class="w-20 my-4 flex justify-center mx-auto">
             <h1 class="md:text-4xl text-3xl font-bold uppercase text-center text-primary-100 flex justify-center mx-auto">
               12+
             </h1>
@@ -56,7 +56,7 @@
           </div>
 
           <div class="my-10 md:my-0">
-            <img src="./assets/images/design.svg" alt="" class="w-20 my-4 flex justify-center mx-auto">
+            <img :src="require('@/assets/images/icons/courses/design.svg')" alt="" class="w-20 my-4 flex justify-center mx-auto">
             <h1 class="md:text-4xl text-3xl font-bold uppercase text-center text-primary-100 flex justify-center mx-auto">
               1500+
             </h1 >
@@ -64,7 +64,7 @@
           </div>
 
           <div class="my-10 md:my-0">
-            <img src="./assets/images/thumbs_up.svg" alt="" class="w-20 my-4 flex justify-center mx-auto">
+            <img :src="require('@/assets/images/icons/thumbs_up.svg')" alt="" class="w-20 my-4 flex justify-center mx-auto">
             <h1 class="md:text-4xl text-3xl font-bold uppercase text-center text-primary-100 flex justify-center mx-auto" >
               1000+
             </h1>
@@ -81,32 +81,32 @@
           </h1>
           <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mt-3">
             <div class="flex items-center p-2 bg-gray-50">
-              <img src="./assets/images/checked_icon.svg" alt="" class="w-8">
+              <img :src="require('@/assets/images/icons/checked_icon.svg')" alt="" class="w-8">
               <p class="mx-4 text-base md:text-lg xl:text-lg">Ingenuity</p>
             </div>
 
             <div class="flex items-center p-2 bg-gray-50">
-              <img src="./assets/images/checked_icon.svg" alt="" class="w-8">
+              <img :src="require('@/assets/images/icons/checked_icon.svg')" alt="" class="w-8">
               <p class="mx-4 text-base md:text-lg xl:text-lg">Innovation</p>
             </div>
 
             <div class="flex items-center p-2 bg-gray-50">
-              <img src="./assets/images/checked_icon.svg" alt="" class="w-8">
+              <img :src="require('@/assets/images/icons/checked_icon.svg')" alt="" class="w-8">
               <p class="mx-4 text-base md:text-lg xl:text-lg">Integrity</p>
             </div>
 
             <div class="flex items-center p-2 bg-gray-50">
-              <img src="./assets/images/checked_icon.svg" alt="" class="w-8">
+              <img :src="require('@/assets/images/icons/checked_icon.svg')" alt="" class="w-8">
               <p class="mx-4 text-base md:text-lg xl:text-lg">Transparency</p>
             </div>
 
             <div class="flex items-center p-2 bg-gray-50">
-              <img src="./assets/images/checked_icon.svg" alt="" class="w-8">
+              <img :src="require('@/assets/images/icons/checked_icon.svg')" alt="" class="w-8">
               <p class="mx-4 text-base md:text-lg xl:text-lg">Consistency</p>
             </div>
 
             <div class="flex items-center p-2 bg-gray-50">
-              <img src="./assets/images/checked_icon.svg" alt="" class="w-8">
+              <img :src="require('@/assets/images/icons/checked_icon.svg')" alt="" class="w-8">
               <p class="mx-4 text-base md:text-lg xl:text-lg">Diversity</p>
             </div>
           </div>
@@ -143,42 +143,42 @@
 
           <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-10  w-full">
             <div class="bg-gray-50 md:h-20 flex items-center p-4 md:p-6 w-full">
-              <img src="./assets/images/checked_icon.svg" class="w-8" alt="">
+              <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-8" alt="">
               <p class="mx-4 md:mx-6 text-left text-base md:text-lg xl:text-lg ">Graphics Design</p>
             </div>
 
             <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
-              <img src="./assets/images/checked_icon.svg" class="w-8" alt="">
+              <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-8" alt="">
               <p class="mx-4 md:mx-6 text-left text-base md:text-lg xl:text-lg ">Web Design</p>
             </div>
 
             <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
-              <img src="./assets/images/checked_icon.svg" class="w-8" alt="">
+              <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-8" alt="">
               <p class="mx-4 md:mx-6 text-left text-base md:text-lg xl:text-lg ">Web Development</p>
             </div>
 
             <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
-              <img src="./assets/images/checked_icon.svg" class="w-8" alt="">
+              <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-8" alt="">
               <p class="mx-4 md:mx-6 text-left text-base md:text-lg xl:text-lg ">Video Editing</p>
             </div>
 
             <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
-              <img src="./assets/images/checked_icon.svg" class="w-8" alt="">
+              <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-8" alt="">
               <p class="mx-4 md:mx-6 text-left text-base md:text-lg xl:text-lg ">Freelancing</p>
             </div>
 
             <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
-              <img src="./assets/images/checked_icon.svg" class="w-8" alt="">
+              <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-8" alt="">
               <p class="mx-4 md:mx-6 text-left text-base md:text-lg xl:text-lg ">Printing</p>
             </div>
 
             <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
-              <img src="./assets/images/checked_icon.svg" class="w-8" alt="">
+              <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-8" alt="">
               <p class="mx-4 md:mx-6 text-left text-base md:text-lg xl:text-lg ">Amazon KDP</p>
             </div>
 
             <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
-              <img src="./assets/images/checked_icon.svg" class="w-8" alt="">
+              <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-8" alt="">
               <p class="mx-4 md:mx-6 text-left text-base md:text-lg xl:text-lg ">E-Commerce</p>
             </div>
           </div>
