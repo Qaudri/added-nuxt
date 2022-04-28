@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-between">
+  <div class="flex justify-between w-full">
     <div>
       <UiButtonsMenu /> 
       <UiButtonsClose />
@@ -22,5 +22,9 @@ export default {
 </script>
 
 <style>
+body{
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
 
 </style>
