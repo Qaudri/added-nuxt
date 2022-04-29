@@ -11,7 +11,7 @@
 
     </div>
 
-    <div class="grid gap-6 mb-8 md:m-0">
+    <div class="grid gap-6 items-center justify-center w-full mb-8 md:m-0">
       <SectionsFaqsFaqcard v-for="item in faqItems" :key="item.id" :question="item.question" :answer="item.answer"/>
     </div>
 
