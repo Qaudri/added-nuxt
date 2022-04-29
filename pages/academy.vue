@@ -232,8 +232,7 @@
           </div>
 
           <div class="py-10 container mx-auto">
-            <h1 class="md:text-4xl text-3xl font-bold mb-4 text-center text-primary-100 flex justify-center mx-auto">FAQs</h1>
-              <SectionsFaqsContainer />
+            <SectionsFaqsContainer />
             <div class="text-base md:text-lg xl:text-xl flex justify-center mx-auto">Have other questions? <span>
               <a href="https://wa.me/2348066600820" class="ml-2 font-semibold text-primary-100 border-b-2 border-transparent hover:border-primary-100 duration-500 ease-in-out"> Contact Us!</a></span>
             </div>

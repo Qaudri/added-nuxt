@@ -4,7 +4,7 @@
 
       <div >
         <div class="my-10">
-          <h1 class="text-4xl md:text-6xl font-bold text-center my-2">FAQs</h1>
+          <h1 class="md:text-4xl text-3xl font-bold mb-4 text-center text-primary-100 flex justify-center mx-auto">FAQs</h1>
           <p class="text-gray-400 text-center font-normal md:text-base text-sm">Frequently Asked Questions.</p>
         </div>
       </div>
