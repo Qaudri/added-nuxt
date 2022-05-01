@@ -146,7 +146,7 @@
             <h1 class="md:text-4xl text-3xl font-bold uppercase mb-4 text-center text-primary-100 flex justify-center mx-auto">
               What They're Saying
             </h1>
-            <div class="h-full slider relative ">
+            <div class="h-full flex overflow-x-hidden relative">
             </div>
           </div>
 
