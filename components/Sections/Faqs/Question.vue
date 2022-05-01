@@ -7,10 +7,10 @@
     <slot class="cursor-pointer" />
 
     <img :src="require('@/assets/images/icons/reveal.svg')" alt="" width="10px"
-    :class="is_clicked ? 'hidden' : 'block' " class="">
+    :class="is_clicked ? 'hidden' : 'block' " class="ml-3">
 
     <img :src="require('@/assets/images/icons/hide.svg')" alt="" width="10px" 
-    :class="is_clicked ? 'block' : 'hidden' " class="">
+    :class="is_clicked ? 'block' : 'hidden' " class="ml-3">
 
   </div>
 
