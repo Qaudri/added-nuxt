@@ -13,7 +13,10 @@
 
 <script>
 export default {
-
+  props: {
+   review: String,
+   reviewer: String,
+  }
 }
 </script>
 
@@ -21,6 +24,5 @@ export default {
 .width{
   width: 24rem !important;
   padding-right: 1.5rem !important;
-  height: 26rem !important;
 }
 </style>
