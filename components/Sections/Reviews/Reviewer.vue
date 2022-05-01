@@ -1,6 +1,6 @@
 <template>
-  <div class="block">
-    <slot class="text-sm italic" />
+  <div class="block text-sm italic">
+    <slot />
   </div>
 </template>
 
