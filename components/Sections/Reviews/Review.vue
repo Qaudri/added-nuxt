@@ -1,6 +1,6 @@
 <template>
-  <div class="block">
-    <slot class="cursor-pointer text-base md:text-lg xl:text-xl text-secondary-100" />
+  <div class="block text-base md:text-lg xl:text-xl text-secondary-100">
+    <slot class="cursor-pointer " />
   </div>
 </template>
 
