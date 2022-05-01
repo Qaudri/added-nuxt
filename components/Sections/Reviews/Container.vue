@@ -1,5 +1,7 @@
 <template>
-  
+  <div>
+    <UiCardsReviewcard />
+  </div>
 </template>
 
 <script>
@@ -12,7 +14,7 @@ export default {
       faqItems : 'faqs/getFaqItems'
     })
   }
-  
+
 }
 </script>
 
