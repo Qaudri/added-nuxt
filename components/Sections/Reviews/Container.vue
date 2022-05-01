@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="w-full">
     <UiCardsReviewcard v-for="item in reviewItems" :key="item.id" :review="item.review" :reviewer="item.reviewer" class="h-64 md:h-72 mx-1 md:mx-5 xl:mx-7" />
   </div>
 </template>

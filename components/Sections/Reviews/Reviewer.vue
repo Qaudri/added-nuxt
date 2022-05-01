@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="block">
     <slot class="text-sm italic" />
   </div>
 </template>
