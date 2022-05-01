@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UiCardsReviewcard />
+    <UiCardsReviewcard v-for="item in reviewItems" :key="item.id" :review="item.review" :reviewer="item.reviewer" />
   </div>
 </template>
 
