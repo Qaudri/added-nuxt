@@ -4,7 +4,6 @@
     <SectionsReviewsReview class="-mt-16 pl-10">
       {{review}}
     </SectionsReviewsReview>
-
     <SectionsReviewsReviewer class="mt-5 flex justify-end">
       {{reviewer}}
     </SectionsReviewsReviewer>
