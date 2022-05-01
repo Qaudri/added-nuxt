@@ -147,6 +147,7 @@
               What They're Saying
             </h1>
             <div class="h-full flex overflow-x-hidden relative">
+              <SectionsReviewsContainer />
             </div>
           </div>
 

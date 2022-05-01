@@ -11,7 +11,7 @@ export default {
 
   computed: {
     ...mapGetters({
-      reviewItems : 'faqs/getReviewItems'
+      reviewItems : 'reviews/getReviewItems'
     })
   }
 
