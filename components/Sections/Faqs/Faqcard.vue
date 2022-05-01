@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div class="w-full">
     <SectionsFaqsQuestion @questionClicked="toggleAnswer" >
       {{question}}
     </SectionsFaqsQuestion>
