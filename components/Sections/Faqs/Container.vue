@@ -12,7 +12,7 @@
     </div>
 
     <div class="flex flex-wrap justify-center w-full mb-8 md:m-0">
-      <SectionsFaqsFaqcard v-for="item in faqItems" :key="item.id" :question="item.question" :answer="item.answer" class="my-4 "/>
+      <UiCardsFaqcard v-for="item in faqItems" :key="item.id" :question="item.question" :answer="item.answer" class="my-4 "/>
     </div>
 
   </div>
