@@ -1,10 +1,10 @@
 <template>
   <div class="w-full">
-    <SectionsFaqsQuestion @questionClicked="toggleAnswer" >
+    <SectionsFaqsQuestion @questionClicked="toggleAnswer" class="w-full" >
       {{question}}
     </SectionsFaqsQuestion>
 
-    <SectionsFaqsAnswer :class="answerRevealed ? 'block' : 'hidden'">
+    <SectionsFaqsAnswer :class="answerRevealed ? 'block' : 'hidden'" class="w-full">
       {{answer}}
     </SectionsFaqsAnswer>
   </div>
