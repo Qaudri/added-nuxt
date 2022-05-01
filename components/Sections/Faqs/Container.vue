@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto px-10 w-full md:w-3/4 lg:w-2/3" >
+  <div class="container mx-auto px-10 w-full md:w-3/4 xl:w-3/5" >
     <div class="flex items-center justify-center">
 
       <div >
@@ -11,8 +11,8 @@
 
     </div>
 
-    <div class="grid gap-6 items-center justify-center w-full mb-8 md:m-0">
-      <SectionsFaqsFaqcard v-for="item in faqItems" :key="item.id" :question="item.question" :answer="item.answer"/>
+    <div class="flex flex-wrap justify-center w-full mb-8 md:m-0">
+      <SectionsFaqsFaqcard v-for="item in faqItems" :key="item.id" :question="item.question" :answer="item.answer" class="my-4 "/>
     </div>
 
   </div>

@@ -1,6 +1,6 @@
 <template>
 
-  <div @click="dropDown" :class="is_clicked ? 'border-b-0' : ''"
+  <div @click="dropDown" :class="is_clicked ? 'border-b-0 w-full' : ''" style="width: 100%;"
   class="w-full flex justify-between px-4 py-3 border-2 border-primary-100 bg-white
    text-primary-100 text-lg font-medium mx-auto">
 
