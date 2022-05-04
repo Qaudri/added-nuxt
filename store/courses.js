@@ -82,3 +82,9 @@ export const state = () =>({
     },
   ]
 })
+
+export const getters = {
+  getCourseItems(state) {
+    return state.items
+  }
+}
