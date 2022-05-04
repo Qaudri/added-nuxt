@@ -1,12 +1,8 @@
 <template>
   <div class="px-6 py-4 border shadow-lg">
-    <div class="border-b pb-4">
-      <SectionsCoursesImage />
-    </div>
+    <SectionsCoursesImage />
     <div class="pt-4">
-      <h1 class="text-2xl font-bold">
-        Brand Identity Design
-      </h1>
+      <SectionsCoursesTitle />
 
       <div class=" extra flex md:block 2xl:flex justify-between items-center mt-4">
         <p class="text-base my-2">
