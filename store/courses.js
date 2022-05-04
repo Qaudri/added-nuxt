@@ -2,7 +2,7 @@ export const state = () =>({
   items: [
     {
       id: 1,
-      imageUrl: "",
+      imageUrl: "require('@/assets/images/icons/courses/design.svg')",
       title: "",
       duration: "",
       price: "",
