@@ -1,6 +1,7 @@
 <template>
   <div>
     <SectionsCommonHeader />
+    <SectionsCoursesContainer />
     <SectionsCommonFooter />
   </div>
 </template>
