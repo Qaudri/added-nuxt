@@ -1,17 +1,13 @@
 <template>
   <div class="border-b pb-4">
-    <img :src="require('{{source}}')" class="w-16" alt="">
+    <img :attr="{src: imgUrl}" class="w-16" alt="">
   </div>
 </template>
 
 <script>
 export default {
   props: {
-    source: String,
+    imgUrl: String,
   }
 }
 </script>
-
-<style>
-
-</style>
