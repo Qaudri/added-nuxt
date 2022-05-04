@@ -1,5 +1,8 @@
 <template>
-  
+  <div>
+    <SectionsCommonHeader />
+    <SectionsCommonFooter />
+  </div>
 </template>
 
 <script>
