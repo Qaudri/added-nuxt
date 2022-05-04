@@ -1,6 +1,6 @@
 <template>
   <div class="border-b pb-4">
-    <img :attr="{src: imgUrl}" class="w-16" alt="">
+    <img :src="imgUrl" class="w-16" alt="">
   </div>
 </template>
 
