@@ -1,6 +1,6 @@
 <template>
   <div>
-    <UiCardsFaqcard v-for="item in faqItems" :key="item.id" :question="item.question" :answer="item.answer" />
+    <UiCardsFaqcard v-for="item in faqItems" :key="item.id" :question="item.question" :answer="item.answer" class="my-8 w-full md:w-2/3 mx-auto"/>
   </div>
 </template>
 
