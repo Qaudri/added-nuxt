@@ -1,22 +1,20 @@
 <template>
   <div>
-    <SectionsCommonHeader />
-      <div class="h-full w-full absolute z-10 bg-black flex items-center justify-center">
-        <div class="bg-white p-8">
-          <form action="">
-            <label for="Name">Name</label>
-            <input type="text" name="Name" id="Name" placeholder="Enter your full name">
+    <div class="h-full w-full absolute z-10 bg-black bg-opacity-40 flex items-center justify-center ">
+      <div class="bg-white p-8 w-full md:w-2/3 lg:w-1/3">
+        <form action="">
+          <label for="Name">Name</label>
+          <input type="text" name="Name" id="Name" placeholder="Enter your full name">
 
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email address">
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" placeholder="Enter your email address">
 
-            <button type="submit" class="submit">Register</button>
-          </form>
-        </div>
+          <button type="submit" class="submit">Register</button>
+        </form>
       </div>
-      <SectionsCoursesContainer @RegisterUser="register">
-
-    </SectionsCoursesContainer>
+    </div>
+    <SectionsCommonHeader />
+    <SectionsCoursesContainer @RegisterUser="register" />
     <SectionsCommonFooter />
   </div>
 </template>
