@@ -33,6 +33,7 @@ export default {
  props: {
   imgUrl: String,
   duration: String,
+  title: String,
   price: String,
  }
 }
