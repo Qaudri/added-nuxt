@@ -10,10 +10,9 @@ import {mapGetters} from 'vuex';
 export default {
 
   computed: {
-
-      ...mapGetters({
-        reviews : 'reviews/getReviews'
-      })
+    ...mapGetters({
+      faqItems : 'faqs/getFaqsItems'
+    })
   },
 
 
