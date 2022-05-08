@@ -30,18 +30,18 @@
 
 <script>
 export default {
- props: {
-  imgUrl: String,
-  duration: String,
-  title: String,
-  price: String,
- }
+  props: {
+    imgUrl: String,
+    duration: String,
+    title: String,
+    price: String,
+  };
 
- methods :{
-   emitRegisterUserEvent(){
+  methods: {
+    emitRegisterUserEvent(){
     this.$emit("RegisterUser")
-   }
- }
+    }
+  }
 }
 </script>
 

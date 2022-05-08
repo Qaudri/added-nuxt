@@ -1,7 +1,7 @@
 <template>
   <div>
     <SectionsCommonHeader />
-    <SectionsCoursesContainer />
+    <SectionsCoursesContainer @RegisterUser="Register"/>
     <SectionsCommonFooter />
   </div>
 </template>
