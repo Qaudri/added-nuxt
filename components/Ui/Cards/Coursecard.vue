@@ -30,7 +30,7 @@
 
 <script>
 export default {
- props: {
+ props:{
   imgUrl: String,
   duration: String,
   title: String,
