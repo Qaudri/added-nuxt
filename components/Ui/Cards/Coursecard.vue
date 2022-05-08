@@ -20,7 +20,7 @@
           </p>
         </SectionsCoursesPrice>
         <div class="my-4">
-          <a @click="emitRegisterUserEvent" class="bg-primary-100 px-4 py-2 text-white font-medium">Enroll now</a>
+          <button @click="emitRegisterUserEvent" class="bg-primary-100 px-4 py-2 text-white font-medium">Enroll now</button>
         </div>
       </div>
 
