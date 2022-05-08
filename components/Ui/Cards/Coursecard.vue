@@ -15,6 +15,9 @@
 
       <div class=" extra flex md:block 2xl:flex justify-between items-center mt-4">
         <SectionsCoursesPrice>
+          <p class="text-base">
+            {{duration}} | <span class="text-primary-100 font-medium">#{{price}}</span>
+          </p>
         </SectionsCoursesPrice>
         <div class="my-4">
           <a href="./payment.html" class="bg-primary-100 px-4 py-2 text-white font-medium">Enroll now</a>
