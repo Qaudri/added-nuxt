@@ -1,13 +1,18 @@
 <template>
   <div>
     <SectionsCommonHeader />
-    <SectionsCoursesContainer @RegisterUser="Register"/>
+    <SectionsCoursesContainer @RegisterUser="register"/>
     <SectionsCommonFooter />
   </div>
 </template>
 
 <script>
 export default {
+  methods: {
+    register(){
+      this.formdisplayed = true
+    }
+  }
 }
 </script>
 
