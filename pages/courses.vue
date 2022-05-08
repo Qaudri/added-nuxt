@@ -1,8 +1,7 @@
 <template>
   <div>
     <SectionsCommonHeader />
-    <SectionsCoursesContainer @RegisterUser="register">
-      <div class="h-full w-full absolute z-10 bg-black">
+          <div class="h-full w-full absolute z-10 bg-black">
         <div class="bg-white p-8">
           <form action="">
             <label for="Name">Name</label>
@@ -15,6 +14,8 @@
           </form>
         </div>
       </div>
+      <SectionsCoursesContainer @RegisterUser="register">
+
     </SectionsCoursesContainer>
     <SectionsCommonFooter />
   </div>
