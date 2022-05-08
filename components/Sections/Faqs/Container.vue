@@ -11,7 +11,7 @@ export default {
 
   computed: {
     ...mapGetters({
-      faqItems : 'faqs/getFaqsItems'
+      faqItems : 'faqs/getFaqItems'
     })
   },
 
