@@ -1,7 +1,7 @@
 <template>
   <div>
     <SectionsCommonHeader />
-          <div class="h-full w-full absolute z-10 bg-black">
+      <div class="h-full w-full absolute z-10 bg-black flex items-center justify-center">
         <div class="bg-white p-8">
           <form action="">
             <label for="Name">Name</label>
@@ -10,7 +10,7 @@
             <label for="email">Email</label>
             <input type="email" name="email" id="email" placeholder="Enter your email address">
 
-            <button type="submit">Register</button>
+            <button type="submit" class="submit">Register</button>
           </form>
         </div>
       </div>
@@ -67,11 +67,12 @@ input:focus{
 }
 
 .submit{
-  margin-top: 3rem;
-  width: 10rem;
+  margin-top: 2rem;
+  width: 100%;
   background-color: transparent;
   border: 2px solid #058182;
   text-transform: capitalize;
+  padding: 10px;
   color: #058182;
   font-weight: 600;
   font-size: 16px;
