@@ -7,7 +7,6 @@
 <script>
 export default {
   props: {
-    imgUrl: String,
   }
 }
 </script>
