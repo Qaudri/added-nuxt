@@ -7,8 +7,7 @@
 <script>
 export default {
   props: {
-    duration: String,
-    price: String,
+
   }
 }
 </script>
