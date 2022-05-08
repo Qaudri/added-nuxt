@@ -1,5 +1,5 @@
 export const state = () => ({
-  item: [
+  items : [
     {
       id: 1,
       review: "Being a student of the academy is literally one of the best thigs to ever happen to me. The support is exceptional and I felt very welcome. I have never had a cause for regret and my life has been a thousand times better!",
@@ -51,7 +51,7 @@ export const state = () => ({
 })
 
 export const getters = {
-  getReviewItems(state) {
+  getReviews(state) {
     return state.items
   }
 }

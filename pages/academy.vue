@@ -147,7 +147,10 @@
               What They're Saying
             </h1>
             <div class="w-full py-3">
-              <SectionsReviewsContainer class="flex overflow-x-hidden relative"/>
+              <!-- <SectionsReviewsContainer class="flex overflow-x-hidden relative"/> -->
+              <div class="grid grid-cols-4 gap-6">
+                <UiCardsReviewcard v-for="review in reviews" :key="review.id" :review="review.review" :reviewer="review.reviewer" />
+              </div>
             </div>
           </div>
 
@@ -187,7 +190,18 @@
 </template>
 
 <script>
+
+
+import {mapGetters} from 'vuex';
 export default {
+
+  computed: {
+
+      ...mapGetters({
+        reviews : 'reviews/getReviews'
+      })
+  },
+
 
 }
 </script>
