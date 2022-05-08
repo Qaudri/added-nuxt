@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-50 p-6 width">
+  <div class="bg-gray-50 p-6 width mx-2 md:mx-5 xl:mx-7">
     <div class="text-9xl font-light opacity-20">"</div>
     <SectionsReviewsReview class="-mt-16 pl-10">
       {{review}}

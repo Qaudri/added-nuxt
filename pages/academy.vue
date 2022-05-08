@@ -148,7 +148,7 @@
             </h1>
             <div class="w-full py-3">
               <!-- <SectionsReviewsContainer class="flex overflow-x-hidden relative"/> -->
-              <div class="grid grid-cols-4 gap-6">
+              <div class="flex relative w-full h-full">
                 <UiCardsReviewcard v-for="review in reviews" :key="review.id" :review="review.review" :reviewer="review.reviewer" />
               </div>
             </div>
