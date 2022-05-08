@@ -1,6 +1,6 @@
 <template>
   <div class="border-b pb-4">
-    <img :src="imgUrl" class="w-16" alt="">
+    <slot />
   </div>
 </template>
 

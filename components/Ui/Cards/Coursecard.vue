@@ -1,6 +1,9 @@
 <template>
   <div class="px-6 py-4 border shadow-lg">
     <SectionsCoursesImage />
+      <div>    
+        <img :src="imgUrl" class="w-16" alt="">
+      </div>
     <div class="pt-4">
       <SectionsCoursesTitle>
       </SectionsCoursesTitle>
