@@ -8,6 +8,11 @@
 
 <script>
 export default {
+  data(){
+    return{
+      formdisplayed: false
+    }
+  },
   methods: {
     register(){
       this.formdisplayed = true
