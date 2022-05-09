@@ -14,7 +14,7 @@
       </div>
     </div>
     <SectionsCommonHeader />
-    <SectionsCoursesContainer @RegisterUser="register" />
+    <!-- <SectionsCoursesContainer @RegisterUser="register" /> -->
     <SectionsCommonFooter />
   </div>
 </template>
