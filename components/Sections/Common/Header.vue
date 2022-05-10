@@ -5,7 +5,6 @@
 
         <div class="flex justify-between">
           <slot></slot>
-          <UiSharedLogo @ReloadPage="emitReloadPage" />
 
           <div class="flex lg:hidden">
             <UiButtonsMenu @revealMenu="showMenu" :class="is_revealed ? 'hidden' : 'block'" /> 
