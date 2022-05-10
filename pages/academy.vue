@@ -10,7 +10,7 @@
         <UiButtonsSecondary @Pushto="whatWeDo" button_title="Our Academy" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
         <UiButtonsSecondary @Pushto="ourServices" button_title="Our Courses" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
         <UiButtonsSecondary @Pushto="Academy" button_title="Reviews & FAQs" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0" />
-        <UiButtonsPrimary button_title="Register Now" class="lg:ml-4 my-10 lg:my-0 mx-6 lg:mr-0 " />
+        <UiButtonsPrimary @pushTo="Primary" button_title="Register Now" class="lg:ml-4 my-10 lg:my-0 mx-6 lg:mr-0 " />
       </template>
     </SectionsCommonHeader>
     <section class="flex justify-between items-center">
