@@ -29,13 +29,16 @@
 </template
 
 <script>
+
+
+<script>
 export default {
-  props: {
+props: {
     imgUrl: String,
     duration: String,
     title: String,
     price: String,
-  };
+  },
 
   methods: {
     emitRegisterUserEvent(){
@@ -44,7 +47,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>

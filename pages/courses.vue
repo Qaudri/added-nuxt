@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="h-full w-full absolute z-10 bg-black bg-opacity-40 flex items-center justify-center backdrop-filter backdrop-blur">
+    <div :class="formdisplayed ? 'block' : 'hidden'" class="h-full w-full absolute z-10 bg-black bg-opacity-40 flex items-center justify-center backdrop-filter backdrop-blur">
       <div class="bg-white p-8 w-full md:w-2/3 lg:w-1/3">
         <form action="">
           <label for="Name" class="mt-0">Name</label>
@@ -14,7 +14,7 @@
       </div>
     </div>
     <SectionsCommonHeader />
-    <!-- <SectionsCoursesContainer @RegisterUser="register" /> -->
+    <SectionsCoursesCoursecard @RegisterUser="register" />
     <SectionsCommonFooter />
   </div>
 </template>
