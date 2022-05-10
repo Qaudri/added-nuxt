@@ -56,6 +56,30 @@ export default {
   methods: {
     toggleForm(){
       this.formdisplayed = !this.formdisplayed
+    },
+
+    reloadThisPage(){
+      this.$router.push({path:'/academy'})
+    },
+
+    whoWeAre(){
+      this.$router.push({path:'/'})
+    },
+
+    whatWeDo(){
+      this.$router.push({path:'/academy#our-academy'})
+    },
+
+    ourServices(){
+      this.$router.push({path:'/academy#our-courses'})
+    },
+
+    Academy(){
+      this.$router.push({path:'/academy#reviews/faqs'})
+    },
+
+    Primary(){
+      this.$router.push({path:'/courses'})
     }
   },
 
