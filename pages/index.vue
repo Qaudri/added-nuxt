@@ -212,8 +212,20 @@ export default {
     },
 
     whoWeAre(){
+      this.$router.push({name:'/#who-we-are'})
+    },
+
+    whatWeDo(){
+      this.$router.push({name:'/#what-we-do'})
+    },
+
+    whoWeAre(){
       this.$router.push({name:'/who-we-are'})
-    }
+    },
+
+    whoWeAre(){
+      this.$router.push({name:'/who-we-are'})
+    },
   }
 }
 </script>
