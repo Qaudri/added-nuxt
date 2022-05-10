@@ -200,12 +200,15 @@ import { Carousel, Slide } from 'vue-carousel';
 export default {
 
   computed: {
-
-      ...mapGetters({
-        reviews : 'reviews/getReviews'
-      })
+    ...mapGetters({
+      reviews : 'reviews/getReviews'
+    })
   },
 
+  components: {
+    Carousel,
+    Slide
+  }
 
 }
 </script>
