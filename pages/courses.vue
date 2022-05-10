@@ -16,7 +16,20 @@
         </form>
       </div>
     </div>
-    <SectionsCommonHeader />
+    <SectionsCommonHeader >
+      <div>
+        <UiSharedLogo @emitReload="reloadThisPage" />
+      </div>
+
+      <template v-slot:menuitems >
+        <UiButtonsSecondary @Pushto="whoWeAre" button_title="Back to Home" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
+        <UiButtonsSecondary @Pushto="whatWeDo" button_title="Our Academy" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
+        <UiButtonsSecondary @Pushto="ourServices" button_title="Our Courses" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
+        <UiButtonsSecondary @Pushto="Academy" button_title="Reviews & FAQs" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0" />
+        <UiButtonsPrimary @pushTo="Primary" button_title="Register Now" class="lg:ml-4 my-10 lg:my-0 mx-6 lg:mr-0 " />
+      </template>
+    </SectionsCommonHeader>
+    
     <div class="container mx-auto px-10 py-28 xl:py-32">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
       <UiCardsCoursecard v-for="item in course" :key="item.id" 
