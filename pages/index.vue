@@ -2,7 +2,7 @@
   <div class="w-full">
     <SectionsCommonHeader >
       <div>
-        <UiSharedLogo @ReloadPage="reloadThisPage" />
+        <UiSharedLogo @emitReload="reloadThisPage" />
       </div>
     </SectionsCommonHeader>
 
