@@ -147,10 +147,12 @@
               What They're Saying
             </h1>
             <div class="w-full py-3">
-              <!-- <SectionsReviewsContainer class="flex overflow-x-hidden relative"/> -->
-              <div class="flex relative w-full h-full">
-                <UiCardsReviewcard v-for="review in reviews" :key="review.id" :review="review.review" :reviewer="review.reviewer" />
-              </div>
+
+              <carousel class="flex relative w-full h-full">
+                <slide>
+                  <UiCardsReviewcard v-for="review in reviews" :key="review.id" :review="review.review" :reviewer="review.reviewer" />
+                </slide>
+              </carousel>
             </div>
           </div>
 
