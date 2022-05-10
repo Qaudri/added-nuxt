@@ -59,7 +59,7 @@ export default {
     },
 
     reloadThisPage(){
-      this.$router.push({path:'/academy'})
+      this.$router.push({path:'/courses'})
     },
 
     whoWeAre(){
@@ -79,7 +79,7 @@ export default {
     },
 
     Primary(){
-      this.$router.push({path:'/courses'})
+      this.$router.push({path:'https://bit.ly/3uOIVPo'})
     }
   },
 
