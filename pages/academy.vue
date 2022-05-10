@@ -237,6 +237,10 @@ export default {
     Academy(){
       this.$router.push({path:'/academy#reviews/faqs'})
     },
+
+    Primary(){
+      this.$router.push({path:'/courses'})
+    }
   },
 
   components: {
