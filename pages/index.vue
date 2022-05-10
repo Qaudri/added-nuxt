@@ -4,6 +4,10 @@
       <div>
         <UiSharedLogo @emitReload="reloadThisPage" />
       </div>
+
+      <template v-slot="menu" >
+
+      </template>
     </SectionsCommonHeader>
 
     <section class="hero-bg w-full py-32 md:py-44 px-10">
