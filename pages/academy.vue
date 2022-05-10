@@ -195,6 +195,8 @@
 
 
 import {mapGetters} from 'vuex';
+import { Carousel, Slide } from 'vue-carousel';
+
 export default {
 
   computed: {
