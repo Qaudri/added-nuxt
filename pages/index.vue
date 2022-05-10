@@ -223,8 +223,8 @@ export default {
       this.$router.push({name:'/#our-services'})
     },
 
-    whoWeAre(){
-      this.$router.push({name:'/who-we-are'})
+    Academy(){
+      this.$router.push({name:'/academy'})
     },
   }
 }
