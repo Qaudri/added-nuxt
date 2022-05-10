@@ -23,7 +23,7 @@
       :imgUrl="item.imageUrl" 
       :title="item.title" 
       :duration="item.duration"
-      :price="item.price" @RegisterUser="register"/>
+      :price="item.price" @RegisterUser="toggleForm"/>
     </div>
   </div>  />
     <SectionsCommonFooter />
