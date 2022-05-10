@@ -93,7 +93,7 @@ input:focus{
   padding: 10px;
   color: #058182;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   cursor: pointer;
 }
 
