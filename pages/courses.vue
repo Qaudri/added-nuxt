@@ -34,10 +34,17 @@ export default {
       formdisplayed: false
     }
   },
+  
   methods: {
     register(){
       this.formdisplayed = true
     }
+  },
+
+    computed: {
+    ...mapGetters({
+      course : 'courses/getCourseItems'
+    })
   }
 }
 </script>
