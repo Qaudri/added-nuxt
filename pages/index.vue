@@ -5,7 +5,7 @@
         <UiSharedLogo @emitReload="reloadThisPage" />
       </div>
 
-      <template v-slot="menu" >
+      <template v-slot="menuitems" >
         <UiButtonsSecondary button_title="Who We Are" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
         <UiButtonsSecondary button_title="What We Do" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
         <UiButtonsSecondary button_title="Our Services" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>

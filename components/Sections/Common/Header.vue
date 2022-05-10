@@ -13,7 +13,7 @@
         </div>
 
         <div :class="is_revealed ? 'menu-slide-down' : 'menu-slide-up'" class="items-center hidden lg:flex lg:pt-0 pt-8 h-screen lg:h-auto">
-          <slot name="menu"></slot>
+          <slot name="menuitems"></slot>
         </div>
 
       </div>
