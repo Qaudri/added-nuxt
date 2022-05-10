@@ -2,7 +2,7 @@
   <div class="px-6 py-4 border shadow-lg">
     <SectionsCoursesImage>
       <div>    
-        <img :src="imgUrl" class="w-16" alt="">
+        <img ::src="imgUrl" class="w-16" alt="">
       </div>
     </SectionsCoursesImage>
     <div class="pt-4">
@@ -11,7 +11,6 @@
           {{title}}
         </h1>
       </SectionsCoursesTitle>
-
 
       <div class=" extra flex md:block 2xl:flex justify-between items-center mt-4">
         <SectionsCoursesPrice>
