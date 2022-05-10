@@ -1,7 +1,8 @@
 <template>
   <div>
-    <div :class="formdisplayed ? 'block' : 'hidden'" class="h-full w-full absolute z-10 bg-black bg-opacity-40 flex items-center justify-center backdrop-filter backdrop-blur">
+    <div :class="formdisplayed ? 'block' : 'hidden'" class="h-full w-full fixed z-10 bg-black bg-opacity-40 flex items-center justify-center backdrop-filter backdrop-blur">
       <div class="bg-white p-8 w-full md:w-2/3 lg:w-1/3">
+        <div class="flex items-end"></div>
         <form action="">
           <label for="Name" class="mt-0">Name</label>
           <input type="text" name="Name" id="Name" placeholder="Enter your full name">
