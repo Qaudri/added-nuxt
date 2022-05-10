@@ -1,6 +1,10 @@
 <template>
   <div class="w-full">
-    <SectionsCommonHeader @ReloadPage="reloadThisPage" />
+    <SectionsCommonHeader >
+      <div>
+        <UiSharedLogo @ReloadPage="reloadThisPage" />
+      </div>
+    </SectionsCommonHeader>
 
     <section class="hero-bg w-full py-32 md:py-44 px-10">
 
