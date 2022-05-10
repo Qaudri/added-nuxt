@@ -62,7 +62,7 @@ form{
 }
 
 label{
-  font-weight: medium;
+  font-weight: 600;
   color: #058182;
   margin-top: 30px;
   display: block;
