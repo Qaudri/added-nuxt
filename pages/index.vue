@@ -209,6 +209,10 @@ export default {
   methods: {
     reloadThisPage(){
       this.$router.push({name:'/'})
+    },
+
+    whoWeAre(){
+      this.$router.push({name:'/who-we-are'})
     }
   }
 }
