@@ -1,6 +1,18 @@
 <template>
   <div>
-    <SectionsCommonHeader />
+    <SectionsCommonHeader >
+      <div>
+        <UiSharedLogo @emitReload="reloadThisPage" />
+      </div>
+
+      <template v-slot:menuitems >
+        <UiButtonsSecondary @Pushto="whoWeAre" button_title="Back to Home" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
+        <UiButtonsSecondary @Pushto="whatWeDo" button_title="Our Academy" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
+        <UiButtonsSecondary @Pushto="ourServices" button_title="Our Courses" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
+        <UiButtonsSecondary @Pushto="Academy" button_title="Reviews & FAQs" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0" />
+        <UiButtonsPrimary button_title="Register Now" class="lg:ml-4 my-10 lg:my-0 mx-6 lg:mr-0 " />
+      </template>
+    </SectionsCommonHeader>
     <section class="flex justify-between items-center">
 
       <div class="lg:flex items-center justify-between mt-28 lg:mt-36 container mx-auto" >
@@ -203,6 +215,28 @@ export default {
     ...mapGetters({
       reviews : 'reviews/getReviews'
     })
+  },
+
+  methods: {
+    reloadThisPage(){
+      this.$router.push({path:'/academy'})
+    },
+
+    whoWeAre(){
+      this.$router.push({path:'/'})
+    },
+
+    whatWeDo(){
+      this.$router.push({path:'/academy#our-academy'})
+    },
+
+    ourServices(){
+      this.$router.push({path:'/academy#our-courses'})
+    },
+
+    Academy(){
+      this.$router.push({path:'/academy#reviews/faqs'})
+    },
   },
 
   components: {
