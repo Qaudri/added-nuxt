@@ -219,8 +219,8 @@ export default {
       this.$router.push({name:'/#what-we-do'})
     },
 
-    whoWeAre(){
-      this.$router.push({name:'/who-we-are'})
+    ourServices(){
+      this.$router.push({name:'/#our-services'})
     },
 
     whoWeAre(){
