@@ -208,23 +208,23 @@ export default {
 
   methods: {
     reloadThisPage(){
-      this.$router.push({name:'/'})
+      this.$router.push({path:'/'})
     },
 
     whoWeAre(){
-      this.$router.push({name:'/#who-we-are'})
+      this.$router.push({path:'/#who-we-are'})
     },
 
     whatWeDo(){
-      this.$router.push({name:'/#what-we-do'})
+      this.$router.push({path:'/#what-we-do'})
     },
 
     ourServices(){
-      this.$router.push({name:'/#our-services'})
+      this.$router.push({path:'/#our-services'})
     },
 
     Academy(){
-      this.$router.push({name:'/academy'})
+      this.$router.push({path:'/academy'})
     },
   }
 }
