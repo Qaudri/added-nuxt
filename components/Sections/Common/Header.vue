@@ -4,6 +4,7 @@
       <div class="block lg:flex items-center lg:justify-between container mx-auto py-3 px-10">
 
         <div class="flex justify-between">
+          <slot></slot>
           <UiSharedLogo @ReloadPage="emitReloadPage" />
 
           <div class="flex lg:hidden">
@@ -13,6 +14,7 @@
         </div>
 
         <div :class="is_revealed ? 'menu-slide-down' : 'menu-slide-up'" class="items-center hidden lg:flex lg:pt-0 pt-8 h-screen lg:h-auto">
+          <slot name="menu"></slot>
           <UiButtonsSecondary button_title="Who We Are" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
           <UiButtonsSecondary button_title="What We Do" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
           <UiButtonsSecondary button_title="Our Services" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
