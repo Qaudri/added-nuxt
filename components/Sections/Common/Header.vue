@@ -36,10 +36,6 @@ data(){
 },
 
 methods: {
-  emitReloadPage(){
-    this.$emit("ReloadPage");
-    this.$router.push({name:'/'})
-  },
 
   hideMenu(){
     this.is_revealed = false;
