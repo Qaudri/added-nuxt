@@ -16,7 +16,7 @@
             <div>
               <div class="flex justify-end items-center">
                 <div class="flex items-center text-sm sm:text-base">
-                  <!-- <img :src="require('@/assets/images/avatar.png')" class="w-5 rounded-full border-yellow-500 border mr-2"/> -->
+                  <img :src="require('@/assets/images/avatar.png')" class="w-5 rounded-full border-yellow-500 border mr-2"/>
                   <div class="mr-4 font-bold flex items-center">Hi,
                     
                     <a class="cursor-pointer ml-5">
