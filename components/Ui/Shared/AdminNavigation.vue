@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
   
-    <div class="py-2 lg:py-3 fixed w-full shadow z-110 bg-accent1-00 bg-white">
+    <div class="py-2 lg:py-3 fixed w-full shadow z-110 bg-white">
       <div class="container mx-auto">
         <div class="w-full flex justify-between items-center px-4">
           <div>
@@ -11,9 +11,9 @@
           </div>
           
           <div class="flex items-center justify-end">
-            <div v-if="!NavigationInfo" class="px-8 py-1 bg-accent1-200 mr-6 rounded-full text-transparent">Loading</div>
+            <!-- <div v-if="!NavigationInfo" class="px-8 py-1 bg-accent1-200 mr-6 rounded-full text-transparent">Loading</div> -->
             
-            <div v-else>
+            <div>
               <div v-if="NavigationInfo" class="flex justify-end items-center">
                 <div class="flex items-center text-sm sm:text-base">
                   <!-- <img :src="require('@/assets/images/avatar.png')" class="w-5 rounded-full border-yellow-500 border mr-2"/> -->

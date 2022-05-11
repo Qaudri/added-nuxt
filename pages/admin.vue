@@ -1,6 +1,6 @@
 <template>
   <div>
-    <LayoutsAdminApp />
+    <!-- <LayoutsAdminApp /> -->
     <UiSharedAdminNavigation />
     <!-- <UiSharedMenu /> -->
   </div>
