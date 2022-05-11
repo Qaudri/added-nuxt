@@ -1,7 +1,7 @@
 <template>
   <div class="w-full">
   
-    <div class="py-2 lg:py-3 fixed w-full shadow z-110 bg-primary-100">
+    <div class="py-2 lg:py-3 fixed w-full shadow z-110 bg-white">
       <div class="container mx-auto">
         <div class="w-full flex justify-between items-center px-4">
           <div>
