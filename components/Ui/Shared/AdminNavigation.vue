@@ -6,19 +6,19 @@
         <div class="w-full flex justify-between items-center px-4">
           <div>
             <nuxt-link to="admin">
-              <MainLogo :Size="'w-28'" />
+              <UiSharedLogo />
             </nuxt-link>
           </div>
           
           <div class="flex items-center justify-end">
-            <div v-if="!NavigationInfo.data" class="px-8 py-1 bg-accent1-200 mr-6 rounded-full text-transparent">Loading</div>
+            <div v-if="!NavigationInfo" class="px-8 py-1 bg-accent1-200 mr-6 rounded-full text-transparent">Loading</div>
             
             <div v-else>
-              <div v-if="NavigationInfo.data" class="flex justify-end items-center">
+              <div v-if="NavigationInfo" class="flex justify-end items-center">
                 <div class="flex items-center text-sm sm:text-base">
                   <!-- <img :src="require('@/assets/images/avatar.png')" class="w-5 rounded-full border-yellow-500 border mr-2"/> -->
                   <div class="mr-4 font-bold flex items-center">Hi,
-                    {{NavigationInfo.data.display_name}}
+                    {{NavigationInfo.display_name}}
                     
                     <a  @click="logOut" class="cursor-pointer ml-5">
                       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12pt" height="12pt" viewBox="0 0 52 52" version="1.1">
@@ -55,7 +55,7 @@
         <div :class="mobile_nav ? 'shadow-2xl md:shadow-sm block' : 'hidden md:block'" class="z-100 fixed shadow-lg h-full md:h-auto w-10/12 md:w-full bg-accent1-500 px-2 text-white md:block">
           <div class="mx-auto md:container">
             <div class="pt-2 pb-2"></div>
-            <div v-if="!NavigationInfo.data" class="md:flex justify-start w-full py-5 pl-3">
+            <div v-if="!NavigationInfo" class="md:flex justify-start w-full py-5 pl-3">
               
               <div v-for="item in 4" :key="item"  class="bg-gray-800 rounded-full bg-opacity-10 mr-3 px-12 py-4 mt-1"></div>
             </div>
@@ -74,60 +74,60 @@
   </div>
 </template>
 <script>
-  import { mapGetters, mapActions } from 'vuex';
+  // import { mapGetters, mapActions } from 'vuex';
 
-  export default {
+  // export default {
     
-    props: {
-      url: String,
-      BlockBackground: Boolean
-    },
-    data() {
-        return {
-            nav_item: ' block py-6 px-10 md:px-5 hover:bg-accent2-400 ',
-            active_nav: ' bg-accent2-500 border-gray-400  border-b-6 ',
-            mobile_nav:false,
-            pc_nav: true,
-            show_dropdown: false,
-            showSideNav:  false,
-            isOpen: false,
-        }
-    },
-    computed: {
-      ...mapGetters({
-        NavigationInfo: 'accounts/getAdminInfo',
-        // Role: 'global/getAdminRole',
-      }),
-    } ,
+  //   props: {
+  //     url: String,
+  //     BlockBackground: Boolean
+  //   },
+  //   data() {
+  //       return {
+  //         nav_item: ' block py-6 px-10 md:px-5 hover:bg-accent2-400 ',
+  //         active_nav: ' bg-accent2-500 border-gray-400  border-b-6 ',
+  //         mobile_nav:false,
+  //         pc_nav: true,
+  //         show_dropdown: false,
+  //         showSideNav:  false,
+  //         isOpen: false,
+  //       }
+  //   },
+  //   computed: {
+  //     ...mapGetters({
+  //       NavigationInfo: 'accounts/getAdminInfo',
+  //       // Role: 'global/getAdminRole',
+  //     }),
+  //   } ,
     
-    mounted(){
-      this.retrieveAdminInfo()
-    },
-    methods: {
-      ...mapActions({
-        retrieveAdminInfo: 'accounts/retrieveAdminInfo',
-        destroySession: 'authentication/destroySession',
-      }),
+  //   mounted(){
+  //     this.retrieveAdminInfo()
+  //   },
+  //   methods: {
+  //     ...mapActions({
+  //       retrieveAdminInfo: 'accounts/retrieveAdminInfo',
+  //       destroySession: 'authentication/destroySession',
+  //     }),
       
-      logOut(){
-        this.destroySession()
-        this.$router.push({name:'admin-login'})
-      },
-      close(){
-          this.isOpen = !this.isOpen;
-      },
+  //     logOut(){
+  //       this.destroySession()
+  //       this.$router.push({name:'admin-login'})
+  //     },
+  //     close(){
+  //         this.isOpen = !this.isOpen;
+  //     },
       
-      ToggleMobileNav(){
-        // alert("its working");
-        this.mobile_nav = !this.mobile_nav
-      },
+  //     ToggleMobileNav(){
+  //       // alert("its working");
+  //       this.mobile_nav = !this.mobile_nav
+  //     },
       
-      isUrl(...urls) {
-          if (urls[0] === '') {
-              return this.url === ''
-          }
-          return urls.filter(url => this.url.startsWith(url)).length
-      },
-    }
-  };
+  //     isUrl(...urls) {
+  //         if (urls[0] === '') {
+  //             return this.url === ''
+  //         }
+  //         return urls.filter(url => this.url.startsWith(url)).length
+  //     },
+  //   }
+  // };
 </script>

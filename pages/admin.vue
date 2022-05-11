@@ -2,7 +2,7 @@
   <div>
     <LayoutsAdminApp />
     <UiSharedAdminNavigation />
-    <UiSharedMenu />
+    <!-- <UiSharedMenu /> -->
   </div>
 </template>
 
