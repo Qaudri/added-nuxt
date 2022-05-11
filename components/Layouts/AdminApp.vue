@@ -1,10 +1,10 @@
 <template>
   <div class="">
-    <SharedAdminNavigation :url="url()"></SharedAdminNavigation>
+    <UiSharedAdminNavigation :url="url()" :BlockBackground="true"></UiSharedAdminNavigation>
     
-    <!-- <slot name="special"></slot> -->
+    <slot name="special"></slot>
     <div>
-      <!-- <slot name="hero-fixed"></slot> -->
+      <slot name="hero-fixed"></slot>
     </div>
     
     <div class="pt-5 md:pt-20 container mx-auto bg-white shadow-md">

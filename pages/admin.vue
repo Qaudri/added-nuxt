@@ -1,8 +1,8 @@
 <template>
   <div>
-    <!-- <LayoutsAdminApp /> -->
-    <UiSharedAdminNavigation />
-    <!-- <UiSharedMenu /> -->
+    <LayoutsAdminApp>
+      
+    </LayoutsAdminApp>
   </div>
 </template>
 
