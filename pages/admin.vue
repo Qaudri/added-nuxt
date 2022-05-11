@@ -1,6 +1,7 @@
 <template>
   <div>
     <LayoutsAdminApp />
+    <UiSharedAdminNavigation />
   </div>
 </template>
 
