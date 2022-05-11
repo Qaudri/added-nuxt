@@ -1,5 +1,7 @@
 <template>
-  
+  <div>
+    <LayoutsAdminApp />
+  </div>
 </template>
 
 <script>
