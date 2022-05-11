@@ -17,7 +17,7 @@
               <div class="flex justify-end items-center">
                 <div class="flex items-center text-sm sm:text-base">
                   <img :src="require('@/assets/images/icons/avatar.svg')" class="w-5 mr-2"/>
-                  <div class="mr-4 font-bold flex items-center">Hi,
+                  <div class="mr-4 font-medium flex items-center">Hi, Noarex
                     
                     <a class="cursor-pointer ml-5">
                       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12pt" height="12pt" viewBox="0 0 52 52" version="1.1">
