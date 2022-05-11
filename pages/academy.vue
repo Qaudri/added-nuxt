@@ -13,6 +13,7 @@
         <UiButtonsPrimary @pushTo="Primary" button_title="Register Now" class="lg:ml-4 my-10 lg:my-0 mx-6 lg:mr-0 " />
       </template>
     </SectionsCommonHeader>
+    
     <section class="flex justify-between items-center">
 
       <div class="lg:flex items-center justify-between mt-28 lg:mt-36 container mx-auto" >
@@ -160,7 +161,7 @@
             </h1>
             <div class="w-full py-3">
 
-              <carousel class="flex relative w-full h-full">
+              <carousel>
                 <slide>
                   <UiCardsReviewcard v-for="review in reviews" :key="review.id" :review="review.review" :reviewer="review.reviewer" />
                 </slide>
