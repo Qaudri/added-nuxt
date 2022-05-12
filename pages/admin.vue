@@ -16,6 +16,6 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
 body{
-  font-family: "Poppins" sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 </style>
