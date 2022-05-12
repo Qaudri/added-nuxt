@@ -1,6 +1,6 @@
 <template>
   <div class="w-full">
-    <div class="py-2 lg:py-3 w-full shadow-5xl z-10 fixed bg-white">
+    <div class="py-2 lg:py-3 flex items-center w-full shadow-5xl z-10 fixed bg-white">
       <div class="container mx-auto">
         <div class="w-full flex justify-between items-center px-4">
           <div>
@@ -45,7 +45,7 @@
  
     <transition name="page">
     
-      <div :class="mobile_nav ? 'shadow-2xl md:shadow-sm block' : 'hidden md:block'" class="fixed z-0 top-20 h-full md:h-auto w-10/12 md:w-full bg-primary-100 px-2 text-white md:block">
+      <div :class="mobile_nav ? 'shadow-2xl md:shadow-sm block' : 'hidden md:block'" class="fixed z-0 top-16 h-full md:h-auto w-10/12 md:w-full bg-primary-100 px-2 text-white md:block">
         <div class="mx-auto md:container">
           
           <div class="pt-20 md:pt-0 md:flex justify-start">
@@ -73,7 +73,7 @@
     data() {
         return {
           nav_item: ' block py-6 px-10 md:px-5 hover:bg-accent2-400 ',
-          active_nav: ' bg-primary-100 border-gray-400  border-b-6 ',
+          active_nav: ' bg-primary-100 border-white border-b-6 ',
           mobile_nav:false,
           pc_nav: true,
           show_dropdown: false,
