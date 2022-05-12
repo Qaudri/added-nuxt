@@ -1,7 +1,9 @@
 <template>
   <div>
     <LayoutsAdminApp>
-      
+      <template v-slot: >
+
+      </template>
     </LayoutsAdminApp>
   </div>
 </template>
@@ -17,5 +19,9 @@ export default {
 
 body{
   font-family: "Poppins", sans-serif;
+}
+
+.bg-gray-50{
+  background-color: #f7f7f7 !important;
 }
 </style>
