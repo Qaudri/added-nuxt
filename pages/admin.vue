@@ -6,7 +6,7 @@
           <div class="bg-white p-6 justify-between items-center flex">
             <div>
               <p class="font-medium uppercase text-sm">Number of courses</p>
-              <h1 class="font-semibold text-6xl mb-4">9</h1>
+              <h1 class="font-semibold text-6xl mb-3">9</h1>
               <a href="" class="px-2 py-1 text-sm border">Manage</a>
             </div>
 
