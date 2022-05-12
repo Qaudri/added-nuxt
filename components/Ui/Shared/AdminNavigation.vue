@@ -103,13 +103,14 @@
   };
 </script>
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
 .shadow-2xl{
   --tw-shadow: 0 12px 20px -12px rgb(0 0 0 / 0.5);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
 body{
   font-family: "Poppins", sans-serif;

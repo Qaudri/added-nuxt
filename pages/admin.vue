@@ -2,7 +2,7 @@
   <div>
     <LayoutsAdminApp>
       <template v-slot:hero >
-        <div class="">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3">
 
         </div>
       </template>
