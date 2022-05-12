@@ -2,7 +2,9 @@
   <div>
     <LayoutsAdminApp>
       <template v-slot:hero >
+        <div class="">
 
+        </div>
       </template>
     </LayoutsAdminApp>
   </div>
