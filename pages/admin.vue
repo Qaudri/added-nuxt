@@ -10,6 +10,7 @@
               <a href="" class="px-4 py-2 ">Manage</a>
             </div>
 
+            <img :src="require('@/assets/images/icons/list.svg')" alt="">
           </div>
         </div>
       </template>
