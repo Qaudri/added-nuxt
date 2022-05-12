@@ -9,9 +9,9 @@
     
     <div class="pt-5 md:pt-20 container mx-auto bg-white shadow-md">
       <slot name="hero"></slot>
-      <div class="p-6 sm:p-8">
+      <!-- <div class="p-6 sm:p-8">
         <slot />
-      </div>
+      </div> -->
     </div>
     
   </div>
