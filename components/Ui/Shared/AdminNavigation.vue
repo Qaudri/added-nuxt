@@ -45,7 +45,7 @@
  
     <transition name="page">
     
-      <div :class="mobile_nav ? 'shadow-2xl md:shadow-sm block' : 'hidden md:block'" class="fixed z-0 -mt-1 top-16 h-full md:h-auto w-10/12 md:w-full bg-primary-100 px-2 text-white md:block">
+      <div :class="mobile_nav ? 'block' : 'hidden md:block'" class="fixed z-0 -mt-1 top-16 h-full md:h-auto w-10/12 md:w-full bg-primary-100 px-2 text-white md:block">
         <div class="mx-auto md:container">
           
           <div class="pt-16 md:pt-0 md:flex justify-start">
@@ -106,8 +106,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
 .shadow-2xl{
-  --tw-shadow: 0 12px 20px -12px rgb(0 0 0 / 0.5);
-  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  --tw-shadow: 0 12px 25px -12px rgb(0 0 0 / 0.25);
+  --tw-shadow-colored: 0 12px 25px -12px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
