@@ -1,7 +1,7 @@
 <template>
   <div>
     <LayoutsAdminApp>
-      <template v-slot: >
+      <template v-slot:hero >
 
       </template>
     </LayoutsAdminApp>
