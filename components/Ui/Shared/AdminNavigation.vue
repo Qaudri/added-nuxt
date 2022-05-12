@@ -73,7 +73,7 @@
     data() {
         return {
           nav_item: ' block py-6 px-10 md:px-5 hover:bg-secondary-100 hover:bg-opacity-30',
-          active_nav: ' bg-secondary-100 bg-opacity-30 border-white border-b-6 ',
+          active_nav: ' bg-secondary-100 bg-opacity-30',
           mobile_nav:false,
           pc_nav: true,
           show_dropdown: false,
