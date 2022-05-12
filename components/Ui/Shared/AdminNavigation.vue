@@ -49,7 +49,7 @@
         <div class="mx-auto md:container">
           
           <div class="pt-16 md:pt-0 md:flex justify-start">
-            <nuxt-link :to="{name:'admin'}" :class="isUrl('admin') ? (active_nav + nav_item) : nav_item">Dashboard &</nuxt-link>
+            <nuxt-link :to="{name:'admin'}" :class="isUrl('admin') ? (active_nav + nav_item) : nav_item">Dashboard </nuxt-link>
             <nuxt-link :to="{name:'admin'}" :class="isUrl('courses') ? (active_nav + nav_item) : nav_item">Courses</nuxt-link>
             <nuxt-link :to="{name:'admin'}" :class="isUrl('tagsandcategories') ? (active_nav + nav_item) : nav_item">Statistics</nuxt-link>
             
