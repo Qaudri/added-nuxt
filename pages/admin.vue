@@ -2,7 +2,7 @@
   <div>
     <LayoutsAdminApp>
       <template v-slot:hero >
-        <div class="grid md:grid-cols-2 gap-10 px-10">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-10">
           <div class="bg-white p-6 justify-between items-center flex">
             <div>
               <p class="font-medium uppercase text-sm">Number of courses</p>
@@ -22,6 +22,17 @@
 
             <img :src="require('@/assets/images/icons/categories.svg')" class="p-2 bg-primary-100 w-16" alt="">
           </div>
+
+          <div class="bg-white p-6 justify-between items-center flex">
+            <div>
+              <p class="font-medium uppercase text-sm">Registered Students</p>
+              <h1 class="font-semibold text-6xl mb-3">0</h1>
+              <a href="" class="px-2 py-1 text-sm border">Manage</a>
+            </div>
+
+            <img :src="require('@/assets/images/icons/earning.svg')" class="p-2 bg-primary-100 w-16" alt="">
+          </div>
+
         </div>
       </template>
     </LayoutsAdminApp>
