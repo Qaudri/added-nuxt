@@ -48,7 +48,7 @@
       <div :class="mobile_nav ? 'shadow-2xl md:shadow-sm block' : 'hidden md:block'" class="fixed z-0 -mt-1 top-16 h-full md:h-auto w-10/12 md:w-full bg-primary-100 px-2 text-white md:block">
         <div class="mx-auto md:container">
           
-          <div class="pt-20 md:pt-0 md:flex justify-start">
+          <div class="pt-16 md:pt-0 md:flex justify-start">
             <nuxt-link :to="{name:'admin'}" :class="isUrl('admin') ? (active_nav + nav_item) : nav_item">Dashboard</nuxt-link>
             <nuxt-link :to="{name:'admin'}" :class="isUrl('records') ? (active_nav + nav_item) : nav_item">Courses</nuxt-link>
             <nuxt-link :to="{name:'admin'}" :class="isUrl('tagsandcategories') ? (active_nav + nav_item) : nav_item">Statistics</nuxt-link>
