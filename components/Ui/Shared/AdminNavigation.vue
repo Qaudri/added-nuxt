@@ -1,6 +1,6 @@
 <template>
   <div class="w-full">
-    <div class="py-2 lg:py-3 flex items-center w-full shadow z-10 fixed bg-white">
+    <div class="py-2 lg:py-3 flex items-center w-full shadow-2xl z-10 fixed bg-white">
       <div class="container mx-auto">
         <div class="w-full flex justify-between items-center px-4">
           <div>
@@ -103,4 +103,9 @@
   };
 </script>
 <style>
+.shadow-2xl{
+  --tw-shadow: 0 12px 20px -12px rgb(0 0 0 / 0.5);
+  --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 </style>
