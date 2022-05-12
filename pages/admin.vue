@@ -2,8 +2,15 @@
   <div>
     <LayoutsAdminApp>
       <template v-slot:hero >
-        <div class="grid md:grid-cols-2 lg:grid-cols-3">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 px-10">
+          <div class="bg-white p-6 justify-between items-center flex">
+            <div>
+              <p class="font-medium uppercase text-lg">Number of courses</p>
+              <h1 class="font-bold text-2xl">9</h1>
+              <a href="" class="px-4 py-2 ">Manage</a>
+            </div>
 
+          </div>
         </div>
       </template>
     </LayoutsAdminApp>
