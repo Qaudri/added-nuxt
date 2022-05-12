@@ -1,7 +1,6 @@
 <template>
-  <div class="w-full fixed">
-  
-    <div class="py-2 lg:py-3 w-full fixed z-110 shadow bg-white">
+  <div class="w-full">
+    <div class="py-2 lg:py-3 w-full shadow-5xl z-10 fixed bg-white">
       <div class="container mx-auto">
         <div class="w-full flex justify-between items-center px-4">
           <div>
@@ -42,25 +41,23 @@
         
         </div>
       </div>
-    </div>    
-    <div class="">
-      <transition name="page">
-      
-        <div :class="mobile_nav ? 'shadow-2xl md:shadow-sm block' : 'hidden md:block'" class="z-100 fixed shadow-lg h-full md:h-auto w-10/12 md:w-full bg-primary-100 px-2 text-white md:block">
-          <div class="mx-auto md:container">
-            
-            <div class="pt-20 md:pt-0 md:flex justify-start">
-              <nuxt-link :to="{name:'admin'}" :class="isUrl('admin') ? (active_nav + nav_item) : nav_item">Dashboard</nuxt-link>
-              <nuxt-link :to="{name:'admin'}" :class="isUrl('records') ? (active_nav + nav_item) : nav_item">Courses</nuxt-link>
-              <nuxt-link :to="{name:'admin'}" :class="isUrl('tagsandcategories') ? (active_nav + nav_item) : nav_item">Statistics</nuxt-link>
-              
-             </div>
-          </div>
-          
-        </div>
-      </transition>
-    </div>
+    </div>   
+ 
+    <transition name="page">
     
+      <div :class="mobile_nav ? 'shadow-2xl md:shadow-sm block' : 'hidden md:block'" class="fixed z-0 top-20 h-full md:h-auto w-10/12 md:w-full bg-primary-100 px-2 text-white md:block">
+        <div class="mx-auto md:container">
+          
+          <div class="pt-20 md:pt-0 md:flex justify-start">
+            <nuxt-link :to="{name:'admin'}" :class="isUrl('admin') ? (active_nav + nav_item) : nav_item">Dashboard</nuxt-link>
+            <nuxt-link :to="{name:'admin'}" :class="isUrl('records') ? (active_nav + nav_item) : nav_item">Courses</nuxt-link>
+            <nuxt-link :to="{name:'admin'}" :class="isUrl('tagsandcategories') ? (active_nav + nav_item) : nav_item">Statistics</nuxt-link>
+            
+            </div>
+        </div>
+        
+      </div>
+    </transition>
   </div>
 </template>
 <script>
