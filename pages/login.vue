@@ -42,9 +42,13 @@ export default {
 
     verifyInfo(){
       if (form.email === loginInfo.email) {
-        
+        if (form.password === loginInfo.password) {
+          this.tryLogin()
+        } else {
+          console.log("Wrong password inputed")
+        }
       } else {
-        
+        console.log("Wrong email inputed")
       }
     },
 
