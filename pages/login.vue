@@ -28,7 +28,7 @@ export default {
   },
 
   ...mapGetters ({
-    sessions : 'authentication/session_token',
+    loginInfo : 'authentication/getLoginInfo',
     auth_status: 'authentication/isUnauthenticated'
   }),
 
