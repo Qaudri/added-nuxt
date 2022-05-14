@@ -26,6 +26,27 @@ export default {
       },
     }
   },
+
+  ...mapGetters ({
+    sessions : 'authentication/session_token',
+    auth_status: 'authentication/isUnauthenticated'
+  }),
+
+  methods: {
+
+    ...mapActions({
+      tryLogin : 'authentication/tryLogin',
+      retrieveLoggedUserInfo: 'authentication/retrieveLoggedUserInfo'
+
+    }),
+
+    attemptLogin(){
+      this.tryLogin({
+        email: this.form.email,
+        password: this.form.password
+      })
+    }
+  }
 }
 </script>
 
