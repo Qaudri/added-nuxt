@@ -41,6 +41,7 @@
 
 <script>
 export default {
+  middleware: 'login_verification',
 
 }
 </script>

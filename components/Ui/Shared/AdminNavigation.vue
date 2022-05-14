@@ -64,8 +64,6 @@
   import { mapGetters, mapActions } from 'vuex';
 
   export default {
-    
-    middleware: 'login_verification',
 
     props: {
       url: String,
