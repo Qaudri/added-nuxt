@@ -30,7 +30,7 @@
               <a href="" class="px-2 py-1 text-sm border">Manage</a>
             </div>
 
-            <img :src="require('@/assets/images/icons/earning.svg')" class="p-2 bg-primary-100 w-16" alt="">
+            <img :src="require('@/assets/images/icons/earning.svg')" class="p-2 bg-primary-100 w-14" alt="">
           </div>
 
         </div>
