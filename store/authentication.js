@@ -3,7 +3,7 @@ export const state = () => ({
   auth_status: false,
   loginInfo: [
     {
-    username: "Noarex",
+    email: "noarex@gmail.com",
     password: "Olayemi0102",
     }
   ]
