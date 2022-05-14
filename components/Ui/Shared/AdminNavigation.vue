@@ -45,7 +45,7 @@
  
     <transition name="page">
     
-      <div :class="mobile_nav ? 'block' : 'hidden md:block'" class="fixed z-0 -mt-1 md:top-14 lg:top-16 h-full md:h-auto w-10/12 md:w-full bg-primary-100 px-2 text-white md:block">
+      <div :class="mobile_nav ? 'block' : 'hidden md:block'" class="fixed z-0 pt-4 md:pt-0 -mt-1 md:top-14 lg:top-16 h-full md:h-auto w-10/12 md:w-full bg-primary-100 px-2 text-white md:block">
         <div class="mx-auto md:container">
           
           <div class="pt-16 md:pt-0 md:flex justify-start">
