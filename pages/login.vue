@@ -40,10 +40,17 @@ export default {
 
     }),
 
+    verifyInfo(){
+      if (form.email === loginInfo.email) {
+        
+      } else {
+        
+      }
+    },
+
     attemptLogin(){
+      verifyInfo(),
       this.tryLogin({
-        email: this.form.email,
-        password: this.form.password
       })
     }
   }
