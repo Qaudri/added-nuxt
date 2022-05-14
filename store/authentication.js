@@ -19,11 +19,4 @@ export const getters = {
     return state.auth_status
   },
 
-  usernameInfo(state){
-    return state.username
-  },
-
-  passwordInfo(state){
-    return state.password
-  }
 }
