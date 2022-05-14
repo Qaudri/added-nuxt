@@ -43,7 +43,9 @@ export default {
     verifyInfo(){
       if (form.email === loginInfo.email) {
         if (form.password === loginInfo.password) {
-          this.tryLogin()
+          this.tryLogin({
+
+          })
         } else {
           console.log("Wrong password inputed")
         }
@@ -53,9 +55,7 @@ export default {
     },
 
     attemptLogin(){
-      verifyInfo(),
-      this.tryLogin({
-      })
+      this.verifyInfo()
     }
   }
 }
