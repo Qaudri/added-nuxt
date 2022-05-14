@@ -27,9 +27,9 @@
                   
                   <div class="md:hidden flex justify-end" @click="ToggleMobileNav">
                     <div class="w-8">
-                      <div :class="(mobile_nav ? 'transition transform rotate-45 my-0' : 'transition my-1') + ' ' + (BlockBackground ? 'bg-white' : 'bg-primary-100')" class="block h-1 cursor-pointer"></div>
+                      <div :class="(mobile_nav ? 'transition transform rotate-45 my-0' : 'transition my-1') + ' ' + (BlockBackground ? 'bg-primary-100' : 'bg-primary-100')" class="block h-1 cursor-pointer"></div>
                       <div class="flex justify-end">
-                        <div :class="(mobile_nav ? 'transition transform -rotate-45 my-0 w-8' : 'transition my-1 w-8') + ' ' + (BlockBackground ? 'bg-white' : 'bg-primary-100')"  class="block  h-1 cursor-pointer"></div>
+                        <div :class="(mobile_nav ? 'transition transform -rotate-45 my-0 w-8' : 'transition my-1 w-8') + ' ' + (BlockBackground ? 'bg-primary-100' : 'bg-primary-100')"  class="block  h-1 cursor-pointer"></div>
                       </div>
                     </div>
                   </div>
