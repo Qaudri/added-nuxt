@@ -65,6 +65,8 @@
 
   export default {
     
+    middleware: 'login_verification',
+
     props: {
       url: String,
       BlockBackground: Boolean
