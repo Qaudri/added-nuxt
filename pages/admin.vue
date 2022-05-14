@@ -6,21 +6,21 @@
           <div class="bg-white border p-6 justify-between items-center flex">
             <div>
               <p class="font-medium uppercase text-sm">Number of courses</p>
-              <h1 class="font-semibold text-6xl mb-3">9</h1>
+              <h1 class="font-semibold text-3xl mb-3">9</h1>
               <a href="" class="px-2 py-1 text-sm border">Manage</a>
             </div>
 
-            <img :src="require('@/assets/images/icons/list.svg')" class="p-2 bg-primary-100 w-16" alt="">
+            <img :src="require('@/assets/images/icons/list.svg')" class="p-2 bg-primary-100 w-14" alt="">
           </div>
 
           <div class="bg-white boder p-6 justify-between items-center flex">
             <div>
               <p class="font-medium uppercase text-sm">Registered Students</p>
-              <h1 class="font-semibold text-6xl mb-3">0</h1>
+              <h1 class="font-semibold text-3xl mb-3">0</h1>
               <a href="" class="px-2 py-1 text-sm border">Manage</a>
             </div>
 
-            <img :src="require('@/assets/images/icons/categories.svg')" class="p-2 bg-primary-100 w-16" alt="">
+            <img :src="require('@/assets/images/icons/categories.svg')" class="p-2 bg-primary-100 w-14" alt="">
           </div>
 
           <div class="bg-white border p-6 justify-between items-center flex">
