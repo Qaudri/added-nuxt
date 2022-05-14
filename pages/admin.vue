@@ -25,8 +25,8 @@
 
           <div class="bg-white border p-6 justify-between items-center flex">
             <div>
-              <p class="font-medium uppercase text-sm">Aount Received</p>
-              <h1 class="font-semibold text-6xl mb-3">#100,000</h1>
+              <p class="font-medium uppercase text-sm">Amount Received</p>
+              <h1 class="font-semibold text-3xl mb-3">#100,000</h1>
               <a href="" class="px-2 py-1 text-sm border">Manage</a>
             </div>
 
