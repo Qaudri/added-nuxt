@@ -30,3 +30,9 @@ export const actions = {
     context.commit('SET_AUTHENTICATION_STATUS', true)
   }
 }
+
+export const mutations = {
+  SET_AUTHENTICATION_STATUS(state, payload){
+    state.auth_status = payload
+  },
+}
