@@ -4,3 +4,7 @@ export const state = () => ({
   username: Noarex,
   password: Olayemi0102,
 })
+
+export const getters = {
+  
+}
