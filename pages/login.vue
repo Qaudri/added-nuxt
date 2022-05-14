@@ -3,10 +3,10 @@
     <div class="bg-white p-8 w-full md:w-2/3 lg:w-1/3">
       <form action="" @submit.prevent="attemptLogin">
         <label for="Name" class="mt-0">Email</label>
-        <input type="email" name="email" id="email" placeholder="Enter your email address">
+        <input v-model="form.email" type="email" name="email" id="email" placeholder="Enter your email address">
 
         <label for="email">Password</label>
-        <input type="password" name="password" id="password" placeholder="Enter your password">
+        <input v-model="form.password" type="password" name="password" id="password" placeholder="Enter your password">
 
         <button type="submit" class="submit">Register</button>
       </form>
