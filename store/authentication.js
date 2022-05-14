@@ -24,3 +24,9 @@ export const getters = {
   }
 
 }
+
+export const actions = {
+  tryLogin(context){
+    context.commit('SET_AUTHENTICATION_STATUS', true)
+  }
+}
