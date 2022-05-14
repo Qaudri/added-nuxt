@@ -16,7 +16,14 @@
 
 <script>
 export default {
-
+  data(){
+    return{
+      form: {
+        email: '',
+        password: '',
+      },
+    }
+  },
 }
 </script>
 
