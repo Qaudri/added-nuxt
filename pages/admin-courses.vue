@@ -4,6 +4,8 @@
     <template v-slot:hero >
 
     </template>
+
+    <LayoutsDialog />
     
     <div class="p-8 py-14">
       <div class="py-3 border-b mb-8">

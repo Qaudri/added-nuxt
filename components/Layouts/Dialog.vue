@@ -1,7 +1,7 @@
 <template>
   <div class=" absolute backdrop-filter backdrop-blur flex items-center justify-center h-full w-full">
 
-    <div class="bg-white rounded-xl p-6 pb-0">
+    <div class="bg-white p-6 pb-0">
 
       <div>
         <div class="border-b text-xl pb-4 font-semibold flex justify-between">
@@ -25,7 +25,7 @@
             <p class="text-black font-medium text-xl text-center max-w-sm flex justify-center">Are you sure you want to delete this course item? This action is irreversible!</p>
 
             <a @click="emitSubmitEvent"
-            class="flex items-center justify-center cursor-pointer mt-6 bg-primary-100 text-lg  px-7 py-3 uppercase text-white rounded-lg font-medium">
+            class="flex items-center justify-center cursor-pointer mt-6 bg-primary-100 text-lg  px-7 py-3 uppercase text-white font-medium">
             Delete
             </a>
           </div>
