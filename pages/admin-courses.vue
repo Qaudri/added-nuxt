@@ -5,7 +5,11 @@
 
     </template>
 
-    <LayoutsDialog />
+    <LayoutsDialog>
+      <div class="flex justify-end w-full">
+        <UiButtonsClose @closeMenu="toggleForm" class="flex items-center justify-end cursor-pointer pb-2" />
+      </div>
+    </LayoutsDialog>
     
     <div class="p-8 py-14">
       <div class="py-3 border-b mb-8">
