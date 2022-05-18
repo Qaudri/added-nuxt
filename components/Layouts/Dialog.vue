@@ -1,5 +1,5 @@
 <template>
-  <div class=" absolute backdrop-filter backdrop-blur flex items-center justify-center h-full w-full">
+  <div class="absolute bg-secondary-100 flex items-center justify-center h-full">
 
     <div class="bg-white p-6 pb-0">
 
