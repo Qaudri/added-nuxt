@@ -37,6 +37,11 @@
         :title="item.title" 
         :duration="item.duration"
         :price="item.price" @RegisterUser="toggleForm"/>
+
+        <div>
+          <button @click="emitRegisterUserEvent" class="bg-primary-100 px-4 py-2 text-white font-medium">Enroll now</button>
+        </div>
+
       </div>
     </div>  />
     <SectionsCommonFooter />
