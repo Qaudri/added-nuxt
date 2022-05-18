@@ -11,7 +11,7 @@
           <div class="">
 
             <button @click="emitCloseEvent">
-              <img :src="require('@/assets/images/close_window.svg') " alt="" width="35px" />
+              <slot />
             </button>
 
           </div>
@@ -25,8 +25,8 @@
             <p class="text-black font-medium text-xl text-center max-w-sm flex justify-center">Are you sure you want to submit? This action is irreversible!</p>
 
             <a @click="emitSubmitEvent"
-            class="flex items-center justify-center cursor-pointer mt-6 bg-gradient-to-r from-accent1-500 to-accent2-500 text-lg  px-7 py-3 uppercase text-white rounded-lg font-medium">
-            Submit
+            class="flex items-center justify-center cursor-pointer mt-6 bg-primary-100 text-lg  px-7 py-3 uppercase text-white rounded-lg font-medium">
+            Delete
             </a>
           </div>
 
