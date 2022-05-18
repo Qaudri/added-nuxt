@@ -7,7 +7,7 @@
       <div class="p-6"></div>
     </div>
 
-    <div class="p-8 container mx-auto shadow-md">
+    <div class="container mx-auto shadow-md">
       <slot></slot>
     </div>
   </div>
