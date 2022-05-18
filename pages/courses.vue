@@ -36,11 +36,12 @@
         :imgUrl="item.imageUrl" 
         :title="item.title" 
         :duration="item.duration"
-        :price="item.price"/>
-
+        :price="item.price">
         <div>
           <button @click="toggleForm" class="bg-primary-100 px-4 py-2 text-white font-medium">Enroll now</button>
         </div>
+
+
 
       </div>
     </div>  />
