@@ -39,25 +39,12 @@
 </template>
 
 <script>
-
-import {mapGetters, mapActions} from 'vuex';
-
-
-
 export default {
   props: {
     openDialog: Boolean,
 
     button: String
 
-  },
-
-    computed: {
-    ...mapGetters({
-      question : 'quiz/getQuestion',
-      question2 : 'quiz/getQuestion'
-
-    })
   },
 
   methods: {
