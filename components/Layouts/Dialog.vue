@@ -1,12 +1,12 @@
 <template>
-  <div class=" absolute bg-accent3-600 bg-opacity-80 flex items-center justify-center h-full w-full">
+  <div class=" absolute backdrop-filter backdrop-blur flex items-center justify-center h-full w-full">
 
     <div class="bg-white rounded-xl p-6 pb-0">
 
       <div>
         <div class="border-b text-xl pb-4 font-semibold flex justify-between">
 
-          <p class="font-medium text-black text-lg">Confirm Submission</p>
+          <p class="font-medium text-black text-lg">Confirm Delete</p>
 
           <div class="">
 
