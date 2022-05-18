@@ -39,7 +39,7 @@
         :price="item.price" @RegisterUser="toggleForm"/>
 
         <div>
-          <button @click="emitRegisterUserEvent" class="bg-primary-100 px-4 py-2 text-white font-medium">Enroll now</button>
+          <button @click="toggleForm" class="bg-primary-100 px-4 py-2 text-white font-medium">Enroll now</button>
         </div>
 
       </div>
