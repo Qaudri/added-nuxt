@@ -20,7 +20,7 @@
 
         <div class="my-6 flex items-center justify-center">
           <div>
-            <img :src="require('@/assets/images/important.svg')"  class="flex items-center mx-auto justify-center m-0 w-32" />
+            <img :src="require('@/assets/images/icons/important.svg')"  class="flex items-center mx-auto justify-center m-0 w-32" />
 
             <p class="text-black font-medium text-xl text-center max-w-sm flex justify-center">Are you sure you want to delete this course item? This action is irreversible!</p>
 
