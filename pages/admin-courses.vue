@@ -15,8 +15,9 @@
         :title="item.title" 
         :duration="item.duration"
         :price="item.price" @RegisterUser="toggleForm">
-          <div>
-            <img :src="require('@/assets/images/icons/edit.svg')" />
+          <div class="flex">
+            <img :src="require('@/assets/images/icons/edit.svg')" class="w-6" />
+            <img :src="require('@/assets/images/icons/delete.svg')" class="w-6" />
           </div>
         </UiCardsCoursecard>
       </div>
