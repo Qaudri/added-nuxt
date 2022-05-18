@@ -40,13 +40,6 @@
 
 <script>
 export default {
-  props: {
-    openDialog: Boolean,
-
-    button: String
-
-  },
-
   methods: {
 
     emitCloseEvent(){
