@@ -1,5 +1,5 @@
 <template>
-  <div class="absolute bg-secondary-100 flex items-center justify-center h-full w-full left-0">
+  <div class="absolute bg-secondary-100 bg-opacity-20 flex items-center justify-center h-full w-full left-0">
 
     <div class="bg-white p-6 pb-0">
 
