@@ -45,8 +45,6 @@ export default {
       this.$emit('confirmDelete')
     },
   }
-
-
 }
 </script>
 

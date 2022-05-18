@@ -35,9 +35,13 @@
 import {mapGetters} from 'vuex';
 
 export default {
+  data(){
+    form_toggled: false
+  },
+
   methods: {
     toggleForm(){
-      console.log("Form toggled")
+      this.form_toggled = !this.form_toggled
     }
   },
   computed: {
