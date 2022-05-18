@@ -46,8 +46,8 @@ export default {
       this.$emit('closeDialog')
     },
 
-    emitSubmitEvent(){
-      this.$emit('ConfirmSubmit')
+    emitDeleteEvent(){
+      this.$emit('confirmDelete')
     },
 
 
