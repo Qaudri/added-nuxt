@@ -36,7 +36,9 @@ import {mapGetters} from 'vuex';
 
 export default {
   data(){
+    return{
     form_toggled: false
+    }
   },
 
   methods: {
