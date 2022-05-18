@@ -5,7 +5,7 @@
 
     </template>
 
-    <LayoutsDialog>
+    <LayoutsDialog :class="form_toggled ? 'block' : 'hidden' ">
       <div class="flex justify-end w-full">
         <UiButtonsClose @closeMenu="toggleForm" class="flex items-center justify-end cursor-pointer pb-2" />
       </div>
@@ -23,7 +23,7 @@
         :price="item.price" @RegisterUser="toggleForm">
           <div class="flex">
             <img :src="require('@/assets/images/icons/edit.svg')" @click="editCourse" class="w-5 cursor-pointer" />
-            <img :src="require('@/assets/images/icons/delete.svg')" @click="deleteCourse" class="w-5 cursor-pointer mx-4" />
+            <img :src="require('@/assets/images/icons/delete.svg')" @click="toggleForm" class="w-5 cursor-pointer mx-4" />
           </div>
         </UiCardsCoursecard>
       </div>
@@ -37,7 +37,7 @@ import {mapGetters} from 'vuex';
 export default {
   data(){
     return{
-    form_toggled: false
+      form_toggled: false
     }
   },
 
