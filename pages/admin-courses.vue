@@ -1,5 +1,5 @@
 <template>
-  <LayoutsAdminApp>
+  <LayoutsAdminApp :class="form_toggled ? 'fixed': 'relative'">
 
     <template v-slot:hero ></template>
 
