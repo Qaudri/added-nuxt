@@ -1,15 +1,15 @@
 <template>
-  <LayoutsAdminApp :class="form_toggled ? 'fixed': 'relative'">
+  <LayoutsAdminApp :class="form_toggled ? 'h-screen overflow-y-hidden top-0': ''">
 
     <template v-slot:hero ></template>
 
-    <LayoutsDialog :class="form_toggled ? 'block' : 'hidden' ">
+    <LayoutsDialog :class="form_toggled ? 'block ' : 'hidden' ">
       <div class="flex justify-end w-full">
         <UiButtonsClose @closeMenu="toggleForm" class="flex items-center justify-end cursor-pointer pb-2" />
       </div>
     </LayoutsDialog>
     
-    <div class="p-8 py-14">
+    <div class="p-8 py-14" >
       <div class="py-3 border-b mb-8">
         <h1 class="text-2xl font-semibold">Courses</h1>
       </div>
