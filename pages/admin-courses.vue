@@ -1,16 +1,14 @@
 <template>
   <LayoutsAdminApp>
 
+    <template v-slot:hero ></template>
+
     <LayoutsDialog :class="form_toggled ? 'block' : 'hidden' ">
       <div class="flex justify-end w-full">
         <UiButtonsClose @closeMenu="toggleForm" class="flex items-center justify-end cursor-pointer pb-2" />
       </div>
     </LayoutsDialog>
     
-    <template v-slot:hero >
-
-    </template>
-
     <div class="p-8 py-14">
       <div class="py-3 border-b mb-8">
         <h1 class="text-2xl font-semibold">Courses</h1>
@@ -23,7 +21,7 @@
         :price="item.price" @RegisterUser="toggleForm">
           <div class="flex">
             <img :src="require('@/assets/images/icons/edit.svg')" @click="editCourse" class="w-5 cursor-pointer" />
-            <img :src="require('@/assets/images/icons/delete.svg')" @click="togg" class="w-5 cursor-pointer mx-4" />
+            <img :src="require('@/assets/images/icons/delete.svg')" @click="toggleForm" class="w-5 cursor-pointer mx-4" />
           </div>
         </UiCardsCoursecard>
       </div>
@@ -43,9 +41,15 @@ export default {
 
   methods: {
     toggleForm(){
+      console.log("toggled")
       this.form_toggled = !this.form_toggled
+    },
+
+    editCourse(){
+      console.log("Edit")
     }
   },
+
   computed: {
     ...mapGetters({
       course : 'courses/getCourseItems'
