@@ -14,7 +14,11 @@
         :imgUrl="item.imageUrl" 
         :title="item.title" 
         :duration="item.duration"
-        :price="item.price" @RegisterUser="toggleForm"/>
+        :price="item.price" @RegisterUser="toggleForm">
+          <div>
+            <img :src="require('@/assets/images/icons/edit.svg')" />
+          </div>
+        </UiCardsCoursecard>
       </div>
     </div>
   </LayoutsAdminApp>
