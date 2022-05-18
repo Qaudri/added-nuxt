@@ -32,7 +32,5 @@ export default {
 </script>
 
 <style>
-.bg-white{
-  background-color: white !important;
-}
+
 </style>
