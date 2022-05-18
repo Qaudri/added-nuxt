@@ -39,10 +39,5 @@ props: {
     price: String,
   },
 
-  methods: {
-    emitRegisterUserEvent(){
-    this.$emit("RegisterUser")
-    }
-  }
 }
 </script>
