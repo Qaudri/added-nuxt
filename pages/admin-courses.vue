@@ -1,7 +1,7 @@
 <template>
   <LayoutsAdminApp>
 
-    <template v-slot:hero class="first-letter:" >
+    <template v-slot:hero >
 
     </template>
     
