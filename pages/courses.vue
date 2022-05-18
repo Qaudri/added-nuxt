@@ -31,14 +31,14 @@
     </SectionsCommonHeader>
 
     <div class="container mx-auto px-10 py-28 xl:py-32">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-      <UiCardsCoursecard v-for="item in course" :key="item.id" 
-      :imgUrl="item.imageUrl" 
-      :title="item.title" 
-      :duration="item.duration"
-      :price="item.price" @RegisterUser="toggleForm"/>
-    </div>
-  </div>  />
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <UiCardsCoursecard v-for="item in course" :key="item.id" class="bg-white"
+        :imgUrl="item.imageUrl" 
+        :title="item.title" 
+        :duration="item.duration"
+        :price="item.price" @RegisterUser="toggleForm"/>
+      </div>
+    </div>  />
     <SectionsCommonFooter />
   </div>
 </template>
@@ -83,7 +83,7 @@ export default {
     }
   },
 
-    computed: {
+  computed: {
     ...mapGetters({
       course : 'courses/getCourseItems'
     })
