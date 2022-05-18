@@ -10,7 +10,7 @@
 
           <div class="">
 
-            <button @click="emitCloseEvent">
+            <button>
               <slot />
             </button>
 
@@ -24,7 +24,7 @@
 
             <p class="text-black font-medium text-lg my-4 text-center max-w-sm flex justify-center">Are you sure you want to delete this course item? This action is irreversible!</p>
 
-            <a @click="emitSubmitEvent"
+            <a @click="emitDeleteEvent"
             class="flex items-center justify-center cursor-pointer mt-6 bg-primary-100 text-lg  px-7 py-3 uppercase text-white font-medium">
             Delete
             </a>
@@ -41,16 +41,9 @@
 <script>
 export default {
   methods: {
-
-    emitCloseEvent(){
-      this.$emit('closeDialog')
-    },
-
     emitDeleteEvent(){
       this.$emit('confirmDelete')
     },
-
-
   }
 
 
