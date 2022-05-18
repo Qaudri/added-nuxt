@@ -1,6 +1,7 @@
 <template>
   <div class="h-full w-full fixed z-10 bg-gray-400 bg-opacity-40 flex items-center justify-center backdrop-filter backdrop-blur">
     <div class="bg-white p-8 w-full md:w-2/3 lg:w-1/3">
+
       <form action="" @submit.prevent="attemptLogin">
         <label for="Name" class="mt-0">Email</label>
         <input v-model="form.email" type="email" name="email" id="email" placeholder="Enter your email address">
@@ -10,6 +11,7 @@
 
         <button type="submit" class="submit">Register</button>
       </form>
+
     </div>
   </div>
 </template>
@@ -44,7 +46,7 @@ export default {
       if (form.email === loginInfo.email) {
         if (form.password === loginInfo.password) {
           this.tryLogin({
-
+            auth_status: true
           })
         } else {
           console.log("Wrong password inputed")
