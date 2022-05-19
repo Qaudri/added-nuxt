@@ -6,8 +6,8 @@
         <form action="" class="w-72 bg-white flex items-center shadow-lg">
           <select name="Category" id="category" class="px-4 py-4 w-60 bg-white">
             <option disabled value="">Category</option>
-            <option value="design">Graphics design</option>
-            <option value="design">UiUx design</option>
+            <option value="design">Graphics Design</option>
+            <option value="design">UiUx Design</option>
           </select>
         </form>
       </div>
