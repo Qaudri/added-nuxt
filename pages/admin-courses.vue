@@ -21,7 +21,7 @@
 
     <LayoutsForm :class="form_toggled ? 'block ' : '' ">
       <div class="flex justify-end w-full">
-        <UiButtonsClose @closeMenu="toggleForm" class="flex items-center justify-end cursor-pointer pb-2" />
+        <UiButtonsClose @closeMenu="toggleCourseForm" class="flex items-center justify-end cursor-pointer pb-2" />
       </div>
     </LayoutsForm>
     
