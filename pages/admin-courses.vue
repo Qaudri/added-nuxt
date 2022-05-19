@@ -1,5 +1,5 @@
 <template>
-  <LayoutsAdminApp :class="form_toggled ? 'h-screen overflow-y-hidden top-0': ''">
+  <LayoutsAdminApp :class="delete_form_toggled ? 'h-screen overflow-y-hidden top-0': ''">
 
     <template v-slot:hero >
       <div class="w-full flex justify-center items-center">
@@ -13,13 +13,13 @@
       </div>
     </template>
 
-    <LayoutsDialog :class="form_toggled ? 'block ' : 'hidden' ">
+    <LayoutsDialog :class="delete_form_toggled ? 'block ' : 'hidden' ">
       <div class="flex justify-end w-full">
         <UiButtonsClose @closeMenu="toggleForm" class="flex items-center justify-end cursor-pointer pb-2" />
       </div>
     </LayoutsDialog>
 
-    <LayoutsForm :class="form_toggled ? 'block ' : 'hidden' ">
+    <LayoutsForm :class="edit_form_toggled ? 'block ' : 'hidden' ">
       <div class="flex justify-end w-full">
         <UiButtonsClose @closeMenu="toggleCourseForm" class="flex items-center justify-end cursor-pointer pb-2" />
       </div>
@@ -51,7 +51,7 @@ import {mapGetters} from 'vuex';
 export default {
   data(){
     return{
-      form_toggled: false,
+      delete_form_toggled: false,
       edit_form_toggled: false
     }
   },
@@ -59,11 +59,11 @@ export default {
   methods: {
     toggleForm(){
       console.log("toggled")
-      this.form_toggled = !this.form_toggled
+      this.delete_form_toggled = !this.delete_form_toggled
     },
 
     editCourse(){
-      console.log("Edit")
+      this.edit_form_toggled = !this.edit_form_toggled
     }
   },
 
