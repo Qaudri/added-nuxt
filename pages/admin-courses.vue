@@ -19,11 +19,11 @@
       </div>
     </LayoutsDialog>
 
-    <LayoutsDialog :class="form_toggled ? 'block ' : 'hidden' ">
+    <LayoutsForm :class="form_toggled ? 'block ' : '' ">
       <div class="flex justify-end w-full">
         <UiButtonsClose @closeMenu="toggleForm" class="flex items-center justify-end cursor-pointer pb-2" />
       </div>
-    </LayoutsDialog>
+    </LayoutsForm>
     
     <div class="p-8 py-14" >
       <div class="py-3 border-b mb-8">
