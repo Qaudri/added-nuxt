@@ -23,6 +23,11 @@
 export default {
 props: {
   course_title: String,
+  course_duration: String,
+  course_price: String,
+  course_description: String,
+  course_contents: String,
+
 }
 }
 </script>
