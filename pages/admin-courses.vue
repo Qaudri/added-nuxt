@@ -1,5 +1,5 @@
 <template>
-  <LayoutsAdminApp :class="delete_form_toggled ? 'h-screen overflow-y-hidden top-0': ''">
+  <LayoutsAdminApp :class="delete_form_toggled || edit_form_toggled ? 'h-screen overflow-y-hidden top-0': ''">
 
     <template v-slot:hero >
       <div class="w-full flex justify-center items-center">
@@ -21,7 +21,7 @@
 
     <LayoutsForm :class="edit_form_toggled ? 'block ' : 'hidden' ">
       <div class="flex justify-end w-full">
-        <UiButtonsClose @closeMenu="toggleCourseForm" class="flex items-center justify-end cursor-pointer pb-2" />
+        <UiButtonsClose @closeMenu="editCourse" class="flex items-center justify-end cursor-pointer pb-2" />
       </div>
     </LayoutsForm>
     
