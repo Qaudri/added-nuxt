@@ -19,7 +19,7 @@
       </div>
     </LayoutsDialog>
 
-    <LayoutsForm :class="form_toggled ? 'block ' : '' ">
+    <LayoutsForm :class="form_toggled ? 'block ' : 'hidden' ">
       <div class="flex justify-end w-full">
         <UiButtonsClose @closeMenu="toggleCourseForm" class="flex items-center justify-end cursor-pointer pb-2" />
       </div>
@@ -51,7 +51,8 @@ import {mapGetters} from 'vuex';
 export default {
   data(){
     return{
-      form_toggled: false
+      form_toggled: false,
+      edit_form_toggled: false
     }
   },
 
