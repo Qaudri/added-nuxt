@@ -3,7 +3,7 @@
 
     <template v-slot:hero >
       <div class="w-full flex justify-center items-center">
-        <form action="">
+        <form action="" class="px-4 py-4 shadow-md w-36">
           <select name="Category" id="category">
             <option value="">Category</option>
             <option value="design">Graphics design</option>
