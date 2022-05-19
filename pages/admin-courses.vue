@@ -5,7 +5,7 @@
       <div class="w-full flex justify-center items-center">
         <form action="" class="w-72 bg-white flex items-center shadow-lg">
           <select name="Category" id="category" class="px-4 py-4 w-60 bg-white">
-            <option value="">Category</option>
+            <option disabled value="">Category</option>
             <option value="design">Graphics design</option>
             <option value="design">UiUx design</option>
           </select>
