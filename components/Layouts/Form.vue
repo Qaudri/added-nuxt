@@ -36,16 +36,62 @@
 
 <script>
 export default {
-props: {
-  course_title: String,
-  course_duration: String,
-  course_price: String,
-  course_description: String,
-  course_contents: String,
-}
+  props: {
+    course_title: String,
+    course_duration: String,
+    course_price: String,
+    course_description: String,
+    course_contents: String,
+  }
 }
 </script>
 
 <style>
+form{
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
 
+label{
+  font-weight: 600;
+  color: #058182;
+  margin-top: 30px;
+  display: block;
+}
+
+input{
+  padding: 10px 15px;
+  margin: 10px 0;
+  display: block;
+  width: 100%;
+  border: 2px solid #222222;
+}
+
+
+input:focus{
+  border: 2px solid #058182;
+  border-radius: 0;
+  outline: none;
+  color: #058182;
+}
+
+.submit{
+  margin-top: 2rem;
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid #058182;
+  text-transform: capitalize;
+  padding: 10px;
+  color: #058182;
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.submit:hover{
+  background: #058182;
+  color: white;
+  transition: .5s ease-in-out;
+}
 </style>
