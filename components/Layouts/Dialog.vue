@@ -4,7 +4,7 @@
     <div class="bg-white p-6 pb-0">
 
       <div>
-        <div class="border-b text-xl pb-4 font-semibold flex justify-between">
+        <div class="border-b text-xl font-semibold flex justify-between">
 
           <p class="font-medium text-black text-lg">Confirm Delete</p>
 
