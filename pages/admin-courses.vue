@@ -18,6 +18,12 @@
         <UiButtonsClose @closeMenu="toggleForm" class="flex items-center justify-end cursor-pointer pb-2" />
       </div>
     </LayoutsDialog>
+
+    <LayoutsDialog :class="form_toggled ? 'block ' : 'hidden' ">
+      <div class="flex justify-end w-full">
+        <UiButtonsClose @closeMenu="toggleForm" class="flex items-center justify-end cursor-pointer pb-2" />
+      </div>
+    </LayoutsDialog>
     
     <div class="p-8 py-14" >
       <div class="py-3 border-b mb-8">
@@ -66,7 +72,7 @@ export default {
     })
   }
 }
-</script>
+</script> 
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
