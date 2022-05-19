@@ -1,7 +1,17 @@
 <template>
   <LayoutsAdminApp :class="form_toggled ? 'h-screen overflow-y-hidden top-0': ''">
 
-    <template v-slot:hero ></template>
+    <template v-slot:hero >
+      <div class="w-full flex justify-center items-center">
+        <form action="">
+          <select name="Category" id="category">
+            <option value="">Category</option>
+            <option value="design">Graphics design</option>
+            <option value="design">UiUx design</option>
+          </select>
+        </form>
+      </div>
+    </template>
 
     <LayoutsDialog :class="form_toggled ? 'block ' : 'hidden' ">
       <div class="flex justify-end w-full">
