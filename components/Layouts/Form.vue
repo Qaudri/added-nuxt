@@ -9,7 +9,9 @@
 
 <script>
 export default {
-
+props: {
+  course_title: String,
+}
 }
 </script>
 
