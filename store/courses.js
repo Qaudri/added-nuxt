@@ -89,6 +89,8 @@ export const getters = {
   getCourseItems(state) {
     return state.items
   }
+}
 
-
+export const actions = {
+  
 }
