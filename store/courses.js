@@ -80,11 +80,15 @@ export const state = () =>({
       price: "#65,000",
       details: "",
     },
-  ]
+  ],
+
+  selected_course: ''
 })
 
 export const getters = {
   getCourseItems(state) {
     return state.items
   }
+
+
 }
