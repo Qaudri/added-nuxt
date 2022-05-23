@@ -88,9 +88,13 @@ export const state = () =>({
 export const getters = {
   getCourseItems(state) {
     return state.items
+  },
+
+  getSelected(){
+
   }
 }
 
 export const actions = {
-  
+
 }
