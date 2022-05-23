@@ -96,7 +96,17 @@ export const getters = {
 }
 
 export const actions = {
-
+  getSelectedCourse(){
+    if (course_no >= -1) {
+      context.commit("SET_CURRENT_COURSE", context.state.COURSEs[course_no - 1])
+      context.commit("SET_COURSE_COUNTER", course_no - 1)
+      context.commit("SET_CURRENT_COURSE_NUMBER", course_no )
+    } else{
+      context.commit("SET_CURRENT_COURSE", context.state.COURSEs[course_no])
+      context.commit("SET_COURSE_COUNTER", course_no)
+      context.commit("SET_CURRENT_COURSE_NUMBER", course_no )
+    }
+  }
 }
 
 export const mutations = {
