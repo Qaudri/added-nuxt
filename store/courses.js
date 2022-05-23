@@ -100,5 +100,7 @@ export const actions = {
 }
 
 export const mutations = {
-
+  SET_SELECTED_COURSE(state, payload){
+    state.selected_course = payload
+  }
 }
