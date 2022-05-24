@@ -39,12 +39,11 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    'nuxt-paystack'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-
+    'nuxt-paystack'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

@@ -42,6 +42,7 @@
           </div>
         </UiCardsCoursecard>
 
+      <button @click="initializePaystack" class="px-8 py-4 bg-primary-100">Pay</button>
 
 
       </div>
@@ -52,6 +53,7 @@
 
 <script>
 import {mapGetters} from 'vuex';
+import Button from '../components/Ui/Form/Button.vue';
 
 export default {
   data(){
@@ -61,6 +63,22 @@ export default {
   },
 
   methods: {
+    initializePaystack() {
+      this.$paystack({
+        key: '', // Replace with your public key.
+        email: 'stevewilsn75@gmail.com',
+        amount: 500000,
+        ref: '#',
+        currency: '#',
+        callback: () => {
+          // Do something.
+        },
+        onClose: () => {
+          // Do something.
+        }
+      })
+    },
+
     toggleForm(){
       this.formdisplayed = !this.formdisplayed
     },
