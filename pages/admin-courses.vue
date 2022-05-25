@@ -85,4 +85,5 @@ body{
 .bg-gray-50{
   background-color: #f7f7f7 !important;
 }
+
 </style>
