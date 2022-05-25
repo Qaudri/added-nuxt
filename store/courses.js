@@ -90,8 +90,8 @@ export const getters = {
     return state.items
   },
 
-  getSelected(){
-
+  getSelected(state){
+    return state.selected_course
   }
 }
 
