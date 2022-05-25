@@ -12,7 +12,7 @@
         </h1>
       </SectionsCoursesTitle>
 
-      <div class=" extra flex md:block 2xl:flex justify-between items-center mt-4">
+      <div class="extra block justify-between items-center mt-4">
         <SectionsCoursesPrice>
           <p class="text-base">
             {{duration}} | <span class="text-primary-100 font-medium">{{price}}</span>
