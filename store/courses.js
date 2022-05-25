@@ -100,14 +100,14 @@ export const actions = {
     context.commit("GET_SELECTED_COURSE")
   },
 
-  setSelectedCourse(context){
-    context.commit("SET_SELECTED_COURSE", context.state.courses[context.state.selected_course])
+  setSelectedCourse(context, state){
+    context.commit("SET_SELECTED_COURSE", context.state.courses[state.selected_course])
   }
 }
 
 export const mutations = {
   GET_SELECTED_COURSE(state, payload){
-    
+    state.selected_course = payload
   },
 
   SET_SELECTED_COURSE(state, payload){
