@@ -67,7 +67,7 @@ export default {
         key: 'pk_test_6a469a182d02a997d76fbd08f4b931f164892142', // Replace with your public key.
         email: 'stevewilsn75@gmail.com',
         amount: 500000,
-        ref: '#',
+        ref: '',
         currency: '#',
         callback: () => {
           // Do something.
