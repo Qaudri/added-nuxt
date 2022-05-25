@@ -97,15 +97,19 @@ export const getters = {
 
 export const actions = {
   getSelectedCourse(context, state){
-
+    context.commit("GET_SELECTED_COURSE")
   },
-  
+
   setSelectedCourse(context){
     context.commit("SET_SELECTED_COURSE", context.state.courses[context.state.selected_course])
   }
 }
 
 export const mutations = {
+  GET_SELECTED_COURSE(state, payload){
+    
+  },
+
   SET_SELECTED_COURSE(state, payload){
     state.selected_course.push({
       course_id: payload.items.id,
