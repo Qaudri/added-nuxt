@@ -38,7 +38,7 @@
         :duration="item.duration"
         :price="item.price">
           <div class="flex items-center">
-            <UiButtonsSecondary @pushTo="showDetails" button_title="See Details" class="mx-4"/>
+            <UiButtonsSecondary @pushTo="showDetails" button_title="See Details" class=""/>
             <UiButtonsPrimary @Pushto="toggleForm" class="px-4 py-2 text-white font-medium" button_title="Enroll now"/>
           </div>
         </UiCardsCoursecard>
