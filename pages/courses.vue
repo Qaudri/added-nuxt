@@ -85,11 +85,12 @@ export default {
     },
 
     ...mapActions({
-      setCourse: 'courses/setSelectedCourse'
+      setCourse: 'courses/setSelectedCourse',
     }),
 
     setCourse(){
       this.setCourse()
+      this.detailsdisplayed = !this.detailsdisplayed
     },
 
     toggleForm(){
