@@ -62,7 +62,8 @@ import {mapGetters, mapActions} from 'vuex';
 export default {
   data(){
     return{
-      formdisplayed: false
+      formdisplayed: false,
+      detailsdisplayed: false
     }
   },
 
