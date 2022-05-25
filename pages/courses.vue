@@ -30,7 +30,7 @@
       </template>
     </SectionsCommonHeader>
 
-    <div class="container mx-auto px-10 py-28 xl:py-32">
+    <div :class="detailsdisplayed ? 'block' : 'hidden'" class="container mx-auto px-10 py-28 xl:py-32">
       
     </div>
 
@@ -88,7 +88,7 @@ export default {
       setCourse: 'courses/setSelectedCourse',
     }),
 
-    setCourse(){
+    showDetails(){
       this.setCourse()
       this.detailsdisplayed = !this.detailsdisplayed
     },
