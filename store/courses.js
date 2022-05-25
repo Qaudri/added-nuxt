@@ -97,13 +97,15 @@ export const getters = {
 
 export const actions = {
   getSelectedCourse(){
-    if (course_no >= -1) {
-      context.commit("SET_CURRENT_COURSE", context.state.courses[course_no - 1])
-      context.commit("SET_CURRENT_COURSE_NUMBER", course_no )
-    } else{
-      context.commit("SET_CURRENT_COURSE", context.state.courses[course_no])
-      context.commit("SET_CURRENT_COURSE_NUMBER", course_no )
-    }
+    context.commit("SET_SELECTED_COURSE", context.state.courses[course_no - 1])
+
+    state.selected_course.push({
+      course_id: payload.items.id,
+      course_image: payload.items.image,
+      course_title: payload.items.title,
+      course_price: payload.items.price,
+      course_duration: payload.items.duration,
+    })
   }
 }
 
