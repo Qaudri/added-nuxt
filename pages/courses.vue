@@ -31,7 +31,7 @@
     </SectionsCommonHeader>
 
     <div class="container mx-auto px-10 py-28 xl:py-32">
-
+      
     </div>
 
     <div class="container mx-auto px-10 py-28 xl:py-32">
@@ -118,7 +118,8 @@ export default {
 
   computed: {
     ...mapGetters({
-      course : 'courses/getCourseItems'
+      course : 'courses/getCourseItems',
+      selected: 'courses/getSelectedCourse'
     })
   }
 }
