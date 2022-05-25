@@ -97,7 +97,7 @@ export const getters = {
 
 export const actions = {
   getSelectedCourse(){
-    context.commit("SET_SELECTED_COURSE", context.state.courses[course_no])
+    context.commit("SET_SELECTED_COURSE", context.state.courses[context.state.selected_course])
   }
 }
 
