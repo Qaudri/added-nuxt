@@ -88,6 +88,10 @@ export default {
       setCourse: 'courses/setSelectedCourse'
     }),
 
+    setCourse(){
+      this.setCourse()
+    },
+
     toggleForm(){
       this.formdisplayed = !this.formdisplayed
     },
