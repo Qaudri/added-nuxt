@@ -37,8 +37,9 @@
         :title="item.title" 
         :duration="item.duration"
         :price="item.price">
-          <div>
-            <button @click="toggleForm" class="bg-primary-100 px-4 py-2 text-white font-medium">Enroll now</button>
+          <div class="flex items-center">
+            <UiButtonsSecondary button_title="See Details" class="mx-4"/>
+            <UiButtonsPrimary @click="toggleForm" class="px-4 py-2 text-white font-medium" button_title="Enroll now"/>
           </div>
         </UiCardsCoursecard>
 
@@ -107,7 +108,7 @@ export default {
     },
 
     Primary(){
-      this.$router.push({path:'https://bit.ly/3uOIVPo'})
+      this.$router.go({path:'https://bit.ly/3uOIVPo'})
     }
   },
 
