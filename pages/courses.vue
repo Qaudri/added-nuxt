@@ -42,7 +42,7 @@
         :duration="item.duration"
         :price="item.price">
           <div class="flex items-center">
-            <UiButtonsSecondary @Pushto="showDetails" button_title="See Details" class=""/>
+            <UiButtonsSecondary @Pushto="showDetails(item)" button_title="See Details" class=""/>
             <UiButtonsPrimary @pushTo="toggleForm" class="px-4 py-2 text-white font-medium" button_title="Enroll now"/>
           </div>
         </UiCardsCoursecard>
@@ -88,9 +88,9 @@ export default {
       setCourse: 'courses/setSelectedCourse',
     }),
 
-    showDetails(){
-      console.log("details")
-      this.setCourse()
+    showDetails(item){
+      console.log(item)
+      this.setCourse(item)
       this.detailsdisplayed = !this.detailsdisplayed
     },
 

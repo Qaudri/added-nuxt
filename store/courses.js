@@ -82,7 +82,7 @@ export const state = () =>({
     },
   ],
 
-  selected_course: '[]'
+  selected_course: '{}'
 })
 
 export const getters = {
@@ -96,27 +96,14 @@ export const getters = {
 }
 
 export const actions = {
-  getSelectedCourse(context, state){
-    context.commit("GET_SELECTED_COURSE")
+  setSelectedCourse(context, course_details){
+    context.commit("GET_SELECTED_COURSE", course_details)
   },
 
-  setSelectedCourse(context, state){
-    context.commit("SET_SELECTED_COURSE", context.state.courses[state.selected_course])
-  }
 }
 
 export const mutations = {
   GET_SELECTED_COURSE(state, payload){
     state.selected_course = payload
   },
-
-  SET_SELECTED_COURSE(state, payload){
-    state.selected_course.push({
-      course_id: payload.items.id,
-      course_image: payload.items.image,
-      course_title: payload.items.title,
-      course_price: payload.items.price,
-      course_duration: payload.items.duration,
-    })
-  }
 }
