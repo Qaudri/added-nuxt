@@ -30,8 +30,8 @@
       </template>
     </SectionsCommonHeader>
 
-    <div :class="detailsdisplayed ? 'block' : 'hidden'" class="bg-white right-0 fixed h-full w-full px-10 py-28 xl:py-32">
-      <div class="container mx-auto">
+    <div :class="detailsdisplayed ? 'block' : 'hidden'" class="bg-white relative right-0 h-full w-full px-10 py-28 xl:py-32">
+      <div class="fixed container mx-auto">
         <div class="flex items-center ">
           <div class="pr-4 border-r w-32 h-32">
             <img ::src="selected.imageUrl" alt="" class="w-24">
@@ -44,6 +44,11 @@
         <div class="my-5">
           <h1 class="font-semibold text-primary-100 text-2xl my-3">Course Description:</h1>
           <p class="font-medium text-secondary-100">{{selected.details}}</p>
+        </div>
+        <div class="flex">
+          <div class="text-lg font-medium mr-12">Course duration: <span class="text-primary-100">{{selected.duration}}</span></div>
+          <div class="text-lg font-medium">Course price: <span class="text-primary-100">{{selected.price}}</span></div>
+
         </div>
       </div>
     </div>
