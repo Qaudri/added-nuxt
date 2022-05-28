@@ -30,7 +30,7 @@
       </template>
     </SectionsCommonHeader>
 
-    <div :class="detailsdisplayed ? 'block' : 'hidden'" class="bg-white fixed h-full w-full px-10 py-28 xl:py-32">
+    <div :class="detailsdisplayed ? 'block' : 'hidden'" class="slideUp bg-white fixed h-full w-full px-10 py-28 xl:py-32">
       <div class="container mx-auto">
         <div class="mb-4 w-full flex justify-end">
           <UiButtonsClose @closeMenu="hideDetails" class="cursor-pointer m-0" />
