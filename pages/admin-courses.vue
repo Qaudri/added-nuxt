@@ -69,7 +69,12 @@ export default {
 
     editCourse(item){
       this.edit_form_toggled = !this.edit_form_toggled
-    }
+    },
+
+    ...mapActions({
+      setCourse: 'courses/setSelectedCourse',
+    }),
+    
   },
 
   computed: {
