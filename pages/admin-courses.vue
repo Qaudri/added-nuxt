@@ -57,12 +57,12 @@ export default {
   },
 
   methods: {
-    toggleForm(){
+    toggleForm(item){
       console.log("toggled")
       this.delete_form_toggled = !this.delete_form_toggled
     },
 
-    editCourse(){
+    editCourse(item){
       this.edit_form_toggled = !this.edit_form_toggled
     }
   },
