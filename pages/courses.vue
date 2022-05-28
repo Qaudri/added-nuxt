@@ -33,7 +33,7 @@
     <div :class="detailsdisplayed ? 'block' : 'hidden'" class="bg-white fixed h-full w-full px-10 py-28 xl:py-32">
       <div class="container mx-auto">
         <div class="mb-4 w-full flex justify-end">
-          <UiButtonsClose class="cursor-pointer m-0" />
+          <UiButtonsClose @closeMenu="hideDetails" class="cursor-pointer m-0" />
         </div>
         <div class="flex items-center ">
           <div class="pr-4 border-r w-32 h-32">
@@ -54,7 +54,7 @@
         </div>
         <div class="flex items-center">
           <UiButtonsPrimary @pushTo="toggleForm" class="px-4 py-2 text-white font-medium" button_title="Enroll now"/>
-          <UiButtonsSecondary @Pushto="showDetails(item)" button_title="Check Other Courses" class="mx-6"/>
+          <UiButtonsSecondary @Pushto="hideDetails" button_title="Check Other Courses" class="mx-6"/>
         </div>
       </div>
     </div>
@@ -116,6 +116,10 @@ export default {
     showDetails(item){
       this.setCourse(item)
       this.detailsdisplayed = !this.detailsdisplayed
+    },
+
+    hideDetails(){
+      this.detailsdisplayed = false
     },
 
     toggleForm(){
