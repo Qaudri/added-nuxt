@@ -1,7 +1,7 @@
 <template>
   <div class="absolute bg-secondary-100 z-110 bg-opacity-20 flex items-center justify-center h-full w-full top-0 left-0">
 
-    <div class="bg-white p-6 pb-0">
+    <div class="scale-out bg-white p-6 pb-0">
 
       <div>
         <div class="border-b text-xl font-semibold flex justify-between">
