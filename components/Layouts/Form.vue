@@ -42,6 +42,13 @@ export default {
     course_price: String,
     course_description: String,
     course_contents: String,
+  },
+
+    computed: {
+    ...mapGetters({
+      course : 'courses/getCourseItems',
+      selected: 'courses/getSelectedCourse'
+    })
   }
 }
 </script>
