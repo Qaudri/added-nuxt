@@ -89,7 +89,6 @@ export default {
     }),
 
     showDetails(item){
-      console.log(item)
       this.setCourse(item)
       this.detailsdisplayed = !this.detailsdisplayed
     },
