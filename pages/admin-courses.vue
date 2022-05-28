@@ -74,7 +74,8 @@ export default {
 
   computed: {
     ...mapGetters({
-      course : 'courses/getCourseItems'
+      course : 'courses/getCourseItems',
+      selected: 'courses/getSelectedCourse'
     })
   }
 }
