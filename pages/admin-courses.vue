@@ -36,8 +36,8 @@
         :duration="item.duration"
         :price="item.price" @RegisterUser="toggleForm">
           <div class="flex">
-            <img :src="require('@/assets/images/icons/edit.svg')" @click="editCourse" class="w-5 cursor-pointer" />
-            <img :src="require('@/assets/images/icons/delete.svg')" @click="toggleForm" class="w-5 cursor-pointer mx-4" />
+            <img :src="require('@/assets/images/icons/edit.svg')" @click="editCourse(item)" class="w-5 cursor-pointer" />
+            <img :src="require('@/assets/images/icons/delete.svg')" @click="toggleForm(item)" class="w-5 cursor-pointer mx-4" />
           </div>
         </UiCardsCoursecard>
       </div>
