@@ -222,4 +222,18 @@ input:focus{
     transform: translateY(0);
   }
 }
+
+.scale-out{
+  animation: scaleout 1s forwards;
+}
+
+@keyframes scaleout {
+  from{
+    transform: scale(0);
+  }
+
+  to{
+    transform: scale(1);
+  }
+}
 </style>
