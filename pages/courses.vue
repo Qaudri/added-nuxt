@@ -30,7 +30,7 @@
       </template>
     </SectionsCommonHeader>
 
-    <div :class="detailsdisplayed ? 'block' : 'hidden'" class="container mx-auto px-10 py-28 xl:py-32">
+    <div :class="detailsdisplayed ? 'block' : 'hidden'" class="absolute h-full w-full container mx-auto px-10 py-28 xl:py-32">
       
     </div>
 
