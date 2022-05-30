@@ -47,6 +47,11 @@ export default {
     'nuxt-paystack'
   ],
 
+  axios: {
+    baseURL : 'https://ubit.tk',
+    credentials: true,
+  },
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
