@@ -120,7 +120,7 @@ export default {
     }),
 
     Register(){
-      this.tryRegistration({
+      this.register({
         email: this.form.email,
         password: this.form.password,
       })
