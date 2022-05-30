@@ -50,6 +50,8 @@ export default {
 
   axios: {
     baseURL : 'http://aa.apis.micakin.com',
+    credentials: false,
+
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
