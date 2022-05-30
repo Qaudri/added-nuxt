@@ -5,7 +5,7 @@
         <div class="flex justify-end w-full">
           <UiButtonsClose @closeMenu="toggleForm" class="flex items-center justify-end cursor-pointer pb-2" />
         </div>
-        <form action="" @submit.prevent="attemptSignUp">
+        <form action="" @submit.prevent="Register">
 
           <label for="email" class="mt-0">Email</label>
           <input v-model="form.email" type="email" name="email" id="email" placeholder="Enter your email address">
