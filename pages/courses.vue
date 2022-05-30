@@ -131,9 +131,9 @@ export default {
       })
 
       .catch( error => {
-        this.$toast.error(error.response.data.errors[Object.keys(error.response.data.errors)[0]][0], {
-          duration: 4000,
-        });
+        // this.$toast.error(error.response.data.errors[Object.keys(error.response.data.errors)[0]][0], {
+        //   duration: 4000,
+        // });
 
         this.form.password = '';
         console.log("error")
