@@ -48,7 +48,7 @@ export default {
   ],
 
   axios: {
-    baseURL : 'https://ubit.tk',
+    baseURL : 'http://aa.apis.micakin.com',
     credentials: true,
   },
 
