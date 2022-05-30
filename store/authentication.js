@@ -13,10 +13,6 @@ export const getters = {
     return state.auth_status
   },
 
-  getLoginInfo(state){
-    return state.loginInfo
-  }
-
 }
 
 export const actions = {
