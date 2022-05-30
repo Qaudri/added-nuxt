@@ -44,4 +44,8 @@ export const mutations = {
   SET_AUTHENTICATION_STATUS(state, payload){
     state.auth_status = payload
   },
+
+  SET_SESSION_TOKEN(state, payload){
+    state.session_token = payload
+  }
 }
