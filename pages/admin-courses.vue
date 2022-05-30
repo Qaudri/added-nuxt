@@ -3,7 +3,7 @@
 
     <template v-slot:hero >
       <div class="w-full flex justify-center items-center">
-        <button>Create New Course</button>
+        <UiButtonsPrimary button_title="Create New Course" />
       </div>
     </template>
 
