@@ -20,7 +20,7 @@ export const actions = {
     context.commit('SET_AUTHENTICATION_STATUS', true)
   },
 
-  tryRegistration(context, credentials) {
+  Register(context, credentials) {
     return new Promise((resolve, reject) => {
       this.$axios.$post('/api/students/auth/register', {
         email: credentials.email,
