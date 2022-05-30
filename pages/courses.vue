@@ -89,7 +89,11 @@ export default {
   data(){
     return{
       formdisplayed: false,
-      detailsdisplayed: false
+      detailsdisplayed: false,
+      form: {
+        email: String,
+        password: String,
+      }
     }
   },
 
