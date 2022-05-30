@@ -119,6 +119,10 @@ export default {
       register: 'authentication/registerStudent'
     }),
 
+    Register(){
+      
+    },
+
     showDetails(item){
       this.setCourse(item)
       this.detailsdisplayed = !this.detailsdisplayed
