@@ -5,7 +5,7 @@
         <div class="flex justify-end w-full">
           <UiButtonsClose @closeMenu="toggleForm" class="flex items-center justify-end cursor-pointer pb-2" />
         </div>
-        <form action="">
+        <form action="" @submit.prevent="attemptSignUp">
           <label for="Name" class="mt-0">Name</label>
           <input type="text" name="Name" id="Name" placeholder="Enter your full name">
 
