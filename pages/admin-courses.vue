@@ -105,4 +105,8 @@ body{
     transform: scale(1);
   }
 }
+
+.space{
+  padding: 1rem 2rem !important;
+}
 </style>
