@@ -116,6 +116,7 @@ export default {
 
     ...mapActions({
       setCourse: 'courses/setSelectedCourse',
+      register: 'authentication/registerStudent'
     }),
 
     showDetails(item){
