@@ -7,7 +7,7 @@
         </div>
         <form action="" @submit.prevent="attemptSignUp">
 
-          <label for="email">Email</label>
+          <label for="email" class="mt-0">Email</label>
           <input type="email" name="email" id="email" placeholder="Enter your email address">
 
           <label for="password">Password</label>
