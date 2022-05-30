@@ -8,10 +8,12 @@
         <form action="" @submit.prevent="Register">
 
           <label for="email" class="mt-0">Email</label>
-          <input v-model="form.email" type="email" name="email" id="email" placeholder="Enter your email address">
+          <input v-model="form.email" type="email" name="email" placeholder="Enter your email address">
+          {{form.email}}
 
           <label for="password">Password</label>
-          <input v-model="form.password" type="password" name="password" id="password" placeholder="Choose your password">
+          <input v-model="form.password" type="password" name="password"  placeholder="Choose your password">
+          {{form.password}}
 
           <button type="submit" class="submit">Register</button>
         </form>
@@ -73,7 +75,7 @@
           </div>
         </UiCardsCoursecard>
 
-      <button @click="initializePaystack" class="px-8 py-4 bg-primary-100">Pay</button>
+      <!-- <button @click="initializePaystack" class="px-8 py-4 bg-primary-100">Pay</button> -->
 
 
       </div>
@@ -91,28 +93,28 @@ export default {
       formdisplayed: false,
       detailsdisplayed: false,
       form: {
-        email: String,
-        password: String,
+        email: '',
+        password: '',
       }
     }
   },
 
   methods: {
-    initializePaystack() {
-      this.$paystack({
-        key: 'pk_test_6a469a182d02a997d76fbd08f4b931f164892142', // Replace with your public key.
-        email: 'stevewilsn75@gmail.com',
-        amount: 500000,
-        ref: '',
-        currency: '#',
-        callback: () => {
-          // Do something.
-        },
-        onClose: () => {
-          // Do something.
-        }
-      })
-    },
+    // initializePaystack() {
+    //   this.$paystack({
+    //     key: 'pk_test_6a469a182d02a997d76fbd08f4b931f164892142', // Replace with your public key.
+    //     email: 'stevewilsn75@gmail.com',
+    //     amount: 500000,
+    //     ref: '',
+    //     currency: '#',
+    //     callback: () => {
+    //       // Do something.
+    //     },
+    //     onClose: () => {
+    //       // Do something.
+    //     }
+    //   })
+    // },
 
     ...mapActions({
       setCourse: 'courses/setSelectedCourse',

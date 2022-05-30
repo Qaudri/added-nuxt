@@ -45,12 +45,11 @@ export default {
   modules: [
     '@nuxtjs/toast',
     '@nuxtjs/axios',
-    'nuxt-paystack'
+    // 'nuxt-paystack'
   ],
 
   axios: {
     baseURL : 'http://aa.apis.micakin.com',
-    credentials: false,
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
