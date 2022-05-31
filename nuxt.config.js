@@ -49,7 +49,7 @@ export default {
   ],
 
   axios: {
-    baseURL : 'http://aa.apis.micakin.com',
+    baseURL : 'http://added.apis.micakin.com',
     credentials: false,
 
   },
