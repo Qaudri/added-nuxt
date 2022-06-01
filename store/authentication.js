@@ -70,9 +70,6 @@ export const actions = {
         .then(response => {
           context.commit('SET_USER_INFO', response.data)
 
-          if (response.data.email_verified === false) {
-            this.app.router.push('verify')
-          }
           resolve(response)
         })
 
