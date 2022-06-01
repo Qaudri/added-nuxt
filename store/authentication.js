@@ -88,5 +88,9 @@ export const mutations = {
 
   SET_SESSION_TOKEN(state, payload){
     state.session_token = payload
+  },
+
+  SET_USER_INFO(state, payload){
+    state.user = payload
   }
 }
