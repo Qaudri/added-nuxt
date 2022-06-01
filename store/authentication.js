@@ -40,7 +40,26 @@ export const actions = {
   },
 
   loginStudent(context, credentials){
+    return new Promise((resolve, reject) => {
+      this.$axios.$post('/api/students/auth/login', {
+        email: credentials.email,
+        password: credentials.password
+      })
+        .then(response => {
+          context.commit('SET_SESSION_TOKEN', response.data.token)
+          context.commit('SET_AUTHENTICATION_STATUS', true)
+          localStorage.setItem('session_token', response.data.token)
 
+          context.dispatch('retrieveStudentInfo')
+
+          resolve(response)
+        })
+
+
+        .catch(function (error) {
+          reject(error)
+        })
+    })
   },
 }
 
