@@ -30,8 +30,8 @@ export default {
   },
 
   ...mapGetters ({
-    auth_status: 'authentication/auth_status',
-    session: 'authentication/session_token',
+    // auth_status: 'authentication/auth_status',
+    // session: 'authentication/session_token',
   }),
 
   methods: {
