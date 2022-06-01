@@ -37,7 +37,7 @@ export default {
   methods: {
 
     ...mapActions({
-      login: 'authentication/loginStudent',
+      login: 'authentication/loginAdmin',
       retrieveStudentInfo: 'authentication/retrieveStudentInfo'
     }),
 
