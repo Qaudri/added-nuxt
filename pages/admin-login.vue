@@ -9,7 +9,7 @@
         <label for="email">Password</label>
         <input v-model="form.password" type="password" name="password" id="password" placeholder="Enter your password">
 
-        <button type="submit" class="submit">Register</button>
+        <button type="submit" class="submit">Login</button>
       </form>
 
     </div>
