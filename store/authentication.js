@@ -1,7 +1,7 @@
 export const state = () => ({
   session_token: process.browser ? localStorage.getItem('session_token') : null || null,
   auth_status: false,
-  student: {},
+  user: {},
 })
 
 export const getters = {
@@ -136,6 +136,6 @@ export const mutations = {
   },
 
   SET_USER_INFO(state, payload){
-    state.student = payload
+    state.user = payload
   }
 }
