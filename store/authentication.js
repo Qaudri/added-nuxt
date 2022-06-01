@@ -79,6 +79,15 @@ export const actions = {
     })
   },
 
+  destroySession(context, credentials) {
+    if (context.getter.session) {
+      context.commit('SET_SESSION_TOKEN', null)
+      context.commit('SET_AUTHENTICATION_STATUS', false)
+      localStorage.removeItem('session_token', response.data.token)
+    }
+  
+  },
+
 }
 
 export const mutations = {
