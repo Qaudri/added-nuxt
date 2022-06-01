@@ -61,6 +61,27 @@ export const actions = {
         })
     })
   },
+
+  retrieveStudentInfo(context, credentials) {
+    return new Promise((resolve, reject) => {
+      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.state.session_token
+
+      this.$axios.$get('/api/students/account')
+        .then(response => {
+          context.commit('SET_USER_INFO', response.data)
+
+          if (response.data.email_verified === false) {
+            this.app.router.push('verify')
+          }
+          resolve(response)
+        })
+
+        .catch(function (error) {
+          reject(error)
+        })
+    })
+  },
+
 }
 
 export const mutations = {
