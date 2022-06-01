@@ -30,8 +30,7 @@ export default {
   },
 
   ...mapGetters ({
-    loginInfo : 'authentication/getLoginInfo',
-    auth_status: 'authentication/isUnauthenticated'
+
   }),
 
   methods: {
