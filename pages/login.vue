@@ -36,8 +36,7 @@ export default {
   methods: {
 
     ...mapActions({
-
-
+      login: 'authentication/loginStudent'
     }),
 
     verifyInfo(){
