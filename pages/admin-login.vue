@@ -38,7 +38,7 @@ export default {
 
     ...mapActions({
       login: 'authentication/loginAdmin',
-      retrieveStudentInfo: 'authentication/retrieveStudentInfo'
+      retrieveStudentInfo: 'authentication/retrieveAdminInfo'
     }),
 
     signIn(){
@@ -48,7 +48,7 @@ export default {
       })
 
       .then(() =>{
-        this.$router.push({name: 'dashboard'})
+        this.$router.push({name: 'admin'})
         
       })
 
