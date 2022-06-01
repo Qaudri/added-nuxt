@@ -118,7 +118,9 @@ export default {
 
     ...mapActions({
       setCourse: 'courses/setSelectedCourse',
-      register: 'authentication/registerStudent'
+      register: 'authentication/registerStudent',
+      auth_status: 'authentication/auth_status',
+      session: 'authentication/session_token',
     }),
 
     Register(){
