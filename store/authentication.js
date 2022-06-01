@@ -1,7 +1,7 @@
 export const state = () => ({
   session_token: process.browser ? localStorage.getItem('session_token') : null || null,
   auth_status: false,
-  user: {},
+  student: {},
 })
 
 export const getters = {
