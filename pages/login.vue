@@ -36,8 +36,7 @@ export default {
   methods: {
 
     ...mapActions({
-      tryLogin : 'authentication/tryLogin',
-      retrieveLoggedUserInfo: 'authentication/retrieveLoggedUserInfo'
+
 
     }),
 
