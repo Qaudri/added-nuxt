@@ -91,6 +91,6 @@ export const mutations = {
   },
 
   SET_USER_INFO(state, payload){
-    state.user = payload
+    state.student = payload
   }
 }
