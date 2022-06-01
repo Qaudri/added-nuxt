@@ -39,20 +39,6 @@ export default {
       login: 'authentication/loginStudent'
     }),
 
-    verifyInfo(){
-      if (form.email === loginInfo.email) {
-        if (form.password === loginInfo.password) {
-          this.tryLogin({
-            auth_status: true
-          })
-        } else {
-          console.log("Wrong password inputed")
-        }
-      } else {
-        console.log("Wrong email inputed")
-      }
-    },
-
     signIn(){
       this.verifyInfo()
     }
