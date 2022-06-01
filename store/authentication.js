@@ -38,6 +38,10 @@ export const actions = {
         })
     })
   },
+
+  loginStudent(context, credentials){
+
+  },
 }
 
 export const mutations = {
