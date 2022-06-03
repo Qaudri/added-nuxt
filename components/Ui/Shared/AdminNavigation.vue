@@ -15,7 +15,7 @@
                 <div class="flex items-center text-sm sm:text-base">
                   <img :src="require('@/assets/images/icons/avatar.svg')" class="w-5 mr-2"/>
                   <div class="mr-4 font-medium flex items-center">Hi, Noarex
-                    <slot />
+                    <slot name="logout"></slot>
                   </div>
                   
                   <div class="md:hidden flex justify-end" @click="ToggleMobileNav">
