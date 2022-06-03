@@ -1,5 +1,5 @@
 <template>
-  <LayoutsAdminApp :class="delete_form_toggled || edit_form_toggled ? 'h-screen overflow-y-hidden top-0': ''">
+  <LayoutsAdminApp :class="delete_form_toggled || edit_form_toggled ? 'h-screen overflow-y-hidden top-0': ''" @signOut="logOut()">
 
     <template v-slot:hero >
       <div class="w-full flex justify-center items-center">
@@ -64,6 +64,10 @@ export default {
     editCourse(item){
       this.edit_form_toggled = !this.edit_form_toggled
       this.setCourse(item)
+    },
+
+    logOut(){
+      console.log("Clicked")
     },
 
     ...mapActions({
