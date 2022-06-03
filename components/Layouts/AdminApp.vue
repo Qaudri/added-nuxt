@@ -31,6 +31,10 @@ export default {
         return location.pathname.substr(1)
       }
     },
+
+    emitLogOut(){
+      this.$emit("signOut")
+    }
   }
 }
 </script>
