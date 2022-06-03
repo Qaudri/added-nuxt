@@ -67,12 +67,12 @@ export default {
     },
 
     logOut(){
-      console.log("Clicked")
+      this.logOut()
     },
 
     ...mapActions({
       setCourse: 'courses/setSelectedCourse',
-      logOut: 'authentication/destroySession'
+      logOut: 'authentication/destroySession',
     }),
 
   },
