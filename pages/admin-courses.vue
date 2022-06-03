@@ -48,6 +48,8 @@
 import {mapGetters, mapActions} from 'vuex';
 
 export default {
+  middleware: 'admin-login',
+
   data(){
     return{
       delete_form_toggled: false,

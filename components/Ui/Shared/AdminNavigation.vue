@@ -93,9 +93,6 @@
         return urls.filter(url => this.url.startsWith(url)).length
       },
 
-      emitLogOut(){
-        this.$emit("signOut")
-      }
     }
   };
 </script>
