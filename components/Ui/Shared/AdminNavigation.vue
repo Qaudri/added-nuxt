@@ -85,7 +85,7 @@
     methods: {
 
       close(){
-          this.isOpen = !this.isOpen;
+        this.isOpen = !this.isOpen;
       },
       
       ToggleMobileNav(){
@@ -94,11 +94,15 @@
       },
       
       isUrl(...urls) {
-          if (urls[0] === '') {
-              return this.url === ''
-          }
-          return urls.filter(url => this.url.startsWith(url)).length
+        if (urls[0] === '') {
+          return this.url === ''
+        }
+        return urls.filter(url => this.url.startsWith(url)).length
       },
+
+      emitLogOut(){
+        this.$emit("signOut")
+      }
     }
   };
 </script>
