@@ -100,6 +100,10 @@ export const actions = {
     context.commit("GET_SELECTED_COURSE", course_details)
   },
 
+  updateCourse(state, credentials){
+    
+  }
+
 }
 
 export const mutations = {
