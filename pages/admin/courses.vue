@@ -71,6 +71,7 @@ export default {
 
     ...mapActions({
       setCourse: 'courses/setSelectedCourse',
+      newCourse: 'courses/createCourse',
       logOut: 'authentication/destroySession',
     }),
 
