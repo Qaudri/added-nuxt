@@ -83,7 +83,8 @@ export default {
   data(){
     return{
       delete_form_toggled: false,
-      edit_form_toggled: false
+      edit_form_toggled: false,
+      create_course_form: false,
     }
   },
 
