@@ -28,7 +28,7 @@
           <label for="title">Course contents</label>
           <input type="text" v-model="form.contents" placeholder="Enter the course contents">
 
-          <UiButtonsPrimary button_title="Create Button" />
+          <UiButtonsPrimary @pushTo="createCourse()" button_title="Create Button" />
         </form>
       </div>
     </div>
@@ -114,7 +114,17 @@ export default {
     },
 
     createCourse(){
-
+      this.newCourse({
+        title: this.form.title,
+        price: this.form.price,
+        description: this.form.description,
+        
+      })
+      .then(() =>{
+        this.createCourseForm()
+        // this.$router.push({name: 'courses'})
+        console.log("success")
+      })
     },
 
     ...mapActions({
