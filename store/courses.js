@@ -104,7 +104,7 @@ export const actions = {
     return new Promise((resolve, reject) => {
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.state.session_token
 
-      this.$axios.$get('/api/admins/courses', {
+      this.$axios.$post('/api/admins/courses', {
         title: credentials.title,
         price: credentials.price,
         brief: credentials.description,
@@ -127,5 +127,9 @@ export const actions = {
 export const mutations = {
   GET_SELECTED_COURSE(state, payload){
     state.selected_course = payload
+  },
+
+  CREATE_NEW_COURSE(){
+
   },
 }
