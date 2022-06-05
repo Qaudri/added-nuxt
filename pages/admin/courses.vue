@@ -8,8 +8,7 @@
           <div class="border-b text-xl font-semibold flex justify-between">
             <p class="font-medium text-black text-lg">Create Course</p>
             <div class="">
-        <UiButtonsClose @closeMenu="editCourse" class="flex items-center justify-end cursor-pointer pb-2" />
-
+              <UiButtonsClose @closeMenu="createCourseForm" class="flex items-center justify-end cursor-pointer pb-2" />
             </div>
           </div>
         </div>
@@ -101,6 +100,10 @@ export default {
 
     logOut(){
       this.logOut()
+    },
+
+    createCourseForm(){
+      this.create_course_form = !this.create_course_form
     },
 
     ...mapActions({
