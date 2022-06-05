@@ -85,6 +85,13 @@ export default {
       delete_form_toggled: false,
       edit_form_toggled: false,
       create_course_form: false,
+      form: {
+        title: String,
+        price: String,
+        duration: String,
+        description: String,
+        contents: String,
+      },
     }
   },
 
