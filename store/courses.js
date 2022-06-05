@@ -100,8 +100,21 @@ export const actions = {
     context.commit("GET_SELECTED_COURSE", course_details)
   },
 
-  updateCourse(state, credentials){
-    
+  createCourse(context, credentials){
+    return new Promise((resolve, reject) => {
+      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.state.session_token
+
+      this.$axios.$get('/api/admins/courses')
+        .then(response => {
+          context.commit('SET_USER_INFO', response.data)
+
+          resolve(response)
+        })
+
+        .catch(function (error) {
+          reject(error)
+        })
+    })
   }
 
 }
