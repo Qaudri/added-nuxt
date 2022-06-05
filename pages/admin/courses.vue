@@ -12,8 +12,7 @@
             </div>
           </div>
         </div>
-
-        <form action="" >
+         <form action="" >
           <label for="title">Course title</label>
           <input type="text" v-model="form.title" placeholder="Enter the course title">
 
@@ -29,14 +28,14 @@
           <label for="title">Course contents</label>
           <input type="text" v-model="form.contents" placeholder="Enter the course contents">
 
-          <UiButtonsPrimary @click="emitSubmitFunction" button_title="Create Button" />
+          <UiButtonsPrimary button_title="Create Button" />
         </form>
       </div>
     </div>
 
     <template v-slot:hero >
       <div class="w-full flex justify-center items-center">
-        <UiButtonsPrimary button_title="Create New Course" class="space"/>
+        <UiButtonsPrimary button_title="Create New Course" @pushTo="createCourseForm" class="space"/>
       </div>
     </template>
 
@@ -86,11 +85,11 @@ export default {
       edit_form_toggled: false,
       create_course_form: false,
       form: {
-        title: String,
-        price: String,
-        duration: String,
-        description: String,
-        contents: String,
+        title: "",
+        price: "",
+        duration: "",
+        description: "",
+        contents: "",
       },
     }
   },
