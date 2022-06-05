@@ -1,6 +1,41 @@
 <template>
   <LayoutsAdminApp :class="delete_form_toggled || edit_form_toggled ? 'h-screen overflow-y-hidden top-0': ''" @signOut="logOut()">
 
+    <div class="px-10 absolute bg-secondary-100 z-110 bg-opacity-20 flex items-center justify-center h-full w-full top-10 left-0">
+      <div class="scale-out bg-white p-6 w-full md:w-2/3 lg:w-1/2">
+
+        <div>
+          <div class="border-b text-xl font-semibold flex justify-between">
+            <p class="font-medium text-black text-lg">Create Course</p>
+            <div class="">
+              <button>
+                <slot />
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <form action="" >
+          <label for="title">Course title</label>
+          <input type="text" v-model="form.title" placeholder="Enter the course title">
+
+          <label for="title">Course duration</label>
+          <input type="text" v-model="form.duration" placeholder="Enter the course duration">
+
+          <label for="title">Course price</label>
+          <input type="text" v-model="form.price" placeholder="Enter the course price">
+
+          <label for="title">Course decription</label>
+          <input type="text" v-model="form.description" placeholder="Enter the course description">
+
+          <label for="title">Course contents</label>
+          <input type="text" v-model="form.contents" placeholder="Enter the course contents">
+
+          <UiButtonsPrimary @click="emitSubmitFunction" button_title="Create Button" />
+        </form>
+      </div>
+    </div>
+
     <template v-slot:hero >
       <div class="w-full flex justify-center items-center">
         <UiButtonsPrimary button_title="Create New Course" class="space"/>
