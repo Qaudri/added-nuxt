@@ -107,7 +107,7 @@ export const actions = {
       this.$axios.$post('/api/admins/courses', {
         title: credentials.title,
         price: credentials.price,
-        brief: credentials.description,
+        brief: credentials.details,
         preview: credentials.imageUrl
       })
         .then(response => {
@@ -129,7 +129,13 @@ export const mutations = {
     state.selected_course = payload
   },
 
-  CREATE_NEW_COURSE(){
-
+  CREATE_NEW_COURSE(state, payload){
+    state.items.push({
+      id: Math.floor(Math.random() * 100),
+      title: title,
+      price: price,
+      imageUrl: preview,
+      details: brief
+    })
   },
 }
