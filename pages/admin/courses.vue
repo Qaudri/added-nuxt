@@ -113,6 +113,10 @@ export default {
       this.create_course_form = !this.create_course_form
     },
 
+    createCourse(){
+
+    },
+
     ...mapActions({
       setCourse: 'courses/setSelectedCourse',
       newCourse: 'courses/createCourse',
