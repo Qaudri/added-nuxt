@@ -8,9 +8,8 @@
           <div class="border-b text-xl font-semibold flex justify-between">
             <p class="font-medium text-black text-lg">Create Course</p>
             <div class="">
-              <button>
-                <slot />
-              </button>
+        <UiButtonsClose @closeMenu="editCourse" class="flex items-center justify-end cursor-pointer pb-2" />
+
             </div>
           </div>
         </div>
