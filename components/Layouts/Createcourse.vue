@@ -10,25 +10,24 @@
               <slot />
             </button>
           </div>
-
         </div>
       </div>
 
       <form action="" >
         <label for="title">Course title</label>
-        <input type="text" :placeholder="course_title">
+        <input type="text" placeholder="Enter the course title">
 
         <label for="title">Course duration</label>
-        <input type="text" :placeholder="course_duration">
+        <input type="text" placeholder="Enter the course duration">
 
         <label for="title">Course price</label>
-        <input type="text" :placeholder="course_price">
+        <input type="text" placeholder="Enter the course price">
 
         <label for="title">Course decription</label>
-        <input type="text" :placeholder="course_description">
+        <input type="text" placeholder="Enter the course description">
 
         <label for="title">Course contents</label>
-        <input type="text" ::placeholder="course_contents">
+        <input type="text" placeholder="Enter the course contents">
 
         <UiButtonsPrimary @click="emitSubmitFunction" button_title="Create Button" />
       </form>
