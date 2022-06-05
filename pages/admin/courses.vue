@@ -17,8 +17,7 @@
     :course_title="selected.title"
     :course_duration="selected.duration"
     :course_price="selected.price"
-    :course_description="selected.details"
-    >
+    :course_description="selected.details">
       <div class="flex justify-end w-full">
         <UiButtonsClose @closeMenu="editCourse" class="flex items-center justify-end cursor-pointer pb-2" />
       </div>
