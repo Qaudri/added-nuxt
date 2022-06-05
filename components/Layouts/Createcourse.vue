@@ -30,7 +30,7 @@
         <label for="title">Course contents</label>
         <input type="text" ::placeholder="course_contents">
 
-        <button @click="emitSubmitFunction"></button>
+        <UiButtonsPrimary @click="emitSubmitFunction" button_title="Create Button" />
       </form>
     </div>
   </div>
