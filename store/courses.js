@@ -6,7 +6,7 @@ export const state = () =>({
       title: "Brand Identity Design",
       duration: "2 months",
       price: "#70,000",
-      details: "",
+      description: "",
     },
 
     {
@@ -15,7 +15,7 @@ export const state = () =>({
       title: "Graphics Design",
       duration: "2 months",
       price: "#80,000",
-      details: "",
+      description: "",
     },
 
     {
@@ -24,7 +24,7 @@ export const state = () =>({
       title: "UI/UX Design",
       duration: "2 months",
       price: "#100,000",
-      details: "",
+      description: "",
     },
 
     {
@@ -33,7 +33,7 @@ export const state = () =>({
       title: "Frontend Web Development",
       duration: "4 months",
       price: "#150,000",
-      details: "",
+      description: "",
     },
 
     {
@@ -42,7 +42,7 @@ export const state = () =>({
       title: "Backend Web Development",
       duration: "4 months",
       price: "#180,000",
-      details: "",
+      description: "",
     },
 
     {
@@ -51,7 +51,7 @@ export const state = () =>({
       title: "Freelancing",
       duration: "1 month1",
       price: "#50,000",
-      details: "",
+      description: "",
     },
 
     {
@@ -60,7 +60,7 @@ export const state = () =>({
       title: "Forex Trading",
       duration: "1 month",
       price: "#85,000",
-      details: "",
+      description: "",
     },
 
     {
@@ -69,7 +69,7 @@ export const state = () =>({
       title: "Crypto Trading",
       duration: "2 months",
       price: "#100,000",
-      details: "",
+      description: "",
     },
 
     {
@@ -78,7 +78,7 @@ export const state = () =>({
       title: "Digital Marketing",
       duration: "2 months",
       price: "#65,000",
-      details: "",
+      description: "",
     },
   ],
 
@@ -96,8 +96,8 @@ export const getters = {
 }
 
 export const actions = {
-  setSelectedCourse(context, course_details){
-    context.commit("GET_SELECTED_COURSE", course_details)
+  setSelectedCourse(context, course_description){
+    context.commit("GET_SELECTED_COURSE", course_description)
   },
 
   createCourse(context, credentials){
@@ -107,7 +107,7 @@ export const actions = {
       this.$axios.$post('/api/admins/courses', {
         title: credentials.title,
         price: credentials.price,
-        brief: credentials.details,
+        brief: credentials.description,
         preview: credentials.imageUrl
       })
         .then(response => {
@@ -134,8 +134,8 @@ export const mutations = {
       id: Math.floor(Math.random() * 100),
       title: title,
       price: price,
-      imageUrl: preview,
-      details: brief
+      imageUrl: imageUrl,
+      description: description
     })
   },
 }
