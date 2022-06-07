@@ -28,7 +28,7 @@
           <label for="title">Course contents</label>
           <input type="text" v-model="form.contents" placeholder="Enter the course contents">
 
-          <UiButtonsPrimary @pushTo="createCourse()" button_title="Create Button" />
+          <UiButtonsPrimary @pushTo="createCourse()" button_title="Create Course" />
         </form>
       </div>
     </div>
