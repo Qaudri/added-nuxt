@@ -124,7 +124,7 @@ export const actions = {
 
       this.$axios.$get('/api/admins/courses/:uuid')
         .then(response => {
-          context.commit('LIST_ALL_COURSES', response.data)
+          context.commit('SHOW_COURSE', response.data)
 
           resolve(response)
         })
@@ -211,5 +211,9 @@ export const mutations = {
 
   LIST_ALL_COURSES(state, payload){
     state.items = payload
+  },
+
+  SHOW_COURSE(state, payload){
+    state.selected_course = payload
   }
 }
