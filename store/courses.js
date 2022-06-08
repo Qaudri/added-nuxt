@@ -105,7 +105,7 @@ export const actions = {
     return new Promise((resolve, reject) => {
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.state.session_token
 
-      this.$axios.$post('/api/admins/courses')
+      this.$axios.$get('/api/admins/courses')
         .then(response => {
           context.commit('LIST_ALL_COURSES', response.data)
 
@@ -122,11 +122,11 @@ export const actions = {
     return new Promise((resolve, reject) => {
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.state.session_token
 
-      this.$axios.$get('/api/admins/courses', {
+      this.$axios.$post('/api/admins/courses', {
         title: credentials.title,
         price: credentials.price,
         brief: credentials.description,
-        preview: credentials.imageUrl
+        preview: credentials.imageUrl,
       })
         .then(response => {
           context.commit('CREATE_NEW_COURSE', response.data)
@@ -138,7 +138,7 @@ export const actions = {
           reject(error)
         })
     })
-  }
+  },
 
 }
 
