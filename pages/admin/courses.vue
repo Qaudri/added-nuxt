@@ -79,6 +79,7 @@
 import {mapGetters, mapActions} from 'vuex';
 
 export default {
+  middleware: 'admin-login',
   data(){
     return{
       delete_form_toggled: false,
@@ -141,6 +142,10 @@ export default {
       deleteCourse: 'courses/showCourse',
     }),
 
+    listAllCourses(){
+      this.listCourses()
+    }
+
   },
 
   computed: {
@@ -150,10 +155,8 @@ export default {
     }),
   },
 
-  created: {
-    listCourses(){
-      this.listCourses()
-    }
+  created(){
+    this.listAllCourses()
   }
 }
 </script> 

@@ -103,7 +103,7 @@ export const actions = {
 
   listCourses(context, credentials){
     return new Promise((resolve, reject) => {
-      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.state.session_token
+      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.session_token
 
       this.$axios.$get('/api/admins/courses')
         .then(response => {
@@ -120,7 +120,7 @@ export const actions = {
 
   showCourse(context, credentials){
     return new Promise((resolve, reject) => {
-      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.state.session_token
+      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.session_token
 
       this.$axios.$get('/api/admins/courses/:uuid')
         .then(response => {
@@ -137,7 +137,7 @@ export const actions = {
 
   createCourse(context, credentials){
     return new Promise((resolve, reject) => {
-      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.state.session_token
+      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.session_token
 
       this.$axios.$post('/api/admins/courses', {
         title: credentials.title,
@@ -159,7 +159,7 @@ export const actions = {
 
   updateCourse(context, credentials){
     return new Promise((resolve, reject) => {
-      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.state.session_token
+      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.session_token
 
       this.$axios.$put('/api/admins/courses/:uuid', {
         title: credentials.title,
@@ -179,7 +179,7 @@ export const actions = {
 
   deleteCourse(context, credentials){
     return new Promise((resolve, reject) => {
-      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.state.session_token
+      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.session_token
 
       this.$axios.$delete('/api/admins/courses/:uuid')
         .then(response => {
