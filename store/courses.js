@@ -118,6 +118,23 @@ export const actions = {
     })
   },
 
+  showCourse(context, credentials){
+    return new Promise((resolve, reject) => {
+      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.state.session_token
+
+      this.$axios.$get('/api/admins/courses/:uuid')
+        .then(response => {
+          context.commit('LIST_ALL_COURSES', response.data)
+
+          resolve(response)
+        })
+
+        .catch(function (error) {
+          reject(error)
+        })
+    })
+  },
+
   createCourse(context, credentials){
     return new Promise((resolve, reject) => {
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.state.session_token
@@ -144,7 +161,7 @@ export const actions = {
     return new Promise((resolve, reject) => {
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.state.session_token
 
-      this.$axios.$post('/api/admins/courses/:uuid', {
+      this.$axios.$put('/api/admins/courses/:uuid', {
         title: credentials.title,
         price: credentials.price,
         brief: credentials.description,
@@ -152,10 +169,8 @@ export const actions = {
       })
         .then(response => {
           context.commit('UPDATE_COURSE', response.data)
-
           resolve(response)
         })
-
         .catch(function (error) {
           reject(error)
         })
@@ -166,7 +181,7 @@ export const actions = {
     return new Promise((resolve, reject) => {
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.state.session_token
 
-      this.$axios.$post('/api/admins/courses/:uuid')
+      this.$axios.$delete('/api/admins/courses/:uuid')
         .then(response => {
           resolve(response)
         })
