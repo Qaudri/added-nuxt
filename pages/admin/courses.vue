@@ -28,7 +28,7 @@
           <label for="title">Course contents</label>
           <input type="text" v-model="form.contents" placeholder="Enter the course contents">
 
-          <button @click="createCourse()" class="w-full border-2 border-primary-100 text-primary-100 font-medium text-lg hover:bg-primary-100 hover:text-white ease-in-out duratin-500 py-3">Create course</button>
+          <button @click="createCourse()" class="px-6 border-2 border-primary-100 text-primary-100 font-medium text-lg hover:bg-primary-100 hover:text-white ease-in-out duration-500 py-3">Create course</button>
         </form>
       </div>
     </div>
