@@ -141,6 +141,12 @@ export default {
       course : 'courses/getCourseItems',
       selected: 'courses/getSelectedCourse',
     }),
+  },
+
+  created: {
+    listCourses(){
+      this.listCourses()
+    }
   }
 }
 </script> 
