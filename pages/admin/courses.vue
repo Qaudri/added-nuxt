@@ -131,6 +131,7 @@ export default {
       setCourse: 'courses/setSelectedCourse',
       newCourse: 'courses/createCourse',
       logOut: 'authentication/destroySession',
+      listCourses: 'courses/listCourses'
     }),
 
   },
@@ -138,8 +139,8 @@ export default {
   computed: {
     ...mapGetters({
       course : 'courses/getCourseItems',
-      selected: 'courses/getSelectedCourse'
-    })
+      selected: 'courses/getSelectedCourse',
+    }),
   }
 }
 </script> 

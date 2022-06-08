@@ -156,4 +156,8 @@ export const mutations = {
       description: description
     })
   },
+
+  LIST_ALL_COURSES(state, payload){
+    state.items = payload
+  }
 }
