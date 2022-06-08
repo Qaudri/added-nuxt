@@ -118,7 +118,7 @@ export default {
         title: this.form.title,
         price: this.form.price,
         description: this.form.description,
-        
+        duration: this.form.duration
       })
       .then(() =>{
         this.createCourseForm()
