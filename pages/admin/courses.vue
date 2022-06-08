@@ -131,7 +131,9 @@ export default {
       setCourse: 'courses/setSelectedCourse',
       newCourse: 'courses/createCourse',
       logOut: 'authentication/destroySession',
-      listCourses: 'courses/listCourses'
+      listCourses: 'courses/listCourses',
+      updateCourse: 'courses/updateCourse',
+      showCourse: 'courses/showCourse'
     }),
 
   },
