@@ -39,7 +39,7 @@
       </div>
     </template>
 
-    <LayoutsDialog :class="delete_form_toggled ? 'block ' : 'hidden' ">
+    <LayoutsDialog :class="delete_form_toggled ? 'block ' : 'hidden' " @confirmDelete="deleteCourse(item)">
       <div class="flex justify-end w-full">
         <UiButtonsClose @closeMenu="toggleForm" class="flex items-center justify-end cursor-pointer pb-2" />
       </div>
@@ -127,13 +127,18 @@ export default {
       })
     },
 
+    deleteCourse(item){
+      this.deleteCourse(item)
+    },
+
     ...mapActions({
       setCourse: 'courses/setSelectedCourse',
       newCourse: 'courses/createCourse',
       logOut: 'authentication/destroySession',
       listCourses: 'courses/listCourses',
       updateCourse: 'courses/updateCourse',
-      showCourse: 'courses/showCourse'
+      showCourse: 'courses/showCourse',
+      deleteCourse: 'courses/showCourse',
     }),
 
   },
