@@ -82,6 +82,7 @@ export const state = () =>({
     },
   ],
 
+  
   selected_course: '{}'
 })
 
@@ -100,7 +101,7 @@ export const actions = {
     context.commit("GET_SELECTED_COURSE", course_description)
   },
 
-  createCourse(context, credentials){
+  listCourses(context, credentials){
     return new Promise((resolve, reject) => {
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.state.session_token
 
@@ -117,7 +118,7 @@ export const actions = {
     })
   },
 
-  listCourses(context, credentials){
+  createCourse(context, credentials){
     return new Promise((resolve, reject) => {
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.state.session_token
 
