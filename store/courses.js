@@ -146,8 +146,6 @@ export const actions = {
 
       this.$axios.$post('/api/admins/courses/:uuid')
         .then(response => {
-          context.commit('CREATE_NEW_COURSE', response.data)
-
           resolve(response)
         })
 
