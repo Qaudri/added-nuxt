@@ -1,7 +1,7 @@
 <template>
-  <LayoutsAdminApp :class="delete_form_toggled || edit_form_toggled ? 'h-screen overflow-y-hidden top-0': ''" @signOut="logOut()">
+  <LayoutsAdminApp :class="delete_form_toggled || edit_form_toggled || create_course_form ? 'h-screen overflow-y-hidden top-0': ''" @signOut="logOut()">
 
-    <div :class="create_course_form ? 'block' : 'hidden'" class="px-10 absolute bg-secondary-100 z-110 bg-opacity-20 flex items-center justify-center w-full top-14 left-0">
+    <div :class="create_course_form ? 'block' : 'hidden'" class="px-10 absolute bg-secondary-100 z-110 bg-opacity-20 flex items-center justify-center h-fit py-2.5 w-full top-14 left-0">
       <div class="scale-out bg-white p-6 w-full md:w-2/3 lg:w-1/2">
 
         <div>
@@ -28,7 +28,7 @@
           <label for="title">Course contents</label>
           <input type="text" v-model="form.contents" placeholder="Enter the course contents">
 
-          <button @click="createCourse()" class="px-6 border-2 border-primary-100 text-primary-100 font-medium text-lg hover:bg-primary-100 hover:text-white ease-in-out duration-500 py-3">Create course</button>
+          <button @click="createCourse()" class="px-6 border-2 w-full mt-6 border-primary-100 text-primary-100 font-medium text-lg hover:bg-primary-100 hover:text-white ease-in-out duration-500 py-3">Create course</button>
         </form>
       </div>
     </div>
