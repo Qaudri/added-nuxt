@@ -123,7 +123,6 @@ export default {
       })
       .then(() =>{
         this.createCourseForm()
-        // this.$router.push({name: 'courses'})
         console.log("success")
       })
     },

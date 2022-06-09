@@ -144,10 +144,10 @@ export const actions = {
         price: credentials.price,
         brief: credentials.description,
         preview: credentials.imageUrl,
+        duration_in_weeks: credentials.duration
       })
         .then(response => {
-          context.commit('CREATE_NEW_COURSE', response.data)
-
+          // context.commit('CREATE_NEW_COURSE', response.data)
           resolve(response)
         })
 
