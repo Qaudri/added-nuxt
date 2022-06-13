@@ -31,7 +31,7 @@
           <label for="title">Course contents</label>
           <input type="text" v-model="form.contents" placeholder="Enter the course contents">
 
-          <button @click="createCourse()" class="px-6 border-2 w-full mt-6 border-primary-100 text-primary-100 font-medium text-lg hover:bg-primary-100 hover:text-white ease-in-out duration-500 py-3">Create course</button>
+          <button type="submit" class="px-6 border-2 w-full mt-6 border-primary-100 text-primary-100 font-medium text-lg hover:bg-primary-100 hover:text-white ease-in-out duration-500 py-3">Create course</button>
         </form>
       </div>
     </div>
@@ -125,8 +125,9 @@ export default {
         duration: this.form.duration,
         imageUrl: this.form.image
       })
+
       .then(() =>{
-        this.createCourseForm()
+        this.create_course_form = !this.create_course_form
         console.log("success")
       })
     },

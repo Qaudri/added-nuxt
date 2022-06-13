@@ -139,6 +139,7 @@ export const actions = {
     return new Promise((resolve, reject) => {
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.session_token
 
+      console.log("request sent")
       this.$axios.$post('/api/admins/courses', {
         title: credentials.title,
         price: credentials.price,
