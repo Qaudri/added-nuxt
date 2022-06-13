@@ -1,9 +1,9 @@
 export const state = () => ({
   admin_token: process.browser ? localStorage.getItem('admin_token') : null || null,
-  admin_auth_status: false,
+  admin_auth_status: '',
 
   student_token: process.browser ? localStorage.getItem('student_token') : null || null,
-  student_auth_status: false,
+  student_auth_status: '',
   student: {},
   admin: {}
 })
