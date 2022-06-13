@@ -28,7 +28,7 @@ export const actions = {
       })
         .then(response => {
           context.commit('SET_SESSION_TOKEN', response.data.token)
-          context.commit('SET_AUTHENTICATION_STATUS', true)
+          context.commit('SET_STUDENT_AUTHENTICATION_STATUS', true)
           localStorage.setItem('session_token', response.data.token)
           resolve(response)
         })
@@ -131,8 +131,8 @@ export const actions = {
 }
 
 export const mutations = {
-  SET_AUTHENTICATION_STATUS(state, payload){
-    state.auth_status = payload
+  SET_STUDENT_AUTHENTICATION_STATUS(state, payload){
+    state.student_auth_status = payload
   },
 
   SET_ADMIN_TOKEN(state, payload){
