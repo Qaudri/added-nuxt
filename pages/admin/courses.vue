@@ -94,8 +94,8 @@ export default {
         duration: "",
         description: "",
         image: "",
-        
       },
+
       selected_for_deletion: '',
     }
   },
@@ -150,7 +150,7 @@ export default {
     ...mapActions({
       setCourse: 'courses/setSelectedCourse',
       newCourse: 'courses/createCourse',
-      logOut: 'authentication/destroySession',
+      logOut: 'authentication/destroyAdminSession',
       listCourses: 'courses/listCourses',
       updateCourse: 'courses/updateCourse',
       showCourse: 'courses/showCourse',
