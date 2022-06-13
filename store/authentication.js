@@ -17,6 +17,14 @@ export const getters = {
     return state.admin_auth_status
   },
 
+  student_token(state) {
+    return state.student_token != null 
+  },
+
+  isStudentUnauthenticated(state){
+    return state.student_auth_status
+  },
+
 }
 
 export const actions = {
