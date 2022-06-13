@@ -30,15 +30,15 @@ export default {
   },
 
   ...mapGetters ({
-    // auth_status: 'authentication/auth_status',
-    // session: 'authentication/session_token',
+    auth_status: 'authentication/admin_auth_status',
+    token: 'authentication/admin_token',
   }),
 
   methods: {
 
     ...mapActions({
       login: 'authentication/loginAdmin',
-      retrieveStudentInfo: 'authentication/retrieveAdminInfo'
+      retrieveAdminInfo: 'authentication/retrieveAdminInfo'
     }),
 
     signIn(){
