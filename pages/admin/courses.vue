@@ -12,7 +12,10 @@
             </div>
           </div>
         </div>
-         <form action="" >
+         <form action="" @submit.prevent="createCourse" >
+          <label for="title">Image link</label>
+          <input type="text" v-model="form.image" placeholder="Enter the image link">
+
           <label for="title">Course title</label>
           <input type="text" v-model="form.title" placeholder="Enter the course title">
 
@@ -90,7 +93,7 @@ export default {
         price: "",
         duration: "",
         description: "",
-        contents: "",
+        image: "",
       },
     }
   },
@@ -119,7 +122,8 @@ export default {
         title: this.form.title,
         price: this.form.price,
         description: this.form.description,
-        duration: this.form.duration
+        duration: this.form.duration,
+        imageUrl: this.form.image
       })
       .then(() =>{
         this.createCourseForm()
