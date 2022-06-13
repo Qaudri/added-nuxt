@@ -46,7 +46,7 @@ export const actions = {
         password: credentials.password
       })
         .then(response => {
-          context.commit('SET_SESSION_TOKEN', response.data.token)
+          context.commit('SET_STUDENT_TOKEN', response.data.token)
           context.commit('SET_AUTHENTICATION_STATUS', true)
           localStorage.setItem('session_token', response.data.token)
 
@@ -91,7 +91,7 @@ export const actions = {
 
       this.$axios.$get('/api/students/account')
         .then(response => {
-          context.commit('SET_USER_INFO', response.data)
+          context.commit('SET_STUDENT_INFO', response.data)
 
           resolve(response)
         })
@@ -108,7 +108,7 @@ export const actions = {
 
       this.$axios.$get('/api/admins/account')
         .then(response => {
-          context.commit('SET_USER_INFO', response.data)
+          context.commit('SET_ADMIN_INFO', response.data)
 
           resolve(response)
         })
