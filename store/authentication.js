@@ -135,11 +135,19 @@ export const mutations = {
     state.auth_status = payload
   },
 
-  SET_SESSION_TOKEN(state, payload){
-    state.session_token = payload
+  SET_ADMIN_TOKEN(state, payload){
+    state.admin_token = payload
   },
 
-  SET_USER_INFO(state, payload){
-    state.user = payload
+  SET_STUDENT_TOKEN(state, payload){
+    state.student_token = payload
+  },
+
+  SET_STUDENT_INFO(state, payload){
+    state.student = payload
+  },
+
+  SET_ADMIN_INFO(state, payload){
+    state.admin = payload
   }
 }
