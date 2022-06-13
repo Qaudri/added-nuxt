@@ -35,9 +35,9 @@ export const actions = {
         password: credentials.password
       })
         .then(response => {
-          context.commit('SET_SESSION_TOKEN', response.data.token)
+          context.commit('SET_STUDENT_TOKEN', response.data.token)
           context.commit('SET_STUDENT_AUTHENTICATION_STATUS', true)
-          localStorage.setItem('session_token', response.data.token)
+          localStorage.setItem('student_token', response.data.token)
           resolve(response)
         })
 
