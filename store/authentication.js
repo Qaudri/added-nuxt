@@ -55,8 +55,8 @@ export const actions = {
       })
         .then(response => {
           context.commit('SET_STUDENT_TOKEN', response.data.token)
-          context.commit('SET_AUTHENTICATION_STATUS', true)
-          localStorage.setItem('session_token', response.data.token)
+          context.commit('SET_STUDENT_AUTHENTICATION_STATUS', true)
+          localStorage.setItem('student_token', response.data.token)
 
           context.dispatch('retrieveStudentInfo')
 
