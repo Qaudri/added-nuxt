@@ -9,12 +9,12 @@ export const state = () => ({
 })
 
 export const getters = {
-  session(state) {
-    return state.session_token != null 
+  admin_token(state) {
+    return state.admin_token != null 
   },
 
-  isUnauthenticated(state){
-    return state.auth_status
+  isAdminUnauthenticated(state){
+    return state.admin_auth_status
   },
 
 }
