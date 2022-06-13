@@ -127,11 +127,11 @@ export const actions = {
     })
   },
 
-  destroySession(context, credentials) {
+  destroyAdminSession(context) {
     if (context.getter.session) {
-      context.commit('SET_SESSION_TOKEN', null)
-      context.commit('SET_AUTHENTICATION_STATUS', false)
-      localStorage.removeItem('session_token', response.data.token)
+      context.commit('SET_ADMIN_TOKEN', null)
+      context.commit('SET_ADMIN_AUTHENTICATION_STATUS', false)
+      localStorage.removeItem('admin_token', response.data.token)
     }
   
   },
