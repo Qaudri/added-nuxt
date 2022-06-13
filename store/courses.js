@@ -178,16 +178,11 @@ export const actions = {
     })
   },
 
-  deleteCourse(context, credentials){
+  deleteCourse(context, uuid){
     return new Promise((resolve, reject) => {
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.session_token
 
-      this.$axios.$delete('/api/admins/courses/:uuid',{
-        title: credentials.title,
-        price: credentials.price,
-        brief: credentials.description,
-        preview: credentials.imageUrl,
-      })
+      this.$axios.$delete('/api/admins/courses/' + uuid)
         .then(response => {
           resolve(response)
         })

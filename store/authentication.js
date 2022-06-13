@@ -1,7 +1,11 @@
 export const state = () => ({
-  session_token: process.browser ? localStorage.getItem('session_token') : null || null,
-  auth_status: false,
-  user: {},
+  admin_token: process.browser ? localStorage.getItem('admin_token') : null || null,
+  admin_auth_status: false,
+
+  student_token: process.browser ? localStorage.getItem('student_token') : null || null,
+  student_auth_status: false,
+  student: {},
+  admin: {}
 })
 
 export const getters = {
@@ -65,9 +69,9 @@ export const actions = {
         password: credentials.password
       })
         .then(response => {
-          context.commit('SET_SESSION_TOKEN', response.data.token)
-          context.commit('SET_AUTHENTICATION_STATUS', true)
-          localStorage.setItem('session_token', response.data.token)
+          context.commit('SET_ADMIN_TOKEN', response.data.token)
+          context.commit('SET_ADMIN_AUTHENTICATION_STATUS', true)
+          localStorage.setItem('admin_token', response.data.token)
 
           context.dispatch('retrieveAdminInfo')
 

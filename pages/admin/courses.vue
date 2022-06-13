@@ -42,7 +42,7 @@
       </div>
     </template>
 
-    <LayoutsDialog :class="delete_form_toggled ? 'block ' : 'hidden' " @confirmDelete="deleteCourse(item)">
+    <LayoutsDialog :class="delete_form_toggled ? 'block ' : 'hidden' " @confirmDelete="confirmDeleteCourse()">
       <div class="flex justify-end w-full">
         <UiButtonsClose @closeMenu="toggleForm" class="flex items-center justify-end cursor-pointer pb-2" />
       </div>
@@ -94,14 +94,18 @@ export default {
         duration: "",
         description: "",
         image: "",
+        
       },
+      selected_for_deletion: '',
     }
   },
 
   methods: {
     toggleForm(item){
       console.log("toggled")
+      this.selected_for_deletion = item
       this.delete_form_toggled = !this.delete_form_toggled
+      
     },
 
     editCourse(item){
@@ -129,11 +133,18 @@ export default {
       .then(() =>{
         this.create_course_form = !this.create_course_form
         console.log("success")
+        this.listCourses
       })
     },
 
-    deleteCourse(item){
-      this.deleteCourse(item)
+    confirmDeleteCourse(){
+      console.log(this.selected_for_deletion)
+      this.deleteCourse(this.selected_for_deletion.uuid)
+      .then(() =>{
+        this.delete_form_toggled = !this.delete_form_toggled
+        this.selected_for_deletion = ''
+        this.listCourses()
+      })
     },
 
     ...mapActions({
@@ -143,7 +154,7 @@ export default {
       listCourses: 'courses/listCourses',
       updateCourse: 'courses/updateCourse',
       showCourse: 'courses/showCourse',
-      deleteCourse: 'courses/showCourse',
+      deleteCourse: 'courses/deleteCourse',
     }),
 
     listAllCourses(){
