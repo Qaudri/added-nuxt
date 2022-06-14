@@ -49,7 +49,6 @@ export default {
 
       .then(() =>{
         this.$router.push({name: 'dashboard'})
-        console.log("success")
       })
 
       .catch( error => {
@@ -58,7 +57,6 @@ export default {
         });
 
         this.form.password = '';
-        console.log("error")
       })
     },
 

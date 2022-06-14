@@ -53,7 +53,6 @@ export default {
 
       .then(() =>{
         this.$router.push({name: 'dashboard'})
-        
       })
 
       .catch( error => {
