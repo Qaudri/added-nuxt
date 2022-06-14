@@ -10,6 +10,10 @@
         <input v-model="form.password" type="password" name="password" id="password" placeholder="Enter your password">
 
         <button type="submit" class="submit">Register</button>
+        <div class="flex justify-center items-center mt-4">
+          <p class="text-secondary-100 text-lg font-medium">Not registered yet?</p>
+          <UiButtonsSecondary @Pushto="RegisterPage" button_title="Register Now!"/>
+        </div>
       </form>
 
     </div>
@@ -30,8 +34,8 @@ export default {
   },
 
   ...mapGetters ({
-    auth_status: 'authentication/auth_status',
-    session: 'authentication/session_token',
+    student_auth_status: 'authentication/isStudentUnauthenticated',
+    student_token: 'authentication/get_student_token',
   }),
 
   methods: {
@@ -59,6 +63,10 @@ export default {
 
         this.form.password = '';
       })
+    },
+
+    RegisterPage(){
+      this.$router.push({path:'/register'})
     }
   }
 }

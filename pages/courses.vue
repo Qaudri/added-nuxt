@@ -92,10 +92,7 @@ export default {
     return{
       formdisplayed: false,
       detailsdisplayed: false,
-      form: {
-        email: '',
-        password: '',
-      }
+
     }
   },
 
