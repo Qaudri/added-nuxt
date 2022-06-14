@@ -15,7 +15,7 @@
         <button type="submit" class="submit">Register</button>
 
         <div class="flex justify-center items-center mt-4">
-          <p class="text-secondary-100 text-lg font-medium">Already registered?</p>
+          <p class="text-secondary-100 text-sm mr-2 font-medium">Already registered?</p>
           <UiButtonsSecondary @Pushto="LoginPage" button_title="Login Now!"/>
         </div>
       </form>
