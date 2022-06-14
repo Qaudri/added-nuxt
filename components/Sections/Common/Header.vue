@@ -1,5 +1,5 @@
 <template>
-  <header class="relative w-screen z-50">
+  <header class="relative w-screen z-10">
     <div class="shadow-lg fixed w-screen bg-white top-0">
       <div class="block lg:flex items-center lg:justify-between container mx-auto py-3 px-10">
 

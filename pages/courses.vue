@@ -14,8 +14,8 @@
       </template>
     </SectionsCommonHeader>
 
-    <div :class="detailsdisplayed ? 'block' : 'hidden'" class="bg-gray-400 bg-opacity-40 w-full">
-      <div class="container mx-auto slide-left bg-white relative right-0 w-1/3 px-10 py-28 xl:py-32">
+    <div :class="detailsdisplayed ? 'block' : 'hidden'" class="slide-left bg-white fixed top-0 z-100 right-0 w-1/3 px-6 py-28 xl:py-32">
+      <div class="container mx-auto ">
         <div class="mb-4 w-full flex justify-end">
           <UiButtonsClose @closeMenu="hideDetails" class="cursor-pointer -mt-8" />
         </div>
@@ -43,7 +43,10 @@
       </div>
     </div>
 
-    <div :class="detailsdisplayed ? 'h-screen select-none' : ''" class="container mx-auto px-10 py-28 xl:py-32">
+    <div :class="detailsdisplayed ? 'block' : 'hidden' " class="h-full top-0 absolute z-20 w-full bg-gray-400 bg-opacity-40">
+
+    </div>
+    <div :class="detailsdisplayed ? 'overflow-y-hidden select-none ' : ''" class="container mx-auto px-10 py-28 xl:py-32">
       <div :class="detailsdisplayed ? 'grid-cols-2 h-screen overflow-y-hidden' :''" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         <UiCardsCoursecard v-for="item in course" :key="item.id" class="bg-white"
         :imgUrl="item.imageUrl" 
