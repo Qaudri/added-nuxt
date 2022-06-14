@@ -14,8 +14,8 @@
       </template>
     </SectionsCommonHeader>
 
-    <div :class="detailsdisplayed ? 'block' : 'hidden'" class="slide-left bg-white fixed right-0 h-full w-1/3 px-10 py-28 xl:py-32">
-      <div class="container mx-auto">
+    <div :class="detailsdisplayed ? 'block' : 'hidden'" class="bg-gray-400 bg-opacity-40 w-full">
+      <div class="container mx-auto slide-left bg-white relative right-0 w-1/3 px-10 py-28 xl:py-32">
         <div class="mb-4 w-full flex justify-end">
           <UiButtonsClose @closeMenu="hideDetails" class="cursor-pointer -mt-8" />
         </div>
@@ -30,7 +30,7 @@
 
         <div class="my-5">
           <h1 class="font-semibold text-primary-100 text-xl my-3">Course Description:</h1>
-          <p class="font-medium text-secondary-100 text-base">{{selected.details}}</p>
+          <p class="font-medium text-secondary-100 text-base">{{selected.details}} Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi saepe, sequi assumenda sapiente quidem molestias, doloremque illum explicabo repellat facere quis provident officia labore corporis accusamus dolorum consectetur inventore eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero perferendis in, dolore fugiat rem itaque blanditiis adipisci cum harum rerum tempore repudiandae ex. Officiis ad ipsum quaerat voluptates harum impedit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis laborum adipisci eaque obcaecati quidem atque voluptas aut saepe optio ipsum, doloribus, illo ad ipsa, aliquid iusto doloremque temporibus esse? Cum!</p>
         </div>
         <div class="">
           <div class="text-base font-medium">Course duration: <span class="text-primary-100">{{selected.duration}}</span></div>
@@ -43,8 +43,8 @@
       </div>
     </div>
 
-    <div class="container mx-auto px-10 py-28 xl:py-32">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+    <div :class="detailsdisplayed ? 'h-screen select-none' : ''" class="container mx-auto px-10 py-28 xl:py-32">
+      <div :class="detailsdisplayed ? 'grid-cols-2 h-screen overflow-y-hidden' :''" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         <UiCardsCoursecard v-for="item in course" :key="item.id" class="bg-white"
         :imgUrl="item.imageUrl" 
         :title="item.title" 
