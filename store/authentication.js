@@ -9,7 +9,7 @@ export const state = () => ({
 })
 
 export const getters = {
-  admin_token(state) {
+  get_admin_token(state) {
     return state.admin_token != null 
   },
 
@@ -17,7 +17,7 @@ export const getters = {
     return state.admin_auth_status
   },
 
-  student_token(state) {
+  get_student_token(state) {
     return state.student_token != null 
   },
 
