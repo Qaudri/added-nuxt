@@ -49,10 +49,10 @@
     </LayoutsDialog>
 
     <LayoutsForm :class="edit_form_toggled ? 'block ' : 'hidden' "
-    :course_title="selected.title"
-    :course_duration="selected.duration"
-    :course_price="selected.price"
-    :course_description="selected.details">
+    :course_title="selectedItem.title"
+    :course_duration="selectedItem.duration"
+    :course_price="selectedItem.price"
+    :course_description="selectedItem.details">
       <div class="flex justify-end w-full">
         <UiButtonsClose @closeMenu="editCourse" class="flex items-center justify-end cursor-pointer pb-2" />
       </div>
@@ -63,7 +63,7 @@
         <h1 class="text-2xl font-semibold">Courses</h1>
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        <UiCardsCoursecard v-for="item in course" :key="item.id" 
+        <UiCardsCoursecard v-for="item in courseItems" :key="item.id" 
         :imgUrl="item.imageUrl" 
         :title="item.title" 
         :duration="item.duration"
@@ -122,7 +122,7 @@ export default {
     },
 
     createCourse(){
-      this.newCourse({
+      this.createNewCourses({
         title: this.form.title,
         price: this.form.price,
         description: this.form.description,
@@ -149,24 +149,24 @@ export default {
 
     ...mapActions({
       setCourse: 'courses/setSelectedCourse',
-      newCourse: 'courses/createCourse',
+      createNewCourses: 'courses/createCourse',
       logOut: 'authentication/destroyAdminSession',
-      listCourses: 'courses/listCourses',
+      listEveryCourse: 'courses/listCourses',
       updateCourse: 'courses/updateCourse',
       showCourse: 'courses/showCourse',
       deleteCourse: 'courses/deleteCourse',
     }),
 
     listAllCourses(){
-      this.listCourses()
+      this.listEveryCourse()
     }
 
   },
 
   computed: {
     ...mapGetters({
-      course : 'courses/getCourseItems',
-      selected: 'courses/getSelectedCourse',
+      courseItems : 'courses/getCourseItems',
+      selectedItem: 'courses/getSelectedCourse',
     }),
   },
 
