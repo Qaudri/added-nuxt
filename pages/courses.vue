@@ -1,5 +1,5 @@
 <template>
-  <div :class="detailsdisplayed ? 'overflow-y-hidden h-screen select-none ' : ''">
+  <div :class="detailsdisplayed ? 'overflow-y-hidden select-none ' : ''">
     <SectionsCommonHeader >
       <div>
         <UiSharedLogo @emitReload="reloadThisPage" />
@@ -13,14 +13,14 @@
         <UiButtonsPrimary @pushTo="Primary" button_title="Contact Us" class="lg:ml-4 my-10 lg:my-0 mx-6 lg:mr-0 " />
       </template>
     </SectionsCommonHeader>
-    <div :class="detailsdisplayed ? 'block' : 'hidden' " class=" absolute w-full bg-gray-400 bg-opacity-40 h-screen">
+    <div :class="detailsdisplayed ? 'block' : 'hidden' " class=" absolute w-full bg-gray-400 bg-opacity-40 h-full">
 
     </div>
 
-    <div :class="detailsdisplayed ? 'block' : 'hidden'" class="h-full overflow-y-scroll slide-left right-0 bg-white absolute w-1/3 px-6 
+    <div :class="detailsdisplayed ? 'block' : 'hidden'" class="slide-left right-0 bg-white absolute w-1/3 px-6 
       py-28 xl:py-32 flex items-end">
-      <div class="container mx-auto bg-white ">
-        <div class="mb-4 w-full flex justify-end">
+      <div class="container mx-auto ">
+        <div class="mb-4 w-full flex justify-end bg-white">
           <UiButtonsClose @closeMenu="hideDetails" class="cursor-pointer -mt-8" />
         </div>
         <div class="flex items-center ">
@@ -64,7 +64,7 @@
 
 
       </div>
-    </div>  />
+    </div>
     <SectionsCommonFooter class="z-50 relative" />
   </div>
 </template>
