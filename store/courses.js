@@ -6,7 +6,7 @@ export const state = () =>({
       title: "Brand Identity Design",
       duration: "2 months",
       price: "#70,000",
-      description: "",
+      brief: "",
     },
 
     {
@@ -15,7 +15,7 @@ export const state = () =>({
       title: "Graphics Design",
       duration: "2 months",
       price: "#80,000",
-      description: "",
+      brief: "",
     },
 
     {
@@ -24,7 +24,7 @@ export const state = () =>({
       title: "UI/UX Design",
       duration: "2 months",
       price: "#100,000",
-      description: "",
+      brief: "",
     },
 
     {
@@ -33,7 +33,7 @@ export const state = () =>({
       title: "Frontend Web Development",
       duration: "4 months",
       price: "#150,000",
-      description: "",
+      brief: "",
     },
 
     {
@@ -42,7 +42,7 @@ export const state = () =>({
       title: "Backend Web Development",
       duration: "4 months",
       price: "#180,000",
-      description: "",
+      brief: "",
     },
 
     {
@@ -51,7 +51,7 @@ export const state = () =>({
       title: "Freelancing",
       duration: "1 month1",
       price: "#50,000",
-      description: "",
+      brief: "",
     },
 
     {
@@ -60,7 +60,7 @@ export const state = () =>({
       title: "Forex Trading",
       duration: "1 month",
       price: "#85,000",
-      description: "",
+      brief: "",
     },
 
     {
@@ -69,7 +69,7 @@ export const state = () =>({
       title: "Crypto Trading",
       duration: "2 months",
       price: "#100,000",
-      description: "",
+      brief: "",
     },
 
     {
@@ -78,7 +78,7 @@ export const state = () =>({
       title: "Digital Marketing",
       duration: "2 months",
       price: "#65,000",
-      description: "",
+      brief: "",
     },
   ],
 
@@ -97,8 +97,8 @@ export const getters = {
 }
 
 export const actions = {
-  setSelectedCourse(context, course_description){
-    context.commit("GET_SELECTED_COURSE", course_description)
+  setSelectedCourse(context){
+    context.commit("GET_SELECTED_COURSE")
   },
 
   listCourses(context, credentials){
@@ -120,7 +120,7 @@ export const actions = {
 
   showCourse(context, credentials){
     return new Promise((resolve, reject) => {
-      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.session_token
+      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.admin_token
 
       this.$axios.$get('/api/admins/courses/:uuid')
         .then(response => {
@@ -137,7 +137,7 @@ export const actions = {
 
   createCourse(context, credentials){
     return new Promise((resolve, reject) => {
-      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.session_token
+      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.admin_token
 
       console.log("request sent")
       this.$axios.$post('/api/admins/courses', {
@@ -160,7 +160,7 @@ export const actions = {
 
   updateCourse(context, credentials){
     return new Promise((resolve, reject) => {
-      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.session_token
+      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.admin_token
 
       this.$axios.$put('/api/admins/courses/:uuid', {
         title: credentials.title,
@@ -180,7 +180,7 @@ export const actions = {
 
   deleteCourse(context, uuid){
     return new Promise((resolve, reject) => {
-      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.session_token
+      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.admin_token
 
       this.$axios.$delete('/api/admins/courses/' + uuid)
         .then(response => {
