@@ -24,6 +24,8 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+
 export default {
   methods:{
     url() {
@@ -33,8 +35,14 @@ export default {
     },
 
     emitLogOut(){
-      this.$emit("signOut")
-    }
+      this.logOut()
+      this.$router.push({path: '/admin/login'})
+    },
+
+    ...mapActions({
+      logOut: 'authentication/destroyAdminSession',
+    })
+
   }
 }
 </script>

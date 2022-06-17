@@ -114,7 +114,6 @@ export default {
     },
 
     logOut(){
-      this.logOut()
     },
 
     createCourseForm(){
@@ -150,7 +149,6 @@ export default {
     ...mapActions({
       setCourse: 'courses/setSelectedCourse',
       createNewCourses: 'courses/createCourse',
-      logOut: 'authentication/destroyAdminSession',
       listEveryCourse: 'courses/listCourses',
       updateCourse: 'courses/updateCourse',
       showCourse: 'courses/showCourse',
