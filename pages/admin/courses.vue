@@ -5,8 +5,8 @@
 
     </div>
 
-    <div :class="create_course_form ? 'block' : 'hidden'" class="slide-left fixed top-0 right-0 h-fit xl:h-screen flex justify-center items-center w-full z-20 bg-white md:w-1/2 lg:w-2/5 xl:w-1/3 ">
-      <div class="bg-white py-4 px-10 w-full">
+    <div :class="create_course_form ? 'block' : 'hidden'" class="slide-left fixed top-0 right-0 min-h-screen flex justify-center items-center w-full z-20 bg-white md:w-1/2 lg:w-2/5 xl:w-1/3 ">
+      <div class="bg-white py-4 px-10 w-full scale-95 lg:scale-100">
         <div>
           <div class="border-b text-xl font-semibold flex justify-between">
             <p class="font-medium text-black text-lg">Create Course</p>
@@ -31,7 +31,7 @@
           <label for="title">Course brief</label>
           <input type="text" v-model="form.brief_description" placeholder="Enter the course brief">
 
-          <button type="submit" class="px-6 border-2 w-full mt-6 border-primary-100 text-primary-100 font-medium text-lg hover:bg-primary-100 hover:text-white ease-in-out duration-500 py-3">Create course</button>
+          <button type="submit" class="px-6 border-2 w-full mt-6 border-primary-100 text-primary-100 font-medium text-lg hover:bg-primary-100 hover:text-white ease-in-out duration-300 py-3">Create course</button>
         </form>
       </div>
     </div>
@@ -62,7 +62,7 @@
       <div class="py-3 border-b mb-8">
         <h1 class="text-2xl font-semibold">Courses</h1>
       </div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div :class="create_course_form ? 'grid-cols-1 lg:grid-cols-2' : '' " class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10">
         <UiCardsCoursecard v-for="item in courseItems" :key="item.id" 
         :imgUrl="item.imageUrl" 
         :title="item.title" 

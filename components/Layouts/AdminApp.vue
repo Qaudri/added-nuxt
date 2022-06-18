@@ -12,7 +12,7 @@
       </template>
     </UiSharedAdminNavigation>
 
-      <div class="pt-5 md:pt-44 container mx-auto bg-gray-50 shadow-md">
+      <div class="pt-20 md:pt-44 container mx-auto bg-gray-50 shadow-md">
         <slot name="hero"></slot>
         <div class="p-6"></div>
       </div>
