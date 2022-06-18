@@ -1,7 +1,11 @@
 <template>
   <LayoutsAdminApp :class="delete_form_toggled || edit_form_toggled || create_course_form ? 'h-screen overflow-y-hidden top-0': ''" >
 
-    <div :class="create_course_form ? 'block' : 'hidden'" class="slide-left fixed top-0 right-0 h-fit w-full z-20 bg-white md:w-2/3 lg:w-1/2 xl:w-1/3">
+    <div @click="createCourseForm" :class="create_course_form ? 'block' : 'hidden' " class=" absolute z-10 w-full bg-gray-400 top-0 left-0 bg-opacity-40 h-full">
+
+    </div>
+
+    <div :class="create_course_form ? 'block' : 'hidden'" class="slide-left fixed top-0 right-0 h-fit xl:h-screen flex items-center w-full z-20 bg-white md:w-2/3 lg:w-1/2 xl:w-1/3 ">
       <div class="bg-white p-6">
         <div>
           <div class="border-b text-xl font-semibold flex justify-between">
