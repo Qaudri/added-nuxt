@@ -101,7 +101,7 @@ export const actions = {
     context.commit("GET_SELECTED_COURSE", course_description)
   },
 
-  listCourses(context, credentials){
+  listAdminCourses(context, credentials){
     return new Promise((resolve, reject) => {
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.admin_token
 
@@ -118,7 +118,7 @@ export const actions = {
     })
   },
 
-  showCourse(context, credentials){
+  showAdminCourse(context, credentials){
     return new Promise((resolve, reject) => {
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.admin_token
 
