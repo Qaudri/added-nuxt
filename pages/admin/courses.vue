@@ -5,8 +5,8 @@
 
     </div>
 
-    <div :class="create_course_form ? 'block' : 'hidden'" class="slide-left fixed top-0 right-0 h-fit xl:h-screen flex items-center w-full z-20 bg-white md:w-2/3 lg:w-1/2 xl:w-1/3 ">
-      <div class="bg-white p-6">
+    <div :class="create_course_form ? 'block' : 'hidden'" class="slide-left fixed top-0 right-0 h-fit xl:h-screen flex justify-center items-center w-full z-20 bg-white md:w-1/2 lg:w-2/5 xl:w-1/3 ">
+      <div class="bg-white py-4 px-10 w-full">
         <div>
           <div class="border-b text-xl font-semibold flex justify-between">
             <p class="font-medium text-black text-lg">Create Course</p>
