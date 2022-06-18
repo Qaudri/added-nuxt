@@ -25,7 +25,7 @@
         </div>
         <div class="flex items-center ">
           <div class="pr-4 border-r w-32 h-32">
-            <img ::src="selected.imageUrl" alt="" class="w-24">
+            <img :src="selected.imageUrl" alt="" class="w-24">
           </div>
           <h1 class="text-3xl font-bold mx-3">
             {{selected.title}}
@@ -41,7 +41,7 @@
           <div class="text-base font-medium">Course price: <span class="text-primary-100">{{selected.price}}</span></div>
         </div>
         <div class="mt-4">
-          <UiButtonsPrimary @pushTo="toggleForm" class="px-6 py-2 text-white font-medium flex items-center justify-center" button_title="Enroll now"/>
+          <UiButtonsPrimary @pushTo="registerPage" class="px-6 py-2 text-white font-medium flex items-center justify-center" button_title="Enroll now"/>
           <UiButtonsSecondary @Pushto="hideDetails" button_title="Check Other Courses" class="flex items-center justify-center mt-2"/>
         </div>
       </div>
@@ -98,12 +98,14 @@ export default {
 
     ...mapActions({
       setCourse: 'courses/setSelectedCourse',
+      listCourses: 'courses/listAllCourses'
     }),
 
     showDetails(item){
       this.setCourse(item)
       this.detailsdisplayed = !this.detailsdisplayed
-    },
+      console.log(this.item)
+      },
 
     hideDetails(){
       this.detailsdisplayed = false
