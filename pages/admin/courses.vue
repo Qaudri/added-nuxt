@@ -1,9 +1,8 @@
 <template>
   <LayoutsAdminApp :class="delete_form_toggled || edit_form_toggled || create_course_form ? 'h-screen overflow-y-hidden top-0': ''" >
 
-    <div :class="create_course_form ? 'block' : 'hidden'" class="slide-left px-10 absolute right-0 flex items-center justify-center h-screen py-4 w-full top-14 left-0">
-      <div class="scale-out bg-white p-6 w-full md:w-2/3 lg:w-1/2">
-
+    <div :class="create_course_form ? 'block' : 'hidden'" class="slide-left fixed top-0 right-0 h-fit w-full z-20 bg-white md:w-2/3 lg:w-1/2">
+      <div class="bg-white p-6">
         <div>
           <div class="border-b text-xl font-semibold flex justify-between">
             <p class="font-medium text-black text-lg">Create Course</p>
@@ -183,6 +182,10 @@ body{
   animation: scaleout 1s forwards;
 }
 
+label{
+  margin-top: 20px;
+}
+
 @keyframes scaleout {
   from{
     transform: scale(0);
@@ -190,6 +193,20 @@ body{
 
   to{
     transform: scale(1);
+  }
+}
+
+.slide-left{
+  animation: slideleft 1s forwards;
+}
+
+@keyframes slideleft {
+  from{
+    transform: translateX(10rem);
+  }
+
+  to{
+    transform: translateX(0);
   }
 }
 </style>
