@@ -19,17 +19,14 @@
           <label for="title">Course title</label>
           <input type="text" v-model="form.title" placeholder="Enter the course title">
 
-          <label for="title">Course duration</label>
-          <input type="text" v-model="form.duration" placeholder="Enter the course duration">
+          <label for="title">Course duration (in weeks)</label>
+          <input type="number" v-model="form.duration" placeholder="Enter the course duration (number)">
 
           <label for="title">Course price</label>
-          <input type="text" v-model="form.price" placeholder="Enter the course price">
+          <input type="number" v-model="form.price" placeholder="Enter the course price (number)">
 
-          <label for="title">Course decription</label>
-          <input type="text" v-model="form.description" placeholder="Enter the course description">
-
-          <label for="title">Course contents</label>
-          <input type="text" v-model="form.contents" placeholder="Enter the course contents">
+          <label for="title">Course brief</label>
+          <input type="text" v-model="form.brief_description" placeholder="Enter the course brief">
 
           <button type="submit" class="px-6 border-2 w-full mt-6 border-primary-100 text-primary-100 font-medium text-lg hover:bg-primary-100 hover:text-white ease-in-out duration-500 py-3">Create course</button>
         </form>
