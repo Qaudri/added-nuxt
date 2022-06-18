@@ -1,5 +1,5 @@
 <template>
-  <div :class="detailsdisplayed ? 'overflow-y-hidden select-none ' : ''">
+  <div :class="detailsdisplayed ? 'h-screen overflow-y-hidden' : '' ">
     <SectionsCommonHeader >
       <div>
         <UiSharedLogo @emitReload="reloadThisPage" />
@@ -13,15 +13,15 @@
         <UiButtonsPrimary @pushTo="Primary" button_title="Contact Us" class="lg:ml-4 my-10 lg:my-0 mx-6 lg:mr-0 " />
       </template>
     </SectionsCommonHeader>
-    <div :class="detailsdisplayed ? 'block' : 'hidden' " class=" absolute w-full bg-gray-400 bg-opacity-40 h-full">
+    <div @click="hideDetails" :class="detailsdisplayed ? 'block' : 'hidden' " class=" absolute w-full bg-gray-400 bg-opacity-40 h-full z-40">
 
     </div>
 
-    <div :class="detailsdisplayed ? 'block' : 'hidden'" class="slide-left right-0 bg-white absolute w-1/3 px-6 
-      py-28 xl:py-32 flex items-end">
+    <div :class="detailsdisplayed ? 'block' : 'hidden'" class="h-screen overflow-y-hidden border-l-2 border-primary-100 slide-left right-0 bg-white absolute w-full md:w-1/2 lg:w-1/3 px-6 py-8
+       z-50">
       <div class="container mx-auto ">
         <div class="mb-4 w-full flex justify-end bg-white">
-          <UiButtonsClose @closeMenu="hideDetails" class="cursor-pointer -mt-8" />
+          <UiButtonsClose @closeMenu="hideDetails" class="cursor-pointer" />
         </div>
         <div class="flex items-center ">
           <div class="pr-4 border-r w-32 h-32">
@@ -34,7 +34,7 @@
 
         <div class="my-5">
           <h1 class="font-semibold text-primary-100 text-xl my-3">Course Description:</h1>
-          <p class="font-medium text-secondary-100 text-base">{{selected.details}} Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi saepe, sequi assumenda sapiente quidem molestias, doloremque illum explicabo repellat facere quis provident officia labore corporis accusamus dolorum consectetur inventore eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero perferendis in, dolore fugiat rem itaque blanditiis adipisci cum harum rerum tempore repudiandae ex. Officiis ad ipsum quaerat voluptates harum impedit? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis laborum adipisci eaque obcaecati quidem atque voluptas aut saepe optio ipsum, doloribus, illo ad ipsa, aliquid iusto doloremque temporibus esse? Cum!</p>
+          <p class="font-medium text-secondary-100 text-base">{{selected.details}}</p>
         </div>
         <div class="">
           <div class="text-base font-medium">Course duration: <span class="text-primary-100">{{selected.duration}}</span></div>
@@ -105,7 +105,7 @@ export default {
       this.setCourse(item)
       this.detailsdisplayed = !this.detailsdisplayed
       console.log(this.item)
-      },
+    },
 
     hideDetails(){
       this.detailsdisplayed = false

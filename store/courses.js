@@ -97,8 +97,8 @@ export const getters = {
 }
 
 export const actions = {
-  setSelectedCourse(context){
-    context.commit("GET_SELECTED_COURSE")
+  setSelectedCourse(context, course_description){
+    context.commit("GET_SELECTED_COURSE", course_description)
   },
 
   listCourses(context, credentials){
@@ -231,7 +231,7 @@ export const mutations = {
 
   SHOW_ALL_COURSES(state,payload){
     state.items = payload
-  },
+  }, 
 
   SHOW_COURSE(state, payload){
     state.selected_course = payload
