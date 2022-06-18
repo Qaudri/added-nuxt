@@ -1,6 +1,6 @@
 <template>
-  <div class="px-10 absolute bg-secondary-100 z-110 bg-opacity-20 flex items-center justify-center h-full w-full top-10 left-0">
-    <div class="scale-out bg-white p-6 w-full md:w-2/3 lg:w-1/2">
+  <div class="slide-left fixed top-0 right-0 min-h-screen flex justify-center items-center w-full z-20 bg-white md:w-1/2 lg:w-2/5 xl:w-1/3 ">
+    <div class="bg-white py-4 px-10 w-full scale-95 lg:scale-100">
       <div>
         <div class="border-b text-xl font-semibold flex justify-between">
           <p class="font-medium text-black text-lg">Update Course</p>
@@ -27,7 +27,7 @@
         <input type="text" :placeholder="course_description">
 
         <label for="title">Course contents</label>
-        <input type="text" ::placeholder="course_contents">
+        <input type="text" :placeholder="course_contents">
       </form>
     </div>
 
@@ -65,7 +65,7 @@ form{
 label{
   font-weight: 600;
   color: #058182;
-  margin-top: 30px;
+  margin-top: 20px;
   display: block;
 }
 
@@ -102,5 +102,19 @@ input:focus{
   background: #058182;
   color: white;
   transition: .5s ease-in-out;
+}
+
+.slide-left{
+  animation: slideleft 1s forwards;
+}
+
+@keyframes slideleft {
+  from{
+    transform: translateX(10rem);
+  }
+
+  to{
+    transform: translateX(0);
+  }
 }
 </style>

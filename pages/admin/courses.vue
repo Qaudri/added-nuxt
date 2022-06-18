@@ -1,7 +1,7 @@
 <template>
   <LayoutsAdminApp :class="delete_form_toggled || edit_form_toggled || create_course_form ? 'h-screen overflow-y-hidden top-0': ''" >
 
-    <div @click="createCourseForm" :class="create_course_form ? 'block' : 'hidden' " class=" absolute z-10 w-full bg-gray-400 top-0 left-0 bg-opacity-40 h-full">
+    <div @click="createCourseForm" :class="create_course_form || edit_form_toggled ? 'block' : 'hidden' " class=" absolute z-10 w-full bg-gray-400 top-0 left-0 bg-opacity-40 h-full">
 
     </div>
 
