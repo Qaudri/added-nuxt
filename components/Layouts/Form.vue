@@ -44,11 +44,17 @@ export default {
     course_description: String,
   },
 
-    computed: {
+  computed: {
     ...mapGetters({
       course : 'courses/getCourseItems',
       selected: 'courses/getSelectedCourse'
     })
+  },
+
+  methods: {
+    emitUpdateCourse(item){
+      this.$emit("UpdateCourse", item)
+    }
   }
 }
 </script>
