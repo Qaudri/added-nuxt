@@ -45,7 +45,7 @@ export default {
       })
 
       .then(() =>{
-        this.$router.push({name: 'dashboard'})
+        this.$router.push({path: '/students'})
       })
 
       .catch( error => {
