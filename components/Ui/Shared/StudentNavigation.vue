@@ -14,7 +14,7 @@
               <div class="flex justify-end items-center">
                 <div class="flex items-center text-sm sm:text-base">
                   <img :src="require('@/assets/images/icons/avatar.svg')" class="w-5 mr-2"/>
-                  <div class="mr-4 font-medium flex items-center">Hi, Noarex
+                  <div class="mr-4 font-medium flex items-center">Hi, {{username}}
                     <slot name="logout"></slot>
                   </div>
                   
@@ -42,9 +42,9 @@
         <div class="mx-auto md:container">
           
           <div class="pt-16 md:pt-0 md:flex justify-start">
-            <nuxt-link :to="{name:'student'}" :class="isUrl('student') ? (active_nav + nav_item) : nav_item">Dashboard </nuxt-link>
-            <nuxt-link :to="{name:'student-courses'}" :class="isUrl('courses') ? (active_nav + nav_item) : nav_item">Courses</nuxt-link>
-            <nuxt-link :to="{name:'student-transactions'}" :class="isUrl('transactions') ? (active_nav + nav_item) : nav_item">Statistics</nuxt-link>
+            <nuxt-link :to="{name:'students'}" :class="isUrl('students') ? (active_nav + nav_item) : nav_item">Dashboard </nuxt-link>
+            <nuxt-link :to="{name:'students-courses'}" :class="isUrl('courses') ? (active_nav + nav_item) : nav_item">Courses</nuxt-link>
+            <nuxt-link :to="{name:'students-transactions'}" :class="isUrl('transactions') ? (active_nav + nav_item) : nav_item">Transactions</nuxt-link>
             
             </div>
         </div>
