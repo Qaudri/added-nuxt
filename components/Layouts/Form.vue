@@ -13,21 +13,20 @@
           </div>
         </div>
       </div>
-      <form action="" >
+      <form action="" @submit.prevent="emitUpdateCourse">
         <label for="title">Course title</label>
-        <input type="text" :placeholder="course_title">
+        <input type="text" :value="course_title">
 
-        <label for="title">Course duration</label>
-        <input type="text" :placeholder="course_duration">
+        <label for="title">Course duration (in weeks)</label>
+        <input type="number" :value="course_duration">
 
         <label for="title">Course price</label>
-        <input type="text" :placeholder="course_price">
+        <input type="number" :value="course_price">
 
-        <label for="title">Course decription</label>
-        <input type="text" :placeholder="course_description">
+        <label for="title">Course brief</label>
+        <input type="text" :value="course_description">
 
-        <label for="title">Course contents</label>
-        <input type="text" :placeholder="course_contents">
+        <button type="submit" class="px-6 border-2 w-full mt-6 border-primary-100 text-primary-100 font-medium text-lg hover:bg-primary-100 hover:text-white ease-in-out duration-300 py-3">Update course</button>
       </form>
     </div>
 
@@ -43,7 +42,6 @@ export default {
     course_duration: String,
     course_price: String,
     course_description: String,
-    course_contents: String,
   },
 
     computed: {
