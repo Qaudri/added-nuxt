@@ -1,10 +1,11 @@
 <template>
   <LayoutsAdminApp :class="delete_form_toggled || edit_form_toggled || create_course_form ? 'h-screen overflow-y-hidden top-0': ''" >
 
-    <div @click="createCourseForm" :class="create_course_form || edit_form_toggled ? 'block' : 'hidden' " class=" absolute z-10 w-full bg-gray-400 top-0 left-0 bg-opacity-40 h-full">
+    <div @click="createCourseForm || toggleEditCourse" :class="create_course_form || edit_form_toggled ? 'block' : 'hidden' " class=" absolute z-10 w-full bg-gray-400 top-0 left-0 bg-opacity-40 h-full">
 
     </div>
 
+    <!-- create course form -->
     <div :class="create_course_form ? 'block' : 'hidden'" class="slide-left fixed top-0 right-0 min-h-screen flex justify-center items-center w-full z-20 bg-white md:w-1/2 lg:w-2/5 xl:w-1/3 ">
       <div class="bg-white py-4 px-10 w-full scale-95 lg:scale-100">
         <div>
@@ -36,12 +37,14 @@
       </div>
     </div>
 
+    <!-- create course button -->
     <template v-slot:hero >
       <div class="w-full flex justify-center items-center">
         <UiButtonsPrimary button_title="Create New Course" @pushTo="createCourseForm" class="space"/>
       </div>
     </template>
 
+    <!-- delete course popup -->
     <LayoutsDialog :class="delete_form_toggled ? 'block ' : 'hidden' " @confirmDelete="confirmDeleteCourse()">
       <div class="flex justify-end w-full">
         <UiButtonsClose @closeMenu="toggleForm" class="flex items-center justify-end cursor-pointer pb-2" />
@@ -54,7 +57,7 @@
     :course_price="selectedItem.price"
     :course_description="selectedItem.details">
       <div class="flex justify-end w-full">
-        <UiButtonsClose @closeMenu="editCourse" class="flex items-center justify-end cursor-pointer pb-2" />
+        <UiButtonsClose @closeMenu="toggleEditCourse" class="flex items-center justify-end cursor-pointer pb-2" />
       </div>
     </LayoutsForm>
     
@@ -105,11 +108,14 @@ export default {
       console.log("toggled")
       this.selected_for_deletion = item
       this.delete_form_toggled = !this.delete_form_toggled
-      
+    },
+
+    toggleEditCourse(){
+      this.edit_form_toggled = !this.edit_form_toggled
     },
 
     editCourse(item){
-      this.edit_form_toggled = !this.edit_form_toggled
+      this.edit_form_toggled = true
       this.setCourse(item)
     },
 
@@ -146,7 +152,7 @@ export default {
     ...mapActions({
       setCourse: 'courses/setSelectedCourse',
       createNewCourses: 'courses/createCourse',
-      listEveryCourse: 'courses/listCourses',
+      listEveryCourse: 'courses/listAdminCourses',
       updateCourse: 'courses/updateCourse',
       showCourse: 'courses/showCourse',
       deleteCourse: 'courses/deleteCourse',
