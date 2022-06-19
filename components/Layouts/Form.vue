@@ -53,7 +53,7 @@ export default {
 
   methods: {
     emitUpdateCourse(item){
-      this.$emit("UpdateCourse", item)
+      this.$emit("UpdateCourseEvent", item)
     }
   }
 }

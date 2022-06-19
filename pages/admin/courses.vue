@@ -30,7 +30,7 @@
           <input type="number" v-model="form.price" placeholder="Enter the course price (number)">
 
           <label for="title">Course brief</label>
-          <input type="text" v-model="form.brief_description" placeholder="Enter the course brief">
+          <input type="text" v-model="form.brief" placeholder="Enter the course brief">
 
           <button type="submit" class="px-6 border-2 w-full mt-6 border-primary-100 text-primary-100 font-medium text-lg hover:bg-primary-100 hover:text-white ease-in-out duration-300 py-3">Create course</button>
         </form>
@@ -51,7 +51,7 @@
       </div>
     </LayoutsDialog>
 
-    <LayoutsForm :class="edit_form_toggled ? 'block ' : 'hidden' "
+    <LayoutsForm :class="edit_form_toggled ? 'block ' : 'hidden' " @UpdateCourseEvent="updateCourse()"
     :course_title="selectedItem.title"
     :course_duration="selectedItem.duration"
     :course_price="selectedItem.price"
@@ -96,7 +96,7 @@ export default {
         title: "",
         price: "",
         duration: "",
-        description: "",
+        brief: "",
         image: "",
       },
 
@@ -126,17 +126,16 @@ export default {
 
     createCourse(){
       this.createNewCourses({
-        title: this.form.title,
-        price: this.form.price,
-        description: this.form.description,
-        duration: this.form.duration,
-        imageUrl: this.form.image
+        the_title: this.form.title,
+        the_price: this.form.price,
+        the_brief: this.form.brief,
+        the_duration: this.form.duration,
+        the_imageUrl: this.form.image
       })
 
       .then(() =>{
         this.create_course_form = !this.create_course_form
-        console.log("success")
-        this.listCourses
+        this.listEveryCourse
       })
     },
 
