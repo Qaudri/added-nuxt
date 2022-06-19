@@ -158,15 +158,17 @@ export const actions = {
     })
   },
 
-  updateCourse(context, credentials){
+  updateCourse(context, credentials, uuid){
     return new Promise((resolve, reject) => {
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.admin_token
 
-      this.$axios.$put('/api/admins/courses/:uuid', {
-        title: credentials.title,
-        price: credentials.price,
-        brief: credentials.description,
-        preview: credentials.imageUrl,
+      this.$axios.$put('/api/admins/courses/' + uuid, {
+        title: credentials.edit_title,
+        price: credentials.edit_price,
+        brief: credentials.edit_description,
+        preview: credentials.edit_imageUrl,
+        duration_in_weeks: credentials.edit_duration
+
       })
         .then(response => {
           context.commit('UPDATE_COURSE', response.data)

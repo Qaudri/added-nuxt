@@ -55,7 +55,8 @@
     :course_title="selectedItem.title"
     :course_duration="selectedItem.duration"
     :course_price="selectedItem.price"
-    :course_description="selectedItem.details">
+    :course_description="selectedItem.details"
+    :uuid="selectedItem.uuid">
       <div class="flex justify-end w-full">
         <UiButtonsClose @closeMenu="toggleEditCourse" class="flex items-center justify-end cursor-pointer pb-2" />
       </div>
@@ -140,7 +141,6 @@ export default {
     },
 
     confirmDeleteCourse(){
-      console.log(this.selected_for_deletion)
       this.deleteCourse(this.selected_for_deletion.uuid)
       .then(() =>{
         this.delete_form_toggled = !this.delete_form_toggled
@@ -153,13 +153,30 @@ export default {
       setCourse: 'courses/setSelectedCourse',
       createNewCourses: 'courses/createCourse',
       listEveryCourse: 'courses/listAdminCourses',
-      updateCourse: 'courses/updateCourse',
+      confirmUpdateCourse: 'courses/updateCourse',
       showCourse: 'courses/showCourse',
       deleteCourse: 'courses/deleteCourse',
     }),
 
     listAllCourses(){
       this.listEveryCourse()
+    },
+
+    updateCourse(){
+      this.confirmUpdateCourse(this,this.selectedItem.uuid, {
+        edit_title: this.selectedItem.title,
+        edit_duration: this.selectedItem.duration,
+        edit_description: this.selectedItem.brief,
+        edit_price: this.selectedItem.price,
+        edit_imageUrl: this.selectedItem.imageUrl
+      })
+
+      .then(() =>{
+        this.edit_form_toggled = !this.edit_form_toggled
+        this.selectedItem = ''
+        this.listCourses()
+      })
+
     }
 
   },
