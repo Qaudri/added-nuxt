@@ -98,7 +98,7 @@ export default {
 
     ...mapActions({
       setCourse: 'courses/setSelectedCourse',
-      listCourses: 'courses/listAllCourses'
+      listCourses: 'courses/showAllCourses'
     }),
 
     showDetails(item){
@@ -137,6 +137,10 @@ export default {
 
     Primary(){
       this.$router.go({path:'https://bit.ly/3uOIVPo'})
+    },
+
+    showAllCourses(){
+      this.listCourses()
     }
   },
 
@@ -145,6 +149,10 @@ export default {
       course : 'courses/getCourseItems',
       selected: 'courses/getSelectedCourse',
     })
+  },
+
+   created() {
+    this.showAllCourses()
   }
 }
 </script>

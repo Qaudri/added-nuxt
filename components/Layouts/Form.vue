@@ -18,10 +18,10 @@
         <input type="text" :value="course_title">
 
         <label for="title">Course duration (in weeks)</label>
-        <input type="number" :value="course_duration">
+        <input type="text" :value="course_duration">
 
         <label for="title">Course price</label>
-        <input type="number" :value="course_price">
+        <input type="text" :value="course_price">
 
         <label for="title">Course brief</label>
         <input type="text" :value="course_description">

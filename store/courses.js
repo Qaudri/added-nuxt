@@ -4,8 +4,8 @@ export const state = () =>({
       id: 1,
       imageUrl: "require('@/assets/images/icons/courses/design.svg')",      
       title: "Brand Identity Design",
-      duration: 2,
-      price: 70000,
+      duration: "2",
+      price: "70000",
       brief: "",
     },
 
@@ -13,8 +13,8 @@ export const state = () =>({
       id: 2,
       imageUrl: "require('@/assets/images/icons/courses/uiui.svg')",     
       title: "Graphics Design",
-      duration: 2,
-      price: 80000,
+      duration: "2",
+      price: "80000",
       brief: "",
     },
 
@@ -22,8 +22,8 @@ export const state = () =>({
       id: 3,
       imageUrl: "require('@/assets/images/icons/courses/ui-design.svg')",
       title: "UI/UX Design",
-      duration: 2,
-      price: 100000,
+      duration: "2",
+      price: "100000",
       brief: "",
     },
 
@@ -31,8 +31,8 @@ export const state = () =>({
       id: 4,
       imageUrl: "require('@/assets/images/icons/courses/front-end.svg')",
       title: "Frontend Web Development",
-      duration: 4,
-      price: 150000,
+      duration: "4",
+      price: "150000",
       brief: "",
     },
 
@@ -40,8 +40,8 @@ export const state = () =>({
       id: 5,
       imageUrl: "require('@/assets/images/icons/courses/back-end.svg')",
       title: "Backend Web Development",
-      duration: 4,
-      price: 180000,
+      duration: "4",
+      price: "180000",
       brief: "",
     },
 
@@ -49,8 +49,8 @@ export const state = () =>({
       id: 6,
       imageUrl: "require('@/assets/images/icons/courses/freelancing.svg')",
       title: "Freelancing",
-      duration: 1,
-      price: 50000,
+      duration: "1",
+      price: "50000",
       brief: "",
     },
 
@@ -58,8 +58,8 @@ export const state = () =>({
       id: 7,
       imageUrl: "require('@/assets/images/icons/courses/trading.svg')",
       title: "Forex Trading",
-      duration: 1,
-      price: 5000,
+      duration: "1",
+      price: "5000",
       brief: "",
     },
 
@@ -67,8 +67,8 @@ export const state = () =>({
       id: 8,
       imageUrl: "require('@/assets/images/icons/courses/forex.svg')",
       title: "Crypto Trading",
-      duration: 2,
-      price: 100000,
+      duration: "2",
+      price: "100000",
       brief: "",
     },
 
@@ -76,12 +76,11 @@ export const state = () =>({
       id: 9,
       imageUrl: "require('@/assets/images/icons/courses/digital-marketing.svg')",
       title: "Digital Marketing",
-      duration: 2,
-      price: 65000,
+      duration: "2",
+      price: "65000",
       brief: "",
     },
   ],
-
   
   selected_course: '{}'
 })
@@ -107,7 +106,7 @@ export const actions = {
 
       this.$axios.$get('/api/admins/courses')
         .then(response => {
-          context.commit('LIST_ALL_COURSES', response.data)
+          context.commit('LIST_ALL_ADMIN_COURSES', response.data)
 
           resolve(response)
         })
@@ -227,7 +226,7 @@ export const mutations = {
     })
   },
 
-  LIST_ALL_COURSES(state, payload){
+  LIST_ALL_ADMIN_COURSES(state, payload){
     state.items = payload
   },
 

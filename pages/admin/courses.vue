@@ -94,8 +94,8 @@ export default {
       create_course_form: false,
       form: {
         title: "",
-        price: "",
-        duration: "",
+        price: {},
+        duration: {},
         brief: "",
         image: "",
       },
@@ -106,7 +106,7 @@ export default {
 
   methods: {
     toggleForm(item){
-      console.log("toggled")
+      console.log(this.selected_for_deletion)
       this.selected_for_deletion = item
       this.delete_form_toggled = !this.delete_form_toggled
     },
@@ -144,7 +144,7 @@ export default {
       .then(() =>{
         this.delete_form_toggled = !this.delete_form_toggled
         this.selected_for_deletion = ''
-        this.listCourses()
+        this.listEveryCourse()
       })
     },
 
