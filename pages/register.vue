@@ -45,7 +45,7 @@ export default {
       })
 
       .then(() =>{
-        this.$router.push({path: '/students'})
+        this.$router.push({path: '/students/courses'})
       })
 
       .catch( error => {

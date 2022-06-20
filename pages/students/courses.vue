@@ -1,0 +1,122 @@
+<template>
+  <div>
+    <LayoutsAdminApp>
+      <template v-slot:hero class="">
+      </template>
+
+      <div @click="hideDetails" :class="detailsdisplayed ? 'block' : 'hidden' " class=" absolute w-full bg-gray-400 bg-opacity-40 h-full z-40">
+
+      </div>
+
+      <div :class="detailsdisplayed ? 'block' : 'hidden'" class="h-screen overflow-y-hidden border-l-2 border-primary-100 slide-left right-0 bg-white absolute w-full md:w-1/2 lg:w-1/3 px-6 py-8
+        z-50">
+        <div class="container mx-auto ">
+          <div class="mb-4 w-full flex justify-end bg-white">
+            <UiButtonsClose @closeMenu="hideDetails" class="cursor-pointer" />
+          </div>
+          <div class="flex items-center ">
+            <div class="pr-4 border-r w-32 h-32">
+              <img :src="selected.imageUrl" alt="" class="w-24">
+            </div>
+            <h1 class="text-3xl font-bold mx-3">
+              {{selected.title}}
+            </h1>
+          </div>
+
+          <div class="my-5">
+            <h1 class="font-semibold text-primary-100 text-xl my-3">Course Description:</h1>
+            <p class="font-medium text-secondary-100 text-base">{{selected.details}}</p>
+          </div>
+          <div class="">
+            <div class="text-base font-medium">Course duration: <span class="text-primary-100">{{selected.duration}}</span></div>
+            <div class="text-base font-medium">Course price: <span class="text-primary-100">{{selected.price}}</span></div>
+          </div>
+          <div class="mt-4">
+            <UiButtonsPrimary @pushTo="registerPage" class="px-6 py-2 text-white font-medium flex items-center justify-center" button_title="Enroll now"/>
+            <UiButtonsSecondary @Pushto="hideDetails" button_title="Check Other Courses" class="flex items-center justify-center mt-2"/>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-3 border-b mb-8 px-8 pt-14">
+        <h1 class="text-2xl font-semibold">Courses</h1>
+      </div>
+
+      <div class="container mx-auto px-10">
+        <div :class="detailsdisplayed ? 'grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 w-full md:w-1/2 lg:w-2/3 2xl:w-3/4' :''" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10">
+          <UiCardsCoursecard v-for="item in courseItems" :key="item.id" class="bg-white"
+          :imgUrl="item.imageUrl"   
+          :title="item.title" 
+          :duration="item.duration"
+          :price="item.price">
+            <div class="flex items-center">
+              <UiButtonsSecondary @Pushto="showDetails(item)" button_title="See Details" class=""/>
+              <UiButtonsPrimary @pushTo="paymentCard" class="px-4 py-2 text-white font-medium" button_title="Enroll now"/>
+            </div>
+          </UiCardsCoursecard>
+        </div>
+      </div>
+    </LayoutsAdminApp>
+  </div>
+</template>
+
+<script>
+import {mapGetters, mapActions} from 'vuex';
+
+export default {
+  middleware: 'student-login',
+
+  data(){
+    return{
+      detailsdisplayed: false,
+    }
+  },
+
+  methods: {
+    ...mapActions({
+      setCourse: 'courses/setselectedCourse',
+      listCourses: 'courses/listStudentCourses'
+    }),
+
+    showDetails(item){
+      this.setCourse(item)
+      this.detailsdisplayed = !this.detailsdisplayed
+    },
+
+    hideDetails(){
+      this.detailsdisplayed = false
+    },
+
+    paymentCard(){
+      console.log("time to pay")
+    },
+
+    showAllCourses(){
+      this.listCourses()
+    }
+  },
+
+  computed: {
+    ...mapGetters({
+      courseItems : 'courses/getCourseItems',
+      selected: 'courses/getselectedCourse',
+    }),
+  },
+
+  created() {
+    this.showAllCourses()
+  }
+}
+</script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+body{
+  font-family: "Poppins", sans-serif;
+}
+
+.bg-gray-50{
+  background-color: #f7f7f7 !important;
+}
+</style>

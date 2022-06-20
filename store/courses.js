@@ -100,13 +100,30 @@ export const actions = {
     context.commit("GET_SELECTED_COURSE", course_item)
   },
 
-  listAdminCourses(context, credentials){
+  listAdminCourses(context){
     return new Promise((resolve, reject) => {
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.admin_token
 
       this.$axios.$get('/api/admins/courses')
         .then(response => {
           context.commit('LIST_ALL_ADMIN_COURSES', response.data)
+
+          resolve(response)
+        })
+
+        .catch(function (error) {
+          reject(error)
+        })
+    })
+  },
+
+  listStudentCourses(context){
+    return new Promise((resolve, reject) => {
+      this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.student_token
+
+      this.$axios.$get('/api/admins/courses')
+        .then(response => {
+          context.commit('LIST_ALL_STUDENT_COURSES', response.data)
 
           resolve(response)
         })
@@ -227,6 +244,10 @@ export const mutations = {
   },
 
   LIST_ALL_ADMIN_COURSES(state, payload){
+    state.items = payload
+  },
+
+  LIST_ALL_STUDENT_COURSES(state, payload){
     state.items = payload
   },
 
