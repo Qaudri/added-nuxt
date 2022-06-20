@@ -214,7 +214,7 @@ export const actions = {
   showAllCourses(context){
     return new Promise((resolve, reject) => {
 
-      this.$axios.$get('/api/students/listcourses')
+      this.$axios.$get('/api/listcourses')
         .then(response => {
           context.commit('SHOW_ALL_COURSES', response.data)
           resolve(response)
