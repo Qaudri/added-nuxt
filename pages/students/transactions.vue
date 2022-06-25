@@ -21,8 +21,8 @@ export default {
 
   methods: {
     ...mapActions({
-      setAllTransactions: 'transactions/setAdminTransactions'
-    }),
+      setAllTransactions: 'transactions/set StudentTransactions'
+    })
   },
 
   computed: {
