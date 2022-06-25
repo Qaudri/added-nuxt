@@ -25,20 +25,20 @@
         </div>
         <div class="flex items-center ">
           <div class="pr-4 border-r w-32 h-32">
-            <img :src="selected.imageUrl" alt="" class="w-24">
+            <img :src="selected_for_details.imageUrl" alt="" class="w-24">
           </div>
           <h1 class="text-3xl font-bold mx-3">
-            {{selected.title}}
+            {{selected_for_details.title}}
           </h1>
         </div>
 
         <div class="my-5">
           <h1 class="font-semibold text-primary-100 text-xl my-3">Course Description:</h1>
-          <p class="font-medium text-secondary-100 text-base">{{selected.details}}</p>
+          <p class="font-medium text-secondary-100 text-base">{{selected_for_details.details}}</p>
         </div>
         <div class="">
-          <div class="text-base font-medium">Course duration: <span class="text-primary-100">{{selected.duration}}</span></div>
-          <div class="text-base font-medium">Course price: <span class="text-primary-100">{{selected.price}}</span></div>
+          <div class="text-base font-medium">Course duration: <span class="text-primary-100">{{selected_for_details.duration}}</span></div>
+          <div class="text-base font-medium">Course price: <span class="text-primary-100">{{selected_for_details.price}}</span></div>
         </div>
         <div class="mt-4">
           <UiButtonsPrimary @pushTo="registerPage" class="px-6 py-2 text-white font-medium flex items-center justify-center" button_title="Enroll now"/>
@@ -61,8 +61,6 @@
         </UiCardsCoursecard>
 
       <!-- <button @click="initializePaystack" class="px-8 py-4 bg-primary-100">Pay</button> -->
-
-
       </div>
     </div>
     <SectionsCommonFooter class="z-50 relative" />
@@ -76,7 +74,7 @@ export default {
   data(){
     return{
       detailsdisplayed: false,
-      selected_for_details: {},
+      selected_for_details: '',
     }
   },
 
@@ -102,7 +100,7 @@ export default {
     }),
 
     showDetails(item){
-      this.setCourse(item)
+      this.selected_for_details = item
       this.detailsdisplayed = !this.detailsdisplayed
     },
 
