@@ -81,25 +81,15 @@ export const state = () =>({
       brief: "",
     },
   ],
-  
-  selected_course: '{}'
 })
 
 export const getters = {
   getCourseItems(state) {
     return state.items
   },
-
-  getSelectedCourse(state){
-    return state.selected_course
-  }
 }
 
 export const actions = {
-  setSelectedCourse(context, course_item){
-    context.commit("GET_SELECTED_COURSE", course_item)
-  },
-
   listAdminCourses(context){
     return new Promise((resolve, reject) => {
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.admin_token
@@ -229,20 +219,6 @@ export const actions = {
 }
 
 export const mutations = {
-  GET_SELECTED_COURSE(state, payload){
-    state.selected_course = payload
-  },
-
-  CREATE_NEW_COURSE(state, payload){
-    state.items.push({
-      id: Math.floor(Math.random() * 100),
-      title: title,
-      price: price,
-      imageUrl: imageUrl,
-      description: description
-    })
-  },
-
   LIST_ALL_ADMIN_COURSES(state, payload){
     state.items = payload
   },
