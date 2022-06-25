@@ -76,6 +76,7 @@ export default {
   data(){
     return{
       detailsdisplayed: false,
+      selected_for_details: {},
     }
   },
 
@@ -97,14 +98,12 @@ export default {
     // },
 
     ...mapActions({
-      setCourse: 'courses/setSelectedCourse',
       listCourses: 'courses/showAllCourses'
     }),
 
     showDetails(item){
       this.setCourse(item)
       this.detailsdisplayed = !this.detailsdisplayed
-      console.log(this.item)
     },
 
     hideDetails(){
@@ -147,7 +146,6 @@ export default {
   computed: {
     ...mapGetters({
       course : 'courses/getCourseItems',
-      selected: 'courses/getSelectedCourse',
     })
   },
 
