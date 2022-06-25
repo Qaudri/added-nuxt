@@ -1,14 +1,16 @@
 <template>
-  <div>
+  <div :class="detailsdisplayed ? 'h-screen overflow-y-hidden' : '' ">
     <LayoutsAdminApp>
+      <div @click="hideDetails" :class="detailsdisplayed ? 'block' : 'hidden' " class="left-0 top-0 absolute w-full bg-gray-400 bg-opacity-40 h-full z-40">
+
+      </div>
+      
       <template v-slot:hero class="">
       </template>
 
-      <div @click="hideDetails" :class="detailsdisplayed ? 'block' : 'hidden' " class=" absolute w-full bg-gray-400 bg-opacity-40 h-full z-40">
 
-      </div>
 
-      <div :class="detailsdisplayed ? 'block' : 'hidden'" class="h-screen overflow-y-hidden border-l-2 border-primary-100 slide-left right-0 bg-white absolute w-full md:w-1/2 lg:w-1/3 px-6 py-8
+      <div :class="detailsdisplayed ? 'block' : 'hidden'" class="h-screen overflow-y-hidden border-l-2 border-primary-100 slide-left right-0 bg-white absolute w-full md:w-1/2 lg:w-1/3 px-6 py-8 top-0
         z-50">
         <div class="container mx-auto ">
           <div class="mb-4 w-full flex justify-end bg-white">
@@ -28,12 +30,12 @@
             <p class="font-medium text-secondary-100 text-base">{{selected_for_details.details}}</p>
           </div>
           <div class="">
-            <div class="text-base font-medium">Course duration: <span class="text-primary-100">{{selected_for_details.duration}}</span></div>
-            <div class="text-base font-medium">Course price: <span class="text-primary-100">{{selected_for_details.price}}</span></div>
+            <div class="text-base font-medium">Course duration: <span class="text-primary-100">{{selected_for_details.duration}} weeks</span></div>
+            <div class="text-base font-medium">Course price: <span class="text-primary-100">#{{selected_for_details.price}}</span></div>
           </div>
-          <div class="mt-4">
-            <UiButtonsPrimary @pushTo="registerPage" class="px-6 py-2 text-white font-medium flex items-center justify-center" button_title="Enroll now"/>
-            <UiButtonsSecondary @Pushto="hideDetails" button_title="Check Other Courses" class="flex items-center justify-center mt-2"/>
+          <div class="mt-4 bottom-4 fixed flex">
+            <UiButtonsPrimary @pushTo="registerPage" class="px-6 py-2 text-white font-medium flex items-center justify-center mx-auto" button_title="Enroll now"/>
+            <UiButtonsSecondary @Pushto="hideDetails" button_title="Check Other Courses" class="flex items-center justify-center mx-auto mt-2"/>
           </div>
         </div>
       </div>
@@ -43,7 +45,7 @@
       </div>
 
       <div class="container mx-auto px-10">
-        <div :class="detailsdisplayed ? 'grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 w-full md:w-1/2 lg:w-2/3 2xl:w-3/4' :''" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10">
+        <div :class="detailsdisplayed ? 'grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 w-full md:w-1/2 lg:w-2/3 2xl:w-3/4 gap-10' :'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10'" class="">
           <UiCardsCoursecard v-for="item in courseItems" :key="item.id" class="bg-white"
           :imgUrl="item.imageUrl"   
           :title="item.title" 
