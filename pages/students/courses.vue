@@ -1,7 +1,7 @@
 <template>
   <div :class="detailsdisplayed || payment_mode ? 'h-screen overflow-y-hidden' : '' ">
     <LayoutsAdminApp>
-      <div @click="hideDetails" :class="detailsdisplayed ? 'block' : 'hidden' " class="left-0 top-0 absolute w-full bg-gray-400 bg-opacity-30 h-full z-40">
+      <div @click="hideDetails" :class="detailsdisplayed || payment_mode ? 'block' : 'hidden' " class="left-0 top-0 absolute w-full bg-gray-400 bg-opacity-30 h-full z-40">
 
       </div>
       
