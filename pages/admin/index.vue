@@ -5,8 +5,8 @@
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-10">
           <div class="bg-white border p-6 justify-between items-center flex">
             <div>
-              <p class="font-medium uppercase text-sm">Number of courses</p>
-              <h1 class="font-semibold text-4xl mb-3">9</h1>
+              <p class="font-medium uppercase text-sm">Available courses</p>
+              <h1 class="font-semibold text-4xl mb-3">0{{total_course_number}}</h1>
               <a href="" class="px-2 py-1 text-sm border">Manage</a>
             </div>
 
@@ -25,8 +25,8 @@
 
           <div class="bg-white border p-6 justify-between items-center flex">
             <div>
-              <p class="font-medium uppercase text-sm">Amount Received</p>
-              <h1 class="font-semibold text-4xl mb-3 max-w-xs">#0.00</h1>
+              <p class="font-medium uppercase text-sm">Total Transactions</p>
+              <h1 class="font-semibold text-4xl mb-3 max-w-xs">0</h1>
               <a href="" class="px-2 py-1 text-sm border">Manage</a>
             </div>
 
@@ -42,6 +42,16 @@
 <script>
 export default {
   middleware: 'admin-login',
+
+  data(){
+    return{
+      total_course_number: '',
+    }
+  },
+
+  methods: {
+    
+  }
 
 }
 </script>
