@@ -1,10 +1,10 @@
 <template>
   <div>
-    <LayoutsAdminApp>
+    <LayoutsStudentsApp>
       <template v-slot:hero class="">
       </template>
 
-    </LayoutsAdminApp>
+    </LayoutsStudentsApp>
   </div>
 </template>
 
