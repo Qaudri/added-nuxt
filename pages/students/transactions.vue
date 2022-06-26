@@ -21,7 +21,7 @@ export default {
 
   methods: {
     ...mapActions({
-      setAllTransactions: 'transactions/set StudentTransactions'
+      setAllTransactions: 'transactions/setStudentTransactions'
     })
   },
 
@@ -32,7 +32,6 @@ export default {
   },
 
   created() {
-    this.showAllCourses()
   }
 }
 </script>

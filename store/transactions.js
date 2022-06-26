@@ -32,13 +32,13 @@ export const actions = {
     })
   },
 
-  listStudentCourses(context){
+  setStudentTransactions(context){
     return new Promise((resolve, reject) => {
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.student_token
 
       this.$axios.$get('/api/students/transactions')
         .then(response => {
-          context.commit('LIST_ALL_STUDENT_COURSES', response.data)
+          context.commit('LIST_ALL_STUDENT_TRANSACTIONS', response.data)
 
           resolve(response)
         })

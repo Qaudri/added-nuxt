@@ -8,7 +8,17 @@
 
 <script>
 export default {
+  methods: {
+    ...mapActions({
+      setAllTransactions: 'transactions/setStudentTransactions'
+    })
+  },
 
+  computed: {
+    ...mapGetters({
+      allTransactions: 'transactions/getStudentTransactions',
+    }),
+  },
 }
 </script>
 
