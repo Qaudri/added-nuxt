@@ -1,6 +1,8 @@
 <template>
   <div>
-    
+    <LayoutsAdminApp>
+      
+    </LayoutsAdminApp>
   </div>
 </template>
 
