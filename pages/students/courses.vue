@@ -1,7 +1,7 @@
 <template>
   <div :class="detailsdisplayed ? 'h-screen overflow-y-hidden' : '' ">
     <LayoutsAdminApp>
-      <div @click="hideDetails" :class="detailsdisplayed ? 'block' : 'hidden' " class="left-0 top-0 absolute w-full bg-gray-400 bg-opacity-40 h-full z-40">
+      <div @click="hideDetails" :class="detailsdisplayed ? 'block' : 'hidden' " class="left-0 top-0 absolute w-full bg-gray-400 bg-opacity-30 h-full z-40">
 
       </div>
       
@@ -33,9 +33,9 @@
             <div class="text-base font-medium">Course duration: <span class="text-primary-100">{{selected_for_details.duration}} weeks</span></div>
             <div class="text-base font-medium">Course price: <span class="text-primary-100">#{{selected_for_details.price}}</span></div>
           </div>
-          <div class="mt-4 bottom-4 fixed flex">
-            <UiButtonsPrimary @pushTo="registerPage" class="px-6 py-2 text-white font-medium flex items-center justify-center mx-auto" button_title="Enroll now"/>
-            <UiButtonsSecondary @Pushto="hideDetails" button_title="Check Other Courses" class="flex items-center justify-center mx-auto mt-2"/>
+          <div class="mt-4 bottom-4 fixed flex items-center">
+            <UiButtonsPrimary @pushTo="registerPage" class="px-6 py-2 text-white font-medium" button_title="Enroll now"/>
+            <UiButtonsSecondary @Pushto="hideDetails" button_title="Check Other Courses" class="mt-2"/>
           </div>
         </div>
       </div>

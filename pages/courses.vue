@@ -13,7 +13,7 @@
         <UiButtonsPrimary @pushTo="Primary" button_title="Contact Us" class="lg:ml-4 my-10 lg:my-0 mx-6 lg:mr-0 " />
       </template>
     </SectionsCommonHeader>
-    <div @click="hideDetails" :class="detailsdisplayed ? 'block' : 'hidden' " class=" absolute w-full bg-gray-400 bg-opacity-40 h-full z-40">
+    <div @click="hideDetails" :class="detailsdisplayed ? 'block' : 'hidden' " class=" absolute w-full bg-gray-400 bg-opacity-30 h-full z-40">
 
     </div>
 
@@ -37,10 +37,10 @@
           <p class="font-medium text-secondary-100 text-base">{{selected_for_details.details}}</p>
         </div>
         <div class="">
-          <div class="text-base font-medium">Course duration: <span class="text-primary-100">{{selected_for_details.duration}}</span></div>
-          <div class="text-base font-medium">Course price: <span class="text-primary-100">{{selected_for_details.price}}</span></div>
+          <div class="text-base font-medium">Course duration: <span class="text-primary-100">{{selected_for_details.duration}} weeks</span></div>
+          <div class="text-base font-medium">Course price: <span class="text-primary-100">#{{selected_for_details.price}}</span></div>
         </div>
-        <div class="mt-4 flex justify-center items-center mx-auto">
+        <div class="mt-4 fixed bottom-4 flex justify-center items-center mx-auto">
           <UiButtonsPrimary @pushTo="registerPage" class="px-6 py-2 text-white font-medium" button_title="Enroll now"/>
           <UiButtonsSecondary @Pushto="hideDetails" button_title="Check Other Courses" class="p-0"/>
         </div>
