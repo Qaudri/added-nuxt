@@ -52,11 +52,11 @@
     </LayoutsDialog>
 
     <LayoutsForm :class="edit_form_toggled ? 'block ' : 'hidden' " @UpdateCourseEvent="updateCourse()"
-    :course_title="selectedItem.title"
-    :course_duration="selectedItem.duration"
-    :course_price="selectedItem.price"
-    :course_description="selectedItem.details"
-    :uuid="selectedItem.uuid">
+    :course_title="selected_for_update.title"
+    :course_duration="selected_for_update.duration"
+    :course_price="selected_for_update.price"
+    :course_description="selected_for_update.details"
+    :uuid="selected_for_update.uuid">
       <div class="flex justify-end w-full">
         <UiButtonsClose @closeMenu="toggleEditCourse" class="flex items-center justify-end cursor-pointer pb-2" />
       </div>
@@ -101,6 +101,7 @@ export default {
       },
 
       selected_for_deletion: '',
+      selected_for_update: '',
     }
   },
 
@@ -117,7 +118,7 @@ export default {
 
     editCourse(item){
       this.edit_form_toggled = true
-      this.setCourse(item)
+      this.selected_for_update = item
     },
 
     createCourseForm(){
@@ -162,12 +163,12 @@ export default {
     },
 
     updateCourse(){
-      this.confirmUpdateCourse(this,this.selectedItem.uuid, {
-        edit_title: this.selectedItem.title,
-        edit_duration: this.selectedItem.duration,
-        edit_description: this.selectedItem.brief,
-        edit_price: this.selectedItem.price,
-        edit_imageUrl: this.selectedItem.imageUrl
+      this.confirmUpdateCourse(this.selected_for_update.uuid, {
+        edit_title: this.selected_for_update.title,
+        edit_duration: this.selected_for_update.duration,
+        edit_description: this.selected_for_update.brief,
+        edit_price: this.selected_for_update.price,
+        edit_imageUrl: this.selected_for_update.imageUrl
       })
 
       .then(() =>{
@@ -183,7 +184,6 @@ export default {
   computed: {
     ...mapGetters({
       courseItems : 'courses/getCourseItems',
-      selectedItem: 'courses/getSelectedCourse',
     }),
   },
 
