@@ -11,7 +11,7 @@ export const state = () =>({
 
     {
       id: 2,
-      imageUrl: require('@/assets/images/icons/courses/uiui.svg'),     
+      imageUrl: require('@/assets/images/icons/courses/uiux.svg'),     
       title: "Graphics Design",
       duration: "2",
       price: "80000",
