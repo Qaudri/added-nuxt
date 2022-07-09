@@ -2,7 +2,7 @@ export const state = () =>({
   items: [
     {
       id: 1,
-      imageUrl: "require('@/assets/images/icons/courses/design.svg')",      
+      imageUrl: require('@/assets/images/icons/courses/design.svg'),      
       title: "Brand Identity Design",
       duration: "2",
       price: "70000",
@@ -11,7 +11,7 @@ export const state = () =>({
 
     {
       id: 2,
-      imageUrl: "require('@/assets/images/icons/courses/uiui.svg')",     
+      imageUrl: require('@/assets/images/icons/courses/uiui.svg'),     
       title: "Graphics Design",
       duration: "2",
       price: "80000",
@@ -20,7 +20,7 @@ export const state = () =>({
 
     {
       id: 3,
-      imageUrl: "require('@/assets/images/icons/courses/ui-design.svg')",
+      imageUrl: require('@/assets/images/icons/courses/ui-design.svg'),
       title: "UI/UX Design",
       duration: "2",
       price: "100000",
@@ -29,7 +29,7 @@ export const state = () =>({
 
     {
       id: 4,
-      imageUrl: "require('@/assets/images/icons/courses/front-end.svg')",
+      imageUrl: require('@/assets/images/icons/courses/front-end.svg'),
       title: "Frontend Web Development",
       duration: "4",
       price: "150000",
@@ -38,7 +38,7 @@ export const state = () =>({
 
     {
       id: 5,
-      imageUrl: "require('@/assets/images/icons/courses/back-end.svg')",
+      imageUrl: require('@/assets/images/icons/courses/back-end.svg'),
       title: "Backend Web Development",
       duration: "4",
       price: "180000",
@@ -47,7 +47,7 @@ export const state = () =>({
 
     {
       id: 6,
-      imageUrl: "require('@/assets/images/icons/courses/freelancing.svg')",
+      imageUrl: require('@/assets/images/icons/courses/freelancing.svg'),
       title: "Freelancing",
       duration: "1",
       price: "50000",
@@ -56,7 +56,7 @@ export const state = () =>({
 
     {
       id: 7,
-      imageUrl: "require('@/assets/images/icons/courses/trading.svg')",
+      imageUrl: require('@/assets/images/icons/courses/trading.svg'),
       title: "Forex Trading",
       duration: "1",
       price: "5000",
@@ -65,7 +65,7 @@ export const state = () =>({
 
     {
       id: 8,
-      imageUrl: "require('@/assets/images/icons/courses/forex.svg')",
+      imageUrl: require('@/assets/images/icons/courses/forex.svg'),
       title: "Crypto Trading",
       duration: "2",
       price: "100000",
@@ -74,7 +74,7 @@ export const state = () =>({
 
     {
       id: 9,
-      imageUrl: "require('@/assets/images/icons/courses/digital-marketing.svg')",
+      imageUrl: require('@/assets/images/icons/courses/digital-marketing.svg'),
       title: "Digital Marketing",
       duration: "2",
       price: "65000",
