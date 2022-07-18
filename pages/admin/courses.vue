@@ -51,7 +51,6 @@
       </div>
     </LayoutsDialog>
 
-    {{selected_for_update}}
     <LayoutsForm :class="edit_form_toggled ? 'block ' : 'hidden' " @UpdateCourseEvent="updateCourse()"
     :course_image="selected_for_update.preview"
     :course_title="selected_for_update.title"
