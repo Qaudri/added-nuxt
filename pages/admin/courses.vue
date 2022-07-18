@@ -51,11 +51,13 @@
       </div>
     </LayoutsDialog>
 
+    {{selected_for_update}}
     <LayoutsForm :class="edit_form_toggled ? 'block ' : 'hidden' " @UpdateCourseEvent="updateCourse()"
+    :course_image="selected_for_update.preview"
     :course_title="selected_for_update.title"
-    :course_duration="selected_for_update.duration"
+    :course_duration="selected_for_update.duration_in_weeks"
     :course_price="selected_for_update.price"
-    :course_description="selected_for_update.details"
+    :course_description="selected_for_update.brief"
     :uuid="selected_for_update.uuid">
       <div class="flex justify-end w-full">
         <UiButtonsClose @closeMenu="toggleEditCourse" class="flex items-center justify-end cursor-pointer pb-2" />
@@ -66,11 +68,13 @@
       <div class="py-3 border-b mb-8">
         <h1 class="text-2xl font-semibold">Courses</h1>
       </div>
+
+      {{courseItems}}
       <div :class="create_course_form ? 'grid-cols-1 lg:grid-cols-2' : '' " class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10">
         <UiCardsCoursecard v-for="item in courseItems" :key="item.id" 
-        :imgUrl="item.imageUrl" 
+        :imgUrl="item.preview" 
         :title="item.title" 
-        :duration="item.duration"
+        :duration="item.duration_in_weeks"
         :price="item.price" @RegisterUser="toggleForm">
           <div class="flex">
             <img :src="require('@/assets/images/icons/edit.svg')" @click="editCourse(item)" class="w-5 cursor-pointer" />
@@ -93,11 +97,11 @@ export default {
       edit_form_toggled: false,
       create_course_form: false,
       form: {
-        title: "",
-        price: {},
-        duration: {},
-        brief: "",
-        image: "",
+        title: '',
+        price: '',
+        duration: '',
+        brief: '',
+        image: '',
       },
 
       selected_for_deletion: '',
@@ -130,13 +134,13 @@ export default {
         the_title: this.form.title,
         the_price: this.form.price,
         the_brief: this.form.brief,
-        the_duration: this.form.duration,
+        the_duration_in_weeks: this.form.duration,
         the_imageUrl: this.form.image
       })
 
       .then(() =>{
         this.create_course_form = !this.create_course_form
-        this.listEveryCourse
+        this.listEveryCourse()
       })
     },
 
@@ -163,7 +167,9 @@ export default {
     },
 
     updateCourse(){
-      this.confirmUpdateCourse(this.selected_for_update.uuid, {
+      
+      this.confirmUpdateCourse({
+        uuid: this.selected_for_update.uuid,
         edit_title: this.selected_for_update.title,
         edit_duration: this.selected_for_update.duration,
         edit_description: this.selected_for_update.brief,

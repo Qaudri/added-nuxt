@@ -162,8 +162,8 @@
             <div class="w-full py-3">
 
               <carousel>
-                <slide>
-                  <UiCardsReviewcard v-for="review in reviews" :key="review.id" :review="review.review" :reviewer="review.reviewer" />
+                <slide v-for="review in reviews" :key="review.id">
+                  <UiCardsReviewcard   :review="review.review" :reviewer="review.reviewer" />
                 </slide>
               </carousel>
             </div>

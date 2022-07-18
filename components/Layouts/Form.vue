@@ -14,6 +14,9 @@
         </div>
       </div>
       <form action="" @submit.prevent="emitUpdateCourse">
+        <label for="title">Course image</label>
+        <input type="text" :value="course_image">
+
         <label for="title">Course title</label>
         <input type="text" :value="course_title">
 
@@ -38,6 +41,7 @@ import {mapGetters, mapActions} from 'vuex';
 
 export default {
   props: {
+    course_image: String,
     course_title: String,
     course_duration: String,
     course_price: String,

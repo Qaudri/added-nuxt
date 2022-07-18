@@ -2,81 +2,81 @@ export const state = () =>({
   items: [
     {
       id: 1,
-      imageUrl: require('@/assets/images/icons/courses/design.svg'),      
+      preview: require('@/assets/images/icons/courses/design.svg'),      
       title: "Brand Identity Design",
-      duration: "2",
+      duration_in_weeks: 2,
       price: "70000",
       brief: "",
     },
 
     {
       id: 2,
-      imageUrl: require('@/assets/images/icons/courses/uiux.svg'),     
+      preview: require('@/assets/images/icons/courses/uiux.svg'),     
       title: "Graphics Design",
-      duration: "2",
+      duration_in_weeks: 2,
       price: "80000",
       brief: "",
     },
 
     {
       id: 3,
-      imageUrl: require('@/assets/images/icons/courses/ui-design.svg'),
+      preview: require('@/assets/images/icons/courses/ui-design.svg'),
       title: "UI/UX Design",
-      duration: "2",
+      duration_in_weeks: 2,
       price: "100000",
       brief: "",
     },
 
     {
       id: 4,
-      imageUrl: require('@/assets/images/icons/courses/front-end.svg'),
+      preview: require('@/assets/images/icons/courses/front-end.svg'),
       title: "Frontend Web Development",
-      duration: "4",
+      duration_in_weeks: 4,
       price: "150000",
       brief: "",
     },
 
     {
       id: 5,
-      imageUrl: require('@/assets/images/icons/courses/back-end.svg'),
+      preview: require('@/assets/images/icons/courses/back-end.svg'),
       title: "Backend Web Development",
-      duration: "4",
+      duration_in_weeks: 4,
       price: "180000",
       brief: "",
     },
 
     {
       id: 6,
-      imageUrl: require('@/assets/images/icons/courses/freelancing.svg'),
+      preview: require('@/assets/images/icons/courses/freelancing.svg'),
       title: "Freelancing",
-      duration: "1",
+      duration_in_weeks: 1,
       price: "50000",
       brief: "",
     },
 
     {
       id: 7,
-      imageUrl: require('@/assets/images/icons/courses/trading.svg'),
+      preview: require('@/assets/images/icons/courses/trading.svg'),
       title: "Forex Trading",
-      duration: "1",
+      duration_in_weeks: 1,
       price: "5000",
       brief: "",
     },
 
     {
       id: 8,
-      imageUrl: require('@/assets/images/icons/courses/forex.svg'),
+      preview: require('@/assets/images/icons/courses/forex.svg'),
       title: "Crypto Trading",
-      duration: "2",
+      duration_in_weeks: 2,
       price: "100000",
       brief: "",
     },
 
     {
       id: 9,
-      imageUrl: require('@/assets/images/icons/courses/digital-marketing.svg'),
+      preview: require('@/assets/images/icons/courses/digital-marketing.svg'),
       title: "Digital Marketing",
-      duration: "2",
+      duration_in_weeks: 2,
       price: "65000",
       brief: "",
     },
@@ -150,7 +150,7 @@ export const actions = {
         title: credentials.the_title,
         price: credentials.the_price,
         brief: credentials.the_brief,
-        preview: credentials.the_imageUrl,
+        preview: credentials.the_preview,
         duration_in_weeks: credentials.the_duration
       })
         .then(response => {
@@ -164,15 +164,15 @@ export const actions = {
     })
   },
 
-  updateCourse(context, credentials, uuid){
+  updateCourse(context, credentials){
     return new Promise((resolve, reject) => {
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.admin_token
 
-      this.$axios.$put('/api/admins/courses/' + uuid , {
+      this.$axios.$put('/api/admins/courses/' + credentials.uuid , {
         title: credentials.edit_title,
         price: credentials.edit_price,
         brief: credentials.edit_description,
-        preview: credentials.edit_imageUrl,
+        preview: credentials.edit_preview,
         duration_in_weeks: credentials.edit_duration
       })
 
