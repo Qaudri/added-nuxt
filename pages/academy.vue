@@ -159,13 +159,14 @@
             <h1 class="md:text-4xl text-3xl font-bold uppercase mb-4 text-center text-primary-100 flex justify-center mx-auto">
               What They're Saying
             </h1>
-            <div class="w-full py-3">
-
-              <carousel>
-                <slide v-for="review in reviews" :key="review.id">
-                  <UiCardsReviewcard   :review="review.review" :reviewer="review.reviewer" />
-                </slide>
-              </carousel>
+            <div class="w-full py-3 flex justify-center mx-auto">
+              <div class="w-full md:w-2/3 xl:w-1/2 py-3 border-y-2 border-black">
+                <carousel class="w-full" :centerMode="true" :autoplay="true" :perPage="1" :paginationEnabled="false" :loop="true">
+                  <slide v-for="review in reviews" :key="review.id" class="flex justify-center mx-auto">
+                    <UiCardsReviewcard  :review="review.review" :reviewer="review.reviewer" />
+                  </slide>
+                </carousel>
+              </div>
             </div>
           </div>
 

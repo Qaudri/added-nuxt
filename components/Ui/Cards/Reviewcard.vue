@@ -1,10 +1,10 @@
 <template>
-  <div class="bg-gray-50 p-6 width mx-2 md:mx-5 xl:mx-7">
-    <div class="text-9xl font-light opacity-20">"</div>
-    <SectionsReviewsReview class="-mt-16 pl-10">
+  <div class="w-full md:w-2/3 xl:w-1/2 py-4">
+    <SectionsReviewsReview class="text-center">
       {{review}}
     </SectionsReviewsReview>
-    <SectionsReviewsReviewer class="mt-5 flex justify-end">
+    <div class="w-12 h-0.5 bg-black mb-2 mt-14 flex justify-center mx-auto"></div>
+    <SectionsReviewsReviewer class="flex justify-center">
       {{reviewer}}
     </SectionsReviewsReviewer>
   </div>
@@ -20,8 +20,4 @@ export default {
 </script>
 
 <style>
-.width{
-  width: 24rem !important;
-  padding-right: 1.5rem !important;
-}
 </style>
