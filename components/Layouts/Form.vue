@@ -43,7 +43,7 @@ export default {
   props: {
     course_image: String,
     course_title: String,
-    course_duration: String,
+    course_duration: Number,
     course_price: String,
     course_description: String,
   },

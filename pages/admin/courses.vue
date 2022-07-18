@@ -18,7 +18,7 @@
         </div>
          <form action="" @submit.prevent="createCourse" >
           <label for="title">Image link</label>
-          <input type="text" v-model="form.image" placeholder="Enter the image link">
+          <input type="text" v-model="form.preview" placeholder="Enter the image link">
 
           <label for="title">Course title</label>
           <input type="text" v-model="form.title" placeholder="Enter the course title">
@@ -99,7 +99,7 @@ export default {
         price: '',
         duration: '',
         brief: '',
-        image: '',
+        preview: '',
       },
 
       selected_for_deletion: '',
@@ -132,8 +132,8 @@ export default {
         the_title: this.form.title,
         the_price: this.form.price,
         the_brief: this.form.brief,
-        the_duration_in_weeks: this.form.duration,
-        the_imageUrl: this.form.image
+        the_duration: this.form.duration,
+        the_preview: this.form.preview
       })
 
       .then(() =>{

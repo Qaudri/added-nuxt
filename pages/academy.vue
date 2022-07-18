@@ -161,7 +161,7 @@
             </h1>
             <div class="w-full py-3 flex justify-center mx-auto">
               <div class="w-full md:w-2/3 xl:w-1/2 py-3 border-y-2 border-black">
-                <carousel class="w-full" :centerMode="true" :autoplay="true" :perPage="1" :paginationEnabled="false" :loop="true">
+                <carousel class="w-full" :centerMode="true" :autoplay="true" :perPage="1" :paginationEnabled="false" :loop="false">
                   <slide v-for="review in reviews" :key="review.id" class="flex justify-center mx-auto">
                     <UiCardsReviewcard  :review="review.review" :reviewer="review.reviewer" />
                   </slide>
