@@ -34,7 +34,7 @@
 export default {
 props: {
     imgUrl: String,
-    duration: String,
+    duration: Number,
     title: String,
     price: String,
   },

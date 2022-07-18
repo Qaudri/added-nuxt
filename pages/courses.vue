@@ -25,7 +25,7 @@
         </div>
         <div class="flex items-center ">
           <div class="pr-4 border-r w-32 h-32">
-            <img :src="selected_for_details.imageUrl" alt="" class="w-24">
+            <img :src="selected_for_details.preview" alt="" class="w-24">
           </div>
           <h1 class="text-3xl font-bold mx-3">
             {{selected_for_details.title}}
@@ -34,10 +34,10 @@
 
         <div class="my-5">
           <h1 class="font-semibold text-primary-100 text-xl my-3">Course Description:</h1>
-          <p class="font-medium text-secondary-100 text-base">{{selected_for_details.details}}</p>
+          <p class="font-medium text-secondary-100 text-base">{{selected_for_details.brief}}</p>
         </div>
         <div class="">
-          <div class="text-base font-medium">Course duration: <span class="text-primary-100">{{selected_for_details.duration}} weeks</span></div>
+          <div class="text-base font-medium">Course duration: <span class="text-primary-100">{{selected_for_details.duration_in_weeks}} weeks</span></div>
           <div class="text-base font-medium">Course price: <span class="text-primary-100">#{{selected_for_details.price}}</span></div>
         </div>
         <div class="mt-4 fixed bottom-4 flex justify-center items-center mx-auto">
@@ -50,9 +50,9 @@
     <div class="container mx-auto px-10 py-28 xl:py-32">
       <div :class="detailsdisplayed ? 'grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 w-full md:w-1/2 lg:w-2/3 2xl:w-3/4 gap-10' :'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10'" class="">
         <UiCardsCoursecard v-for="item in course" :key="item.id" class="bg-white"
-        :imgUrl="item.imageUrl"   
+        :imgUrl="item.preview"   
         :title="item.title" 
-        :duration="item.duration"
+        :duration="item.duration_in_weeks"
         :price="item.price">
           <div class="flex items-center">
             <UiButtonsSecondary @Pushto="showDetails(item)" button_title="See Details" class=""/>
