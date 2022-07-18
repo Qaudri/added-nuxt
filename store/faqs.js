@@ -25,7 +25,7 @@ export const state = () => ({
     {
       id: 4,
       question: "Why Added?",
-      answer: "Because with us, you can never go wrong! Our courses are tailored to mmet your needs and suit your learning speed and capability. Our mentors are friendly, warm and caring. Our environment is safe, conducive and welcoming. In short, we are the best there is at what we do!",
+      answer: "Because with us, you can never go wrong! Our courses are tailored to meet your needs and suit your learning speed and capability. Our mentors are friendly, warm and caring. Our environment is safe, conducive and welcoming. In short, we are the best there is at what we do!",
       active: false,
 
     },

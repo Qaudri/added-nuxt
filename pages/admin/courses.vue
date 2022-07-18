@@ -69,7 +69,6 @@
         <h1 class="text-2xl font-semibold">Courses</h1>
       </div>
 
-      {{courseItems}}
       <div :class="create_course_form ? 'grid-cols-1 lg:grid-cols-2' : '' " class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10">
         <UiCardsCoursecard v-for="item in courseItems" :key="item.id" 
         :imgUrl="item.preview" 
