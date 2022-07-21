@@ -3,12 +3,11 @@
     <div class="shadow-lg fixed w-screen bg-white top-0">
       <div class="block lg:flex items-center lg:justify-between container mx-auto py-3 px-10">
 
-        <div class="flex justify-between">
+        <div class="flex justify-between items-center">
           <slot></slot>
 
           <div class="flex lg:hidden">
-            <UiButtonsMenu @revealMenu="showMenu" :class="is_revealed ? 'hidden' : 'block'" /> 
-            <UiButtonsClose @closeMenu="hideMenu" :class="is_revealed ? 'block' : 'hidden' " />
+            <UiButtonsMenu @revealMenu="toggleMenu" :class="is_revealed ? 'block' : 'block'" /> 
           </div>
         </div>
 
@@ -30,19 +29,11 @@ data(){
   }
 },
 
-methods: {
-
-  hideMenu(){
-    this.is_revealed = false;
-    setTimeout(() => {
-      this.is_animated = true
-    }, 750);
+  methods: {
+    toggleMenu(){
+      this.is_revealed = !this.is_revealed;
+    },
   },
-
-  showMenu(){
-    this.is_revealed = true;
-  },
-}
 }
 </script>
 
