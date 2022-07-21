@@ -40,6 +40,8 @@
 </template>
 
 <script>
+import {mapGetters, mapActions} from 'vuex';
+
 export default {
   middleware: 'admin-login',
 
