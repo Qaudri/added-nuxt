@@ -6,7 +6,7 @@
           <div class="bg-white border p-6 justify-between items-center flex">
             <div>
               <p class="font-medium uppercase text-sm">Available courses</p>
-              <h1 class="font-semibold text-4xl mb-3">10</h1>
+              <h1 class="font-semibold text-4xl mb-3">{{courseTotal}}</h1>
               <a href="/students/courses" class="px-2 py-1 text-sm border">Check</a>
             </div>
 
@@ -40,8 +40,25 @@
 </template>
 
 <script>
+import {mapGetters, mapActions} from 'vuex';
+
 export default {
   middleware: 'student-login',
+
+  data(){
+    return{
+    }
+  },
+
+  computed: {
+    ...mapGetters({
+      courseTotal : 'courses/getCourseTotal',
+    }),
+  },
+
+  methods: {
+    
+  }
 
 }
 </script>

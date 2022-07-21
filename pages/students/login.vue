@@ -52,7 +52,7 @@ export default {
       })
 
       .then(() =>{
-        this.$router.push({name: '/students/'})
+        this.$router.push({name: '/students/index'})
       })
 
       .catch( error => {
