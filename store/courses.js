@@ -87,6 +87,10 @@ export const getters = {
   getCourseItems(state) {
     return state.items
   },
+
+  getCourseTotal(state){
+    return state.items.length
+  }
 }
 
 export const actions = {
