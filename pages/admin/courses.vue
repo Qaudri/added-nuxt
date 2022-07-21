@@ -172,7 +172,7 @@ export default {
         edit_duration: this.selected_for_update.duration,
         edit_description: this.selected_for_update.brief,
         edit_price: this.selected_for_update.price,
-        edit_imageUrl: this.selected_for_update.imageUrl
+        edit_preview: this.selected_for_update.preview
       })
 
       .then(() =>{

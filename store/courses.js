@@ -172,6 +172,7 @@ export const actions = {
       this.$axios.defaults.headers.common['Authorization'] = 'Bearer ' + context.rootState.authentication.admin_token
 
       this.$axios.$put('/api/admins/courses/' + credentials.uuid , {
+        uuid: credentials.uuid,
         title: credentials.edit_title,
         price: credentials.edit_price,
         brief: credentials.edit_description,

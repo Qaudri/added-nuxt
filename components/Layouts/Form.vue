@@ -13,7 +13,7 @@
           </div>
         </div>
       </div>
-      <form action="" @submit.prevent="emitUpdateCourse">
+      <form action="" @submit.prevent="emitUpdateCourse(item)">
         <label for="title">Course image</label>
         <input type="text" :value="course_image">
 
@@ -21,7 +21,7 @@
         <input type="text" :value="course_title">
 
         <label for="title">Course duration (in weeks)</label>
-        <input type="text" :value="course_duration">
+        <input type="number" :value="course_duration">
 
         <label for="title">Course price</label>
         <input type="text" :value="course_price">
@@ -43,16 +43,9 @@ export default {
   props: {
     course_image: String,
     course_title: String,
-    course_duration: Number,
+    course_duration: String,
     course_price: String,
     course_description: String,
-  },
-
-  computed: {
-    ...mapGetters({
-      course : 'courses/getCourseItems',
-      selected: 'courses/getSelectedCourse'
-    })
   },
 
   methods: {
