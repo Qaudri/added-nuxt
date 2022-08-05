@@ -159,9 +159,9 @@
             <h1 class="md:text-4xl text-3xl font-bold uppercase mb-4 text-center text-primary-100 flex justify-center mx-auto">
               What They're Saying
             </h1>
-            <div class="w-full py-3 flex justify-center mx-auto">
-              <div class="w-full md:w-2/3 xl:w-1/2 py-3 border-y-2 border-black">
-                <carousel class="w-full" :centerMode="true" :autoplay="true" :perPage="1" :paginationEnabled="false" :loop="false">
+            <div class="w-full py-3 flex justify-center items-center mx-auto">
+              <div class="w-full md:w-2/3 xl:w-1/2 py-3 mx-auto border-y-2 border-black">
+                <carousel class="m-0" :adjustableHeight="true" :centerMode="false" :autoplay="true" :itemsToShow="1" :paginationEnabled="false" :navigationEnabled="false" :loop="true" :infiniteScroll="true">
                   <slide v-for="review in reviews" :key="review.id" class="flex justify-center mx-auto">
                     <UiCardsReviewcard  :review="review.review" :reviewer="review.reviewer" />
                   </slide>
@@ -195,7 +195,7 @@
           </div>
         </div>
 
-        <a href="@/courses.html" class="text-white xl:text-xl xl:border-3 text-base px-6 py-3 font-medium border-2 border-white hover:bg-white hover:text-primary-100 duration-500 ease-in-out">
+        <a href="/courses" class="text-white xl:text-xl xl:border-3 text-base px-6 py-3 font-medium border-2 border-white hover:bg-white hover:text-primary-100 duration-500 ease-in-out">
           Register Now
         </a>      
       </div>
@@ -207,9 +207,9 @@
 
 <script>
 
-
-import {mapGetters} from 'vuex';
 import { Carousel, Slide } from 'vue-carousel';
+import {mapGetters} from 'vuex';
+
 
 export default {
 

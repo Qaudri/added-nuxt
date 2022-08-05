@@ -13,12 +13,12 @@
 <script>
 
 
-
 export default {
 
   props:{
     question: String,
-    answer: String
+    answer: String,
+    is_active: Boolean,
   },
 
 
@@ -30,15 +30,14 @@ export default {
 
   methods: {
     toggleAnswer(){
-      this.answerRevealed = !this.answerRevealed
-    }
-  },
+      this.$emit("checkActive")
+      this.is_active = true
+      if (this.is_active = true) {
+        this.answerRevealed = !this.answerRevealed
+      }
+    },
 
-  // computed: {
-  //   ...mapGetters({
-  //     faqItems : 'faqs/getFaqItems'
-  //   })
-  // }
+  },
 
 }
 </script>
