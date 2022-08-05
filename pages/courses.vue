@@ -47,7 +47,7 @@
       </div>
     </div>
 
-    <div class="container mx-auto px-10 py-28 xl:py-32">
+    <div class="container mx-auto px-6 md:px-10 py-28 xl:py-32">
       <div :class="detailsdisplayed ? 'grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 w-full md:w-1/2 lg:w-2/3 2xl:w-3/4 gap-10' :'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10'" class="">
         <UiCardsCoursecard v-for="item in course" :key="item.id" class="bg-white"
         :imgUrl="item.preview"   

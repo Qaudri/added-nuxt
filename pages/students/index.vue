@@ -2,7 +2,7 @@
   <div>
     <LayoutsStudentsApp>
       <template v-slot:hero class="">
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-10">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-6 md:px-10">
           <div class="bg-white border p-6 justify-between items-center flex">
             <div>
               <p class="font-medium uppercase text-sm">Available courses</p>

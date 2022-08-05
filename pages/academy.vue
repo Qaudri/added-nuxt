@@ -18,7 +18,7 @@
 
       <div class="lg:flex items-center justify-between mt-28 lg:mt-36 container mx-auto" >
 
-        <div class="lg:w-1/2 px-10 w-full mb-5">
+        <div class="lg:w-1/2 px-6 md:px-10 w-full mb-5">
 
           <h1 class="select-none text-4xl lg:text-5xl 2xl:text-6xl font-bold mb-8 md:my-6 lg:leading-relaxed leading-normal hero-text 2xl:w-1/2">
             It's time to learn and acquire digital Tech skills.
@@ -29,7 +29,7 @@
           </p>
 
           <div>
-            <a href="@/courses.html" class="select-none px-10 py-3 font-medium hover:text-white hover:bg-primary-100 border-2 border-primary-100 text-primary-100 mt-8 mb-1 duration-500 ease-in-out">
+            <a href="@/courses.html" class="select-none px-6 md:px-10 py-3 font-medium hover:text-white hover:bg-primary-100 border-2 border-primary-100 text-primary-100 mt-8 mb-1 duration-500 ease-in-out">
                 Get Started
             </a>
           </div>
@@ -46,7 +46,7 @@
           <div class="w-full hidden lg:block lg:w-1/2">
             <img :src="require('@/assets/images/academy.jpg')" alt="" class="w-full">
           </div>
-          <div class="w-full lg:w-1/2 px-10 md:px-16 2xl:px-24 py-8 lg:py-0">
+          <div class="w-full lg:w-1/2 px-6 md:px-16 2xl:px-24 py-8 lg:py-0">
             <h1
             class="md:text-4xl text-3xl font-bold uppercase mb-4 text-center text-primary-100 flex justify-center mx-auto">
                 Our Academy
@@ -64,7 +64,7 @@
           </div>
         </div>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-24 container mx-auto px-10" >
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-24 container mx-auto px-6 md:px-10" >
 
           <div class="p-6 py-6 md:py-8 bg-white shadow-lg flex md:block">
             <img :src="require('@/assets/images/icons/register.svg')" alt="" class="w-16 md:w-28 md:mb-6 mr-4 flex justify-center md:mx-auto">
@@ -126,7 +126,7 @@
       <div class="container mx-auto">
 
         <div class="block lg:flex justify-between items-center mb-10">
-          <div class="mx-auto mb-12 lg:mb-0 px-10 lg:w-1/2">
+          <div class="mx-auto mb-12 lg:mb-0 px-6 md:px-10 lg:w-1/2">
             <p class="text-base md:text-lg xl:text-xl mb-1">
               Become a certified
             </p>
@@ -140,7 +140,7 @@
             companies. We conduct and train students in different courses with unique certification.
             </p>
 
-            <a href="@/courses.html" class="text-lg text-primary-100 font-medium py-3 px-10 border-2 border-primary-100
+            <a href="@/courses.html" class="text-lg text-primary-100 font-medium py-3 px-6 md:px-10 border-2 border-primary-100
             hover:bg-primary-100 duration-500 ease-in-out hover:text-white">View our Courses
             </a>
           </div>
@@ -153,7 +153,7 @@
       </div>
     </section>
 
-    <section class="pt-24 lg:pt-28 pb-32 px-10" id="reviews/faqs">
+    <section class="pt-24 lg:pt-28 pb-32 px-6 md:px-10" id="reviews/faqs">
       <div>
           <div class="">
             <h1 class="md:text-4xl text-3xl font-bold uppercase mb-4 text-center text-primary-100 flex justify-center mx-auto">

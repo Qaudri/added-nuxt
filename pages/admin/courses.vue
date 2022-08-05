@@ -17,19 +17,19 @@
           </div>
         </div>
          <form action="" @submit.prevent="createCourse" >
-          <label for="title">Image link</label>
+          <label for="image link">Image link</label>
           <input type="text" v-model="form.preview" placeholder="Enter the image link">
 
           <label for="title">Course title</label>
           <input type="text" v-model="form.title" placeholder="Enter the course title">
 
-          <label for="title">Course duration (in weeks)</label>
+          <label for="duration">Course duration (in weeks)</label>
           <input type="number" v-model="form.duration" placeholder="Enter the course duration (number)">
 
-          <label for="title">Course price</label>
+          <label for="price">Course price</label>
           <input type="number" v-model="form.price" placeholder="Enter the course price (number)">
 
-          <label for="title">Course brief</label>
+          <label for="brief">Course brief</label>
           <input type="text" v-model="form.brief" placeholder="Enter the course brief">
 
           <button type="submit" class="px-6 border-2 w-full mt-6 border-primary-100 text-primary-100 font-medium text-lg hover:bg-primary-100 hover:text-white ease-in-out duration-300 py-3">Create course</button>
@@ -130,7 +130,7 @@ export default {
     createCourse(){
       this.createNewCourses({
         the_title: this.form.title,
-        the_price: this.form.price,
+        the_price: parseInt(this.form.price),
         the_brief: this.form.brief,
         the_duration: this.form.duration,
         the_preview: this.form.preview
@@ -169,7 +169,7 @@ export default {
       this.confirmUpdateCourse({
         uuid: this.selected_for_update.uuid,
         edit_title: this.selected_for_update.title,
-        edit_duration: this.selected_for_update.duration,
+        edit_duration: parseInt(this.selected_for_update.duration),
         edit_description: this.selected_for_update.brief,
         edit_price: this.selected_for_update.price,
         edit_preview: this.selected_for_update.preview
