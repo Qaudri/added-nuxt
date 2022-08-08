@@ -24,10 +24,10 @@
           <input type="text" v-model="form.title" placeholder="Enter the course title">
 
           <label for="duration">Course duration (in weeks)</label>
-          <input type="number" v-model="form.duration" placeholder="Enter the course duration (number)">
+          <input type="text" v-model="form.duration" placeholder="Enter the course duration (number)">
 
           <label for="price">Course price</label>
-          <input type="number" v-model="form.price" placeholder="Enter the course price (number)">
+          <input type="text" v-model="form.price" placeholder="Enter the course price (number)">
 
           <label for="brief">Course brief</label>
           <input type="text" v-model="form.brief" placeholder="Enter the course brief">
@@ -67,7 +67,7 @@
       <div class="py-3 border-b mb-8">
         <h1 class="text-2xl font-semibold">Courses</h1>
       </div>
-
+      {{courseItems}}
       <div :class="create_course_form ? 'grid-cols-1 lg:grid-cols-2' : '' " class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10">
         <UiCardsCoursecard v-for="item in courseItems" :key="item.id" 
         :imgUrl="item.preview" 
@@ -132,7 +132,7 @@ export default {
         the_title: this.form.title,
         the_price: parseInt(this.form.price),
         the_brief: this.form.brief,
-        the_duration: this.form.duration,
+        the_duration: parseInt(this.form.duration),
         the_preview: this.form.preview
       })
 

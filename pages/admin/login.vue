@@ -4,10 +4,10 @@
 
       <form action="" @submit.prevent="signIn">
         <label for="Name" class="mt-0">Email</label>
-        <input v-model="form.email" type="email" name="email" id="email" placeholder="Enter your email address">
+        <input autocomplete="off" v-model="form.email" type="email" name="email" id="email" placeholder="Enter your email address">
 
         <label for="email">Password</label>
-        <input v-model="form.password" type="password" name="password" id="password" placeholder="Enter your password">
+        <input autocomplete="on" v-model="form.password" type="password" name="password" id="password" placeholder="Enter your password">
 
         <button type="submit" class="submit">Login</button>
       </form>

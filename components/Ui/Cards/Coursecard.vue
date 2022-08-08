@@ -25,10 +25,7 @@
 
     </div>
   </div>
-</template
-
-<script>
-
+</template>
 
 <script>
 export default {
@@ -36,7 +33,7 @@ props: {
     imgUrl: String,
     duration: Number,
     title: String,
-    price: String,
+    price: Number,
   },
 
 }
