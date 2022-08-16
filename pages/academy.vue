@@ -180,8 +180,8 @@
       </div>
     </section>
 
-    <section class="container mx-auto relative">
-      <div class="bg-primary-100 p-10 md:flex items-center justify-around absolute -mt-28">
+    <section class="container mx-auto relative z-10">
+      <div class="bg-primary-100 p-10 md:flex items-center justify-around absolute raise -mt-40 lg:-mt-36">
         <div class="mb-16 md:mb-0 md:w-3/5">
           <div class="text-left text-base text-white md:text-base xl:text-lg mb-2">
             What are you waiting for?
@@ -281,5 +281,12 @@ p{
 .bg-gray-50{
   background-color: #f7f7f7 !important;
 }
+
+@media screen and (max-width: 400px) {
+.raise{
+  margin-top: -15rem;
+}
+}
+
 </style>
 
