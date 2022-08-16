@@ -20,7 +20,7 @@
 
         <div class="lg:w-1/2 px-6 md:px-10 w-full mb-5">
 
-          <h1 class="select-none text-4xl lg:text-5xl 2xl:text-6xl font-bold mb-8 md:my-6 lg:leading-relaxed leading-normal hero-text 2xl:w-1/2">
+          <h1 class="select-none text-4xl lg:text-5xl 2xl:text-6xl font-bold mb-8 md:my-6 lg:leading-tight leading-normal hero-text xl:w-1/2">
             It's time to learn and acquire digital Tech skills.
           </h1>
 

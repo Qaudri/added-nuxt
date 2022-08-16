@@ -5,7 +5,7 @@
         <UiSharedLogo @emitReload="reloadThisPage" />
       </div>
 
-      <template v-slot:menuitems :class="is_revealed ? 'menu-slide-down' : 'menu-slide-up'" >
+      <template v-slot:menuitems >
         <UiButtonsSecondary @Pushto="whoWeAre" button_title="Who We Are" class="lg:mx-4 lg:my-0 my-4"/>
         <UiButtonsSecondary @Pushto="whatWeDo" button_title="What We Do" class="lg:mx-4 lg:my-0 my-4"/>
         <UiButtonsSecondary @Pushto="ourServices" button_title="Our Services" class="lg:mx-4 lg:my-0 my-4"/>
