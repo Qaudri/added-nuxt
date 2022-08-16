@@ -9,7 +9,7 @@
         <label for="password">Password</label>
         <input v-model="form.password" type="password" name="password"  placeholder="Choose your password">
 
-        <button type="submit" class="submit">Register</button>
+        <button type="submit" class="submit">Create Account</button>
 
         <div class="flex justify-center items-center mt-4">
           <p class="text-secondary-100 text-sm mr-2 font-medium">Already registered?</p>
@@ -58,7 +58,7 @@ export default {
     },
 
     LoginPage(){
-      this.$router.push({path:'/login'})
+      this.$router.push({path:'/students'})
     }
   },
 

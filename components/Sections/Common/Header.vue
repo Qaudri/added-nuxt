@@ -7,11 +7,11 @@
           <slot></slot>
 
           <div class="flex lg:hidden">
-            <UiButtonsMenu @revealMenu="toggleMenu" :class="is_revealed ? 'block' : 'block'" /> 
+            <UiButtonsMenu @revealMenu="toggleMenu"  /> 
           </div>
         </div>
 
-        <div :class="is_revealed ? 'menu-slide-down' : 'menu-slide-up'" class="items-center hidden lg:flex lg:pt-0 pt-8 h-screen lg:h-auto">
+        <div :class="is_revealed ? 'menu-slide-down' : 'menu-slide-up'" class=" justify-center items-center hidden lg:flex lg:pt-0 pt-8 h-screen lg:h-auto" @click="toggleMenu">
           <slot name="menuitems"></slot>
         </div>
 
@@ -22,18 +22,28 @@
 
 <script>
 export default {
-data(){
-  return{
-    is_revealed: false,
-    is_animated: false,
-  }
-},
+  props: {
+    menuState: false
+  },
+
+  data(){
+    return{
+      is_revealed: false,
+      is_animated: false,
+    }
+  },
 
   methods: {
     toggleMenu(){
       this.is_revealed = !this.is_revealed;
     },
   },
+
+  created(){
+  },
+
+  mounted(){
+  }
 }
 </script>
 

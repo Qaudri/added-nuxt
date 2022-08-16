@@ -9,10 +9,10 @@
         <label for="email">Password</label>
         <input v-model="form.password" type="password" name="password" id="password" placeholder="Enter your password">
 
-        <button type="submit" class="submit">Register</button>
+        <button type="submit" class="submit">Sign In</button>
         <div class="flex justify-center items-center mt-4">
           <p class="text-secondary-100 text-sm font-medium mr-2">Not registered yet?</p>
-          <UiButtonsSecondary @Pushto="RegisterPage" button_title="Login"/>
+          <UiButtonsSecondary @Pushto="RegisterPage" button_title="Create Account"/>
         </div>
       </form>
 

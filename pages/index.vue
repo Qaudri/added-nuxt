@@ -5,12 +5,16 @@
         <UiSharedLogo @emitReload="reloadThisPage" />
       </div>
 
-      <template v-slot:menuitems >
-        <UiButtonsSecondary @Pushto="whoWeAre" button_title="Who We Are" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
-        <UiButtonsSecondary @Pushto="whatWeDo" button_title="What We Do" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
-        <UiButtonsSecondary @Pushto="ourServices" button_title="Our Services" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
-        <UiButtonsSecondary @Pushto="Academy" button_title="Academy" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0" />
-        <a href="https://bit.ly/3KPTsPB" class="text-primary-100 xl:text-xl text-base px-4 py-2 font-medium border-2 2xl:border-3 border-primary-100 hover:bg-primary-100 hover:text-white duration-500 ease-in-out">Let's Talk</a>
+      <template v-slot:menuitems :class="is_revealed ? 'menu-slide-down' : 'menu-slide-up'" >
+        <UiButtonsSecondary @Pushto="whoWeAre" button_title="Who We Are" class="lg:mx-4 lg:my-0 my-4"/>
+        <UiButtonsSecondary @Pushto="whatWeDo" button_title="What We Do" class="lg:mx-4 lg:my-0 my-4"/>
+        <UiButtonsSecondary @Pushto="ourServices" button_title="Our Services" class="lg:mx-4 lg:my-0 my-4"/>
+        <UiButtonsSecondary @Pushto="Academy" button_title="Academy" class="lg:mx-4 lg:my-0 my-4" />
+
+        <div class="my-10 lg:my-0">
+          <a href="https://wa.me/message/QAXPPW4FO55FM1" target="blank" class="text-primary-100 xl:text-xl text-base px-4 py-2 font-medium border-2 2xl:border-3 border-primary-100 hover:bg-primary-100 hover:text-white duration-500 ease-in-out">Let's Talk</a>
+        </div>
+
       </template>
     </SectionsCommonHeader>
 
@@ -206,25 +210,36 @@
 export default {
   name: 'IndexPage',
 
+  data(){
+    return {
+      menuToggle: false
+    }
+  },
+
   methods: {
     reloadThisPage(){
       this.$router.push({path:'/'})
+      this.is_revealed = false
     },
 
     whoWeAre(){
       this.$router.push({path:'/#who-we-are'})
+      this.is_revealed = false
     },
 
     whatWeDo(){
       this.$router.push({path:'/#what-we-do'})
+      this.is_revealed = false
     },
 
     ourServices(){
       this.$router.push({path:'/#our-services'})
+      this.is_revealed = false
     },
 
     Academy(){
       this.$router.push({path:'/academy'})
+      this.is_revealed = false
     },
   }
 }

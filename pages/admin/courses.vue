@@ -130,9 +130,9 @@ export default {
     createCourse(){
       this.createNewCourses({
         the_title: this.form.title,
-        the_price: parseInt(this.form.price),
+        the_price: this.form.price,
         the_brief: this.form.brief,
-        the_duration: parseInt(this.form.duration),
+        the_duration: this.form.duration,
         the_preview: this.form.preview
       })
 
