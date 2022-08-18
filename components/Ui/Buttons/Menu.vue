@@ -10,18 +10,19 @@
 <script>
 export default {
   props: {
-    BlockBackground: Boolean
+    BlockBackground: Boolean,
+    rotateMenu: Boolean
   },
 
   data(){
     return{
-      mobile_nav:false,
+      mobile_nav: false,
     }
   },
   methods: {
     revealMenuEvent(){
       this.mobile_nav = !this.mobile_nav
-      this.$emit("revealMenu")
+      this.$emit("revealMenu", this.mobile_nav)
     }
   }
 }

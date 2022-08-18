@@ -7,11 +7,16 @@
           <slot></slot>
 
           <div class="flex lg:hidden">
-            <UiButtonsMenu @revealMenu="toggleMenu"  /> 
+            <div class="lg:hidden" @click="revealMenuEvent">
+              <div class="w-8">
+                <div :class="(mobile_nav ? 'transition transform rotate-45 my-0 w-8' : 'transition my-1.5 w-8') + ' ' + (BlockBackground ? 'bg-primary-100' : 'bg-primary-100')" class="block cursor-pointer" style="height: 3px;"></div>
+                <div :class="(mobile_nav ? 'transition transform -rotate-45 my-0 w-8 -mt-0.5' : 'transition my-1.5 w-8') + ' ' + (BlockBackground ? 'bg-primary-100' : 'bg-primary-100')"  class="block cursor-pointer" style="height: 3px;"></div>
+              </div>
+            </div>          
           </div>
         </div>
 
-        <div :class="is_revealed ? 'menu-slide-down' : 'menu-slide-up'" class=" justify-center items-center hidden lg:flex lg:pt-0 pt-8 h-screen lg:h-auto" @click="toggleMenu">
+        <div :class="is_revealed ? 'menu-slide-down' : 'menu-slide-up'" class=" justify-center items-center hidden lg:flex lg:pt-0 pt-8 h-screen lg:h-auto" @click="menuClicked">
           <slot name="menuitems"></slot>
         </div>
 
@@ -23,20 +28,28 @@
 <script>
 export default {
   props: {
-    menuState: false
+    BlockBackground: Boolean
   },
 
   data(){
     return{
+      mobile_nav: false,
       is_revealed: false,
       is_animated: false,
+      bg_block: false
     }
   },
 
   methods: {
-    toggleMenu(){
-      this.is_revealed = !this.is_revealed;
+    menuClicked(){
+      this.is_revealed = false
+      this.mobile_nav = false
     },
+
+    revealMenuEvent(){
+      this.mobile_nav = !this.mobile_nav
+      this.is_revealed = !this.is_revealed;
+    }
   },
 
   created(){
