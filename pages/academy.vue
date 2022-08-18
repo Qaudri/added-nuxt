@@ -6,11 +6,11 @@
       </div>
 
       <template v-slot:menuitems >
-        <UiButtonsSecondary @Pushto="whoWeAre" button_title="Back to Home" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
-        <UiButtonsSecondary @Pushto="whatWeDo" button_title="Our Academy" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
-        <UiButtonsSecondary @Pushto="ourServices" button_title="Our Courses" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
-        <UiButtonsSecondary @Pushto="Academy" button_title="Reviews & FAQs" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0" />
-        <UiButtonsPrimary @pushTo="Primary" button_title="Register Now" class="lg:ml-4 my-10 lg:my-0 mx-6 lg:mr-0 " />
+        <UiButtonsSecondary @Pushto="whoWeAre" button_title="Back to Home" class="lg:mx-4 lg:my-0 my-4"/>
+        <UiButtonsSecondary @Pushto="whatWeDo" button_title="Our Academy" class="lg:mx-4 lg:my-0 my-4"/>
+        <UiButtonsSecondary @Pushto="ourServices" button_title="Our Courses" class="lg:mx-4 lg:my-0 my-4"/>
+        <UiButtonsSecondary @Pushto="Academy" button_title="Reviews & FAQs" class="lg:mx-4 lg:my-0 my-4" />
+        <UiButtonsPrimary @pushTo="Primary" button_title="Register Now" class="lg:ml-4 my-10 lg:my-0" />
       </template>
     </SectionsCommonHeader>
     
@@ -181,7 +181,7 @@
     </section>
 
     <section class="container mx-auto relative z-10">
-      <div class="bg-primary-100 p-10 md:flex items-center justify-around absolute raise -mt-40 lg:-mt-36">
+      <div class="bg-primary-100 p-10 md:flex items-center justify-around absolute raise -mt-32">
         <div class="mb-16 md:mb-0 md:w-3/5">
           <div class="text-left text-base text-white md:text-base xl:text-lg mb-2">
             What are you waiting for?
@@ -284,7 +284,7 @@ p{
 
 @media screen and (max-width: 400px) {
 .raise{
-  margin-top: -15rem;
+  margin-top: -10rem;
 }
 }
 
