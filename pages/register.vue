@@ -1,7 +1,7 @@
 <template>
   <div class="h-full w-full fixed z-10  bg-gray-400 bg-opacity-40 flex items-center justify-center backdrop-filter backdrop-blur">
     <div class="scale-out bg-white p-8 w-full md:w-2/3 lg:w-1/3">
-      <form action="" @submit.prevent="Register">
+      <form action="" @submit.prevent="RegisterUser">
 
         <label for="email" class="mt-0">Email</label>
         <input v-model="form.email" type="email" name="email" placeholder="Enter your email address">
@@ -38,7 +38,7 @@ export default {
       register: 'authentication/registerStudent',
     }),
 
-    Register(){
+    RegisterUser(){
       this.register({
         email: this.form.email,
         password: this.form.password,
@@ -58,7 +58,7 @@ export default {
     },
 
     LoginPage(){
-      this.$router.push({path:'/students'})
+      this.$router.push({path:'/students/login'})
     }
   },
 
