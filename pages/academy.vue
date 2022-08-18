@@ -29,7 +29,7 @@
           </p>
 
           <div>
-            <a href="@/courses.html" class="select-none px-6 md:px-10 py-3 font-medium hover:text-white hover:bg-primary-100 border-2 border-primary-100 text-primary-100 mt-8 mb-1 duration-500 ease-in-out">
+            <a href="/courses" class="select-none px-6 md:px-10 py-3 font-medium hover:text-white hover:bg-primary-100 border-2 border-primary-100 text-primary-100 mt-8 mb-1 duration-500 ease-in-out">
                 Get Started
             </a>
           </div>
