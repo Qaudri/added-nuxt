@@ -284,7 +284,7 @@ p{
 
 @media screen and (max-width: 400px) {
 .raise{
-  margin-top: -10rem;
+  margin-top: -9rem;
 }
 }
 
