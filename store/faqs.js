@@ -33,9 +33,8 @@ export const state = () => ({
     {
       id: 5,
       question: "Payment methods?",
-      answer: "You can pay directly via the website or you can contact us for a discussion. We are available 24/7",
+      answer: "You can pay directly via the website or you can contact us for a discussion. We are available 24/7.",
       active: false,
-
     },
   ],
 
