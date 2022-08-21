@@ -212,6 +212,22 @@ import {mapGetters} from 'vuex';
 
 
 export default {
+  head: {
+    title: 'Added Digital Solutions Academy',
+    htmlAttrs: {
+      lang: 'en'
+    },
+    meta: [
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { hid: 'description', name: 'description', content: 'Creative training institution' },
+      { name: 'format-detection', content: 'telephone=no' }
+    ],
+    
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }
+    ]
+  },
 
   computed: {
     ...mapGetters({
