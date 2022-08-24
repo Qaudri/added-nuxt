@@ -7,12 +7,12 @@
     </SectionsCoursesImage>
     <div class="pt-4">
       <SectionsCoursesTitle>
-        <h1 class="text-2xl font-bold">
+        <h1 class="text-2xl font-normal">
           {{title}}
         </h1>
       </SectionsCoursesTitle>
 
-      <div class="extra block justify-between items-center mt-4">
+      <div class="extra block justify-between items-center mt-2">
         <SectionsCoursesPrice>
           <p class="text-base">
             {{duration}} weeks | <span class="text-primary-100 font-medium">#{{price}}</span>
