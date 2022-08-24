@@ -26,7 +26,7 @@
           <div class="pr-4 border-r w-32 h-32">
             <img :src="selected_for_details.preview" alt="" class="w-24">
           </div>
-          <h1 class="text-3xl font-bold mx-3">
+          <h1 class="text-3xl font-normal mx-3">
             {{selected_for_details.title}}
           </h1>
         </div>
@@ -48,7 +48,7 @@
 
     <div class="container mx-auto px-6 md:px-10 py-28 xl:py-32">
       <div :class="detailsdisplayed ? 'grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 w-full md:w-1/2 lg:w-2/3 2xl:w-3/4 gap-10' :'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10'" class="">
-        <UiCardsCoursecard v-for="item in course" :key="item.id" class="bg-white"
+        <UiCardsCoursecard v-for="item in course" :key="item.id" class="bg-gray-50"
         :imgUrl="item.preview"   
         :title="item.title" 
         :duration="item.duration_in_weeks"
@@ -128,7 +128,7 @@ export default {
     },
 
     reloadThisPage(){
-      this.$router.push({path:'/courses'})
+      this.$router.push({path:'/'})
     },
 
     whoWeAre(){

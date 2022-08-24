@@ -6,7 +6,7 @@
       </div>
 
       <template v-slot:menuitems >
-        <UiButtonsSecondary @Pushto="whoWeAre" button_title="Back to Home" class="lg:mx-4 lg:my-0 my-4"/>
+        <UiButtonsSecondary @Pushto="whoWeAre" button_title="Home" class="lg:mx-4 lg:my-0 my-4"/>
         <UiButtonsSecondary @Pushto="whatWeDo" button_title="Our Academy" class="lg:mx-4 lg:my-0 my-4"/>
         <UiButtonsSecondary @Pushto="ourServices" button_title="Our Courses" class="lg:mx-4 lg:my-0 my-4"/>
         <UiButtonsSecondary @Pushto="Academy" button_title="Reviews & FAQs" class="lg:mx-4 lg:my-0 my-4" />
@@ -20,7 +20,7 @@
 
         <div class="lg:w-1/2 px-6 md:px-10 w-full mb-5">
 
-          <h1 class="select-none text-4xl lg:text-5xl 2xl:text-6xl font-bold mb-8 md:my-6 lg:leading-tight leading-normal hero-text xl:w-1/2">
+          <h1 class="select-none text-4xl lg:text-5xl 2xl:text-6xl font-normal mb-8 md:my-6 lg:leading-tight leading-normal hero-text xl:w-1/2">
             It's time to learn and acquire digital Tech skills.
           </h1>
 
@@ -48,8 +48,8 @@
           </div>
           <div class="w-full lg:w-1/2 px-6 md:px-16 2xl:px-24 py-8 lg:py-0">
             <h1
-            class="md:text-4xl text-3xl font-bold uppercase mb-4 text-center text-primary-100 flex justify-center mx-auto">
-                Our Academy
+            class="md:text-4xl text-3xl font-normal capitalize mb-4 text-center text-primary-100 flex justify-center mx-auto">
+              Our Academy
             </h1>
   
             <p class="text-base md:text-lg 2xl:text-2xl">
@@ -66,10 +66,10 @@
 
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-24 container mx-auto px-6 md:px-10" >
 
-          <div class="p-6 py-6 md:py-8 bg-white shadow-lg flex md:block">
+          <div class="p-4 py-4 md:py-6 bg-gray-50 flex md:block">
             <img :src="require('@/assets/images/icons/register.svg')" alt="" class="w-16 md:w-28 md:mb-6 mr-4 flex justify-center md:mx-auto">
             <div>
-                <h1 class="xl:text-2xl text-xl font-semibold uppercase text-left md:text-center text-primary-100 md:flex md:justify-center md:mx-auto">
+                <h1 class="xl:text-2xl text-xl font-normal capitalize text-left md:text-center text-primary-100 md:flex md:justify-center md:mx-auto">
                 Quick Enrollment
                 </h1>
                 <p
@@ -79,11 +79,11 @@
             </div>
           </div>
 
-          <div class="p-6 py-6 md:py-8 bg-white shadow-lg flex md:block">
+          <div class="p-4 py-4 md:py-6 bg-gray-50 flex md:block">
             <img :src="require('@/assets/images/icons/course.svg')" alt="" class="w-16 md:w-28 md:mb-6 mr-4 flex justify-center md:mx-auto">
             <div>
-                <h1 class="xl:text-2xl text-xl font-semibold uppercase text-left md:text-center text-primary-100 md:flex md:justify-center md:mx-auto">
-                    THOROUGH CURRICULUM
+                <h1 class="xl:text-2xl text-xl font-normal capitalize text-left md:text-center text-primary-100 md:flex md:justify-center md:mx-auto">
+                    Thorough Curriculum
                 </h1>
                 <p
                 class="text-left md:text-center text-base md:text-base xl:text-lg md:flex md:justify-center md:mx-auto mt-2">
@@ -92,24 +92,24 @@
             </div>
           </div>
 
-          <div class="p-6 py-6 md:py-8 bg-white shadow-lg flex md:block">
+          <div class="p-4 py-4 md:py-6 bg-gray-50 flex md:block">
             <img :src="require('@/assets/images/icons/environ.svg')" alt="" class="w-16 md:w-28 md:mb-6 mr-4 flex justify-center md:mx-auto">
             <div>
-                <h1 class="xl:text-2xl text-xl font-semibold uppercase text-left md:text-center text-primary-100 md:flex md:justify-center md:mx-auto">
-                    CONDUSIVE AREA
+                <h1 class="xl:text-2xl text-xl font-normal capitalize text-left md:text-center text-primary-100 md:flex md:justify-center md:mx-auto">
+                    Conducive Area
                 </h1>
                 <p
                 class="text-left md:text-center text-base md:text-base xl:text-lg md:flex md:justify-center md:mx-auto mt-2">
-                    Meet with creative minds in a confortable area
+                    Meet with creative minds in a comfortable area
                 </p>
             </div>
           </div>
 
-          <div class="p-6 py-6 md:py-8 bg-white shadow-lg flex md:block">
+          <div class="p-4 py-4 md:py-6 bg-gray-50 flex md:block">
             <img :src="require('@/assets/images/icons/recruit.svg')" alt="" class="w-16 md:w-28 md:mb-6 mr-4 flex justify-center md:mx-auto">
             <div>
-              <h1 class="xl:text-2xl text-xl font-semibold uppercase text-left md:text-center text-primary-100 md:flex md:justify-center md:mx-auto">
-                  JOB PLACEMENT
+              <h1 class="xl:text-2xl text-xl font-normal capitalize text-left md:text-center text-primary-100 md:flex md:justify-center md:mx-auto">
+                  Job Placement
               </h1>
               <p
               class="text-left md:text-center text-base md:text-base xl:text-lg md:flex md:justify-center md:mx-auto mt-2">
@@ -131,7 +131,7 @@
               Become a certified
             </p>
 
-            <h1 class="text-4xl md:text-5xl 2xl:text-7xl lg:leading-snug leading-tight capitalize 2xl:max-w-xl max-w-sm font-bold text-primary-100">
+            <h1 class="text-4xl md:text-5xl 2xl:text-7xl lg:leading-snug leading-tight capitalize 2xl:max-w-xl max-w-sm font-normal text-primary-100">
               Creative tech professional
             </h1>
 
@@ -156,7 +156,7 @@
     <section class="pt-24 lg:pt-28 pb-32 px-6 md:px-10" id="reviews/faqs">
       <div>
           <div class="">
-            <h1 class="md:text-4xl text-3xl font-bold uppercase mb-4 text-center text-primary-100 flex justify-center mx-auto">
+            <h1 class="md:text-4xl text-3xl font-normal capitalize mb-4 text-center text-primary-100 flex justify-center mx-auto">
               What They're Saying
             </h1>
             <div class="w-full py-3 flex justify-center items-center mx-auto">
@@ -173,7 +173,7 @@
           <div class="py-10 container mx-auto">
             <SectionsFaqsContainer />
             <div class="text-base md:text-lg xl:text-xl flex justify-center mx-auto mt-4">Have other questions? <span>
-              <a href="https://wa.me/2348066600820" class="ml-2 font-semibold text-primary-100 border-b-2 border-transparent hover:border-primary-100 duration-500 ease-in-out"> Contact Us!</a></span>
+              <a href="https://wa.me/2348066600820" class="ml-2 font-normal text-primary-100 border-b-2 border-transparent hover:border-primary-100 duration-500 ease-in-out"> Contact Us!</a></span>
             </div>
 
           </div>
@@ -186,7 +186,7 @@
           <div class="text-left text-base text-white md:text-base xl:text-lg mb-2">
             What are you waiting for?
           </div>
-          <h2 class="xl:text-4xl text-2xl md:text-3xl font-semibold text -left text-white">
+          <h2 class="xl:text-4xl text-2xl md:text-3xl font-normal text -left text-white">
             Pick a course and join!
           </h2>
           <div class="text-left text-base text-white md:text-base xl:text-lg mt-2">
@@ -237,7 +237,7 @@ export default {
 
   methods: {
     reloadThisPage(){
-      this.$router.push({path:'/academy'})
+      this.$router.push({path:'/'})
     },
 
     whoWeAre(){

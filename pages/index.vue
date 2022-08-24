@@ -7,7 +7,6 @@
 
       <template v-slot:menuitems >
         <UiButtonsSecondary @Pushto="whoWeAre" button_title="Who We Are" class="lg:mx-4 lg:my-0 my-4"/>
-        <UiButtonsSecondary @Pushto="whatWeDo" button_title="What We Do" class="lg:mx-4 lg:my-0 my-4"/>
         <UiButtonsSecondary @Pushto="ourServices" button_title="Our Services" class="lg:mx-4 lg:my-0 my-4"/>
         <UiButtonsSecondary @Pushto="Academy" button_title="Academy" class="lg:mx-4 lg:my-0 my-4" />
 
@@ -18,12 +17,12 @@
       </template>
     </SectionsCommonHeader>
 
-    <section class="hero-bg w-full py-32 md:py-44 px-6 md:px-10">
+    <section class="w-full py-32 md:py-44 px-6 md:px-10">
 
       <div class="flex items-center">
 
         <div class="mx-auto">
-          <h1 class="font-bold leading-tight text-4xl md:text-5xl max-w-none 2xl:text-7xl 2xl:max-w-4xl 2xl:leading-snug xl:leading-tight text-center text-black md:max-w-2xl md:leading-tight mx-auto">
+          <h1 class="font-normal leading-tight text-4xl md:text-5xl max-w-none 2xl:text-7xl 2xl:max-w-4xl 2xl:leading-snug xl:leading-tight text-center text-black md:max-w-2xl md:leading-tight mx-auto">
             We help businesses reach their peaks
           </h1>
 
@@ -53,7 +52,7 @@
     <section  id="who-we-are" class="pt-20 lg:pt-28 flex justify-center items-center container mx-auto px-6 md:px-10" >
       <div class="">
         <div>
-          <h1 class="md:text-4xl text-3xl font-bold uppercase text-center xl:text-left text-primary-100 flex justify-center mx-auto ">
+          <h1 class="md:text-4xl text-3xl font-normal capitalize text-center xl:text-left text-primary-100 flex justify-center mx-auto ">
             Who We Are
           </h1>
           <p class="text-center text-base md:text-lg xl:text-lg md:max-w-screen-md lg:max-w-1/2 flex justify-center mx-auto my-3">
@@ -63,7 +62,7 @@
           <div class="block md:flex justify-evenly mt-14 xl:justify-evenly">
             <div class="my-10 md:my-0">
               <img :src="require('@/assets/images/icons/star.svg')" alt="" class="w-20 my-4 flex justify-center mx-auto">
-              <h1 class="md:text-4xl text-3xl font-bold uppercase text-center text-primary-100 flex justify-center mx-auto">
+              <h1 class="md:text-4xl text-3xl font-normal capitalize text-center text-primary-100 flex justify-center mx-auto">
                 12+
               </h1>
               <p class="px-8 text-center text-base md:text-lg xl:text-lg flex justify-center mx-auto ">
@@ -73,7 +72,7 @@
 
             <div class="my-10 md:my-0">
               <img :src="require('@/assets/images/icons/courses/design.svg')" alt="" class="w-20 my-4 flex justify-center mx-auto">
-              <h1 class="md:text-4xl text-3xl font-bold uppercase text-center text-primary-100 flex justify-center mx-auto">
+              <h1 class="md:text-4xl text-3xl font-normal capitalize text-center text-primary-100 flex justify-center mx-auto">
                 1500+
               </h1 >
               <p class="px-8 text-center text-base md:text-lg xl:text-lg flex justify-center mx-auto ">Completed Projects</p>
@@ -81,7 +80,7 @@
 
             <div class="my-10 md:my-0">
               <img :src="require('@/assets/images/icons/thumbs_up.svg')" alt="" class="w-20 my-4 flex justify-center mx-auto">
-              <h1 class="md:text-4xl text-3xl font-bold uppercase text-center text-primary-100 flex justify-center mx-auto" >
+              <h1 class="md:text-4xl text-3xl font-normal capitalize text-center text-primary-100 flex justify-center mx-auto" >
                 1000+
               </h1>
               <p class="text-center text-base md:text-lg xl:text-lg flex justify-center mx-auto ">Satisfied Clients</p>
@@ -92,7 +91,7 @@
         <div class="mt-16">
 
           <div >
-            <h1 class="md:text-4xl text-3xl font-bold uppercase text-left text-primary-100 mx-auto flex justify-center">
+            <h1 class="md:text-4xl text-3xl font-normal capitalize text-left text-primary-100 mx-auto flex justify-center">
               Our Core Values
             </h1>
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mt-3 container mx-auto">
@@ -129,14 +128,14 @@
           </div>
 
           <div class="grid md:grid-cols-2 gap-10 mt-16">
-            <div class="p-8 border bg-primary-100 bg-opacity-5 shadow-lg">
-                <h1 class="md:text-4xl text-3xl font-bold uppercase text-left text-primary-100">Our Vision</h1>
+            <div class="p-8 bg-primary-100 bg-opacity-5 ">
+                <h1 class="md:text-4xl text-3xl font-normal capitalize text-left text-primary-100">Our Vision</h1>
                 <p class="mt-3 text-base md:text-lg xl:text-lg">
                   A renowned technology company that helps in strategic branding and business development with a first class reputation.
                 </p>
             </div>
-            <div  class="p-8 xl:p-4 xl:px-6 border shadow-lg bg-secondary-100 bg-opacity-5">
-              <h1 class="md:text-4xl text-3xl font-bold uppercase text-left text-primary-100">Our Mission</h1>
+            <div  class="p-8 xl:p-4 xl:px-6 bg-gray-50">
+              <h1 class="md:text-4xl text-3xl font-normal capitalize text-left text-primary-100">Our Mission</h1>
               <p class="mt-3 text-base md:text-lg xl:text-lg">
                 Helping businesses grow through online promotion, campaigns, collaboration, and execution.
                 We experience success through the success of our clients.
@@ -153,7 +152,7 @@
     <section id="our-services" class="flex items-center container mx-auto justify-center px-6 md:px-10 pt-20 pb-16 lg:py-28">
       <div>
           <div>
-            <h1 class="md:text-4xl text-3xl font-bold uppercase text-center text-primary-100 flex justify-center mx-auto">
+            <h1 class="md:text-4xl text-3xl font-normal capitalize text-center text-primary-100 flex justify-center mx-auto">
               Our Services                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
             </h1>
 
