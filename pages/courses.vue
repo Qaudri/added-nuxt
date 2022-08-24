@@ -10,7 +10,7 @@
         <UiButtonsSecondary @Pushto="whatWeDo" button_title="Our Academy" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
         <UiButtonsSecondary @Pushto="ourServices" button_title="Our Courses" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
         <UiButtonsSecondary @Pushto="Academy" button_title="Our Reviews" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0" />
-        <a href="https://bit.ly/3KPTsPB" class="text-primary-100 xl:text-xl text-base px-4 py-2 font-medium border-2 2xl:border-3 border-primary-100 hover:bg-primary-100 hover:text-white duration-500 ease-in-out">Contact Us</a>      </template>
+        <a href="https://bit.ly/3KPTsPB" class="text-primary-100 xl:text-xl text-base px-4 py-2 font-normal border-2 2xl:border-4 border-primary-100 hover:bg-primary-100 hover:text-white duration-500 ease-in-out">Contact Us</a>      </template>
     </SectionsCommonHeader>
     <div @click="hideDetails" :class="detailsdisplayed ? 'block' : 'hidden' " class=" absolute w-full bg-gray-400 bg-opacity-30 h-full z-40">
 

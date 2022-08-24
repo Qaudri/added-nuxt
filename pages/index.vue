@@ -38,7 +38,7 @@
               </a>
 
               <a href="https://wa.me/message/QAXPPW4FO55FM1" target="blank"
-                class="font-medium 2xl:text-2xl md:text-lg hover:text-white text-primary-100 md:px-4 px-3 py-2 hover:bg-primary-100 border-2 border-primary-100 mx-4 duration-500 ease-in-outdr">
+                class="font-normal 2xl:text-2xl md:text-lg hover:text-white text-primary-100 md:px-4 px-3 py-2 hover:bg-primary-100 border-2 border-primary-100 mx-4 duration-500 ease-in-out">
                 Let's Talk
               </a>
 

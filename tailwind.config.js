@@ -1,5 +1,8 @@
 module.exports = {
   theme: {
+    borderWidth: {
+      '3': '3px',
+    },
     extend: {
 
       colors: {
