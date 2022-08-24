@@ -1,5 +1,5 @@
 <template>
-  <div class="px-6 py-4 border shadow-lg">
+  <div class="p-4 bg-gray-50">
     <SectionsCoursesImage>
       <div>    
         <img :src="imgUrl" class="w-16" alt="">
@@ -18,7 +18,7 @@
             {{duration}} weeks | <span class="text-primary-100 font-medium">#{{price}}</span>
           </p>
         </SectionsCoursesPrice>
-        <div class="my-4">
+        <div class="mt-2">
           <slot />
         </div>
       </div>
@@ -38,3 +38,9 @@ props: {
 
 }
 </script>
+
+<style>
+.bg-gray-50{
+  background-color: #f9f9f9 !important;
+}
+</style>

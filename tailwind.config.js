@@ -13,6 +13,10 @@ module.exports = {
 
         secondary: {
           '100': '#222222'
+        },
+
+        gray: {
+          '50': '#f9f9f9'
         }
 
       },

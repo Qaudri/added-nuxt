@@ -17,7 +17,7 @@
       </template>
     </SectionsCommonHeader>
 
-    <section class="w-full py-32 md:py-44 px-6 md:px-10">
+    <section class="w-full pt-32 md:pt-44 px-6 md:px-10">
 
       <div class="flex items-center">
 
@@ -312,6 +312,6 @@ p{
 }
 
 .bg-gray-50{
-  background-color: #f7f7f7 !important;
+  background-color: #f9f9f9 !important;
 }
 </style>

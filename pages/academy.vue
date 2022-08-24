@@ -295,7 +295,7 @@ p{
 }
 
 .bg-gray-50{
-  background-color: #f7f7f7 !important;
+  background-color: #f9f9f9 !important;
 }
 
 @media screen and (max-width: 400px) {

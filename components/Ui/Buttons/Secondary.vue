@@ -1,7 +1,7 @@
 <template>
   <div>
     <button @click="emitPushtoLink" class="text-black text-base xl:text-xl font-normal hover:border-primary-100 hover:text-primary-100 
-    border-b-4 border-transparent ease-in-out block duration-500">
+    border-b-2 2xl:border-b-3 border-transparent ease-in-out block duration-500">
       {{button_title}}
     </button>
   </div>
