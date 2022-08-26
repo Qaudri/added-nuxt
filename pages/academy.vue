@@ -20,11 +20,11 @@
 
         <div class="lg:w-1/2 px-6 md:px-10 w-full mb-5">
 
-          <h1 class="select-none text-4xl lg:text-5xl 2xl:text-6xl font-normal mb-8 md:my-6 lg:leading-tight leading-normal hero-text xl:w-1/2">
+          <h1 class="select-none text-3xl lg:text-4xl 2xl:text-4xl font-normal mb-8 md:my-6 lg:leading-tight leading-normal hero-text xl:w-1/2">
             It's time to learn and acquire digital Tech skills.
           </h1>
 
-          <p class="text-base md:text- xl:text-lg mb-8">
+          <p class="text-sm md:text- xl:text-base mb-8">
             Acquire the 21st century skills so as to improve your relevance and employability in this ever changing world.
           </p>
 
@@ -48,11 +48,11 @@
           </div>
           <div class="w-full lg:w-1/2 px-6 md:px-16 2xl:px-24 py-8 lg:py-0">
             <h1
-            class="md:text-4xl text-3xl font-normal capitalize mb-4 text-center text-primary-100 flex justify-center mx-auto">
+            class="md:text-3xl text-2xl font-normal capitalize mb-4 text-center text-primary-100 flex justify-center mx-auto">
               Our Academy
             </h1>
   
-            <p class="text-base md:text-lg 2xl:text-2xl">
+            <p class="text-sm md:text-base 2xl:text-xl">
                 An innovative and technology driven academy aimed to help and empower people who want to get into tech and 
                 digital ecosystem to thrive across africa and globally with well organized courses having upto date 
                 curriculum, our facilitators engage students by walking them through pratical approaches.
@@ -69,11 +69,11 @@
           <div class="p-4 py-4 md:py-6 bg-gray-50 flex md:block">
             <img :src="require('@/assets/images/icons/register.svg')" alt="" class="w-16 md:w-28 md:mb-6 mr-4 flex justify-center md:mx-auto">
             <div>
-                <h1 class="xl:text-2xl text-xl font-normal capitalize text-left md:text-center text-primary-100 md:flex md:justify-center md:mx-auto">
+                <h1 class="xl:text-xl text-lg font-normal capitalize text-left md:text-center text-primary-100 md:flex md:justify-center md:mx-auto">
                 Quick Enrollment
                 </h1>
                 <p
-                class="text-left md:text-center text-base md:text-base xl:text-lg md:flex md:justify-center md:mx-auto mt-2">
+                class="text-left md:text-center text-sm md:text-sm xl:text-base md:flex md:justify-center md:mx-auto mt-2">
                     Students can register for courses right from their comfort zones.
                 </p>
             </div>
@@ -82,11 +82,11 @@
           <div class="p-4 py-4 md:py-6 bg-gray-50 flex md:block">
             <img :src="require('@/assets/images/icons/course.svg')" alt="" class="w-16 md:w-28 md:mb-6 mr-4 flex justify-center md:mx-auto">
             <div>
-                <h1 class="xl:text-2xl text-xl font-normal capitalize text-left md:text-center text-primary-100 md:flex md:justify-center md:mx-auto">
+                <h1 class="xl:text-xl text-lg font-normal capitalize text-left md:text-center text-primary-100 md:flex md:justify-center md:mx-auto">
                     Thorough Curriculum
                 </h1>
                 <p
-                class="text-left md:text-center text-base md:text-base xl:text-lg md:flex md:justify-center md:mx-auto mt-2">
+                class="text-left md:text-center text-sm md:text-sm xl:text-base md:flex md:justify-center md:mx-auto mt-2">
                 Our curriculums cover several in-demand skills
                 </p>
             </div>
@@ -95,11 +95,11 @@
           <div class="p-4 py-4 md:py-6 bg-gray-50 flex md:block">
             <img :src="require('@/assets/images/icons/environ.svg')" alt="" class="w-16 md:w-28 md:mb-6 mr-4 flex justify-center md:mx-auto">
             <div>
-                <h1 class="xl:text-2xl text-xl font-normal capitalize text-left md:text-center text-primary-100 md:flex md:justify-center md:mx-auto">
+                <h1 class="xl:text-xl text-lg font-normal capitalize text-left md:text-center text-primary-100 md:flex md:justify-center md:mx-auto">
                     Conducive Area
                 </h1>
                 <p
-                class="text-left md:text-center text-base md:text-base xl:text-lg md:flex md:justify-center md:mx-auto mt-2">
+                class="text-left md:text-center text-sm md:text-sm xl:text-base md:flex md:justify-center md:mx-auto mt-2">
                     Meet with creative minds in a comfortable area
                 </p>
             </div>
@@ -108,11 +108,11 @@
           <div class="p-4 py-4 md:py-6 bg-gray-50 flex md:block">
             <img :src="require('@/assets/images/icons/recruit.svg')" alt="" class="w-16 md:w-28 md:mb-6 mr-4 flex justify-center md:mx-auto">
             <div>
-              <h1 class="xl:text-2xl text-xl font-normal capitalize text-left md:text-center text-primary-100 md:flex md:justify-center md:mx-auto">
+              <h1 class="xl:text-xl text-lg font-normal capitalize text-left md:text-center text-primary-100 md:flex md:justify-center md:mx-auto">
                   Job Placement
               </h1>
               <p
-              class="text-left md:text-center text-base md:text-base xl:text-lg md:flex md:justify-center md:mx-auto mt-2">
+              class="text-left md:text-center text-sm md:text-sm xl:text-base md:flex md:justify-center md:mx-auto mt-2">
                   Get quick access to recruitment opportunities
               </p>
             </div>
@@ -122,31 +122,31 @@
       </div>
     </section>
 
-    <section class="items-center pt-24 lg:pt-28 pb-12 flex justify-center bg-primary-100 bg-opacity-5"  id="our-courses">
+    <section class="items-center pt-16 lg:pt-20 pb-4 flex justify-center bg-primary-100 bg-opacity-5"  id="our-courses">
       <div class="container mx-auto">
 
         <div class="block lg:flex justify-between items-center mb-10">
-          <div class="mx-auto mb-12 lg:mb-0 px-6 md:px-10 lg:w-1/2">
-            <p class="text-base md:text-lg xl:text-xl mb-1">
+          <div class="mx-auto mb-4 lg:mb-0 px-6 md:px-10 lg:w-1/2">
+            <p class="text-sm md:text-base xl:text-lg mb-1">
               Become a certified
             </p>
 
-            <h1 class="text-4xl md:text-5xl 2xl:text-7xl lg:leading-snug leading-tight capitalize 2xl:max-w-xl max-w-sm font-normal text-primary-100">
+            <h1 class="text-3xl md:text-4xl 2xl:text-7xl lg:leading-snug leading-tight capitalize 2xl:max-w-xl max-w-sm font-normal text-primary-100">
               Creative tech professional
             </h1>
 
-            <p class="text-base md:text-lg xl:text-xl mt-1 max-w-xl mb-12">
+            <p class="text-sm md:text-base xl:text-lg mt-1 max-w-xl mb-12">
               Our academy is a certified training centre for professionals, students and
             companies. We conduct and train students in different courses with unique certification.
             </p>
 
-            <a href="@/courses.html" class="text-lg text-primary-100 font-medium py-3 px-6 md:px-10 border-2 border-primary-100
+            <a href="@/courses.html" class="text-base text-primary-100 font-medium py-3 px-6 md:px-10 border-2 border-primary-100
             hover:bg-primary-100 duration-500 ease-in-out hover:text-white">View our Courses
             </a>
           </div>
 
-          <div class="lg:w-1/2">
-            <img :src="require('@/assets/images/work-bg.png')" alt="" class="w-full py-8 pl-8 hidden lg:block" />
+          <div class="lg:w-1/2 p-4">
+            <img :src="require('@/assets/images/work-bg.png')" alt="" class="w-full pl-8 hidden lg:block" />
           </div>
         </div>
 
@@ -156,7 +156,7 @@
     <section class="pt-24 lg:pt-28 pb-32 px-6 md:px-10" id="reviews/faqs">
       <div>
           <div class="">
-            <h1 class="md:text-4xl text-3xl font-normal capitalize mb-4 text-center text-primary-100 flex justify-center mx-auto">
+            <h1 class="md:text-3xl text-2xl font-normal capitalize mb-4 text-center text-primary-100 flex justify-center mx-auto">
               What They're Saying
             </h1>
             <div class="w-full py-3 flex justify-center items-center mx-auto">
@@ -172,7 +172,7 @@
 
           <div class="py-10 container mx-auto">
             <SectionsFaqsContainer />
-            <div class="text-base md:text-lg xl:text-xl flex justify-center mx-auto mt-4">Have other questions? <span>
+            <div class="text-sm md:text-base xl:text-lg flex justify-center mx-auto mt-4">Have other questions? <span>
               <a href="https://wa.me/2348066600820" class="ml-2 font-normal text-primary-100 border-b-2 border-transparent hover:border-primary-100 duration-500 ease-in-out"> Contact Us!</a></span>
             </div>
 
@@ -183,19 +183,19 @@
     <section class="container mx-auto relative z-10">
       <div class="bg-primary-100 p-10 md:flex items-center justify-around absolute raise -mt-32">
         <div class="mb-16 md:mb-0 md:w-3/5">
-          <div class="text-left text-base text-white md:text-base xl:text-lg mb-2">
+          <div class="text-left text-sm text-white md:text-sm xl:text-base mb-2">
             What are you waiting for?
           </div>
-          <h2 class="xl:text-4xl text-2xl md:text-3xl font-normal text -left text-white">
+          <h2 class="xl:text-3xl text-xl md:text-2xl font-normal text -left text-white">
             Pick a course and join!
           </h2>
-          <div class="text-left text-base text-white md:text-base xl:text-lg mt-2">
+          <div class="text-left text-sm text-white md:text-sm xl:text-base mt-2">
             Join people around the world who are taking steps to better their future and become more relevant in the tech-centric world.
             We will equip you with the skills you need and be with you along every step of the way!
           </div>
         </div>
 
-        <a href="/courses" class="text-white xl:text-xl xl:border-3 text-base px-6 py-3 font-medium border-2 border-white hover:bg-white hover:text-primary-100 duration-500 ease-in-out">
+        <a href="/courses" class="text-white xl:text-lg xl:border-3 text-sm px-6 py-3 font-medium border-2 border-white hover:bg-white hover:text-primary-100 duration-500 ease-in-out">
           Register Now
         </a>      
       </div>
@@ -270,8 +270,13 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: Product Sans;
+  src: url('../ProductSans-Regular.woff');
+}
+
 body{
-  font-family: "Poppins", sans-serif;
+  font-family: "Product Sans", sans-serif;
   overflow-x: hidden;
 }
 

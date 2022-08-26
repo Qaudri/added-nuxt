@@ -11,7 +11,7 @@
         <UiButtonsSecondary @Pushto="Academy" button_title="Academy" class="lg:mx-4 lg:my-0 my-4" />
 
         <div class="my-10 lg:my-0">
-          <a href="https://wa.me/message/QAXPPW4FO55FM1" target="blank" class="text-primary-100 xl:text-xl text-base px-4 py-2 font-medium border-2 2xl:border-3 border-primary-100 hover:bg-primary-100 hover:text-white duration-500 ease-in-out">Let's Talk</a>
+          <a href="https://wa.me/message/QAXPPW4FO55FM1" target="blank" class="text-primary-100  text-sm px-4 py-2 font-medium border-2 2xl:border-3 border-primary-100 hover:bg-primary-100 hover:text-white duration-500 ease-in-out">Let's Talk</a>
         </div>
 
       </template>
@@ -22,23 +22,23 @@
       <div class="flex items-center">
 
         <div class="mx-auto">
-          <h1 class="font-normal leading-tight text-4xl md:text-5xl max-w-none 2xl:text-7xl 2xl:max-w-4xl 2xl:leading-snug xl:leading-tight text-center text-black md:max-w-2xl md:leading-tight mx-auto">
+          <div class="font-normal leading-tight text-3xl md:text-4xl max-w-none 2xl:text-7xl 2xl:max-w-4xl 2xl:leading-snug xl:leading-tight text-center text-primary-100 md:max-w-2xl md:leading-tight mx-auto">
             We help businesses reach their peaks
-          </h1>
+          </div>
 
-          <p class="font-normal xl:text-xl xl:max-w-4xl 2xl:max-w-4xl text-base my-4 md:text-lg text-center md:max-w-2xl mx-auto">
+          <p class="font-normal xl:max-w-4xl 2xl:max-w-4xl text-sm my-4 md:text-base text-center md:max-w-2xl mx-auto">
             With our vetted team of professionals, we help design and craft solutions tailored to match
             your business and connect you with clients worldwide.
           </p>
 
           <div class="max-w-fit mx-auto mt-8 justify-center items-center flex">
               <a href="#see-how"
-              class="font-medium xl:border-3 md:text-lg 2xl:text-2xl p-0.5 hover:text-primary-100 border-b-2 hover:border-primary-100 border-transparent duration-500 ease-in-out mx-4">
+              class="font-medium xl:border-3 md:text-base 2xl:text-2xl p-0.5 hover:text-primary-100 border-b-2 hover:border-primary-100 border-transparent duration-500 ease-in-out mx-4">
                 See How
               </a>
 
               <a href="https://wa.me/message/QAXPPW4FO55FM1" target="blank"
-                class="font-normal 2xl:text-2xl md:text-lg hover:text-white text-primary-100 md:px-4 px-3 py-2 hover:bg-primary-100 border-2 border-primary-100 mx-4 duration-500 ease-in-out">
+                class="font-normal 2xl:text-2xl md:text-base hover:text-white text-primary-100 md:px-4 px-3 py-2 hover:bg-primary-100 border-2 border-primary-100 mx-4 duration-500 ease-in-out">
                 Let's Talk
               </a>
 
@@ -55,7 +55,7 @@
           <h1 class="md:text-4xl text-3xl font-normal capitalize text-center xl:text-left text-primary-100 flex justify-center mx-auto ">
             Who We Are
           </h1>
-          <p class="text-center text-base md:text-lg xl:text-lg md:max-w-screen-md lg:max-w-1/2 flex justify-center mx-auto my-3">
+          <p class="text-center text-sm md:text-base xl:text-lg md:max-w-screen-md lg:max-w-1/2 flex justify-center mx-auto my-3">
             We're a growing team of digital solutions experts and thoughtful leaders — full of personality minus the ego. We're the wearer of many hats dedicated to helping companies like yours grow.  
           </p>
 
@@ -65,7 +65,7 @@
               <h1 class="md:text-4xl text-3xl font-normal capitalize text-center text-primary-100 flex justify-center mx-auto">
                 12+
               </h1>
-              <p class="px-8 text-center text-base md:text-lg xl:text-lg flex justify-center mx-auto ">
+              <p class="px-8 text-center text-sm md:text-base xl:text-lg flex justify-center mx-auto ">
                 Years of service
               </p>
             </div>
@@ -75,7 +75,7 @@
               <h1 class="md:text-4xl text-3xl font-normal capitalize text-center text-primary-100 flex justify-center mx-auto">
                 1500+
               </h1 >
-              <p class="px-8 text-center text-base md:text-lg xl:text-lg flex justify-center mx-auto ">Completed Projects</p>
+              <p class="px-8 text-center text-sm md:text-base xl:text-lg flex justify-center mx-auto ">Completed Projects</p>
             </div>
 
             <div class="my-10 md:my-0">
@@ -83,7 +83,7 @@
               <h1 class="md:text-4xl text-3xl font-normal capitalize text-center text-primary-100 flex justify-center mx-auto" >
                 1000+
               </h1>
-              <p class="text-center text-base md:text-lg xl:text-lg flex justify-center mx-auto ">Satisfied Clients</p>
+              <p class="text-center text-sm md:text-base xl:text-lg flex justify-center mx-auto ">Satisfied Clients</p>
             </div>
           </div>
         </div>
@@ -97,32 +97,32 @@
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mt-3 container mx-auto">
               <div class="flex items-center p-2 bg-gray-50">
                 <img :src="require('@/assets/images/icons/checked_icon.svg')" alt="" class="w-6 md:w-8">
-                <p class="mx-2 md:mx-4 text-base md:text-lg xl:text-lg">Ingenuity</p>
+                <p class="mx-2 md:mx-4 text-sm md:text-base xl:text-lg">Ingenuity</p>
               </div>
 
               <div class="flex items-center p-2 bg-gray-50">
                 <img :src="require('@/assets/images/icons/checked_icon.svg')" alt="" class="w-6 md:w-8">
-                <p class="mx-2 md:mx-4 text-base md:text-lg xl:text-lg">Innovation</p>
+                <p class="mx-2 md:mx-4 text-sm md:text-base xl:text-lg">Innovation</p>
               </div>
 
               <div class="flex items-center p-2 bg-gray-50">
                 <img :src="require('@/assets/images/icons/checked_icon.svg')" alt="" class="w-6 md:w-8">
-                <p class="mx-2 md:mx-4 text-base md:text-lg xl:text-lg">Integrity</p>
+                <p class="mx-2 md:mx-4 text-sm md:text-base xl:text-lg">Integrity</p>
               </div>
 
               <div class="flex items-center p-2 bg-gray-50">
                 <img :src="require('@/assets/images/icons/checked_icon.svg')" alt="" class="w-6 md:w-8">
-                <p class="mx-2 md:mx-4 text-base md:text-lg xl:text-lg">Clarity</p>
+                <p class="mx-2 md:mx-4 text-sm md:text-base xl:text-lg">Clarity</p>
               </div>
 
               <div class="flex items-center p-2 bg-gray-50">
                 <img :src="require('@/assets/images/icons/checked_icon.svg')" alt="" class="w-6 md:w-8">
-                <p class="mx-2 md:mx-4 text-base md:text-lg xl:text-lg">Consistency</p>
+                <p class="mx-2 md:mx-4 text-sm md:text-base xl:text-lg">Consistency</p>
               </div>
 
               <div class="flex items-center p-2 bg-gray-50">
                 <img :src="require('@/assets/images/icons/checked_icon.svg')" alt="" class="w-6 md:w-8">
-                <p class="mx-2 md:mx-4 text-base md:text-lg xl:text-lg">Diversity</p>
+                <p class="mx-2 md:mx-4 text-sm md:text-base xl:text-lg">Diversity</p>
               </div>
             </div>
           </div>
@@ -130,13 +130,13 @@
           <div class="grid md:grid-cols-2 gap-10 mt-16">
             <div class="p-8 bg-primary-100 bg-opacity-5 ">
                 <h1 class="md:text-4xl text-3xl font-normal capitalize text-left text-primary-100">Our Vision</h1>
-                <p class="mt-3 text-base md:text-lg xl:text-lg">
+                <p class="mt-3 text-sm md:text-base xl:text-lg">
                   A renowned technology company that helps in strategic branding and business development with a first class reputation.
                 </p>
             </div>
             <div  class="p-8 xl:p-4 xl:px-6 bg-gray-50">
               <h1 class="md:text-4xl text-3xl font-normal capitalize text-left text-primary-100">Our Mission</h1>
-              <p class="mt-3 text-base md:text-lg xl:text-lg">
+              <p class="mt-3 text-sm md:text-base xl:text-lg">
                 Helping businesses grow through online promotion, campaigns, collaboration, and execution.
                 We experience success through the success of our clients.
               </p>
@@ -159,42 +159,42 @@
             <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-10  w-full">
               <div class="bg-gray-50 md:h-20 flex items-center p-4 md:p-6 w-full">
                 <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-base md:text-lg xl:text-lg ">Graphics Design</p>
+                <p class="mx-2 md:mx-6 text-left text-sm md:text-base xl:text-lg ">Graphics Design</p>
               </div>
 
               <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
                 <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-base md:text-lg xl:text-lg ">Web Design</p>
+                <p class="mx-2 md:mx-6 text-left text-sm md:text-base xl:text-lg ">Web Design</p>
               </div>
 
               <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
                 <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-base md:text-lg xl:text-lg ">Web Development</p>
+                <p class="mx-2 md:mx-6 text-left text-sm md:text-base xl:text-lg ">Web Development</p>
               </div>
 
               <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
                 <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-base md:text-lg xl:text-lg ">Video Editing</p>
+                <p class="mx-2 md:mx-6 text-left text-sm md:text-base xl:text-lg ">Video Editing</p>
               </div>
 
               <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
                 <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-base md:text-lg xl:text-lg ">Freelancing</p>
+                <p class="mx-2 md:mx-6 text-left text-sm md:text-base xl:text-lg ">Freelancing</p>
               </div>
 
               <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
                 <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-base md:text-lg xl:text-lg ">Printing</p>
+                <p class="mx-2 md:mx-6 text-left text-sm md:text-base xl:text-lg ">Printing</p>
               </div>
 
               <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
                 <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-base md:text-lg xl:text-lg ">Amazon KDP</p>
+                <p class="mx-2 md:mx-6 text-left text-sm md:text-base xl:text-lg ">Amazon KDP</p>
               </div>
 
               <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
                 <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-base md:text-lg xl:text-lg ">E-Commerce</p>
+                <p class="mx-2 md:mx-6 text-left text-sm md:text-base xl:text-lg ">E-Commerce</p>
               </div>
             </div>
           </div>
@@ -245,17 +245,15 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
-body{
-  font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
+@font-face {
+  font-family: Product Sans;
+  src: url('../ProductSans-Regular.woff');
 }
 
-.hero-bg{
-  background: url(../assets/images/bg.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+body{
+  font-family: "Product Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 br{

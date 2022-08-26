@@ -65,6 +65,16 @@ export default {
 </script>
 
 <style>
+  @font-face {
+    font-family: Product Sans;
+    src: url('../../ProductSans-Regular.woff');
+  }
+
+  body{
+    font-family: "Product Sans", sans-serif;
+    overflow-x: hidden;
+  }
+  
   form{
     width: 100%;
     display: block;

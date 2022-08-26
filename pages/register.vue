@@ -72,6 +72,64 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: Product Sans;
+  src: url('../ProductSans-Regular.woff');
+}
+
+body{
+  font-family: "Product Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+form{
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+
+label{
+  font-weight: 400;
+  color: #058182;
+  margin-top: 30px;
+  display: block;
+}
+
+input{
+  padding: 10px 15px;
+  margin: 10px 0;
+  display: block;
+  width: 100%;
+  border: 2px solid #222222;
+}
+
+
+input:focus{
+  border: 2px solid #058182;
+  border-radius: 0;
+  outline: none;
+  color: #058182;
+}
+
+.submit{
+  margin-top: 2rem;
+  width: 100%;
+  background-color: transparent;
+  border: 2px solid #058182;
+  text-transform: capitalize;
+  padding: 10px;
+  color: #058182;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit:hover{
+  background: #058182;
+  color: white;
+  transition: .5s ease-in-out;
+}
+
 .scale-out{
   animation: scaleout 1s forwards;
 }

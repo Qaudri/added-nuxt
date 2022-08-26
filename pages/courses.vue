@@ -10,7 +10,7 @@
         <UiButtonsSecondary @Pushto="whatWeDo" button_title="Our Academy" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
         <UiButtonsSecondary @Pushto="ourServices" button_title="Our Courses" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0"/>
         <UiButtonsSecondary @Pushto="Academy" button_title="Our Reviews" class="lg:mx-4 lg:my-0 my-4 ml-10 md:ml-0" />
-        <a href="https://bit.ly/3KPTsPB" class="text-primary-100 xl:text-xl text-base px-4 py-2 font-normal border-2 2xl:border-4 border-primary-100 hover:bg-primary-100 hover:text-white duration-500 ease-in-out">Contact Us</a>      </template>
+        <a href="https://bit.ly/3KPTsPB" class="text-primary-100 xl:text-lg text-sm px-4 py-2 font-normal border-2 2xl:border-4 border-primary-100 hover:bg-primary-100 hover:text-white duration-500 ease-in-out">Contact Us</a>      </template>
     </SectionsCommonHeader>
     <div @click="hideDetails" :class="detailsdisplayed ? 'block' : 'hidden' " class=" absolute w-full bg-gray-400 bg-opacity-30 h-full z-40">
 
@@ -26,18 +26,18 @@
           <div class="pr-4 border-r w-32 h-32">
             <img :src="selected_for_details.preview" alt="" class="w-24">
           </div>
-          <h1 class="text-3xl font-normal mx-3">
+          <h1 class="text-2xl font-normal mx-3">
             {{selected_for_details.title}}
           </h1>
         </div>
 
         <div class="my-5">
-          <h1 class="font-semibold text-primary-100 text-xl my-3">Course Description:</h1>
-          <p class="font-medium text-secondary-100 text-base">{{selected_for_details.brief}}</p>
+          <h1 class="font-semibold text-primary-100 text-lg my-3">Course Description:</h1>
+          <p class="font-medium text-secondary-100 text-sm">{{selected_for_details.brief}}</p>
         </div>
         <div class="">
-          <div class="text-base font-medium">Course duration: <span class="text-primary-100">{{selected_for_details.duration_in_weeks}} weeks</span></div>
-          <div class="text-base font-medium">Course price: <span class="text-primary-100">#{{selected_for_details.price}}</span></div>
+          <div class="text-sm font-medium">Course duration: <span class="text-primary-100">{{selected_for_details.duration_in_weeks}} weeks</span></div>
+          <div class="text-sm font-medium">Course price: <span class="text-primary-100">#{{selected_for_details.price}}</span></div>
         </div>
         <div class="mt-4 fixed bottom-4 flex justify-center items-center mx-auto">
           <UiButtonsPrimary @pushTo="registerPage" class="px-6 py-2 text-white font-medium" button_title="Enroll now"/>
@@ -169,6 +169,16 @@ export default {
 </script>
 
 <style>
+@font-face {
+  font-family: Product Sans;
+  src: url('../ProductSans-Regular.woff');
+}
+
+body{
+  font-family: "Product Sans", sans-serif;
+  overflow-x: hidden;
+}
+
 form{
   width: 100%;
   display: block;

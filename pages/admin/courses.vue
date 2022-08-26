@@ -9,8 +9,8 @@
     <div :class="create_course_form ? 'block' : 'hidden'" class="slide-left fixed top-0 right-0 min-h-screen flex justify-center items-center w-full z-20 bg-white md:w-1/2 lg:w-2/5 xl:w-1/3 ">
       <div class="bg-white py-4 px-10 w-full scale-95 lg:scale-100">
         <div>
-          <div class="border-b text-xl font-semibold flex justify-between">
-            <p class="font-medium text-black text-lg">Create Course</p>
+          <div class="border-b text-lg font-semibold flex justify-between">
+            <p class="font-medium text-black text-base">Create Course</p>
             <div class="">
               <UiButtonsClose @closeMenu="createCourseForm" class="flex items-center justify-end cursor-pointer pb-2" />
             </div>
@@ -32,7 +32,7 @@
           <label for="brief">Course brief</label>
           <input type="text" v-model="form.brief" placeholder="Enter the course brief">
 
-          <button type="submit" class="px-6 border-2 w-full mt-6 border-primary-100 text-primary-100 font-medium text-lg hover:bg-primary-100 hover:text-white ease-in-out duration-300 py-3">Create course</button>
+          <button type="submit" class="px-6 border-2 w-full mt-6 border-primary-100 text-primary-100 font-medium text-base hover:bg-primary-100 hover:text-white ease-in-out duration-300 py-3">Create course</button>
         </form>
       </div>
     </div>
@@ -65,7 +65,7 @@
     
     <div class="p-8 py-14" >
       <div class="py-3 border-b mb-8">
-        <h1 class="text-2xl font-semibold">Courses</h1>
+        <h1 class="text-lg font-semibold">Courses</h1>
       </div>
       {{courseItems}}
       <div :class="create_course_form ? 'grid-cols-1 lg:grid-cols-2' : '' " class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-10">
@@ -198,10 +198,14 @@ export default {
 </script> 
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@font-face {
+  font-family: Product Sans;
+  src: url('../../ProductSans-Regular.woff');
+}
 
 body{
-  font-family: "Poppins", sans-serif;
+  font-family: "Product Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 .bg-gray-50{
