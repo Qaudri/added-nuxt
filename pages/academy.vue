@@ -153,7 +153,7 @@
       </div>
     </section>
 
-    <section class="pt-24 lg:pt-28 pb-32 px-6 md:px-10" id="reviews/faqs">
+    <section class="pt-24 lg:pt-28 md:pb-32 px-6 md:px-10" id="reviews/faqs">
       <div>
           <div class="">
             <h1 class="md:text-3xl text-2xl font-normal capitalize mb-4 text-center text-primary-100 flex justify-center mx-auto">
@@ -181,8 +181,8 @@
       </div>
     </section>
 
-    <section class="container mx-auto relative z-10">
-      <div class="bg-primary-100 p-10 md:flex items-center justify-around absolute raise -mt-32">
+    <section class="container mx-auto relative">
+      <div class="bg-primary-100 p-10 md:flex items-center justify-around md:absolute md:-mt-24">
         <div class="mb-16 md:mb-0 md:w-3/5">
           <div class="text-left text-sm text-white md:text-sm xl:text-base mb-2">
             What are you waiting for?
@@ -202,7 +202,7 @@
       </div>
     </section>
 
-    <SectionsCommonFooter class="pt-60 md:pt-40 lg:pt-32" />
+    <SectionsCommonFooter class="md:pt-40 lg:pt-32" />
   </div>
 </template>
 
