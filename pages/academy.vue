@@ -160,7 +160,7 @@
               What They're Saying
             </h1>
             <div class="w-full py-3 flex justify-center items-center mx-auto">
-              <div class="w-full md:w-2/3 xl:w-1/2 py-3 mx-auto border-y-2 border-black">
+              <div class="w-full lg:w-3/4 xl:w-1/2 mx-auto md:py-3 border-y-2 border-secondary-100">
                 <agile :autoplay="true" :infinte="true" :slidesToShow="1" :navButtons="false" :dots="false" class="m-0">
                   <div 
                     v-for="review in reviews" :key="review.id" class="flex justify-center mx-auto">

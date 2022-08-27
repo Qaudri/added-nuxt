@@ -1,12 +1,20 @@
 <template>
-  <div class="w-full md:w-2/3 xl:w-1/2 py-4 mx-auto">
-    <SectionsReviewsReview class="text-center">
-      {{review}}
-    </SectionsReviewsReview>
-    <div class="w-12 h-0.5 bg-black mb-2 mt-14 flex justify-center mx-auto"></div>
-    <SectionsReviewsReviewer class="flex justify-center">
-      {{reviewer}}
-    </SectionsReviewsReviewer>
+  <div class="w-full flex items-center py-2 mx-auto px-10">
+    <div class="bg-gray-50 w-24 h-24">
+      <SectionsReviewsImage>
+        <img :src="require('@/assets/images/icons/user.svg')" class="w-24 h-24" alt="">
+      </SectionsReviewsImage>
+    </div>
+    <div class="w-1 h-24 bg-secondary-100 mx-4"></div>
+    <div>
+      <SectionsReviewsReview class="text-left">
+        {{review}}
+      </SectionsReviewsReview>
+      <SectionsReviewsReviewer class="flex mt-4">
+        {{reviewer}}
+      </SectionsReviewsReviewer>
+    </div>
+
   </div>
 </template>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="block text-base md:text-lg xl:text-xl text-secondary-100">
+  <div class="block text-sm md:text-base xl:text-lg text-secondary-100">
     <slot class="cursor-pointer " />
   </div>
 </template>
