@@ -22,10 +22,12 @@
       <div class="flex items-center">
 
         <div class="mx-auto">
-          <div class="font-normal leading-tight text-3xl md:text-4xl max-w-none 2xl:text-7xl 2xl:max-w-4xl 2xl:leading-snug xl:leading-tight text-center text-primary-100 md:max-w-2xl md:leading-tight mx-auto">
-            We help businesses reach their peaks
+          <div class="typewriter font-normal leading-tight text-3xl md:text-4xl max-w-none 2xl:text-7xl 2xl:max-w-4xl 2xl:leading-snug xl:leading-tight text-center text-primary-100 md:max-w-2xl md:leading-tight mx-auto">
+            We help 
+            <span class="typed-text">{{typeValue}}</span>
+            <span class="blinking-cursor">|</span>
+            <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
           </div>
-
           <p class="font-normal xl:max-w-4xl 2xl:max-w-4xl text-sm my-4 md:text-base text-center md:max-w-2xl mx-auto">
             With our vetted team of professionals, we help design and craft solutions tailored to match
             your business and connect you with clients worldwide.
@@ -211,7 +213,15 @@ export default {
 
   data(){
     return {
-      menuToggle: false
+      menuToggle: false,
+      typeValue: "",
+      typeStatus: false,
+      displayTextArray: ["businesses reach their peaks", "bring your ideas to life"],
+      typingSpeed: 100,
+      erasingSpeed: 100,
+      newTextDelay: 2000,
+      displayTextArrayIndex: 0,
+      charIndex: 0,
     }
   },
 
@@ -240,7 +250,43 @@ export default {
       this.$router.push({path:'/academy'})
       this.is_revealed = false
     },
-  }
+
+    typeText() {
+      if (this.charIndex < this.displayTextArray[this.displayTextArrayIndex].length) {
+        if (!this.typeStatus) this.typeStatus = true;
+        this.typeValue += this.displayTextArray[this.displayTextArrayIndex].charAt(
+          this.charIndex
+        );
+        this.charIndex += 1;
+        setTimeout(this.typeText, this.typingSpeed);
+      } else {
+        this.typeStatus = false;
+        setTimeout(this.eraseText, this.newTextDelay);
+      }
+    },
+
+    eraseText() {
+      if (this.charIndex > 0) {
+        if (!this.typeStatus) this.typeStatus = true;
+        this.typeValue = this.displayTextArray[this.displayTextArrayIndex].substring(
+          0,
+          this.charIndex - 1
+        );
+        this.charIndex -= 1;
+        setTimeout(this.eraseText, this.erasingSpeed);
+      } else {
+        this.typeStatus = false;
+        this.displayTextArrayIndex += 1;
+        if (this.displayTextArrayIndex >= this.displayTextArray.length)
+          this.displayTextArrayIndex = 0;
+        setTimeout(this.typeText, this.typingSpeed + 1000);
+      }
+    },
+  },
+
+  created() {
+   setTimeout(this.typeText, this.newTextDelay + 200);
+  },
 }
 </script>
 
@@ -311,5 +357,64 @@ p{
 
 .bg-gray-50{
   background-color: #f9f9f9 !important;
+}
+
+span.typed-text {
+  color: #058182;
+}
+
+.blinking-cursor {
+  font-size: 2.5rem;
+  color: #222222;
+  -webkit-animation: 1s blink step-end infinite;
+  -moz-animation: 1s blink step-end infinite;
+  -ms-animation: 1s blink step-end infinite;
+  -o-animation: 1s blink step-end infinite;
+  animation: 1s blink step-end infinite;
+}
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #2c3e50;
+  }
+}
+@-moz-keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #2c3e50;
+  }
+}
+@-webkit-keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #2c3e50;
+  }
+}
+@-ms-keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #2c3e50;
+  }
+}
+@-o-keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+  50% {
+    color: #2c3e50;
+  }
 }
 </style>
