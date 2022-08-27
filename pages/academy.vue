@@ -161,11 +161,11 @@
             </h1>
             <div class="w-full py-3 flex justify-center items-center mx-auto">
               <div class="w-full md:w-2/3 xl:w-1/2 py-3 mx-auto border-y-2 border-black">
-                <carousel class="m-0" :adjustableHeight="true" :centerMode="false" :autoplay="true" :itemsToShow="1" :paginationEnabled="false" :navigationEnabled="false" :loop="true" :infiniteScroll="true">
-                  <slide v-for="review in reviews" :key="review.id" class="flex justify-center mx-auto">
-                    <UiCardsReviewcard  :review="review.review" :reviewer="review.reviewer" />
-                  </slide>
-                </carousel>
+                <div class="m-0" :adjustableHeight="true" :centerMode="false" :autoplay="true" :itemsToShow="1" :itemstoScroll="1" :paginationEnabled="false" :navigationEnabled="false" :loop="true" :infiniteScroll="true">
+                  <div v-for="review in reviews" :key="review.id" class="flex justify-center mx-auto">
+                    <UiCardsReviewcard :review="review.review" :reviewer="review.reviewer" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -207,8 +207,8 @@
 
 <script>
 
-import { Carousel, Slide } from 'vue-carousel';
-import {mapGetters} from 'vuex';
+  // import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
+  import {mapGetters} from 'vuex';
 
 
 export default {
@@ -261,10 +261,10 @@ export default {
     }
   },
 
-  components: {
-    Carousel,
-    Slide
-  }
+  // components: {
+  //   Swiper,
+  //   SwiperSlide
+  // }
 
 }
 </script>
