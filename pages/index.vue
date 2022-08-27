@@ -364,7 +364,7 @@ span.typed-text {
 }
 
 .blinking-cursor {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #222222;
   -webkit-animation: 1s blink step-end infinite;
   -moz-animation: 1s blink step-end infinite;
