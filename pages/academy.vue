@@ -161,11 +161,12 @@
             </h1>
             <div class="w-full py-3 flex justify-center items-center mx-auto">
               <div class="w-full md:w-2/3 xl:w-1/2 py-3 mx-auto border-y-2 border-black">
-                <div class="m-0" :adjustableHeight="true" :centerMode="false" :autoplay="true" :itemsToShow="1" :itemstoScroll="1" :paginationEnabled="false" :navigationEnabled="false" :loop="true" :infiniteScroll="true">
-                  <div v-for="review in reviews" :key="review.id" class="flex justify-center mx-auto">
-                    <UiCardsReviewcard :review="review.review" :reviewer="review.reviewer" />
+                <agile :autoplay="true" :infinte="true" :slidesToShow="1" :navButtons="false" :dots="false" class="m-0">
+                  <div 
+                    v-for="review in reviews" :key="review.id" class="flex justify-center mx-auto">
+                    <UiCardsReviewcard class="slide" :review="review.review" :reviewer="review.reviewer" />
                   </div>
-                </div>
+                </agile>
               </div>
             </div>
           </div>
@@ -207,9 +208,9 @@
 
 <script>
 
-  // import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
-  import {mapGetters} from 'vuex';
+import {mapGetters} from 'vuex';
 
+import { VueAgile } from 'vue-agile';
 
 export default {
   head: {
@@ -227,6 +228,10 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.svg' }
     ]
+  },
+
+  components: {
+    agile: VueAgile 
   },
 
   computed: {
@@ -258,13 +263,8 @@ export default {
 
     Primary(){
       this.$router.push({path:'/courses'})
-    }
+    },
   },
-
-  // components: {
-  //   Swiper,
-  //   SwiperSlide
-  // }
 
 }
 </script>
