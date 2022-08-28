@@ -44,7 +44,7 @@
           <div class="text-sm font-medium">Course duration: <span class="text-primary-100">{{selected_for_details.duration_in_weeks}} weeks</span></div>
           <div class="text-sm font-medium">Course price: <span class="text-primary-100">#{{selected_for_details.price}}</span></div>
         </div>
-        <div class="mt-4 fixed bottom-4 flex justify-center items-center mx-auto">
+        <div class="mt-4 flex justify-center items-center mx-auto">
           <UiButtonsPrimary @pushTo="registerPage" class="px-6 py-2 text-white font-medium" button_title="Enroll now"/>
           <UiButtonsSecondary @Pushto="hideDetails" button_title="Check Other Courses" class="p-0"/>
         </div>

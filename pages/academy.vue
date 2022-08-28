@@ -16,15 +16,15 @@
     
     <section class="flex justify-between items-center">
 
-      <div class="lg:flex items-center justify-between mt-28 lg:mt-36 container mx-auto" >
+      <div class="md:flex items-center justify-between mt-28 lg:mt-36 container mx-auto" >
 
-        <div class="lg:w-1/2 px-6 md:px-10 w-full mb-5">
+        <div class="md:w-1/2 px-6 md:px-10 w-full mb-5">
 
-          <h1 class="select-none text-3xl lg:text-4xl 2xl:text-4xl font-normal mb-8 md:my-6 lg:leading-tight leading-normal hero-text xl:w-1/2">
+          <h1 class="select-none text-2xl lg:text-3xl 2xl:text-3xl font-normal mb-8 md:my-6 lg:leading-tight leading-normal hero-text">
             It's time to learn and acquire digital Tech skills.
           </h1>
 
-          <p class="text-sm md:text- xl:text-base mb-8">
+          <p class="text-sm xl:text-base mb-8">
             Acquire the 21st century skills so as to improve your relevance and employability in this ever changing world.
           </p>
 
@@ -36,7 +36,7 @@
 
         </div>
 
-        <img :src="require('@/assets/images/hero-bg.png')" alt="" class="select-none w-full lg:w-1/2 border-b-2 pl-6 pb-1" />
+        <img :src="require('@/assets/images/hero-bg.png')" alt="" class="select-none w-full md:w-1/2 border-b-2 pl-6 pb-1" />
       </div>
     </section> 
 
@@ -125,13 +125,13 @@
     <section class="items-center pt-16 lg:pt-20 pb-4 flex justify-center bg-primary-100 bg-opacity-5"  id="our-courses">
       <div class="container mx-auto">
 
-        <div class="block lg:flex justify-between items-center mb-10">
+        <div class="block md:flex justify-between items-center mb-10">
           <div class="mx-auto mb-4 lg:mb-0 px-6 md:px-10 lg:w-1/2">
             <p class="text-sm md:text-base xl:text-lg mb-1">
               Become a certified
             </p>
 
-            <h1 class="text-3xl md:text-4xl 2xl:text-7xl lg:leading-snug leading-tight capitalize 2xl:max-w-xl max-w-sm font-normal text-primary-100">
+            <h1 class="text-2xl md:text-2xl 2xl:text-4xl lg:leading-snug leading-tight capitalize 2xl:max-w-xl max-w-sm font-normal text-primary-100">
               Creative tech professional
             </h1>
 
@@ -146,7 +146,7 @@
           </div>
 
           <div class="lg:w-1/2 p-4">
-            <img :src="require('@/assets/images/work-bg.png')" alt="" class="w-full pl-8 hidden lg:block" />
+            <img :src="require('@/assets/images/work-bg.png')" alt="" class="w-full pl-8 hidden md:block" />
           </div>
         </div>
 
@@ -156,7 +156,7 @@
     <section class="pt-24 lg:pt-28 md:pb-32 px-6 md:px-10" id="reviews/faqs">
       <div>
           <div class="">
-            <h1 class="md:text-3xl text-2xl font-normal capitalize mb-4 text-center text-primary-100 flex justify-center mx-auto">
+            <h1 class="md:text-2xl text-2xl font-normal capitalize mb-4 text-center text-primary-100 flex justify-center mx-auto">
               What They're Saying
             </h1>
             <div class="w-full py-3 flex justify-center items-center mx-auto">
@@ -187,7 +187,7 @@
           <div class="text-left text-sm text-white md:text-sm xl:text-base mb-2">
             What are you waiting for?
           </div>
-          <h2 class="xl:text-3xl text-xl md:text-2xl font-normal text -left text-white">
+          <h2 class="xl:text-2xl text-xl md:text-2xl font-normal text -left text-white">
             Pick a course and join!
           </h2>
           <div class="text-left text-sm text-white md:text-sm xl:text-base mt-2">

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full flex items-center py-2 mx-auto px-10">
+  <div class="w-full flex items-center py-2 mx-auto px-10 lg:w-3/4 md:w-2/3">
     <div class="bg-gray-50 w-24 h-24">
       <SectionsReviewsImage>
         <img :src="picture" class="w-24 h-24" alt="">
