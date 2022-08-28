@@ -1,11 +1,14 @@
 <template>
-  <div class="p-4 bg-gray-50">
-    <SectionsCoursesImage>
+  <div class="p-6 bg-gray-50 flex md:block items-center">
+    <div class="border-r-secondary-100 border-r md:border-r-0 md:border-b pr-4 md:pb-4 md:border-b-secondary-100">
+      <SectionsCoursesImage >
       <div>    
-        <img :src="imgUrl" class="w-16" alt="">
+        <img :src="imgUrl" class="w-20 md:w-16" alt="">
       </div>
     </SectionsCoursesImage>
-    <div class="pt-4">
+    </div>
+
+    <div class="pl-4 md:pt-4">
       <SectionsCoursesTitle>
         <h1 class="text-2xl font-normal">
           {{title}}
