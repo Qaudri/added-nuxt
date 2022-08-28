@@ -164,7 +164,7 @@
                 <agile :autoplay="true" :infinte="true" :slidesToShow="1" :navButtons="false" :dots="false" class="m-0">
                   <div 
                     v-for="review in reviews" :key="review.id" class="flex justify-center mx-auto">
-                    <UiCardsReviewcard class="slide" :review="review.review" :reviewer="review.reviewer" />
+                    <UiCardsReviewcard class="slide" :picture="review.image" :review="review.review" :reviewer="review.reviewer" />
                   </div>
                 </agile>
               </div>

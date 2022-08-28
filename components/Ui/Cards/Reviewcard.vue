@@ -2,7 +2,7 @@
   <div class="w-full flex items-center py-2 mx-auto px-10">
     <div class="bg-gray-50 w-24 h-24">
       <SectionsReviewsImage>
-        <img :src="require('@/assets/images/icons/user.svg')" class="w-24 h-24" alt="">
+        <img :src="picture" class="w-24 h-24" alt="">
       </SectionsReviewsImage>
     </div>
     <div class="w-1 h-24 bg-secondary-100 mx-4"></div>
@@ -23,6 +23,7 @@ export default {
   props: {
    review: String,
    reviewer: String,
+   picture: String,
   }
 }
 </script>
