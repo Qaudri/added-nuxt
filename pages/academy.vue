@@ -131,7 +131,7 @@
               Become a certified
             </p>
 
-            <h1 class="text-2xl md:text-2xl 2xl:text-4xl lg:leading-snug leading-tight capitalize 2xl:max-w-xl max-w-sm font-normal text-primary-100">
+            <h1 class="text-2xl md:text-3xl 2xl:text-4xl lg:leading-snug leading-tight capitalize 2xl:max-w-xl max-w-sm font-normal text-primary-100">
               Creative tech professional
             </h1>
 
@@ -139,7 +139,6 @@
               Our academy is a certified training centre for professionals, students and
             companies. We conduct and train students in different courses with unique certification.
             </p>
-
             <a href="@/courses.html" class="text-base text-primary-100 font-medium py-3 px-6 md:px-10 border-2 border-primary-100
             hover:bg-primary-100 duration-500 ease-in-out hover:text-white">View our Courses
             </a>

@@ -1,12 +1,24 @@
 <template>
   <div class="w-full">
-    <SectionsFaqsQuestion @questionClicked="toggleAnswer" class="w-full" >
-      {{question}}
-    </SectionsFaqsQuestion>
+    
+    <SectionsFaqsAccordion>
 
-    <SectionsFaqsAnswer :class="answerRevealed ? 'block' : 'hidden'" class="w-full">
-      {{answer}}
-    </SectionsFaqsAnswer>
+      <SectionsFaqsAccordionItem container_class="bg-gray-50 border p-2 my-3">
+
+        <template #accordion-trigger>
+          <SectionsFaqsQuestion @questionClicked="toggleAnswer" class="w-full" >
+            {{question}}
+          </SectionsFaqsQuestion>
+          </template>
+
+        <template #accordion-content>
+          <SectionsFaqsAnswer :class="answerRevealed ? 'block' : 'hidden'" class="w-full">
+            {{answer}}
+          </SectionsFaqsAnswer>
+
+        </template>
+      </SectionsFaqsAccordionItem>
+    </SectionsFaqsAccordion>
   </div>
 </template>
 
