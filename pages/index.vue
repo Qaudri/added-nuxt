@@ -17,7 +17,7 @@
       </template>
     </SectionsCommonHeader>
 
-    <section class="w-full pt-32 md:pt-44">
+    <section class="w-full pt-32 md:pt-44 hero-bg">
 
       <div class="">
 
@@ -47,7 +47,7 @@
           </div>
         </div> -->
 
-        <div class="container mx-auto px-6 md:px-10">
+        <div class="container mx-auto px-6 md:px-10 mb-12">
           <h1 class="font-semibold leading-tight text-3xl md:text-5xl md:w-1/2 w-full lg:w-2/5 2xl:text-7xl 2xl:leading-snug xl:leading-tight text-primary-100 md:leading-tight uppercase">Creating World Class Digital Solutions</h1>
 
           <p class="font-normal text-sm my-4 md:text-base md:w-1/2 w-full lg:w-2/5 2xl:text-7xl">We help design and craft solutions tailored to match your business and connect you with clients worldwide.</p>
@@ -68,10 +68,11 @@
         
         <div class="bg-primary-100 mt-2 w-full">
           <div class="container mx-auto py-10">
-            <div class="block md:flex justify-evenly mt-14 text-white">
+            <div class="grid md:grid-cols-3 divide-x-2 divide-white text-white">
+
               <div class="my-10 md:my-0">
                 <!-- <img :src="require('@/assets/images/icons/star.svg')" alt="" class="w-20 my-4 flex justify-center mx-auto"> -->
-                <h1 class="md:text-3xl text-2xl font-normal capitalize text-center text-white flex justify-center mx-auto">
+                <h1 class="md:text-3xl text-2xl font-medium text-center text-white flex justify-center mx-auto">
                   12+
                 </h1>
                 <p class="px-8 text-center text-sm md:text-base xl:text-lg flex justify-center mx-auto ">
@@ -81,7 +82,7 @@
 
               <div class="my-10 md:my-0">
                 <!-- <img :src="require('@/assets/images/icons/design.svg')" alt="" class="w-20 my-4 flex justify-center mx-auto"> -->
-                <h1 class="md:text-3xl text-2xl font-normal capitalize text-center text-white flex justify-center mx-auto">
+                <h1 class="md:text-3xl text-2xl font-medium capitalize text-center text-white flex justify-center mx-auto">
                   1500+
                 </h1 >
                 <p class="px-8 text-center text-sm md:text-base xl:text-lg flex justify-center mx-auto ">Completed Projects</p>
@@ -89,10 +90,10 @@
 
               <div class="my-10 md:my-0">
                 <!-- <img :src="require('@/assets/images/icons/thumbs_up.svg')" alt="" class="w-20 my-4 flex justify-center mx-auto"> -->
-                <h1 class="md:text-3xl text-2xl font-normal capitalize text-center text-white flex justify-center mx-auto" >
+                <h1 class="md:text-3xl m-0 text-2xl font-medium capitalize text-center text-white flex justify-center mx-auto" >
                   1000+
                 </h1>
-                <p class="text-center text-sm md:text-base xl:text-lg flex justify-center mx-auto ">Satisfied Clients</p>
+                <p class="text-center m-0 text-sm md:text-base xl:text-lg flex justify-center mx-auto ">Satisfied Clients</p>
               </div>
           </div>
           </div>
@@ -334,6 +335,13 @@ br{
 
 div{
   user-select: none;
+}
+
+.hero-bg{
+  background: url('../assets/images/Black-Animation-Background.svg');
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: hard-light;
 }
 
 @media screen and (min-width: 1024px){
