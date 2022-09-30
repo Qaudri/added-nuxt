@@ -7,7 +7,6 @@
 
 <script>
 export default {
-
 }
 </script>
 
@@ -15,13 +14,11 @@ export default {
 .slideDown{
   animation: slideDown .75s forwards;
 }
-
 @keyframes slideDown {
   from{
     transform: translateY(-1rem);
     opacity: 0;
   }
-
   to{
     transform: translateY(0);
     opacity: 1;

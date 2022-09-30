@@ -5,22 +5,18 @@
 </template>
 
 <script>
-
 import {mapGetters} from 'vuex';
 export default {
-
   computed: {
     ...mapGetters({
       faqItems : 'faqs/getFaqItems'
     })
   },
-
   data(){
     return{
       tryFaqItems: this.faqItems
     }
   },
-
   methods: {
     tryChecking(){
       for (let item = 0; item < this.tryFaqItems.length; item++) {
@@ -29,17 +25,13 @@ export default {
       }
     }
   },
-
   created(){
     if (this.tryFaqItems =! '') {
       console.log()
     }
   }
-
-
 }
 </script>
 
 <style>
-
 </style>
