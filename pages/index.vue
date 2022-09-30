@@ -17,11 +17,11 @@
       </template>
     </SectionsCommonHeader>
 
-    <section class="w-full pt-32 md:pt-44 px-6 md:px-10">
+    <section class="w-full pt-32 md:pt-44">
 
-      <div class="flex items-center">
+      <div class="">
 
-        <div class="mx-auto">
+        <!-- <div class="mx-auto">
           <div class="typewriter font-normal leading-tight text-2xl md:text-3xl max-w-none 2xl:text-7xl 2xl:max-w-4xl 2xl:leading-snug xl:leading-tight text-center text-primary-100 md:max-w-2xl md:leading-tight mx-auto">
             We help 
             <span class="typed-text">{{typeValue}}</span>
@@ -45,8 +45,58 @@
               </a>
 
           </div>
-        </div>
+        </div> -->
 
+        <div class="container mx-auto px-6 md:px-10">
+          <h1 class="font-semibold leading-tight text-3xl md:text-5xl md:w-1/2 w-full lg:w-2/5 2xl:text-7xl 2xl:leading-snug xl:leading-tight text-primary-100 md:leading-tight uppercase">Creating World Class Digital Solutions</h1>
+
+          <p class="font-normal text-sm my-4 md:text-base md:w-1/2 w-full lg:w-2/5 2xl:text-7xl">We help design and craft solutions tailored to match your business and connect you with clients worldwide.</p>
+
+          <div class="mt-8 items-center flex">
+            <a href="#see-how"
+            class="font-medium xl:border-3 md:text-base 2xl:text-2xl hover:text-primary-100 border-b-2 hover:border-primary-100 border-transparent duration-500 ease-in-out mr-4">
+              Get Started
+            </a>
+
+            <a href="https://wa.me/message/QAXPPW4FO55FM1" target="blank"
+              class="font-normal 2xl:text-2xl md:text-base hover:text-white text-primary-100 md:px-4 px-3 py-2 hover:bg-primary-100 border-2 border-primary-100 mx-4 duration-500 ease-in-out">
+              Let's talk
+            </a>
+
+          </div>
+        </div>
+        
+        <div class="bg-primary-100 mt-2 w-full">
+          <div class="container mx-auto py-10">
+            <div class="block md:flex justify-evenly mt-14 text-white">
+              <div class="my-10 md:my-0">
+                <!-- <img :src="require('@/assets/images/icons/star.svg')" alt="" class="w-20 my-4 flex justify-center mx-auto"> -->
+                <h1 class="md:text-3xl text-2xl font-normal capitalize text-center text-white flex justify-center mx-auto">
+                  12+
+                </h1>
+                <p class="px-8 text-center text-sm md:text-base xl:text-lg flex justify-center mx-auto ">
+                  Years of service
+                </p>
+              </div>
+
+              <div class="my-10 md:my-0">
+                <!-- <img :src="require('@/assets/images/icons/design.svg')" alt="" class="w-20 my-4 flex justify-center mx-auto"> -->
+                <h1 class="md:text-3xl text-2xl font-normal capitalize text-center text-white flex justify-center mx-auto">
+                  1500+
+                </h1 >
+                <p class="px-8 text-center text-sm md:text-base xl:text-lg flex justify-center mx-auto ">Completed Projects</p>
+              </div>
+
+              <div class="my-10 md:my-0">
+                <!-- <img :src="require('@/assets/images/icons/thumbs_up.svg')" alt="" class="w-20 my-4 flex justify-center mx-auto"> -->
+                <h1 class="md:text-3xl text-2xl font-normal capitalize text-center text-white flex justify-center mx-auto" >
+                  1000+
+                </h1>
+                <p class="text-center text-sm md:text-base xl:text-lg flex justify-center mx-auto ">Satisfied Clients</p>
+              </div>
+          </div>
+          </div>
+        </div>
       </div>
 
     </section>
@@ -61,33 +111,7 @@
             We're a growing team of digital solutions experts and thoughtful leaders — full of personality minus the ego. We're the wearer of many hats dedicated to helping companies like yours grow.  
           </p>
 
-          <div class="block md:flex justify-evenly mt-14 xl:justify-evenly">
-            <div class="my-10 md:my-0">
-              <img :src="require('@/assets/images/icons/star.svg')" alt="" class="w-20 my-4 flex justify-center mx-auto">
-              <h1 class="md:text-3xl text-2xl font-normal capitalize text-center text-primary-100 flex justify-center mx-auto">
-                12+
-              </h1>
-              <p class="px-8 text-center text-sm md:text-base xl:text-lg flex justify-center mx-auto ">
-                Years of service
-              </p>
-            </div>
 
-            <div class="my-10 md:my-0">
-              <img :src="require('@/assets/images/icons/design.svg')" alt="" class="w-20 my-4 flex justify-center mx-auto">
-              <h1 class="md:text-3xl text-2xl font-normal capitalize text-center text-primary-100 flex justify-center mx-auto">
-                1500+
-              </h1 >
-              <p class="px-8 text-center text-sm md:text-base xl:text-lg flex justify-center mx-auto ">Completed Projects</p>
-            </div>
-
-            <div class="my-10 md:my-0">
-              <img :src="require('@/assets/images/icons/thumbs_up.svg')" alt="" class="w-20 my-4 flex justify-center mx-auto">
-              <h1 class="md:text-3xl text-2xl font-normal capitalize text-center text-primary-100 flex justify-center mx-auto" >
-                1000+
-              </h1>
-              <p class="text-center text-sm md:text-base xl:text-lg flex justify-center mx-auto ">Satisfied Clients</p>
-            </div>
-          </div>
         </div>
 
         <div class="mt-16">
@@ -310,14 +334,6 @@ br{
 
 div{
   user-select: none;
-}
-
-h1{
-  color: #222222 !important;
-}
-
-p{
-  color: #222222 !important;
 }
 
 @media screen and (min-width: 1024px){
