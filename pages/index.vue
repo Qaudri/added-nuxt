@@ -21,13 +21,8 @@
 
       <div class="">
 
-        <!-- <div class="mx-auto">
-          <div class="typewriter font-normal leading-tight text-2xl md:text-3xl max-w-none 2xl:text-7xl 2xl:max-w-4xl 2xl:leading-snug xl:leading-tight text-center text-primary-100 md:max-w-2xl md:leading-tight mx-auto">
-            We help 
-            <span class="typed-text">{{typeValue}}</span>
-            <span class="blinking-cursor">|</span>
-            <span class="cursor" :class="{ typing: typeStatus }">&nbsp;</span>
-          </div>
+        <div class="mx-auto">
+
           <p class="font-normal xl:max-w-4xl 2xl:max-w-4xl text-sm my-4 md:text-base text-center md:max-w-2xl mx-auto">
             With our vetted team of professionals, we help design and craft solutions tailored to match
             your business and connect you with clients worldwide.
@@ -45,7 +40,7 @@
               </a>
 
           </div>
-        </div> -->
+        </div>
 
         <div class="container mx-auto px-6 md:px-10 mb-12">
           <h1 class="font-semibold leading-tight text-3xl md:text-5xl md:w-1/2 w-full lg:w-2/5 2xl:text-7xl 2xl:leading-snug xl:leading-tight text-primary-100 md:leading-tight uppercase">Creating World Class Digital Solutions</h1>
@@ -239,14 +234,6 @@ export default {
   data(){
     return {
       menuToggle: false,
-      typeValue: "",
-      typeStatus: false,
-      displayTextArray: ["businesses reach their peaks...", "bring your ideas to life...", "share your message with the world..."],
-      typingSpeed: 100,
-      erasingSpeed: 100,
-      newTextDelay: 2000,
-      displayTextArrayIndex: 0,
-      charIndex: 0,
     }
   },
 
@@ -276,42 +263,8 @@ export default {
       this.is_revealed = false
     },
 
-    typeText() {
-      if (this.charIndex < this.displayTextArray[this.displayTextArrayIndex].length) {
-        if (!this.typeStatus) this.typeStatus = true;
-        this.typeValue += this.displayTextArray[this.displayTextArrayIndex].charAt(
-          this.charIndex
-        );
-        this.charIndex += 1;
-        setTimeout(this.typeText, this.typingSpeed);
-      } else {
-        this.typeStatus = false;
-        setTimeout(this.eraseText, this.newTextDelay);
-      }
-    },
-
-    eraseText() {
-      if (this.charIndex > 0) {
-        if (!this.typeStatus) this.typeStatus = true;
-        this.typeValue = this.displayTextArray[this.displayTextArrayIndex].substring(
-          0,
-          this.charIndex - 1
-        );
-        this.charIndex -= 1;
-        setTimeout(this.eraseText, this.erasingSpeed);
-      } else {
-        this.typeStatus = false;
-        this.displayTextArrayIndex += 1;
-        if (this.displayTextArrayIndex >= this.displayTextArray.length)
-          this.displayTextArrayIndex = 0;
-        setTimeout(this.typeText, this.typingSpeed + 1000);
-      }
-    },
   },
 
-  created() {
-   setTimeout(this.typeText, this.newTextDelay + 200);
-  },
 }
 </script>
 
