@@ -11,41 +11,18 @@
         <UiButtonsSecondary @Pushto="Academy" button_title="Academy" class="lg:mx-4 lg:my-0 my-4" />
 
         <div class="my-10 lg:my-0">
-          <a href="https://wa.me/message/QAXPPW4FO55FM1" target="blank" class="text-primary-100  text-sm px-4 py-2 font-medium border-2 2xl:border-3 border-primary-100 hover:bg-primary-100 hover:text-white duration-500 ease-in-out">Let's Talk</a>
+          <a href="https://wa.me/message/QAXPPW4FO55FM1" target="blank" class="text-primary-100  text-sm px-4 py-2 font-medium border-2 2xl:border-3 border-primary-100 hover:bg-primary-100 hover:text-white duration-500 ease-in-out 2xl:text-2xl">Let's Talk</a>
         </div>
 
       </template>
     </SectionsCommonHeader>
 
-    <section class="w-full pt-32 md:pt-44 hero-bg">
+    <section class="w-full">
+      <div class="hero-bg md:h-screen h-fit">
+        <div class="container pt-32 md:pt-44 2xl:md:pt-56 mx-auto px-6 md:px-10 mb-12">
+          <h1 class="font-semibold leading-tight text-3xl md:text-5xl md:w-1/2 w-full lg:w-2/5 2xl:w-1/3 2xl:text-6xl 2xl:leading-snug xl:leading-tight text-primary-100 md:leading-tight uppercase">Creating World Class Digital Solutions</h1>
 
-      <div class="">
-
-        <div class="mx-auto">
-
-          <p class="font-normal xl:max-w-4xl 2xl:max-w-4xl text-sm my-4 md:text-base text-center md:max-w-2xl mx-auto">
-            With our vetted team of professionals, we help design and craft solutions tailored to match
-            your business and connect you with clients worldwide.
-          </p>
-
-          <div class="max-w-fit mx-auto mt-8 justify-center items-center flex">
-              <a href="#see-how"
-              class="font-medium xl:border-3 md:text-base 2xl:text-2xl p-0.5 hover:text-primary-100 border-b-2 hover:border-primary-100 border-transparent duration-500 ease-in-out mx-4">
-                See How
-              </a>
-
-              <a href="https://wa.me/message/QAXPPW4FO55FM1" target="blank"
-                class="font-normal 2xl:text-2xl md:text-base hover:text-white text-primary-100 md:px-4 px-3 py-2 hover:bg-primary-100 border-2 border-primary-100 mx-4 duration-500 ease-in-out">
-                Let's Talk
-              </a>
-
-          </div>
-        </div>
-
-        <div class="container mx-auto px-6 md:px-10 mb-12">
-          <h1 class="font-semibold leading-tight text-3xl md:text-5xl md:w-1/2 w-full lg:w-2/5 2xl:text-7xl 2xl:leading-snug xl:leading-tight text-primary-100 md:leading-tight uppercase">Creating World Class Digital Solutions</h1>
-
-          <p class="font-normal text-sm my-4 md:text-base md:w-1/2 w-full lg:w-2/5 2xl:text-7xl">We help design and craft solutions tailored to match your business and connect you with clients worldwide.</p>
+          <p class="font-normal text-sm my-4 md:text-base xl:text-lg md:w-1/2 w-full lg:w-2/5 2xl:text-">We help design and craft solutions tailored to match your business and connect you with clients worldwide.</p>
 
           <div class="mt-8 items-center flex">
             <a href="#see-how"
@@ -60,41 +37,43 @@
 
           </div>
         </div>
-        
-        <div class="bg-primary-100 mt-2 w-full">
-          <div class="container mx-auto py-10">
-            <div class="grid md:grid-cols-3 divide-x-2 divide-white text-white">
+      </div>
 
-              <div class="my-10 md:my-0">
-                <!-- <img :src="require('@/assets/images/icons/star.svg')" alt="" class="w-20 my-4 flex justify-center mx-auto"> -->
-                <h1 class="md:text-3xl text-2xl font-medium text-center text-white flex justify-center mx-auto">
-                  12+
-                </h1>
-                <p class="px-8 text-center text-sm md:text-base xl:text-lg flex justify-center mx-auto ">
-                  Years of service
-                </p>
-              </div>
+      <div class="h-screen bg-gray-50 w-1/3 right-0 hidden lg:block absolute top-0">
 
-              <div class="my-10 md:my-0">
-                <!-- <img :src="require('@/assets/images/icons/design.svg')" alt="" class="w-20 my-4 flex justify-center mx-auto"> -->
-                <h1 class="md:text-3xl text-2xl font-medium capitalize text-center text-white flex justify-center mx-auto">
-                  1500+
-                </h1 >
-                <p class="px-8 text-center text-sm md:text-base xl:text-lg flex justify-center mx-auto ">Completed Projects</p>
-              </div>
+      </div>
+    </section>
 
-              <div class="my-10 md:my-0">
-                <!-- <img :src="require('@/assets/images/icons/thumbs_up.svg')" alt="" class="w-20 my-4 flex justify-center mx-auto"> -->
-                <h1 class="md:text-3xl m-0 text-2xl font-medium capitalize text-center text-white flex justify-center mx-auto" >
-                  1000+
-                </h1>
-                <p class="text-center m-0 text-sm md:text-base xl:text-lg flex justify-center mx-auto ">Satisfied Clients</p>
-              </div>
+    <section class="bg-primary-100 mt-2 w-full">
+      <div class="container mx-auto py-0 md:py-10">
+        <div class="grid md:grid-cols-3 px-36 md:px-0 divide-y-2 md:divide-y-0 md:divide-x-2 divide-white text-white">
+          <div class="py-10 md:my-0">
+            <!-- <img :src="require('@/assets/images/icons/star.svg')" alt="" class="w-20 my-4 flex justify-center mx-auto"> -->
+            <h1 class="text-3xl font-medium text-center text-white flex justify-center mx-auto">
+              12+
+            </h1>
+            <p class="px-8 text-center text-sm md:text-base xl:text-lg flex justify-center mx-auto ">
+              Years of service
+            </p>
           </div>
+
+          <div class="py-10 md:my-0">
+            <!-- <img :src="require('@/assets/images/icons/design.svg')" alt="" class="w-20 my-4 flex justify-center mx-auto"> -->
+            <h1 class="text-3xl font-medium capitalize text-center text-white flex justify-center mx-auto">
+              1500+
+            </h1 >
+            <p class="px-8 text-center text-sm md:text-base xl:text-lg flex justify-center mx-auto ">Completed Projects</p>
+          </div>
+
+          <div class="py-10 md:my-0">
+            <!-- <img :src="require('@/assets/images/icons/thumbs_up.svg')" alt="" class="w-20 my-4 flex justify-center mx-auto"> -->
+            <h1 class="m-0 text-3xl font-medium capitalize text-center text-white flex justify-center mx-auto" >
+              1000+
+            </h1>
+            <p class="text-center m-0 text-sm md:text-base xl:text-lg flex justify-center mx-auto ">Satisfied Clients</p>
           </div>
         </div>
       </div>
-
     </section>
 
     <section  id="who-we-are" class="pt-20 lg:pt-28 flex justify-center items-center container mx-auto px-6 md:px-10" >
@@ -175,7 +154,7 @@
       <div>
           <div>
             <h1 class="md:text-3xl text-2xl font-normal capitalize text-center text-primary-100 flex justify-center mx-auto">
-              Our Services                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+              Our Services              
             </h1>
 
             <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-10  w-full">
@@ -334,64 +313,5 @@ div{
 
 .bg-gray-50{
   background-color: #f9f9f9 !important;
-}
-
-span.typed-text {
-  color: #058182;
-}
-
-.blinking-cursor {
-  font-size: 2rem;
-  color: #222222;
-  -webkit-animation: 1s blink step-end infinite;
-  -moz-animation: 1s blink step-end infinite;
-  -ms-animation: 1s blink step-end infinite;
-  -o-animation: 1s blink step-end infinite;
-  animation: 1s blink step-end infinite;
-}
-@keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #2c3e50;
-  }
-}
-@-moz-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #2c3e50;
-  }
-}
-@-webkit-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #2c3e50;
-  }
-}
-@-ms-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #2c3e50;
-  }
-}
-@-o-keyframes blink {
-  from,
-  to {
-    color: transparent;
-  }
-  50% {
-    color: #2c3e50;
-  }
 }
 </style>
