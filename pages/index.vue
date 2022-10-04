@@ -18,13 +18,13 @@
     </SectionsCommonHeader>
 
     <section class="w-full">
-      <div class="hero-bg md:h-screen h-fit">
+      <div class="hero-bg lg:h-screen h-fit">
         <div class="container pt-32 md:pt-44 2xl:md:pt-56 mx-auto px-6 md:px-10 mb-12">
-          <h1 class="font-semibold leading-tight text-3xl md:text-5xl md:w-1/2 w-full lg:w-2/5 2xl:w-1/3 2xl:text-6xl 2xl:leading-snug xl:leading-tight text-primary-100 md:leading-tight uppercase">Creating World Class Digital Solutions</h1>
+          <h1 class="font-semibold text-center lg:text-left leading-tight text-3xl md:text-5xl w-full lg:w-2/5 2xl:w-1/3 2xl:text-6xl 2xl:leading-snug xl:leading-tight text-primary-100 md:leading-tight uppercase">Creating World Class Digital Solutions</h1>
 
-          <p class="font-normal text-sm my-4 md:text-base xl:text-lg md:w-1/2 w-full lg:w-2/5 2xl:text-">We help design and craft solutions tailored to match your business and connect you with clients worldwide.</p>
+          <p class="font-normal text-center lg:text-left text-sm my-4 md:text-base xl:text-lg w-full lg:w-2/5">We help design and craft solutions tailored to match your business and connect you with clients worldwide.</p>
 
-          <div class="mt-8 items-center flex">
+          <div class="mt-8 items-center justify-center lg:justify-start flex">
             <a href="#see-how"
             class="font-medium xl:border-3 md:text-base 2xl:text-2xl hover:text-primary-100 border-b-2 hover:border-primary-100 border-transparent duration-500 ease-in-out mr-4">
               Get Started
@@ -44,7 +44,7 @@
       </div>
     </section>
 
-    <section class="bg-primary-100 mt-2 w-full">
+    <section class="bg-primary-100 w-full">
       <div class="container mx-auto py-0 md:py-10">
         <div class="grid md:grid-cols-3 px-36 md:px-0 divide-y-2 md:divide-y-0 md:divide-x-2 divide-white text-white">
           <div class="py-10 md:my-0">
