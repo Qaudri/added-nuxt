@@ -11,7 +11,7 @@
         <UiButtonsSecondary @Pushto="Academy" button_title="Academy" class="lg:mx-4 lg:my-0 my-4" />
 
         <div class="my-10 lg:my-0">
-          <a href="https://wa.me/message/QAXPPW4FO55FM1" target="blank" class="text-primary-100  text-sm px-4 py-2 font-medium border-2 2xl:border-3 border-primary-100 hover:bg-primary-100 hover:text-white duration-500 ease-in-out 2xl:text-2xl">Let's Talk</a>
+          <a href="https://wa.me/message/QAXPPW4FO55FM1" target="blank" class="text-primary-100 xl:text-xl text-base px-4 py-2 font-normal border-2 2xl:border-3 border-primary-100 hover:bg-primary-100 hover:text-white duration-500 ease-in-out">Let's Talk</a>
         </div>
 
       </template>
@@ -31,7 +31,7 @@
             </a>
 
             <a href="https://wa.me/message/QAXPPW4FO55FM1" target="blank"
-              class="font-normal 2xl:text-2xl md:text-base hover:text-white text-primary-100 md:px-4 px-3 py-2 hover:bg-primary-100 border-2 border-primary-100 mx-4 duration-500 ease-in-out">
+              class="text-primary-100 xl:text-xl text-base px-4 py-2 font-normal border-2 2xl:border-3 border-primary-100 hover:bg-primary-100 hover:text-white duration-500 ease-in-out mr-4">
               Let's talk
             </a>
 
@@ -40,7 +40,7 @@
       </div>
 
       <div class="h-screen bg-gray-50 w-1/3 right-0 hidden lg:block absolute top-0">
-
+        
       </div>
     </section>
 
