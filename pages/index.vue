@@ -20,7 +20,7 @@
     <section class="w-full">
       <div class="hero-bg lg:h-screen h-fit">
         <div class="container pt-32 md:pt-44 2xl:md:pt-56 mx-auto px-6 md:px-10 mb-12">
-          <h1 class="font-semibold text-center lg:text-left leading-tight text-3xl md:text-5xl w-full lg:w-2/5 2xl:w-1/3 2xl:text-6xl 2xl:leading-snug xl:leading-tight text-primary-100 md:leading-tight uppercase">Creating World Class Digital Solutions</h1>
+          <h1 class="font-semibold text-center lg:text-left leading-tight text-3xl md:text-5xl w-full lg:w-2/5 xl:w-1/3 2xl:text-6xl 2xl:leading-snug xl:leading-tight text-primary-100 md:leading-tight uppercase">Creating World Class Digital Solutions</h1>
 
           <p class="font-normal text-center lg:text-left text-sm my-4 md:text-base xl:text-lg w-full lg:w-2/5">We help design and craft solutions tailored to match your business and connect you with clients worldwide.</p>
 
@@ -39,9 +39,13 @@
         </div>
       </div>
 
-      <div class="h-screen bg-gray-50 w-1/3 right-0 hidden lg:block absolute top-0">
-        
-      </div>
+      <div class="h-screen bg-gray-50 w-1/3 xl:w-1/4 right-0 hidden lg:block absolute top-0"></div>
+      <agile :autoplay="true" :infinte="true" :slidesToShow="1" :navButtons="false" :dots="false">
+        <div v-for="image in carousel" :key="image.id" class="absolute right-60 xl:right-52 top-1/4 w-1/4 hidden lg:block">
+          <UiCardsCarousel :text="image.title" :imageSource="image.source" />
+        </div>
+      </agile>
+
     </section>
 
     <section class="bg-primary-100 w-full">
@@ -207,12 +211,42 @@
 </template>
 
 <script>
+  import { VueAgile } from 'vue-agile';
 export default {
   name: 'IndexPage',
+
+  components: {
+    agile: VueAgile 
+  },
 
   data(){
     return {
       menuToggle: false,
+      carousel: [
+        {
+          id: 1,
+          title: "First one",
+          source: require('@/assets/images/01.jpg')
+        },
+
+        {
+          id: 2,
+          title: "Second one",
+          source: require('@/assets/images/02.jpg')
+        },
+
+        {
+          id: 3,
+          title: "Third one",
+          source: require('@/assets/images/03.jpg')
+        },
+
+        {
+          id: 4,
+          title: "Fourth one",
+          source: require('@/assets/images/04.jpg')
+        },
+      ]
     }
   },
 
