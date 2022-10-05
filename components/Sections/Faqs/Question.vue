@@ -1,6 +1,6 @@
 <template>
 
-  <div  :class="is_clicked ? 'border-b-0 2xl:border-b-0' : ''"
+  <div @click="dropDown" :class="is_clicked ? 'border-b-0 2xl:border-b-0' : ''"
   class="w-full flex justify-between px-4 py-3 border-2 2xl:border-3 border-primary-100 bg-white
    text-primary-100 text-lg font-medium mx-auto">
 
