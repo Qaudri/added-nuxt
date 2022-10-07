@@ -20,9 +20,9 @@
     <section class="w-full">
       <div class="hero-bg lg:h-screen h-fit">
         <div class="container pt-32 md:pt-44 2xl:md:pt-56 mx-auto px-6 md:px-10 mb-12">
-          <h1 class="font-semibold text-center lg:text-left leading-tight text-3xl md:text-5xl w-full lg:w-2/5 xl:w-1/3 2xl:text-6xl 2xl:leading-snug xl:leading-tight text-primary-100 md:leading-tight uppercase">Creating World Class Digital Solutions</h1>
+          <h1 class="font-medium text-center lg:text-left leading-tight text-3xl md:text-5xl w-full lg:w-2/5 xl:w-1/3 2xl:text-6xl 2xl:leading-snug xl:leading-tight text-primary-100 md:leading-tight uppercase">Creating World Class Digital Solutions</h1>
 
-          <p class="font-normal text-center lg:text-left text-sm my-4 md:text-base xl:text-lg w-full lg:w-2/5">We help design and craft solutions tailored to match your business and connect you with clients worldwide.</p>
+          <p class="font-normal text-center lg:text-left text-sm my-4 md:text-base xl:text-lg w-full lg:w-2/5">We provide the best experience for  .</p>
 
           <div class="mt-8 items-center justify-center lg:justify-start flex">
             <a href="#see-how"
@@ -40,17 +40,17 @@
       </div>
 
       <div class="h-screen bg-gray-50 w-1/3 xl:w-1/4 right-0 hidden lg:block absolute top-0"></div>
-      <agile :autoplay="true" :infinte="true" :slidesToShow="1" :navButtons="false" :dots="false">
-        <div v-for="image in carousel" :key="image.id" class="absolute right-60 xl:right-52 top-1/4 w-1/4 hidden lg:block">
-          <UiCardsCarousel :text="image.title" :imageSource="image.source" />
+      <!-- <agile :autoplay="true" :infinte="true" :slidesToShow="1" :navButtons="false" :dots="false"> -->
+        <div class="">
+          <img class="w-1/4 absolute right-60 xl:right-52 top-1/4 hidden lg:block" :src="require('@/assets/images/01.jpg')" alt="">
         </div>
-      </agile>
+      <!-- </agile> -->
 
     </section>
 
     <section class="bg-primary-100 w-full">
       <div class="container mx-auto py-0 md:py-10">
-        <div class="grid md:grid-cols-3 px-36 md:px-0 divide-y-2 md:divide-y-0 md:divide-x-2 divide-white text-white">
+        <div class="grid md:grid-cols-3 px-36 md:px-0 divide-y md:divide-y-0 md:divide-x divide-white text-white">
           <div class="py-10 md:my-0">
             <!-- <img :src="require('@/assets/images/icons/star.svg')" alt="" class="w-20 my-4 flex justify-center mx-auto"> -->
             <h1 class="text-3xl font-medium text-center text-white flex justify-center mx-auto">
