@@ -20,9 +20,9 @@
     <section class="w-full">
       <div class="hero-bg lg:h-screen h-fit">
         <div class="container pt-32 md:pt-44 2xl:md:pt-56 mx-auto px-6 md:px-10 mb-12">
-          <h1 class="font-medium text-center lg:text-left leading-tight text-3xl md:text-5xl w-full lg:w-2/5 xl:w-1/3 2xl:text-6xl 2xl:leading-snug xl:leading-tight text-primary-100 md:leading-tight uppercase">Creating World Class Digital Solutions</h1>
+          <h1 class="font-semibold text-center lg:text-left leading-tight text-3xl md:text-5xl w-full lg:w-2/5 xl:w-1/3 2xl:text-6xl 2xl:leading-snug xl:leading-tight text-primary-100 md:leading-tight uppercase">Creating World Class Digital Solutions</h1>
 
-          <p class="font-normal text-center lg:text-left text-sm my-4 md:text-base xl:text-lg w-full lg:w-2/5">We provide the best experience for  .</p>
+          <p class="font-normal text-center lg:text-left text-sm my-4 md:text-base xl:text-lg w-full lg:w-2/5">We craft solutions that help connects you with your clients worldwide.</p>
 
           <div class="mt-8 items-center justify-center lg:justify-start flex">
             <a href="#see-how"
@@ -80,18 +80,32 @@
       </div>
     </section>
 
-    <section  id="who-we-are" class="pt-20 lg:pt-28 flex justify-center items-center container mx-auto px-6 md:px-10" >
-      <div class="">
+    <section id="who-we-are" class="random-bg pt-20 lg:pt-28 flex justify-center items-center px-6 md:px-10" >
+      <div class="container mx-auto">
         <div>
-          <h1 class="md:text-2xl text-2xl font-normal capitalize text-center xl:text-left text-primary-100 flex justify-center mx-auto ">
-            Who We Are
+          <h1 class="font-semibold text-2xl md:text-3xl 2xl:text-4xl text-primary-100 md:leading-tight uppercase">
+            We think as strategists.<br /> We do as creators.
           </h1>
-          <p class="text-center text-sm md:text-base xl:text-lg md:max-w-screen-md lg:max-w-1/2 flex justify-center mx-auto my-3">
-            We're a growing team of digital solutions experts and thoughtful leaders — full of personality minus the ego. We're the wearer of many hats dedicated to helping companies like yours grow.  
+          <p class="text-sm md:text-base xl:text-lg">
+            Insights & Innovation | Brand Strategy | Brand Design | Digital Experience
           </p>
-
-
         </div>
+
+        <div class="grid md:grid-cols-2 gap-10 mt-16">
+            <div class="p-8 bg-primary-100 bg-opacity-5 ">
+                <h1 class="md:text-3xl text-2xl font-normal capitalize text-left text-primary-100">Our Vision</h1>
+                <p class="mt-3 text-sm md:text-base xl:text-lg">
+                  A renowned technology company that helps in strategic branding and business development with a first class reputation.
+                </p>
+            </div>
+            <div  class="p-8 xl:p-4 xl:px-6 bg-gray-50">
+              <h1 class="md:text-3xl text-2xl font-normal capitalize text-left text-primary-100">Our Mission</h1>
+              <p class="mt-3 text-sm md:text-base xl:text-lg">
+                Helping businesses grow through online promotion, campaigns, collaboration, and execution.
+                We experience success through the success of our clients.
+              </p>
+            </div>
+          </div>
 
         <div class="mt-16">
 
@@ -129,22 +143,6 @@
                 <img :src="require('@/assets/images/icons/checked_icon.svg')" alt="" class="w-6 md:w-8">
                 <p class="mx-2 md:mx-4 text-sm md:text-base xl:text-lg">Diversity</p>
               </div>
-            </div>
-          </div>
-
-          <div class="grid md:grid-cols-2 gap-10 mt-16">
-            <div class="p-8 bg-primary-100 bg-opacity-5 ">
-                <h1 class="md:text-3xl text-2xl font-normal capitalize text-left text-primary-100">Our Vision</h1>
-                <p class="mt-3 text-sm md:text-base xl:text-lg">
-                  A renowned technology company that helps in strategic branding and business development with a first class reputation.
-                </p>
-            </div>
-            <div  class="p-8 xl:p-4 xl:px-6 bg-gray-50">
-              <h1 class="md:text-3xl text-2xl font-normal capitalize text-left text-primary-100">Our Mission</h1>
-              <p class="mt-3 text-sm md:text-base xl:text-lg">
-                Helping businesses grow through online promotion, campaigns, collaboration, and execution.
-                We experience success through the success of our clients.
-              </p>
             </div>
           </div>
 
@@ -296,7 +294,7 @@ body{
 br{
   content: "A" !important;
   display: block !important;
-  margin-bottom: .65em !important;
+  margin-bottom: .2em !important;
 }
 
 div{
@@ -307,7 +305,12 @@ div{
   background: url('../assets/images/Black-Animation-Background.svg');
   background-position: center;
   background-size: cover;
-  background-blend-mode: hard-light;
+}
+
+.random-bg {
+  background: url('../assets/images/random.svg');
+  background-position: center;
+  background-size: cover;
 }
 
 @media screen and (min-width: 1024px){
