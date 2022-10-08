@@ -22,7 +22,7 @@
         <div class="container pt-32 md:pt-44 2xl:md:pt-56 mx-auto px-6 md:px-10 mb-12">
           <h1 class="font-semibold text-center lg:text-left leading-tight text-3xl md:text-5xl w-full lg:w-2/5 xl:w-1/3 2xl:text-6xl 2xl:leading-snug xl:leading-tight text-primary-100 md:leading-tight uppercase">Creating World Class Digital Solutions</h1>
 
-          <p class="font-normal text-center lg:text-left text-sm my-4 md:text-base xl:text-lg w-full lg:w-2/5">We craft solutions that help connects you with your clients worldwide.</p>
+          <p class="font-normal text-center lg:text-left my-4 text-base xl:text-lg w-full lg:w-2/5">We craft solutions that help connects you with your clients worldwide.</p>
 
           <div class="mt-8 items-center justify-center lg:justify-start flex">
             <a href="#see-how"
@@ -56,7 +56,7 @@
             <h1 class="text-3xl font-medium text-center text-white flex justify-center mx-auto">
               12+
             </h1>
-            <p class="px-8 text-center text-sm md:text-base xl:text-lg flex justify-center mx-auto ">
+            <p class="px-8 text-center text-base md:text-base xl:text-lg flex justify-center mx-auto ">
               Years of service
             </p>
           </div>
@@ -66,7 +66,7 @@
             <h1 class="text-3xl font-medium capitalize text-center text-white flex justify-center mx-auto">
               1500+
             </h1 >
-            <p class="px-8 text-center text-sm md:text-base xl:text-lg flex justify-center mx-auto ">Completed Projects</p>
+            <p class="px-8 text-center text-base md:text-base xl:text-lg flex justify-center mx-auto ">Completed Projects</p>
           </div>
 
           <div class="py-10 md:my-0">
@@ -74,7 +74,7 @@
             <h1 class="m-0 text-3xl font-medium capitalize text-center text-white flex justify-center mx-auto" >
               1000+
             </h1>
-            <p class="text-center m-0 text-sm md:text-base xl:text-lg flex justify-center mx-auto ">Satisfied Clients</p>
+            <p class="text-center m-0 text-base md:text-base xl:text-lg flex justify-center mx-auto ">Satisfied Clients</p>
           </div>
         </div>
       </div>
@@ -82,68 +82,52 @@
 
     <section id="who-we-are" class="random-bg pt-20 lg:pt-28 flex justify-center items-center px-6 md:px-10" >
       <div class="container mx-auto">
-        <div>
-          <h1 class="font-semibold text-2xl md:text-3xl 2xl:text-4xl text-primary-100 md:leading-tight uppercase">
-            We think as strategists.<br /> We do as creators.
-          </h1>
-          <p class="text-sm md:text-base xl:text-lg">
-            Insights & Innovation | Brand Strategy | Brand Design | Digital Experience
-          </p>
-        </div>
-
-        <div class="grid md:grid-cols-2 gap-10 mt-16">
-            <div class="p-8 bg-primary-100 bg-opacity-5 ">
-                <h1 class="md:text-3xl text-2xl font-normal capitalize text-left text-primary-100">Our Vision</h1>
-                <p class="mt-3 text-sm md:text-base xl:text-lg">
-                  A renowned technology company that helps in strategic branding and business development with a first class reputation.
-                </p>
-            </div>
-            <div  class="p-8 xl:p-4 xl:px-6 bg-gray-50">
-              <h1 class="md:text-3xl text-2xl font-normal capitalize text-left text-primary-100">Our Mission</h1>
-              <p class="mt-3 text-sm md:text-base xl:text-lg">
-                Helping businesses grow through online promotion, campaigns, collaboration, and execution.
-                We experience success through the success of our clients.
-              </p>
-            </div>
+        <div class="grid grid-cols-1 xl:grid-cols-2 items-center">
+          <div class="">
+            <h1 class="font-semibold text-2xl md:text-3xl 2xl:text-4xl text-primary-100 md:leading-tight uppercase">
+              We think as strategists.<br /> We do as creators.
+            </h1>
+            <p class="text-base md:text-base xl:text-lg">
+              Insights & Innovation | Brand Strategy | Brand Design | Digital Experience
+            </p>
           </div>
 
-        <div class="mt-16">
-
-          <div >
-            <h1 class="md:text-3xl text-2xl font-normal capitalize text-left text-primary-100 mx-auto flex justify-center">
-              Our Core Values
-            </h1>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mt-3 container mx-auto">
-              <div class="flex items-center p-2 bg-gray-50">
-                <img :src="require('@/assets/images/icons/checked_icon.svg')" alt="" class="w-6 md:w-8">
-                <p class="mx-2 md:mx-4 text-sm md:text-base xl:text-lg">Ingenuity</p>
+          <div class="grid md:grid-cols-2 gap-10 mt-16 xl:mt-0">
+              <div class="p-8 bg-primary-100 bg-opacity-5 ">
+                  <h1 class="md:text-3xl text-2xl font-normal capitalize text-left text-primary-100">Our Vision</h1>
+                  <p class="mt-3 text-base md:text-base xl:text-lg">
+                    A renowned technology company that helps in strategic branding and business development with a first class reputation.
+                  </p>
               </div>
-
-              <div class="flex items-center p-2 bg-gray-50">
-                <img :src="require('@/assets/images/icons/checked_icon.svg')" alt="" class="w-6 md:w-8">
-                <p class="mx-2 md:mx-4 text-sm md:text-base xl:text-lg">Innovation</p>
+              <div  class="p-8 xl:p-4 xl:px-6 bg-gray-50">
+                <h1 class="md:text-3xl text-2xl font-normal capitalize text-left text-primary-100">Our Mission</h1>
+                <p class="mt-3 text-base md:text-base xl:text-lg">
+                  Helping businesses grow through online promotion, campaigns, collaboration, and execution.
+                  We experience success through the success of our clients.
+                </p>
               </div>
+          </div>
+        </div>
 
-              <div class="flex items-center p-2 bg-gray-50">
-                <img :src="require('@/assets/images/icons/checked_icon.svg')" alt="" class="w-6 md:w-8">
-                <p class="mx-2 md:mx-4 text-sm md:text-base xl:text-lg">Integrity</p>
-              </div>
 
-              <div class="flex items-center p-2 bg-gray-50">
-                <img :src="require('@/assets/images/icons/checked_icon.svg')" alt="" class="w-6 md:w-8">
-                <p class="mx-2 md:mx-4 text-sm md:text-base xl:text-lg">Clarity</p>
-              </div>
+        <div class="mt-20">
 
-              <div class="flex items-center p-2 bg-gray-50">
-                <img :src="require('@/assets/images/icons/checked_icon.svg')" alt="" class="w-6 md:w-8">
-                <p class="mx-2 md:mx-4 text-sm md:text-base xl:text-lg">Consistency</p>
-              </div>
-
-              <div class="flex items-center p-2 bg-gray-50">
-                <img :src="require('@/assets/images/icons/checked_icon.svg')" alt="" class="w-6 md:w-8">
-                <p class="mx-2 md:mx-4 text-sm md:text-base xl:text-lg">Diversity</p>
-              </div>
+          <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6 items-center gap-3">
+            <div>
+              <h1 class="font-semibold text-2xl md:text-3xl 2xl:text-4xl text-primary-100 md:leading-tight uppercase">
+                Our Core Values
+              </h1>
+              <p class="font-normal text-left text-base my-4 md:text-lg">
+                We hold our values to the highest esteem. They define us, who we are, what we do and how we do it.
+              </p>
             </div>
+
+            <img :src="require('@/assets/images/values/ingenuity.svg')" alt="ingenuity">
+            <img :src="require('@/assets/images/values/innovation.svg')" alt="innovation">
+            <img :src="require('@/assets/images/values/integrity.svg')" alt="integrity">
+            <img :src="require('@/assets/images/values/clarity.svg')" alt="clarity" class="block md:hidden xl:block" />
+            <img :src="require('@/assets/images/values/consistency.svg')" alt="consistency" class="block md:hidden lg:block" />
+
           </div>
 
         </div>
@@ -162,42 +146,42 @@
             <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-10  w-full">
               <div class="bg-gray-50 md:h-20 flex items-center p-4 md:p-6 w-full">
                 <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-sm md:text-base xl:text-lg ">Graphics Design</p>
+                <p class="mx-2 md:mx-6 text-left text-base md:text-base xl:text-lg ">Graphics Design</p>
               </div>
 
               <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
                 <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-sm md:text-base xl:text-lg ">Web Design</p>
+                <p class="mx-2 md:mx-6 text-left text-base md:text-base xl:text-lg ">Web Design</p>
               </div>
 
               <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
                 <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-sm md:text-base xl:text-lg ">Web Development</p>
+                <p class="mx-2 md:mx-6 text-left text-base md:text-base xl:text-lg ">Web Development</p>
               </div>
 
               <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
                 <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-sm md:text-base xl:text-lg ">Video Editing</p>
+                <p class="mx-2 md:mx-6 text-left text-base md:text-base xl:text-lg ">Video Editing</p>
               </div>
 
               <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
                 <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-sm md:text-base xl:text-lg ">Freelancing</p>
+                <p class="mx-2 md:mx-6 text-left text-base md:text-base xl:text-lg ">Freelancing</p>
               </div>
 
               <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
                 <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-sm md:text-base xl:text-lg ">Printing</p>
+                <p class="mx-2 md:mx-6 text-left text-base md:text-base xl:text-lg ">Printing</p>
               </div>
 
               <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
                 <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-sm md:text-base xl:text-lg ">Amazon KDP</p>
+                <p class="mx-2 md:mx-6 text-left text-base md:text-base xl:text-lg ">Amazon KDP</p>
               </div>
 
               <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
                 <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-sm md:text-base xl:text-lg ">E-Commerce</p>
+                <p class="mx-2 md:mx-6 text-left text-base md:text-base xl:text-lg ">E-Commerce</p>
               </div>
             </div>
           </div>
