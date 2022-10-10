@@ -17,9 +17,9 @@
       </template>
     </SectionsCommonHeader>
 
-    <section class="w-full">
+    <section class="w-full mb-12">
       <div class="hero-bg lg:h-screen h-fit">
-        <div class="container pt-32 md:pt-44 2xl:md:pt-56 mx-auto px-6 md:px-10 mb-12">
+        <div class="container pt-32 md:pt-44 2xl:md:pt-56 mx-auto px-6 md:px-10">
           <h1 class="font-semibold text-center lg:text-left leading-tight text-3xl md:text-5xl w-full lg:w-2/5 xl:w-1/3 2xl:text-6xl 2xl:leading-snug xl:leading-tight text-primary-100 md:leading-tight uppercase">Creating World Class Digital Solutions</h1>
 
           <p class="font-normal text-center lg:text-left my-4 text-base xl:text-lg w-full lg:w-2/5">We craft solutions that help connects you with your clients worldwide.</p>
@@ -111,13 +111,12 @@
 
 
         <div class="mt-20">
-
-          <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 2xl:grid-cols-6 items-center gap-3">
+          <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 md:gap-5 items-center gap-3">
             <div>
               <h1 class="font-semibold text-2xl md:text-3xl 2xl:text-4xl text-primary-100 md:leading-tight uppercase">
                 Our Core Values
               </h1>
-              <p class="font-normal text-left text-base my-4 md:text-lg">
+              <p class="font-normal text-left text-base mt-2 md:text-lg">
                 We hold our values to the highest esteem. They define us, who we are, what we do and how we do it.
               </p>
             </div>
@@ -125,18 +124,16 @@
             <img :src="require('@/assets/images/values/ingenuity.svg')" alt="ingenuity">
             <img :src="require('@/assets/images/values/innovation.svg')" alt="innovation">
             <img :src="require('@/assets/images/values/integrity.svg')" alt="integrity">
-            <img :src="require('@/assets/images/values/clarity.svg')" alt="clarity" class="block md:hidden xl:block" />
-            <img :src="require('@/assets/images/values/consistency.svg')" alt="consistency" class="block md:hidden lg:block" />
-
+            <img :src="require('@/assets/images/values/clarity.svg')" alt="clarity" class="block md:hidden lg:block" />
+            <img :src="require('@/assets/images/values/consistency.svg')" alt="consistency" class="block md:hidden" />
+<!--  -->
           </div>
-
         </div>
-
       </div>
 
     </section>
 
-    <section id="our-services" class="flex items-center container mx-auto justify-center px-6 md:px-10 pt-20 pb-16 lg:py-28">
+    <section id="our-services" class="flex items-center container mx-auto justify-center px-6 md:px-10 pt-24 pb-16 lg:py-28">
       <div>
           <div>
             <h1 class="md:text-3xl text-2xl font-normal capitalize text-center text-primary-100 flex justify-center mx-auto">
