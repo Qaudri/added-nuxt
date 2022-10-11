@@ -17,7 +17,7 @@
       </template>
     </SectionsCommonHeader>
 
-    <section class="w-full mb-12">
+    <section class="w-full mb-12 lg:mb-0">
       <div class="hero-bg lg:h-screen h-fit">
         <div class="container pt-32 md:pt-44 2xl:md:pt-56 mx-auto px-6 md:px-10">
           <h1 class="font-semibold text-center lg:text-left leading-tight text-3xl md:text-5xl w-full lg:w-2/5 xl:w-1/3 2xl:text-6xl 2xl:leading-snug xl:leading-tight text-primary-100 md:leading-tight uppercase">Creating World Class Digital Solutions</h1>
@@ -109,14 +109,13 @@
           </div>
         </div>
 
-
         <div class="mt-20">
           <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 md:gap-5 items-center gap-3">
             <div>
               <h1 class="font-semibold text-2xl md:text-3xl 2xl:text-4xl text-primary-100 md:leading-tight uppercase">
                 Our Core Values
               </h1>
-              <p class="font-normal text-left text-base mt-2 md:text-lg">
+              <p class="font-normal text-left text-sm md:text-base mt-2 xl:text-lg">
                 We hold our values to the highest esteem. They define us, who we are, what we do and how we do it.
               </p>
             </div>
@@ -133,55 +132,29 @@
 
     </section>
 
-    <section id="our-services" class="flex items-center container mx-auto justify-center px-6 md:px-10 pt-24 pb-16 lg:py-28">
-      <div>
-          <div>
-            <h1 class="md:text-3xl text-2xl font-normal capitalize text-center text-primary-100 flex justify-center mx-auto">
-              Our Services              
-            </h1>
+    <section id="our-services" class="pt-24 pb-16 lg:py-28">
+      <div class="bg-gray-50 px-6 md:px-10">
+        <div class="container mx-auto w-full py-10">
+          <div class="grid grid-cols-5 items-center">
+            <div class="col-span-2">
+              <h1 class="text-base font-normal uppercase text-secondary-100 tracking-[.25rem]">Our Services</h1>
+              <h1 class="font-semibold text-left text-2xl md:text-4xl w-full 2xl:text-5xl text-primary-100 capitalize mt-3">Full Service Creative Solutions Agency</h1>
+            </div>
 
-            <div class="grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mt-10  w-full">
-              <div class="bg-gray-50 md:h-20 flex items-center p-4 md:p-6 w-full">
-                <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-base md:text-base xl:text-lg ">Graphics Design</p>
-              </div>
+            <div class="mx-auto">
+              <!-- <div class="h-0.5 bg-secondary-100 w-20"></div> -->
+            </div>
+            <p class="col-span-2">Added Digital Solutions is a full-service digital creative agency. Build, develop your brand and get results with Added Solutions.</p>
+          </div>
 
-              <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
-                <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-base md:text-base xl:text-lg ">Web Design</p>
+          <div class="grid grid-cols-3">
+            <div>
+              <div>
               </div>
-
-              <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
-                <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-base md:text-base xl:text-lg ">Web Development</p>
-              </div>
-
-              <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
-                <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-base md:text-base xl:text-lg ">Video Editing</p>
-              </div>
-
-              <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
-                <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-base md:text-base xl:text-lg ">Freelancing</p>
-              </div>
-
-              <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
-                <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-base md:text-base xl:text-lg ">Printing</p>
-              </div>
-
-              <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
-                <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-base md:text-base xl:text-lg ">Amazon KDP</p>
-              </div>
-
-              <div class="bg-gray-50 md:h-20 flex items-center p-6 w-full">
-                <img :src="require('@/assets/images/icons/checked_icon.svg')" class="w-6 md:w-8" alt="">
-                <p class="mx-2 md:mx-6 text-left text-base md:text-base xl:text-lg ">E-Commerce</p>
-              </div>
+              <p></p>
             </div>
           </div>
+        </div>
       </div>
     </section>
     
@@ -284,12 +257,6 @@ div{
 
 .hero-bg{
   background: url('../assets/images/Black-Animation-Background.svg');
-  background-position: center;
-  background-size: cover;
-}
-
-.random-bg {
-  background: url('../assets/images/random.svg');
   background-position: center;
   background-size: cover;
 }
