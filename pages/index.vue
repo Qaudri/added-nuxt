@@ -54,7 +54,7 @@
         <div class="grid grid-cols-1 px-6 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white divide-opacity-20 text-white">
           
           <div class="py-8 w-full flex items-center justify-center mx-auto">
-            <div class="w-1/2 md:w-2/3 mx-auto flex items-center">
+            <div class="w-2/3 md:w-2/3 mx-auto block md:flex items-center">
               <h1 class="text-3xl lg:text-4xl font-medium text-white mr-4">
                 500+
               </h1>
@@ -65,7 +65,7 @@
           </div>
 
           <div class="py-8 w-full flex items-center justify-center mx-auto">
-            <div class="w-1/2 md:w-2/3 mx-auto flex items-center">
+            <div class="w-2/3 md:w-2/3 mx-auto block md:flex items-center">
               <h1 class="text-3xl lg:text-4xl font-medium mr-4 text-white">
                 750k+
               </h1 >
@@ -74,7 +74,7 @@
           </div>
 
           <div class="py-8 w-full flex items-center justify-center mx-auto">
-            <div class="w-1/2 md:w-2/3 mx-auto flex items-center">
+            <div class="w-2/3 md:w-2/3 mx-auto block md:flex items-center">
               <h1 class="text-3xl lg:text-4xl font-medium text-white mr-4" >
                 20+
               </h1>
@@ -147,7 +147,7 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-x-24 lg:gap-x-24 gap-y-10 mt-16 px-10 md:px-0">
+          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 md:gap-x-24 lg:gap-x-24 gap-y-10 mt-16 px-4 md:px-0">
             <div>
               <h1 class="text-xl m-0 text-secondary-100">01</h1>
               <h1 class="md:text-3xl text-2xl font-normal capitalize text-primary-100 mt-3">Branding & Design</h1>
@@ -269,6 +269,7 @@
 
       </div>
     </section>
+
     <SectionsCommonFooter />
   </div>
 </template>
@@ -322,12 +323,30 @@ export default {
     },
 
     whoWeAre(){
-      // this.$router.push({path:'/#who-we-are'})
+      this.$router.push({path:'/#who-we-are'})
       this.is_revealed = false
-      window.scroll({
-        top: 750,
-        behavior: 'smooth'
-      })
+      // if ((window.innerWidth <= 1024)) {
+      //   window.scroll({
+      //     top: 800,
+      //     behavior: 'smooth'
+      //   })
+      // } else {
+      //     if ((window.innerWidth <= 768)) {
+      //       window.scroll({
+      //         top: 580,
+      //         behavior: 'smooth'
+      //       })
+      //     } else {
+      //         if ((window.innerWidth <= 640)) {
+      //           window.scroll({
+      //             top: 660,
+      //             behavior: 'smooth'
+      //           })
+      //         }
+      //       }
+          
+      // }
+
     },
 
     whatWeDo(){
@@ -360,6 +379,7 @@ export default {
 body{
   font-family: "Product Sans", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 br{
