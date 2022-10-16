@@ -20,7 +20,7 @@ module.exports = {
         },
 
         gray: {
-          '50': '#f9f9f9'
+          '50': '#f8f8f8'
         }
 
       },
